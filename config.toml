@@ -35,13 +35,24 @@ defaultContentLanguage = "en"           # Default language to use
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "English"
-  weight = 20
-  url = "/categories/en"
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
 [[menu.main]]
-  name = "中文"
+  name = "Archives"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
+[[menu.main]]
+  name = "Tags"
   weight = 30
-  url = "/categories/zh"
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "SecondState.io"
+  weight = 50
+  url = "https://www.secondstate.io"
 
 
 [params]
