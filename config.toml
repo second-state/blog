@@ -52,7 +52,7 @@ defaultContentLanguage = "en"           # Default language to use
 [[menu.main]]
   name = "SecondState.io"
   weight = 50
-  url = "https://www.secondstate.io"
+  url = "http://www.secondstate.io"
 
 
 [params]
@@ -81,8 +81,8 @@ defaultContentLanguage = "en"           # Default language to use
 
   [params.social]                                         # 社交链接
     a-email = "mailto:contact@secondstate.io"
-    c-twitter = "https://twitter.com/secondstatellc"
-    d-facebook = "https://www.facebook.com/secondstatellc/"
+    c-twitter = "https://twitter.com/secondstateinc"
+    d-facebook = "https://www.facebook.com/secondstateinc/"
     g-github = "https://github.com/second-state/"
     h-weibo = "http://localhost:1313"
     i-zhihu = "http://localhost:1313"
