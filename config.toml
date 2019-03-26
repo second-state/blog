@@ -35,13 +35,24 @@ defaultContentLanguage = "en"           # Default language to use
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu              # 配置目录
-  name = "English"
-  weight = 20
-  url = "/categories/en"
+  name = "Home"
+  weight = 10
+  identifier = "home"
+  url = "/"
 [[menu.main]]
-  name = "中文"
+  name = "Archives"
+  weight = 20
+  identifier = "archives"
+  url = "/post/"
+[[menu.main]]
+  name = "Tags"
   weight = 30
-  url = "/categories/zh"
+  identifier = "tags"
+  url = "/tags/"
+[[menu.main]]
+  name = "SecondState.io"
+  weight = 50
+  url = "http://www.secondstate.io"
 
 
 [params]
@@ -70,8 +81,8 @@ defaultContentLanguage = "en"           # Default language to use
 
   [params.social]                                         # 社交链接
     a-email = "mailto:contact@secondstate.io"
-    c-twitter = "https://twitter.com/secondstatellc"
-    d-facebook = "https://www.facebook.com/secondstatellc/"
+    c-twitter = "https://twitter.com/secondstateinc"
+    d-facebook = "https://www.facebook.com/secondstateinc/"
     g-github = "https://github.com/second-state/"
     h-weibo = "http://localhost:1313"
     i-zhihu = "http://localhost:1313"
