@@ -82,7 +82,5 @@ defaultContentLanguage = "en"           # Default language to use
   [params.social]                                         # 社交链接
     a-email = "mailto:contact@secondstate.io"
     c-twitter = "https://twitter.com/secondstateinc"
-    d-facebook = "https://www.facebook.com/secondstateinc/"
+    d-facebook = "https://www.facebook.com/Secondstateinc-422015655273364/"
     g-github = "https://github.com/second-state/"
-    h-weibo = "http://localhost:1313"
-    i-zhihu = "http://localhost:1313"
