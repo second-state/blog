@@ -3,7 +3,7 @@ title: "Libra First Impressions
 Part 1: Smart Contracts are not created equal"
 date: 2019-06-20T10:01:23+08:00
 draft: false
-tags: ["hacks","smart contract","Ethereum","Wallet","blockchain"]
+tags: ["Libra","smart contract","Ethereum","Move","blockchain"]
 categories: ["en"]
 ---
 
