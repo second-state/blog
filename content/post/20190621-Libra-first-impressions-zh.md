@@ -39,7 +39,8 @@ Facebook 和 Libra 想要建立专注于支付和资产数字化的区块链，�
 
 Move 编程语言的名字来自于Move本身支持的基础操作器。Move操作器负责移动资产。Move  消除了原本常见的两步操作：减掉前面一个账户的余额，然后加到另外一个账户。Move 语言将资产与资源放在一等公民的地位。当然，Move语言也有其他重要的特性，使其在资产管理方面更加安全，更加健壮。
 
-```public deposit(payee: address, to_deposit: Coin) { 
+```
+public deposit(payee: address, to_deposit: Coin) { 
 
 let to_deposit_value: u64 = Unpack(move(to_deposit)); 
 
@@ -51,10 +52,11 @@ let coin_value: u64 = *move(coin_value_ref);
 
 *move(coin_value_ref) = move(coin_value) + move(to_deposit_value); 
 
-}```
+}
+```
 
-
-```public withdraw_from_sender(amount: u64): Coin { 
+```
+public withdraw_from_sender(amount: u64): Coin { 
 
 let transaction_sender_address: address = GetTxnSenderAddress(); 
 
@@ -72,7 +74,8 @@ let new_coin: Coin = Pack(move(amount));
 
 return move(new_coin); 
 
-}```
+}
+```
 
 (Move 操作器示例)
 
@@ -80,13 +83,15 @@ Move编程语言是静态的，并且由编译器工具来发现错误和潜在�
 
 Move源代码被编译为由虚拟机执行的静态的IR (intermediate representation)代码。IR代码由工具进行检查并验证是否正确。
 
-```public main(payee: address, amount: u64) { 
+```
+public main(payee: address, amount: u64) { 
 
 let coin: 0x0.Currency.Coin = 0x0.Currency.withdraw_from_sender(copy(amount)); 
 
 0x0.Currency.deposit(copy(payee), move(coin)); 
 
-}```
+}
+```
 
 实际上，目前的Libra 资料仅仅有Move IR代码的案例。Move源代码的细节，在本文章发表时还未公布。
 
@@ -102,7 +107,7 @@ Move 编程语言和虚拟机是Libra项目的关键创新之处，但是Move �
  
 ### Move程序是真的智能合约吗？
 
-Move程序必须进行编译，并且集成到一个Libra节点软件当中，对普通用户来说才是可用的。Libra区块链如果要支持新的Move程序，必须要暂停整条链，并且所有三分之二的验证人节点进行软件升级，才能够支持同样的Move程序，这在本质上意味着，每次要添加新的Move程序到区块链，都要进行硬分叉，期间伴随着区块链服务暂停。这不是智能合约，而是[chaincode]()。
+Move程序必须进行编译，并且集成到一个Libra节点软件当中，对普通用户来说才是可用的。Libra区块链如果要支持新的Move程序，必须要暂停整条链，并且所有三分之二的验证人节点进行软件升级，才能够支持同样的Move程序，这在本质上意味着，每次要添加新的Move程序到区块链，都要进行硬分叉，期间伴随着区块链服务暂停。这不是智能合约，而是[chaincode](https://hyperledger-fabric.readthedocs.io/en/release-1.4/chaincode.html)。
 
 智能合约的一个决定性的特点就是它有能力按照要求在区块链在并不需要暂停服务的情况下，通过共识，部署并且执行新代码，这个对于企业区块链或者是公链来说非常重要。
 
