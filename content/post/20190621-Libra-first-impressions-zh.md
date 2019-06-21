@@ -2,8 +2,8 @@
 title: "Libra深度剖析:智能合约并非生而平等 ①"
 date: 2019-04-21T01:01:23+08:00
 draft: false
-tags: ["Ethereum", "conference", "eth2.0", "EDCON", "development"]
-categories: ["Ethereum"]
+tags: ["Ethereum", "Libra","Smart contract"]
+categories: ["Smart Contract"]
 author: "Second State"
 ---
 
@@ -39,7 +39,7 @@ Facebook 和 Libra 想要建立专注于支付和资产数字化的区块链，�
 
 Move 编程语言的名字来自于Move本身支持的基础操作器。Move操作器负责移动资产。Move  消除了原本常见的两步操作：减掉前面一个账户的余额，然后加到另外一个账户。Move 语言将资产与资源放在一等公民的地位。当然，Move语言也有其他重要的特性，使其在资产管理方面更加安全，更加健壮。
 
-`public deposit(payee: address, to_deposit: Coin) { 
+```public deposit(payee: address, to_deposit: Coin) { 
 
 let to_deposit_value: u64 = Unpack(move(to_deposit)); 
 
@@ -51,9 +51,10 @@ let coin_value: u64 = *move(coin_value_ref);
 
 *move(coin_value_ref) = move(coin_value) + move(to_deposit_value); 
 
-}`
+}```
 
-`public withdraw_from_sender(amount: u64): Coin { 
+
+```public withdraw_from_sender(amount: u64): Coin { 
 
 let transaction_sender_address: address = GetTxnSenderAddress(); 
 
@@ -71,7 +72,7 @@ let new_coin: Coin = Pack(move(amount));
 
 return move(new_coin); 
 
-}`
+}```
 
 (Move 操作器示例)
 
@@ -79,13 +80,13 @@ Move编程语言是静态的，并且由编译器工具来发现错误和潜在�
 
 Move源代码被编译为由虚拟机执行的静态的IR (intermediate representation)代码。IR代码由工具进行检查并验证是否正确。
 
-`public main(payee: address, amount: u64) { 
+```public main(payee: address, amount: u64) { 
 
 let coin: 0x0.Currency.Coin = 0x0.Currency.withdraw_from_sender(copy(amount)); 
 
 0x0.Currency.deposit(copy(payee), move(coin)); 
 
-}`
+}```
 
 实际上，目前的Libra 资料仅仅有Move IR代码的案例。Move源代码的细节，在本文章发表时还未公布。
 
