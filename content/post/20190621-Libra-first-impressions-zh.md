@@ -54,14 +54,23 @@ let coin_value: u64 = *move(coin_value_ref);
 }`
 
 `public withdraw_from_sender(amount: u64): Coin { 
+
 let transaction_sender_address: address = GetTxnSenderAddress(); 
+
 let coin_ref: &mut Coin = BorrowGlobal(move(transaction_sender_address)); 
+
 let coin_value_ref: &mut u64 = &mut move(coin_ref).value; 
+
 let coin_value: u64 = *move(coin_value_ref); 
+
 RejectUnless(copy(coin_value) >= copy(amount));
+
 *move(coin_value_ref) = move(coin_value) - copy(amount); 
+
 let new_coin: Coin = Pack(move(amount));
+
 return move(new_coin); 
+
 }`
 
 (Move 操作器示例)
@@ -71,8 +80,11 @@ Move编程语言是静态的，并且由编译器工具来发现错误和潜在�
 Move源代码被编译为由虚拟机执行的静态的IR (intermediate representation)代码。IR代码由工具进行检查并验证是否正确。
 
 `public main(payee: address, amount: u64) { 
+
 let coin: 0x0.Currency.Coin = 0x0.Currency.withdraw_from_sender(copy(amount)); 
+
 0x0.Currency.deposit(copy(payee), move(coin)); 
+
 }`
 
 实际上，目前的Libra 资料仅仅有Move IR代码的案例。Move源代码的细节，在本文章发表时还未公布。
