@@ -1,5 +1,5 @@
 ---
-title: "Libra深度剖析:Validator 如何 2"
+title: "Libra深度剖析② Validator 如何验证交易"
 date: 2019-07-01T01:01:23+08:00
 draft: false
 tags: ["Ethereum", "Libra","Smart contract","virtual machine"]
