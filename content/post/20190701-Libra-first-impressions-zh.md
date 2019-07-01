@@ -3,7 +3,7 @@ title: "Libra深度剖析② Validator 如何验证交易"
 date: 2019-07-01T01:01:23+08:00
 draft: false
 tags: ["Ethereum", "Libra","Smart contract","virtual machine"]
-categories: ["libra]
+categories: ["libra"]
 ---
 
 在上一篇文章中，我们[初步探索了 Libra & Move 语言](https://blog.secondstate.io/post/20190621-libra-first-impressions-zh/) 。在这篇文章中，我们将探讨使用者如何跟 Libra 进行互动。本文以向 Libra 水龙头(Faucet)索取 Libra 币为例子，解释 Libra Client 与 Validator 的内部是如何处理与执行交易的。
