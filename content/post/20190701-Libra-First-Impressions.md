@@ -1,10 +1,10 @@
 ---
 title: "Libra First Impressions 
 Part 2: Deep dive with a Libra transaction"
-date: 2019-07-1T10:01:23+08:00
+date: 2019-07-01T10:01:23+08:00
 draft: false
-tags: ["Libra","smart contract","Ethereum","Move","blockchain"]
-categories: ["en"]
+tags: ["Libra","smart contract","virtual machine","Ethereum","Move","blockchain"]
+categories: ["libra"]
 ---
 
 This is the second article in a 3-article series on the technology behind Libra. The first article is [an overview of Libra and its smart contract programming language Move](). In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.
