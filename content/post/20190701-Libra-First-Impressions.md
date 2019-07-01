@@ -7,7 +7,7 @@ tags: ["Libra","smart contract","virtual machine","Ethereum","Move","blockchain"
 categories: ["libra"]
 ---
 
-This is the second article in a 3-article series on the technology behind Libra. The first article is [an overview of Libra and its smart contract programming language Move](). In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.
+This is the second article in a 3-article series on the technology behind Libra. The first article is [an overview of Libra and its smart contract programming language Move](https://blog.secondstate.io/post/20190619-libra-first-impressions/). In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.
 
 This article is researched by Hydai from Second State, a VC-funded, enterprise-focused, [smart contract platform company](www.secondstate.io). We are still in stealth mode while making contributions to leading open source projects. We are launching our first products soon.
 
@@ -140,3 +140,5 @@ Each Address has a Module section and a Resource section.
 Each Address can have multiple Modules. The only restriction is that there can only be one Module with the same name in the Address. In the following figure, for example, `0x0` already has the `Account` module. When the user tries to publish another Account module to `0x0`, the transaction would fail with an error.
 
 In Libra, each Address has an independent namespace. Therefore if a module is deployed in different addresses, each module deployment has a different name. For example, in the figure below, even though `0x0` and `0x4` have the same account module, `0x0.Account.T {…}` and `0x4.Account.T {…}` are entirely different resources.
+
+![](/images/20190701-Libra-first-impression2-07.png)
