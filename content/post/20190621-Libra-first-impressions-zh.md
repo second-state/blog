@@ -1,6 +1,6 @@
 ---
 title: "Libra深度剖析:智能合约并非生而平等 ①"
-date: 2019-04-21T01:01:23+08:00
+date: 2019-06-21T01:01:23+08:00
 draft: false
 tags: ["Ethereum", "Libra","Smart contract"]
 categories: ["Smart Contract"]
