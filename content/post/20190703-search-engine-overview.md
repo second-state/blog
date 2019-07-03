@@ -21,7 +21,9 @@ Just as with a traditional centralized smartphone application (App), the adoptio
 
 ## DApps need data.
 
-Whilst ubiquitous, in terms of mainstream centralised applications (Apps), mobile devices are not able to participate as full blockchain nodes. This is due, largely, to data storage requirements. In all blockchain protocols each individual node stores all states and processes all transactions. This provides a large amount of security, but in turn requires computational and storage resources which mobile handheld devices do not have. 
+Whilst ubiquitous, in terms of mainstream centralised applications (Apps), mobile devices are not able to participate as full blockchain nodes. This is due, largely, to data storage requirements. 
+
+In all blockchain protocols each individual node stores all states and processes all transactions. This provides a large amount of security, but in turn requires computational and storage resources which mobile handheld devices do not have. 
 
 > For DApps to thrive, they need a fast and efficient way to access specific blockchain data in real-time.
 
