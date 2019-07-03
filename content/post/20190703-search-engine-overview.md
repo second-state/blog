@@ -11,7 +11,7 @@ author: "Timothy McCallum"
 
 Web traffic from smartphones and tablets first overtook traffic from personal computers (PCs) in mid-2016. Since then mobile handheld devices have become ubiquitous. Whilst their primary use may have started out as a way for us to communicate with each other, the functionality of these devices has grown to the point where they have now become a necessity. 
 
-Not only do they provide access to gaming, music, books and more. They also allow us to access our stored value as well as provide us with access to both the online gaming and global online shopping phenomena.
+Not only do they provide access to gaming, music, books and more. They also allow us to access our stored value (online banking) as well as provide us with access to both the online gaming and global online shopping phenomena.
 
 ![](/images/20190703-search-engine-overview-01.jpg)
 
