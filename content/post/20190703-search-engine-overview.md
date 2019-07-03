@@ -66,7 +66,7 @@ The smart contract search engine is built using FOSS products/code which allow i
 
 ### Selectivity
 
-The smart contract search engine and API can index and deliver any combination of smart contract data. For example a smart contract and DApp development team can specifically index the one and only smart contract that is relevent to their project/product. This is done by simply uploading the ABI and Transaction address of their deployed smart contract. This contributes greatly to the performance and efficiency of the smart contract search engine, in terms of harware requirements.
+The smart contract search engine and API can index and deliver any combination of smart contract data. For example a smart contract and DApp development team can specifically index the one and only smart contract that is relevent to their project/product. This is done by simply uploading the ABI and transaction address of their deployed smart contract. This contributes greatly to the performance and efficiency of the smart contract search engine, and greatly reduces harware requirements.
 
 ## Usability - web browser
 
