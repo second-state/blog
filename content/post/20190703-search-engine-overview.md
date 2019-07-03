@@ -48,6 +48,7 @@ The ethos of decentralisation is to empower the individual. This smart contract 
 > The smart contract search engine, in-itself, is completely open source. 
 
 In its purest form, it uses the following FOSS products/code:
+
 * Ubuntu
 * Apache2
 * HTML
