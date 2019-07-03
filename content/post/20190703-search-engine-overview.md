@@ -1,5 +1,5 @@
 ---
-title: "Blockchain search engine — real-time data for decentralised applications (DApps)"
+title: "Blockchain search engine — real-time data for decentralized applications (DApps)"
 date: 2019-07-03T09:42:14+08:00
 draft: false
 tags: ["blockchain", "search", "DApp"]
@@ -7,9 +7,11 @@ categories: ["business"]
 author: "Timothy McCallum"
 ---
 
-## Mobile handheld devices
+This article articulates the importance of putting decentralized, blockchain, applications (DApps) into the hands of mobile technology users. More specifically, the importance of providing real-time blockchain data to decentralized applications (DApps) which run on mobile devices. This is the first of many articles. This particular article provides an overview of the smart contract search engine architecture and then provides specific code examples for querying the search engine and API. Future articles will explain the inner workings of the product.
 
 Web traffic from smartphones and tablets first overtook traffic from personal computers (PCs) in mid-2016. Since then mobile handheld devices have become ubiquitous. Whilst their primary use may have started out as a way for us to communicate with each other, the functionality of these devices has grown to the point where they have now become a necessity. 
+
+## Mobile handheld devices are an essential part of our future
 
 Not only do mobiles provide access to music, videos, books and more. They also allow us to access and transact value (online banking) as well as provide us with access to both the online gaming and global online shopping phenomena.
 
