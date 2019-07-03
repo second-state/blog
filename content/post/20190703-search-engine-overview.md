@@ -15,7 +15,7 @@ Not only do they provide access to music, videos, books and more. They also allo
 
 ![](/images/20190703-search-engine-overview-01.jpg)
 
-Just as with a given centralized application (App), the adoption of a, blockchain based, decentralized application (DApp) can be accelerated and sustained if provided to the end user via a similarly convenient platform i.e. a mobile handheld device.
+Just as with a given centralized mobile (smartphone) application (App), the adoption of a, blockchain based, decentralized application (DApp) can be accelerated and sustained if provided to the end user via a similarly convenient platform i.e. a mobile handheld device.
 
 ---
 
