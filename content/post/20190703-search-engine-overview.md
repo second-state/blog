@@ -218,6 +218,6 @@ The results of the above code are as follows.
 ```
 # Conclusion
 
-The is article has introduced the smart contract search engine. This has just been an overview. Subsequent articles will dive deeper into the inner workings of the product. The takeaway points for now are that this product is free and open source and can be installed and operated on consumer grade hardware. It can be used to index as little or as much data as your DApp requires. If you would like to integrate the smart contract search engine into your smart contract/DApp development cycle and/or use this software as a way to take control over the flow of public blockchain data to suit your needs, please contact us via [secondstate.io](https://www.secondstate.io/). 
+This article has introduced the smart contract search engine. This has just been an overview. Subsequent articles will dive deeper into the inner workings of the product. The takeaway points for now are that this product is free and open source and can be installed and operated on consumer grade hardware. It can be used to index as little or as much data as your DApp requires. If you would like to integrate the smart contract search engine into your smart contract/DApp development cycle and/or use this software as a way to take control over the flow of public blockchain data to suit your needs, please contact us via [secondstate.io](https://www.secondstate.io/). 
 
 The source code to this project can be found at the following Second State [GitHub](https://github.com/second-state/smart-contract-search-engine) repository.
