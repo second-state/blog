@@ -70,9 +70,9 @@ The smart contract search engine and API can index and deliver any combination o
 
 ## Usability - web browser
 
-Searching via the frontend user interface can be done by simply typing text into the search box. Whilst still under heavy development, at present there are three separate public smart contract search engine websites running.
+Searching via the frontend user interface can be done by simply typing text into the search box. Whilst still under reasonably heavy development, at present there are three separate public smart contract search engine websites running.
 
-As mentioned above this product can be used to index as little as one contract; for purpose. However, in order to test the scalability on consumer grade hardware, we have begun indexing the entire Ethereum MainNet. At the time of writing, the [Ethereum MainNet Search Engine](https://ethereum.search.secondstate.io/) has:
+As mentioned above this product can be used to index as little as one contract. However, in order to test the scalability on consumer grade hardware, we have begun indexing the entire Ethereum MainNet. At the time of writing, the [Ethereum MainNet Search Engine](https://ethereum.search.secondstate.io/) has:
 
 * 853,073 contracts indexed, 
 * 99 unique ABIs uploaded and 
@@ -213,4 +213,8 @@ The results of the above code are as follows.
 9251 contracts have the transfer() function
 8239 contracts are ERC20 compliant
 ```
+# Conclusion
 
+The is article has introduced the smart contract search engine. This has just been an overview. Subsequent articles will dive deeper into the inner workings of the product. The takeaway points for now are that this product is free and open source and can be installed and operated on consumer grade hardware. It can be used to index as little or as much data as your DApp requires. If you would like to integrate the smart contract search engine into your smart contract/DApp development cycle and/or use this software as a way to take control over the flow of public blockchain data to suit your needs, please contact us via [secondstate.io](https://www.secondstate.io/). 
+
+The source code to this project can be found at the following Second State [GitHub](https://github.com/second-state/smart-contract-search-engine) repository.
