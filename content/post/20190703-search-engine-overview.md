@@ -35,8 +35,6 @@ Second State has developed a smart contract search engine and Machine to Machine
 
 ![](/images/20190703-search-engine-overview-02.png)
 
-The ethos of decentralisation is to empower the individual. In order to achieve this we need to build software products which can run on inexpensive consumer grade (store bought) hardware.
-
 The smart contract search engine can be thought of as a middle layer between a blockchain full node and a decentralised application (DApp). This product is an essential part of the future of DApps.
 
 > The search engine architecture is modular by design; providing flexibility and versatility, as well as scalability.
