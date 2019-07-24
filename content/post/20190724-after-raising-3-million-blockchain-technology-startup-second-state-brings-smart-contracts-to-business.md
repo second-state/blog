@@ -2,7 +2,7 @@
 title: "After Raising $3 Million, Blockchain Technology Startup, Second State, Aims to Bring Smart Contracts to Businesses"
 date: 2019-07-24T10:01:23+08:00
 draft: false
-tags: [Startup","smart contract","dapp"]
+tags: ["Startup","smart contract","dapp"]
 categories: ["News"]
 ---
 
