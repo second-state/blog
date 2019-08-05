@@ -53,11 +53,11 @@ Regarding this, Long also gave his own opinion from a technical point of view, "
 
 2. [Use BUIDL to write a DApp in a wink](https://buidl.secondstate.io/)
 
-[Documentation](https://docs.secondstate.io/buidl-developer-tool/getting-started)
+   [Documentation](https://docs.secondstate.io/buidl-developer-tool/getting-started)
 
 3.[Libra Deep dive slides](https://github.com/CyberMiles/education/blob/master/meetups/beijing/6-libra/Libra-dragon.pdf)
 
-[The complete code used to initiate a transcation](https://github.com/second-state/libra-research/tree/master/examples/ERC20Token)
+   [The complete code used to initiate a transcation](https://github.com/second-state/libra-research/tree/master/examples/ERC20Token)
 
 4. Libra tech blogs
 
