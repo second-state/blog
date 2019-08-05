@@ -1,5 +1,5 @@
 ---
-title: "Blockchain search engine — real-time data for decentralized applications (DApps)"
+title: "Meetup#7：Libra 智能合约技术详解"
 date: 2019-08-05T09:42:14+08:00
 draft: false
 tags: ["blockchain", "developer Community", "Libra"]
