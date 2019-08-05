@@ -49,17 +49,17 @@ Regarding this, Long also gave his own opinion from a technical point of view, "
 
 ### Resources for reference. Come and star Buidl on Github!
 
-1. [Libra workshop slides](https://github.com/CyberMiles/education/blob/master/meetups/beijing/6-libra/Libra%20AresTalk.pdf)
+1 [Libra workshop slides](https://github.com/CyberMiles/education/blob/master/meetups/beijing/6-libra/Libra%20AresTalk.pdf)
 
-2. [Use BUIDL to write a DApp in a wink](https://buidl.secondstate.io/)
+2 [Use BUIDL to write a DApp in a wink](https://buidl.secondstate.io/)
 
-   [Documentation](https://docs.secondstate.io/buidl-developer-tool/getting-started)
+  [BUIDL Documentation](https://docs.secondstate.io/buidl-developer-tool/getting-started)
 
-3.[Libra Deep dive slides](https://github.com/CyberMiles/education/blob/master/meetups/beijing/6-libra/Libra-dragon.pdf)
+3 [Libra Deep dive slides](https://github.com/CyberMiles/education/blob/master/meetups/beijing/6-libra/Libra-dragon.pdf)
 
-   [The complete code used to initiate a transcation](https://github.com/second-state/libra-research/tree/master/examples/ERC20Token)
+  [The complete code used to initiate a transcation](https://github.com/second-state/libra-research/tree/master/examples/ERC20Token)
 
-4. Libra tech blogs
+4 Libra tech blogs
 
 * [Libra First Impressions Part 1: Smart Contracts are not created equal](https://blog.secondstate.io/post/20190619-libra-first-impressions/)
 
@@ -67,5 +67,5 @@ Regarding this, Long also gave his own opinion from a technical point of view, "
 
 * [Libra First Impressions Part 3: How to Issue ERC20 token on Libra with Move Language](https://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/)
 
-5.BUIDL github Thank you and please star in Github
-[](https://github.com/second-state/buidl)
+5 BUIDL github Thank you and please star in Github
+[https://github.com/second-state/buidl](https://github.com/second-state/buidl)
