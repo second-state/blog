@@ -13,7 +13,11 @@ categories: ["developer"]
 
 8月3日，在北京举办的技术沙龙《Libra 智能合约技术详解》详细探讨了上述问题。Second State 资深工程师龙智为在场30多名开发者讲解了[如何在Libra 上发布ERC-20 合约](https://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/)，受到大家的赞不绝口地评价。
 
+![](/images/20190805-libra-deep-dive-01.JPG)
+
 Michael Yuan 博士为大家讲解了Second State 的新产品BUIDL，一款新的[区块链开发工具](https://buidl.secondstate.io/)。任何人都可以在BUIDL 上在一分钟内开发出自己的DApp。
+
+![](/images/20190805-libra-deep-dive-03.jpeg)
 
 Libra 是本年度最受期待的科技项目，[其最引人瞩目的设计就是智能合约先行的策略](https://blog.secondstate.io/post/20190621-libra-first-impressions-zh/)。而在以太坊上，智能合约仅仅只是一种交易的类型。
 
@@ -30,6 +34,7 @@ Libra 是本年度最受期待的科技项目，[其最引人瞩目的设计就�
 3. 所有者可通过 mint.mvir 给其他拥有 resource Token.T 的账户增发 token；
 4. 两个拥有 resource Token.T 的 account 可以通过 transfer.mvir 进行 token 转移。
 
+![](/images/20190805-libra-deep-dive-02.JPG)
 
 这次活动也邀请到了Ares Talk 创始人Ares 讲解Libra 在国会听证后的发展趋势，他认为Libra 完全停止开发性的可能性非常小。
 
