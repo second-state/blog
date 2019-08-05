@@ -7,7 +7,6 @@ categories: ["developer"]
 ---
 
 
-
 * With Libra being scrutinized, if not attacked, at Congressional hearing, where is the anticipated ambitious global stable coin is heading towards?
 
 * What is the difference between the programming on Libra and Ethereum?
@@ -20,15 +19,20 @@ These are discussed in detail at the tech workshop "Libra Smart Contract Deep Di
 
 Dragon Long, a senior engineer with Second State, demoed to 35 developers presented how to publish an ERC-20 smart contract on Libra. As an engineer with 20 years of computer engineering experience and 5 years of blockchain programming expertise, he answered many questions from the audience.
 
+![](/images/20190805-libra-deep-dive-01.JPG)
+
 Dr. Michael Yuan, the founder of a VC funded startup, Second State, [a blockchain solution provider for business](wwww.secondstate.io), spent 15 minutes introduced BUIDL, Second State's freshly launched blockchain IDE. Anyone can [develop their own DApp with BUIDL in less than a minute](https://buidl.secondstate.io/).
+
+![](/images/20190805-libra-deep-dive-03.jpeg)
 
 Libra is the most anticipated technology project of the year, and [its most eye-catching design is its smart contract-first approach](https://blog.secondstate.io/post/20190619-libra-first-impressions/). In Ethereum, comparatively, smart contracts are just a type of transaction.
 
-With Libra, an account consists of modules and resources. Its module is similar to Ethereum's smart contract. Resources are guaranteed by the Move system and can not be copied, reused or discarded. The external module has strict restrictions on the modification of the resources of this module. It can only be "move" and cannot assign values to resources at will.
+With Libra, an account consists of modules and resources. Its module is similar to Ethereum's smart contract. Resources are guaranteed by the Move system and can not be copied, reused or discarded. The external module has strict restrictions on the modification of the resources of this module. It can only be "moved" (like moving a chess) and cannot assign values to resources at will.
 
-The variable can be copied on Ethereum, which is equivalent to cloning. The original variable value can still be used unchanged; but on Libra, the value is taken by move, and after the variable move to the new object, the original variable is invalid. "This draws on Rust's move semantics: when reading variables, you must make a value, either copy or move." Long explained, "This can only be 'move' design, compared to Ethereum More secure assets.“
+In comparasion, a variable can be copied on Ethereum, which is equivalent to cloning. The original variable’s value can still be used unchanged; but on Libra, the value is read by move, and after the variable is moved to the new object, the original variable becomes invalid. "This draws on Rust's move grammar: when reading variables, you must choose a value-reading method, either being copy or move." Long explained, "This restrive moveable-only design, compared to Ethereum's solidity, is much more secure in programming when assets is involved.“
 
 For details on how to issue ERC-20 tokens on Libra, you can refer to [the third article](https://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/) on Libra s on Second State's blog.
+
 
 The order in which Tokens are deployed and used on BUIDL:
 
@@ -41,6 +45,7 @@ The event also invited Ares, a talk show Ares Talk’s owner, to explain his tak
 
 Regarding this, Long also gave his own opinion from a technical point of view, "Judging rom the frequency of Libra’s code update, the technology development is being iterated without stop.“
 
+![](/images/20190805-libra-deep-dive-02.JPG)
 
 ### Resources for reference. Come and star Buidl on Github!
 
