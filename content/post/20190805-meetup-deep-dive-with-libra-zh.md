@@ -23,7 +23,7 @@ Libra 是本年度最受期待的科技项目，[其最引人瞩目的设计就�
 
 在Libra，账户由模块和资源两部分组成。模块类似以太坊智能合约的概念，资源由Move 系统保证安全，不会被复制，重用或丢弃。外部模块对本模块资源的修改受到了严格的限制，只能“move”，不能随意对资源赋值。
 
-变量在以太坊上是可以Copy的，相当于克隆，原变量值不变仍可继续使用；但在Libra 上，用move 方式取值，变量move 给新对象后，原变量失效了。“这借鉴了Rust 的move 语义：读取变量时，必须制定取值放肆，要么是copy，要么是move。”龙智解释道，“这种只能’move‘的设计方式，相较以太坊更能够保证资产安全。”
+变量在以太坊上是可以Copy的，相当于克隆，原变量值不变仍可继续使用；但在Libra 上，用move 方式取值，变量move 给新对象后，原变量失效了。“这借鉴了Rust 的move 语义：读取变量时，必须制定取值方式，要么是copy，要么是move。”龙智解释道，“这种只能’move‘的设计方式，相较以太坊更能够保证资产安全。”
 
 具体到如何在Libra 上发行ERC-20 token，可以参考Second State 出品的深度剖析Libra 系列文章的第三篇：[《Libra深度剖析③ 如何基于 ERC20 标准在 Libra 上发布金融资产》](https://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/)
 
