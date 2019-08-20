@@ -2,7 +2,7 @@
 title: "Team HITCON, with Second State's developer as a core, scored the second in DEF CON"
 date: 2019-08-19T10:01:23+08:00
 draft: false
-tags: ["hacks","smart contract","Ethereum","Wallet","blockchain"]
+tags: ["hackrs","defcon","HITCON","CyberSecurity"]
 categories: ["hacker"]
 ---
 
