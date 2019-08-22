@@ -38,9 +38,9 @@ In 2010, the PPP team first became shortlisted in the DEF CON CTF final. Althoug
 
 ![](/images/20190819-defcon-2019-03.jpg)
 
-Tea deliverses team's MaskRay concluded in the post-meeting blog that the PPP team has superb skills, with diversified attacking and defense strategies, strong research and development capabilities, complete tools, seamless teamwork, clear division of labor, full preparation, and eagerness to win. It’s no surprise that they have enough experience to get the first place.
+Tea deliverses team's MaskRay concluded in the post-game blog that the PPP team has superb skills, with diversified attacking and defense strategies, strong research and development capabilities, complete tools, seamless teamwork, clear division of labor, full preparation, and eagerness to win. It’s no surprise that they have enough experience to get the first place.
 
-In 2013, CNBC reporters tracked and interviewed the PPP team during the DEF CON CTF competition to record how tough PPP fared. One of the details is impressive. At the end of the first day of the game, the PPP team scored 5,545 points, left the runner-up far behind. But Ryan Goulden believes that this is not enough to rest on the achievement or a reason to lay down. They want to tackle two problems left. It is very important to continue to take the lead.
+In 2013, CNBC reporters tracked and interviewed the PPP team during the DEF CON CTF competition to record how tough PPP fared. One of the details is impressive. At the end of the first day of the game, the PPP team scored 5,545 points, left the runner-up far behind. But Ryan Goulden believes that this is not enough to rest on the achievement or a reason to lay down. They want to tackle two problems left. It is very important to continue to take the lead far ahead.
 
 With a clear grasp and a thought-out plan, it is not surprising that the PPP team can win the first prize for many years.
 
@@ -51,7 +51,7 @@ Tea deliverses and Tencent A*0*E team ranking 3rd and 4th may be a bit new. But 
 In 2013, the blue-lotus team from China appeared at the DEF CON CTF finals. In 2016, the blue-lotus team and the 0ops team joined hands to be the blo0p team and won the third place. This cooperation has only lasted for one year.
 
 In 2017, the core members of the original blue-lotus team reorganized into the Tea deliverses team and won the fourth place.
-On the other hand, the 0ops team, together with the Tencent eee team, Fudan University **** team and Zhejiang University AAA team together formed Tencent A*0*E team to DEF CON, winning the second place. Since 2017, the Team of the Tea deliverses team and the A*0*E team have gradually stabilized.
+On the other hand, the 0ops team, together with the Tencent eee team, Fudan University ****** team and Zhejiang University AAA team together formed Tencent A*0*E team to DEF CON, winning the second place. Since 2017, the Team of the Tea deliverses team and the A*0*E team have gradually stabilized.
 
 # DEFCON CTF is not just a game
 
