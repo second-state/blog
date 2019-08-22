@@ -51,7 +51,7 @@ Tea deliverses and Tencent A*0*E team ranking 3rd and 4th may be a bit new. But 
 In 2013, the blue-lotus team from China appeared at the DEF CON CTF finals. In 2016, the blue-lotus team and the 0ops team joined hands to be the blo0p team and won the third place. This cooperation has only lasted for one year.
 
 In 2017, the core members of the original blue-lotus team reorganized into the Tea deliverses team and won the fourth place.
-On the other hand, the 0ops team, together with the Tencent eee team, Fudan University ** team and Zhejiang University AAA team together formed Tencent A*0*E team to DEF CON, winning the second place. Since 2017, the Team of the Tea deliverses team and the A*0*E team have gradually stabilized.
+On the other hand, the 0ops team, together with the Tencent eee team, Fudan University **** team and Zhejiang University AAA team together formed Tencent A*0*E team to DEF CON, winning the second place. Since 2017, the Team of the Tea deliverses team and the A*0*E team have gradually stabilized.
 
 # DEFCON CTF is not just a game
 
