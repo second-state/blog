@@ -1,6 +1,6 @@
 ---
 title: "Ethereum Classic partners with Second State to build the next generation Ethereum infrastructure"
-date: 2019-09-02T01:01:23+08:00
+date: 2019-09-01T01:01:23+08:00
 draft: false
 tags: ["Ethereum Classic", "Ethereum", "LLVM", "smart contract", "development"]
 categories: ["Ethereum"]
