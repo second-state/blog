@@ -29,7 +29,7 @@ Together with Ethereum core developers, Second State brings in much needed engin
 # Building LLVM on Ethereum
 The best way to build a future-proof smart contract programming language toolchain is to bring the large and mature LLVM ecosystem into Ethereum.
 
-The LLVM project is perhaps the toolchain ecosystem from the fields of traditional software that the blockchain community could benefit most from. LLVM is widely used as the compiler which translates source code into machine code. A lot of our daily gadgets, such as phones, smart TVs, routers, laptops, has received tremendous performance improvement thanks to LLVM optimizations. Collaborative projects LLVM-EVM and SOLL from ETC Labs and Second State aim to bring LLVM into Ethereum.
+The [LLVM](https://llvm.org/) project is perhaps the toolchain ecosystem from the fields of traditional software that the blockchain community could benefit most from. LLVM is widely used as the compiler which translates source code into machine code. A lot of our daily gadgets, such as phones, smart TVs, routers, laptops, has received tremendous performance improvement thanks to LLVM optimizations. Collaborative projects [LLVM-EVM](https://github.com/etclabscore/evm_llvm) and [SOLL](https://github.com/second-state/soll) from ETC Labs and Second State aim to bring LLVM into Ethereum.
 
 The LLVM ecosystem provides perhaps the best toolchain ecosystem in the open source world. Thousands of developers are contributing to it daily. A good amount of them stood the test of time, which can be easily ported to the blockchain, saving tremendous amount of resources.
 
@@ -61,10 +61,10 @@ Second State and ETC Labs are committed to ensuring a high-performance, easy-to-
 
 ![ETC labs](/images/20190902-etclabs-03.jpeg)
 
-ETC Labs is dedicated to providing guidance, resources and technical resources to help the community understand, build and create impactful decentralized applications. Our goal is to empower the community to build impactful dapps and solutions to encourage adoption, utilization, and advancement of Ethereum Classic and embrace the true values of the philosophy and technology.
+[ETC Labs](https://etclabs.org/) is dedicated to providing guidance, resources and technical resources to help the community understand, build and create impactful decentralized applications. Our goal is to empower the community to build impactful dapps and solutions to encourage adoption, utilization, and advancement of Ethereum Classic and embrace the true values of the philosophy and technology.
 
 ## About Second State
 
 ![Second State](/images/20190902-etclabs-04.jpeg)
 
-Second State focuses on building and commercializing open source blockchain infrastructure software. It develops a full stack of developer tools and runtime technologies for smart contract platforms, including the BUIDL IDE. Second State is based in Austin, Texas, and has development offices in Taipei, Beijing, and Australia. It has recently closed a $3M funding round led by Susquehanna International Group. It is also a member of the ETC Labs incubator program.
+[Second State](https://www.secondstate.io/) focuses on building and commercializing open source blockchain infrastructure software. It develops a full stack of developer tools and runtime technologies for smart contract platforms, including the [BUIDL IDE](https://buidl.secondstate.io/). Second State is based in Austin, Texas, and has development offices in Taipei, Beijing, and Australia. It has recently closed a $3M funding round led by Susquehanna International Group. It is also a member of the ETC Labs incubator program.
