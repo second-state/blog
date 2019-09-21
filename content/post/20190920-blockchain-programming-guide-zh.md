@@ -146,6 +146,7 @@ function reload() {
 }
 
 function like () {
+    document.querySelector("#submit").disabled = true;
     web3.ss.getAccounts(function (e, address) {
         if (!e) {
             document.querySelector("#recording").style.display = "block";
