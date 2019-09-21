@@ -16,15 +16,15 @@ categories: ["developer"]
 
 ## 在开始之前，您需要准备以下工作
 
-*#1* 在电脑浏览器打开 https://buidl.secondstate.io/cmt (https://buidl.secondstate.io/cmt?) （推荐使用Chrome 浏览器）
+**#1** 在电脑浏览器打开 [https://buidl.secondstate.io/cmt](https://buidl.secondstate.io/cmt) （推荐使用Chrome 浏览器）
 
-*#2* 检查开发工具BUIDL是否连接到区块链上
+**#2** 检查开发工具BUIDL是否连接到区块链上
 
 ![BUIDL](/images/20190920-BUIDL-demo-01.png)
 
 检查方法：查看页面左下方 Providers 是否是绿色图标，绿色表明已经连接到CyberMiles链上，红色表明尚未连接，请刷新重试。如果多次刷新后，仍然是红色，请及时告知。
 
-*#3 *点击Account，找到当下使用的账号，然后往账号中打入少量 CMT。
+**#3** 点击Account，找到当下使用的账号，然后往账号中打入少量 CMT。
 
 如果没有 CMT，也可以复制此账号，发给我们，我们将给您的账号转1个CMT，以支付gas 费。（gas 费是区块链常见的名词，用以向网络中帮忙确认此笔交易的节点或矿工支付“薪水”。）
 
@@ -34,7 +34,7 @@ categories: ["developer"]
 
 ## 区块链网页后端——智能合约
 
-*#1* 点击红色的Contract，清空默认代码，将下面的智能合约代码粘贴上去
+**#1** 点击红色的Contract，清空默认代码，将下面的智能合约代码粘贴上去
 ```
 pragma solidity >= 0.4.0;
 
@@ -63,7 +63,7 @@ contract Celebration {
 }
 ```
 
-*#2* 点击右上角Compile，在 _greeting 的横线处输入你想在网页上写的话，之后点击 Deploy to the chain，此处需要等待大概20秒。
+**#2** 点击右上角Compile，在 _greeting 的横线处输入你想在网页上写的话，之后点击 Deploy to the chain，此处需要等待大概20秒。
 
 ![BUIDL](/images/20190920-BUIDL-demo-03.png)
 
@@ -77,7 +77,7 @@ contract Celebration {
 
 接下来是前端部分。
 
-*#1* 点击绿色的Dapp，看到HTML，CSS，JS三个模块，清空这三个模块的代码。
+**#1** 点击绿色的Dapp，看到HTML，CSS，JS三个模块，清空这三个模块的代码。
 
 将下面的代码粘贴到HTML 模块
 
@@ -166,7 +166,7 @@ function like () {
 }
 ```
 
-*#2* BUIDL 是一个开源的开发工具，支持添加开源的代码资源，点击Resources 。
+**#2** BUIDL 是一个开源的开发工具，支持添加开源的代码资源，点击Resources 。
 
 * 在JavaScript 点击加号，将下面的JS资源粘贴到弹窗里：https://code.jquery.com/jquery-3.4.1.min.js 并点击确定
 
@@ -176,11 +176,11 @@ function like () {
 
 ![BUIDL](/images/20190920-BUIDL-demo-06.png)
 
-*#3* 点击最左边的Run，会在页面右侧预览网页样式。然后来输入自己的名字，做个测试吧!（输入自己名字后，需要等大概20秒左右。分布在全球的节点达成共识需要一点时间）
+**#3** 点击最左边的Run，会在页面右侧预览网页样式。然后来输入自己的名字，做个测试吧!（输入自己名字后，需要等大概20秒左右。分布在全球的节点达成共识需要一点时间）
 
 ![BUIDL](/images/20190920-BUIDL-demo-07.png)
 
-*#4* 点击页面上方的Publish，输入自己网站的名称，比如孩子的小名，然后等待大概30秒，点击launched 就可以看到自己的网页。
+**#4** 点击页面上方的Publish，输入自己网站的名称，比如孩子的小名，然后等待大概30秒，点击launched 就可以看到自己的网页。
 
 ![BUIDL](/images/20190920-BUIDL-demo-08.png)
 
