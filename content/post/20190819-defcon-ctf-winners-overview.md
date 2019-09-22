@@ -3,7 +3,7 @@ title: "Team HITCON, with Second State's developer as a core, scored the second 
 date: 2019-08-19T10:01:23+08:00
 draft: false
 tags: ["hackrs","defcon","HITCON","CyberSecurity"]
-categories: ["hacker"]
+categories: ["hacker","en"]
 ---
 
 Taiwanese hacker team HITCON scored the second in world’s most prestigious hacking competition DEF CON Capture the Flag in Las Vegas. **A core team member is a software developer at [Second State Inc](www.secondstate.io).**
