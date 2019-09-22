@@ -3,7 +3,7 @@ title: "Libra深度剖析③ 如何基于 ERC20 标准在 Libra 上发布金融�
 date: 2019-07-19T01:01:23+08:00
 draft: false
 tags: ["Ethereum", "Libra","Smart contract","virtual machine"]
-categories: ["libra"]
+categories: ["libra","zh"]
 ---
 
 本文是 「Libra 深度剖析」系列文章的第 3 篇，也是最后一篇。在之前的两篇文章，我们分别探讨了 Libra 项目的技术意义以及 Libra Client 与 Validator 内部处理与执行交易。
