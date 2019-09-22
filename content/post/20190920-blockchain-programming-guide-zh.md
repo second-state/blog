@@ -16,7 +16,7 @@ categories: ["developer"]
 
 ## 在开始之前，您需要准备以下工作
 
-**#1** 在电脑浏览器打开 [https://buidl.secondstate.io/cmt](https://buidl.secondstate.io/cmt) （推荐使用Chrome 浏览器）
+**#1** 在电脑浏览器打开 [https://buidl.secondstate.io/cmt](https://buidl.secondstate.io/xiaoxiao) （推荐使用Chrome 浏览器）
 
 **#2** 检查开发工具BUIDL是否连接到区块链上
 
