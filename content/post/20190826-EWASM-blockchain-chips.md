@@ -3,7 +3,7 @@ title: "Second State Finalisted in Qualcomm Innovate in Taiwan Challenge, Drivin
 date: 2019-08-26T09:42:14+08:00
 draft: false
 tags: ["blockchain for enterprise", "EWASM", "Smart contracts"]
-categories: ["news"]
+categories: ["news","en"]
 ---
 
 
