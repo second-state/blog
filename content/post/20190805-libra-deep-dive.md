@@ -3,7 +3,7 @@ title: "Smart Contract Meetup 7:  Libra Deep Dive"
 date: 2019-08-05T09:42:14+08:00
 draft: false
 tags: ["blockchain", "developer Community", "Libra"]
-categories: ["developer"]
+categories: ["developer","en"]
 ---
 
 
