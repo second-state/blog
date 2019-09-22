@@ -3,7 +3,7 @@ title: "Meetup#7：Libra 智能合约技术详解"
 date: 2019-08-05T09:42:14+08:00
 draft: false
 tags: ["blockchain", "developer Community", "Libra"]
-categories: ["developer"]
+categories: ["developer","zh"]
 ---
 
 * Libra 在国会听证后，该何去何从？
