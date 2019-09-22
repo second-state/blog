@@ -3,7 +3,7 @@ title: "Blockchain search engine — real-time data for decentralized applic
 date: 2019-07-03T09:42:14+08:00
 draft: false
 tags: ["blockchain", "search", "DApp"]
-categories: ["business"]
+categories: ["business","en"]
 author: "Timothy McCallum"
 ---
 
