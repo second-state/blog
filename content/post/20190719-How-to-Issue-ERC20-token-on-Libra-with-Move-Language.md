@@ -3,7 +3,7 @@ title: "Libra First Impressions Part 3: How to Issue ERC20 token on Libra with M
 date: 2019-07-19T01:01:23+08:00
 draft: false
 tags: ["Ethereum", "Libra","Smart contract","virtual machine"]
-categories: ["libra"]
+categories: ["libra","en"]
 ---
 
 This article is the third and final part of the "Libra First impressions" series. In the previous two articles, we explored the technical implications of the Libra project and the internal processing and execution of Libra Client and Validator.
