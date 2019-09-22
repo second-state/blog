@@ -3,7 +3,7 @@ title: "FairPlay: a new type of DApp"
 date: 2019-07-14T10:01:23+08:00
 draft: false
 tags: ["search engine","smart contract","dapp"]
-categories: ["DApp","search engine"]
+categories: ["DApp","search engine","en"]
 ---
 
 
