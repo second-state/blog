@@ -3,7 +3,7 @@ title: "Ethereum Classic partners with Second State to build the next generation
 date: 2019-09-01T01:01:23+08:00
 draft: false
 tags: ["Ethereum Classic", "Ethereum", "LLVM", "smart contract", "development"]
-categories: ["Ethereum"]
+categories: ["Ethereum","en"]
 ---
 
 [Ethereum Classic Labs](https://etclabs.org/) (ETC Labs), the developer and maintainer of the Ethereum Classic blockchain (ETC), announced today that it has entered a partnership with a leading blockchain infrastructure developer, [Second State](https://www.secondstate.io/), to create open source toolchain and runtime software that powers the next generation of Ethereum-compatible blockchains, including the Ethereum Classic.
