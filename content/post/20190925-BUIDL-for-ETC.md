@@ -5,8 +5,9 @@ draft: false
 tags: ["Ethereum", "Ethereum Classic", "developer tool", "BUIDL"]
 categories: ["developer","en","ethereum"]
 ---
+> This news is also seen on [PRweb.com](https://www.prweb.com/releases/second_state_launches_buidl_ide_for_ethereum_classic/prweb16593043.htm)
 
-[Second State](https://www.secondstate.io/), developer of an open source, blockchain-based smart contract platform for global business, has announced the launch of its [BUIDL](https://buidl.secondstate.io/) IDE, an integrated development environment software application for Ethereum Classic (ETC), the preeminent blockchain for smart contracts and “dapps.” With Second State’s BUIDL IDE, development and deployment on ETC can be done within minutes, from any web browser: [secondstate.io/etc](https://www.secondstate.io/etc)  
+SAN FRANCISCO (Sept. 24, 2019) —[Second State](https://www.secondstate.io/), developer of an open source, blockchain-based smart contract platform for global business, has announced the launch of its [BUIDL](https://buidl.secondstate.io/) IDE, an integrated development environment software application for Ethereum Classic (ETC), the preeminent blockchain for smart contracts and “dapps.” With Second State’s BUIDL IDE, development and deployment on ETC can be done within minutes, from any web browser: [secondstate.io/etc](https://www.secondstate.io/etc)  
 
 ![BUIDL for ETC](/images/20190925-BUIDL-for-ETC-01.png)
  
@@ -19,7 +20,7 @@ In addition, the Ethereum blockchain is operating most recently near its capacit
 ## The State of Ethereum Classic
 Ethereum Classic, one of the most secure and decentralized blockchain networks today, is fully compatible with the Ethereum blockchain (ETH) but much faster (i.e. transactions confirmed within seconds) and much cheaper (gas fee 1% of ETH). Developers are looking at Ethereum Classic as a serious alternative to the Ethereum blockchain.
  
-“Ethereum Classic is not just the original Ethereum blockchain,” Elizabeth Kukka, Executive Director of Ethereum Classic Labs, said. “It also is the most dapp-friendly Ethereum blockchain with its very low gas fees, store-of-value native cryptocurrency, and fast confirmation times. We look forward to collaborating with Second State to further empower our developer communities.”
+> “Ethereum Classic is not just the original Ethereum blockchain,” Elizabeth Kukka, Executive Director of Ethereum Classic Labs, said. “It also is the most dapp-friendly Ethereum blockchain with its very low gas fees, store-of-value native cryptocurrency, and fast confirmation times. We look forward to collaborating with Second State to further empower our developer communities.”
  
 However, developer tools on Ethereum Classic have been traditionally lacking, and, as a result, far fewer smart contracts and dapps are deployed on Ethereum Classic. This is what Second State aims to change.
  
@@ -27,8 +28,10 @@ However, developer tools on Ethereum Classic have been traditionally lacking, an
 Second State’s BUIDL IDE is a web-based integrated development environment that requires no software download or install. It provides a one-stop development and deployment environment for smart contract and dapp developers. More importantly, with one click, developers can publish a complete dapp on the web for everyone to interact with blockchain smart contracts.
  
 Prior to BUIDL, developers would have to endure many steps in order to deploy a dapp on a public blockchain. Time consuming, this could take four to eight hours to complete the entire setup. Developers should install Chrome browser and Metamask, and set up the accounts, the network and blockchain nodes. (For a tutorial on how to create a wallet-free, cryptocurrency-free and wait-free dapp on BUIDL, visit [secondstate.io/buidl/why](https://www.secondstate.io/buidl/why).)
+
+![Blockchain development before/after](/images/20190925-BUIDL-for-ETC-02.png)
  
-“I am delighted to see Second State launch BUIDL for ETC,” Bob Summerwill, Executive Director of the ETC Cooperative, said. “There has been a developer need for such a tool since the death of the much beloved Ethereum Studio many years ago. It is marvelous to see Second State launching BUIDL for ETC to fill this need, and to help provide an easier onramp for developers to develop on ETC.”
+> “I am delighted to see Second State launch BUIDL for ETC,” Bob Summerwill, Executive Director of the ETC Cooperative, said. “There has been a developer need for such a tool since the death of the much beloved Ethereum Studio many years ago. It is marvelous to see Second State launching BUIDL for ETC to fill this need, and to help provide an easier onramp for developers to develop on ETC.”
  
 Working with ETC Labs and the ETC Cooperative, Second State has released a special version of its BUIDL IDE for the Ethereum Classic blockchain. Developers now can develop and deploy in the Ethereum Classic blockchain in minutes, from any web browser, with no software to download or install. Here’s how:
  
