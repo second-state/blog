@@ -29,7 +29,7 @@ Second State’s BUIDL IDE is a web-based integrated development environment tha
  
 Prior to BUIDL, developers would have to endure many steps in order to deploy a dapp on a public blockchain. Time consuming, this could take four to eight hours to complete the entire setup. Developers should install Chrome browser and Metamask, and set up the accounts, the network and blockchain nodes. (For a tutorial on how to create a wallet-free, cryptocurrency-free and wait-free dapp on BUIDL, visit [secondstate.io/buidl/why](https://www.secondstate.io/buidl/why).)
 
-![Blockchain development before/after](/images/20190925-BUIDL-for-ETC-02.png)
+![Blockchain development before/after](/images/20190924-BUIDL-for-ETC-02.png)
  
 > “I am delighted to see Second State launch BUIDL for ETC,” Bob Summerwill, Executive Director of the ETC Cooperative, said. “There has been a developer need for such a tool since the death of the much beloved Ethereum Studio many years ago. It is marvelous to see Second State launching BUIDL for ETC to fill this need, and to help provide an easier onramp for developers to develop on ETC.”
  
