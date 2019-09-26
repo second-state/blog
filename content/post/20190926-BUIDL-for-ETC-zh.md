@@ -6,7 +6,7 @@ tags: ["blockchain", "Ethereum", "Ethereum Classic","developer tool"]
 categories: ["ethereum","zh"]
 ---
 
-区块链智能合约平台Second State 发布专为以太经典（Ethereum Classic）打造的BUIDL IDE。BUIDL 集成了以太经典开发环境，开发者利用BUIDL可以在几分钟内，在任何网页浏览器上开发和部署ETC链上相关区块链应用。
+区块链智能合约平台[Second State](https://www.secondstate.io/) 发布专为以太经典（Ethereum Classic）打造的[BUIDL IDE](https://www.secondstate.io/etc)。BUIDL 集成了以太经典开发环境，开发者利用BUIDL可以在几分钟内，在任何网页浏览器上开发和部署ETC链上相关区块链应用。
 
 ![BUIDL for ETC](/images/20190925-BUIDL-for-ETC-01.png)
 
@@ -36,7 +36,7 @@ ETC Cooperative 执行董事Bob Summerwill说：“我很高兴看到Second Stat
 
 与ETC Labs 和ETC Cooperative 合作，Second State 发布了针对以太经典区块链的BUIDL IDE 版本。开发者现在可以在任何网络浏览器上，在几分钟内开发和部署以太经典区块链的智能合约和应用，而无需下载或安装任何软件。
 
-1.打开ETC IDE的BUIDL：https://buidl.secondstate.io/etc
+1.打开ETC IDE的BUIDL：[https://buidl.secondstate.io/etc](https://buidl.secondstate.io/etc)
 
 2.打开Accounts，向默认地址发送小额ETC（例如，0.1 ETC），以用作在以太经典区块链上部署合约的gas 费。如果您不知道如何获得ETC，请发送电子邮件至etc@secondstate.io。
 
