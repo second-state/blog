@@ -15,9 +15,9 @@ The *Building Blockchain Apps* book is to be published by Addison-Wesley in 2019
 
 The discount code is “hidden in plain sight” in a smart contract deployed on the Ethereum Classic blockchain. Using [BUIDL for ETC](http://secondstate.io/etc), you can instantiate an instance of this contract and call it’s functions to get its state. So, let’s get started. 
 
-*Step 1*: Launch the BUIDL for ETC from any browser: [https://buidl.secondstate.io/etc](https://buidl.secondstate.io/etc) 
+**Step 1**: Launch the BUIDL for ETC from any browser: [https://buidl.secondstate.io/etc](https://buidl.secondstate.io/etc) 
 
-*Step 2*: In the *contract* section, copy and paste in the smart contract code below.
+**Step 2**: In the **contract** section, copy and paste in the smart contract code below.
 
 ```
 pragma solidity >= 0.4.0;
@@ -59,15 +59,15 @@ contract PublicComments {
 }
 ```
 
-*Step 3*: Hit the *Compile* button. And you will see the compiled interface of the contract as below. 
+**Step 3**: Hit the **Compile** button. And you will see the compiled interface of the contract as below. 
 
 ![](/images/20191002-book-etc-02.png)
 
-*Step 4*: Now, instead of deploying a new instance of this contract, we need to instantiate an instance of an existing contract on the blockchain. Enter the contract address `0x52a8e808254e1a3de50ac493a1011d2eded3d1dd` on the line with `0x`, and click on the *At* button. 
+**Step 4**: Now, instead of deploying a new instance of this contract, we need to instantiate an instance of an existing contract on the blockchain. Enter the contract address `0x52a8e808254e1a3de50ac493a1011d2eded3d1dd` on the line with `0x`, and click on the **At** button. 
 
 ![](/images/20191002-book-etc-03.png)
 
-*Step 5*: Now click open the *PublicComments* contract, and click on the *greeting* button to call its `greeting()` function. In the LOG window, you will see the discount code and purchase link stored in the contract. 
+**Step 5**: Now click open the *PublicComments* contract, and click on the **greeting** button to call its `greeting()` function. In the LOG window, you will see the discount code and purchase link stored in the contract. 
 
 ![](/images/20191002-book-etc-04.png)
 
@@ -77,14 +77,14 @@ Now you have interacted with a smart contract on the blockchain. With BUIDL, you
 
 As you probably already noticed, the smart contract has logic to store user comments. We will build a dapp that allows users to leave comments from the web. Since the Ethereum Classic blockchain requires a little gas fee for storing data inside smart contracts, you will need a little ETCs for this exercise. If you do not have ETCs, email us at etc@secondstate.io and we will send you a little. 
 
-If you leave a comment in the smart contract, your comment will be forever stored on the Ethereum Classic blockchain and we will send you a digital gift!
+>If you leave a comment in the smart contract, your comment will be forever stored on the Ethereum Classic blockchain and we will send you a digital gift!
 
-*Step 6*: Go to the *dapp* section. Open the *Resources* tab, and enter the following CSS and JavaScript resources. 
+**Step 6**: Go to the *dapp* section. Open the **Resources** tab, and enter the following CSS and JavaScript resources. 
 
 * Javascript: https://code.jquery.com/jquery-3.4.1.min.js
 * CSS: https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
 
-*Step 7*: Copy and paste in the HTML code into the HTML editor. 
+**Step 7**: Copy and paste in the HTML code into the HTML editor. 
 
 ```
 <div class="container">
@@ -127,7 +127,7 @@ If you leave a comment in the smart contract, your comment will be forever store
 </div>
 ```
 
-*Step 8*: Copy and paste in the Javascript code into the JS editor. 
+**Step 8**: Copy and paste in the Javascript code into the JS editor. 
 
 ```
 var instance = null;
@@ -200,9 +200,9 @@ $("#submit").click(function() {
 });
 ```
 
-*Step 9*: Now, hit the *Run* button. You will see the dapp UI running in the right panel. You can see all the comments in the smart contract, and leave your own comment now! Please leave your email so that we can get in touch!
+**Step 9**: Now, hit the **Run** button. You will see the dapp UI running in the right panel. You can see all the comments in the smart contract, and leave your own comment now! Please leave your email so that we can get in touch!
 
 >As we mentioned, you will need to have a little ETC in your account to pay for gas. Your default account is randomly generated in the *Accounts* tab. You could send some ETCs to it, or your could import one of your existing addresses into the *Accounts* tab. 
 
-*Bonus step*: You could hit the *Publish* button and publish your dapp to the web for anyone to see. 
+**Bonus step**: You could hit the **Publish** button and publish your dapp to the web for anyone to see. 
 
