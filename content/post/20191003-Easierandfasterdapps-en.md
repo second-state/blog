@@ -5,7 +5,8 @@ draft: false
 tags: ["Ethereum Classic","Building Blockchain Apps","book","BUIDL","ETC"]
 categories: ["en"]
 author: "Second State"
---
+---
+
 Ethereum, the world’s first and dominant smart contract platform, has the largest dapp ecosystem with more than a million deployed smart contracts and hundreds of millions of dollars in monthly transactions.
 
 Ethereum Classic is the original Ethereum blockchain. With fast confirmation time, ultra-low gas cost, and now with first-class developer tooling from the BUIDL IDE, the Ethereum Classic blockchain is also becoming the best platform for deploying smart contracts and dapps. Checkout how: http://secondstate.io/etc 
@@ -25,7 +26,9 @@ Figure 2: Vitalik’s take on transaction fees and network effect.
 However, there is a darth of developer tools on Ethereum Classic. Most dapp developer tools are optimized for the Ethereum blockchain. 
 
 And even on Ethereum, dapp development is already very hard compared with web and mobile app development. Developers and users must be familiar with cryptocurrency, crypto wallet, blockchain nodes, RPC services, web3, a variety of tools, specialized programming languages, frameworks, and services. All of this has hampered dapp adoption greatly.
-BUIDL for ETC
+
+## BUIDL for ETC
+
 The BUIDL IDE is the one-stop development environment for smart contracts and dapps. You can develop and publish complete dapps from a web browser without any software download or install. 
 
 ![](/images/figure3.png)
@@ -33,14 +36,16 @@ Figure 3: Traditional Ethereum dev tools vs Second State BUIDL.
 
 Getting started with Ethereum Classic dapp development is as easy as 1-2-3. For the impatient, watch the 2-minute tutorial video now. 
 
-Step 1 Open the BUIDL IDE tool in any browser. http://buidl.secondstate.io/etc 
+**Step 1** Open the BUIDL IDE tool in any browser. http://buidl.secondstate.io/etc 
 
-Step 2 Open the Accounts tab and send a little ETC to your default account. If you do not have ETC, you can ask for some from etc@secondstate.io
+**Step 2** Open the Accounts tab and send a little ETC to your default account. If you do not have ETC, you can ask for some from etc@secondstate.io
 
-Note: If you have Metamask for ETC, you could opt to use Metamask in the Providers tab. BUIDL and dapps it creates will now use the default account in Metamask to make contract calls and to pay for gas. 
+*Note: If you have Metamask for ETC, you could opt to use Metamask in the Providers tab. BUIDL and dapps it creates will now use the default account in Metamask to make contract calls and to pay for gas.*
 
-Step 3 Develop and deploy your smart contract and dapp! In the next section, we will show an example dapp you can deploy on ETC. 
-A thumb up or thumb down dapp
+**Step 3** Develop and deploy your smart contract and dapp! In the next section, we will show an example dapp you can deploy on ETC. 
+
+## A thumb up or thumb down dapp
+
 The example dapp is a web application where people can vote thumb up or thumb down on a statement. All the votes are recorded on the blockchain, and since gas is required, only ETC token holders can vote. See a published voting dapp.
 
 ![](/images/figure4.png)
@@ -50,11 +55,14 @@ Figure 4: The voting dapp in action, vote now.
 Figure 5: The voting dapp in action, voted. 
 
 Now, let’s check out the source code of the application. With BUIDL for ETC, you can have your own voting dapp published on ETC in minutes. 
-Creating the dapp
+
+## Creating the dapp
+
 You will need to create and deploy a smart contract as the backend data service for the dapp, and then create an HTML5 / Javascript application as the front UI to interact with the smart contract. Once you have tested the dapp in BUIDL, you can publish it to the web for the world to use it. All these tasks can be done within BUIDL.
 
-Step 3.1 Copy and paste the following code to the Contract section of BUIDL. 
+**Step 3.1** Copy and paste the following code to the **contract** section of BUIDL. 
 
+```
 pragma solidity >= 0.4.0;
 
 contract Vote {
@@ -86,12 +94,13 @@ contract Vote {
         return votes[_addr];
     }
 }
+```
 
-The smart contract is very simple. It provides the text and image url to be voted on, and keeps a record of votes. The vote() method is called by voters to vote thumb up or down. But notice that the Solidity syntax is version 0.4.2, which is the Solidity compiler version supported by the Ethereum Classic blockchain.
+The smart contract is very simple. It provides the text and image url to be voted on, and keeps a record of votes. The `vote()` method is called by voters to vote thumb up or down. But notice that the Solidity syntax is version 0.4.2, which is the Solidity compiler version supported by the Ethereum Classic blockchain.
 
-Step 3.2 Click on Compile and you will see the following. Enter your text and image URL to be voted on, and then click on deploy to the chain. 
+**Step 3.2** Click on **Compile** and you will see the following. Enter your text and image URL to be voted on, and then click on **deploy to the chain**. 
 
-Note: Please open the Accounts tab and make sure that the default address has a little ETC. 
+*Note: Please open the Accounts tab and make sure that the default address has a little ETC.*
 
 ![](/images/figure6.png)
 Figure 6: Deploy the smart contract to Ethereum Classic.
@@ -101,13 +110,14 @@ The contract is now deployed on the ETC blockchain, and you can call it’s func
 ![](/images/figure7.png)
 Figure 7: Calling functions on the deployed contract. 
 
-Step 3.3 Go to the dapp section. Click on the Resources tab, and add the following as resources. 
+**Step 3.3** Go to the **dapp** section. Click on the **Resources** tab, and add the following as resources. 
 
-CSS: https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css 
-JavaScript: https://code.jquery.com/jquery-3.4.1.min.js 
+* CSS: https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css 
+* JavaScript: https://code.jquery.com/jquery-3.4.1.min.js 
 
-Step 3.4 Next, copy and paste the following HTML code into the HTML editor. 
+**Step 3.4** Next, copy and paste the following HTML code into the HTML editor. 
 
+```
 <div class="container">
    <br/>
    <div class="alert alert-primary" role="alert">If you have MetaMask for ETC, select MetaMask in the accounts widget at bottom right.</div>
@@ -132,9 +142,11 @@ Step 3.4 Next, copy and paste the following HTML code into the HTML editor.
    <p>You need to pay a tiny amount of ETCs to vote. Make sure that you have at least 0.1 ETC at your current account address: <a target="_blank" href="" id="myAddr"></a></p>
    <p style="text-align:center">Created with <a target="_blank" href="https://www.secondstate.io/etc/">BUIDL for ETC</a>. Checkout the <a target="_blank" href="https://docs.secondstate.io/buidl-developer-tool/demo-a-voting-dapp/ethereum-classic">tutorial</a> to create your own!</p>
 </div>
+```
 
-Step 3.5 Copy and paste the following JavaScript code into the JS editor. 
+**Step 3.5** Copy and paste the following JavaScript code into the JS editor. 
 
+```
 var instance = null;
 window.addEventListener('web3Ready', function() {
   var contract = web3.ss.contract(abi);
@@ -186,7 +198,7 @@ function vote (choice) {
             $("#formSubmitted").css("display", "block");
             instance.vote(choice, {
                 gas: 400000,
-                gasPrice: 15000000000
+                gasPrice: 5000000000
             }, function (ee, result) {
                 if (ee) {
                     window.alert("Failed. Check if there is at least 0.1 ETC (for gas fee) in your account " + address);
@@ -199,14 +211,17 @@ function vote (choice) {
     });
     return false;
 }
+```
 
-Step 3.6 Click on Run to see the dapp in action! You can now vote thumb up or down inside BUIDL. 
+**Step 3.6** Click on **Run** to see the dapp in action! You can now vote thumb up or down inside BUIDL. 
 
 ![](/images/figure8.png)
 Figure 8: The voting dapp in action in BUIDL.
 
-Step 3.7 Finally, you can publish the dapp. Just click on the Publish button and give the dapp a name. Once published, you can share the published URL to the public to vote on your issue!
-Using the dapp
+**Step 3.7** Finally, you can publish the dapp. Just click on the Publish button and give the dapp a name. Once published, you can share the published URL to the public to vote on your issue!
+
+## Using the dapp
+
 The dapp displays the voting text, image, and current results to the public on the web. The dapp retrieves such information from the blockchain free of charge. However, by design, only ETC holders can vote as the dapp requires a tiny amount of ETC as gas when it calls the smart contract to vote. 
 
 The dapp automatically creates addresses for users. In order to vote, the user must have a little ETC in the selected default address to pay for gas.
@@ -221,10 +236,11 @@ Figure 10: Use Metamask for ETC to make transactions on the dapp.
 
 Now, while we consider the requirement for ETC is a feature for this dapp, many dapps will benefit from a lower barrier of entry. Can we waive gas fees altogether for users? Well, in some cases, we can. For gas-less dapps, you could potentially use the Second State DevChain (for development and demonstration only), or the CyberMiles public blockchain. 
 
-DevChain tutorial for the voting dapp
-CyberMiles tutorial for the voting dapp
+* [DevChain tutorial](https://docs.secondstate.io/buidl-developer-tool/demo-a-voting-dapp/devchain) for the voting dapp
+* [CyberMiles tutorial](https://docs.secondstate.io/buidl-developer-tool/demo-a-voting-dapp/cybermiles) for the voting dapp
 
-Conclusion
+## Conclusion
+
 With tools like BUIDL for ETC, it is now a breeze to develop and deploy dapps on the Ethereum Classic blockchain. All you need is a modern web browser and a little ETC to pay for network operations. What are you waiting for? http://secondstate.io/etc
 
 
