@@ -14,12 +14,12 @@ Ethereum Classic is the original Ethereum blockchain. With fast confirmation tim
 The twin challenges of Ethereum
 Recently, the Ethereum blockchain is operating near its capacity. The gas price required for developers and users to operate smart contracts is now 10 times the value from earlier in the year. Furthermore, it could take hours for a smart contract transaction to get confirmed on the network.
 
-
+![](/images/figure1.png)
 Figure 1: Even at a high gas price of 17 GWei, it takes many hours to confirm a transaction.
 
 Ethereum founder, Vitalik Buterin, has acknowledged this very issue. Now more than ever, Ethereum Classic is an appealing choice for dapp developers. 
 
-
+![](/images/figure2.png)
 Figure 2: Vitalik’s take on transaction fees and network effect.
 
 However, there is a darth of developer tools on Ethereum Classic. Most dapp developer tools are optimized for the Ethereum blockchain. 
@@ -28,7 +28,7 @@ And even on Ethereum, dapp development is already very hard compared with web an
 BUIDL for ETC
 The BUIDL IDE is the one-stop development environment for smart contracts and dapps. You can develop and publish complete dapps from a web browser without any software download or install. 
 
-
+![](/images/figure3.png)
 Figure 3: Traditional Ethereum dev tools vs Second State BUIDL. 
 
 Getting started with Ethereum Classic dapp development is as easy as 1-2-3. For the impatient, watch the 2-minute tutorial video now. 
@@ -43,10 +43,10 @@ Step 3 Develop and deploy your smart contract and dapp! In the next section, we 
 A thumb up or thumb down dapp
 The example dapp is a web application where people can vote thumb up or thumb down on a statement. All the votes are recorded on the blockchain, and since gas is required, only ETC token holders can vote. See a published voting dapp.
 
-
+![](/images/figure4.png)
 Figure 4: The voting dapp in action, vote now. 
 
-
+![](/images/figure5.png)
 Figure 5: The voting dapp in action, voted. 
 
 Now, let’s check out the source code of the application. With BUIDL for ETC, you can have your own voting dapp published on ETC in minutes. 
@@ -93,12 +93,12 @@ Step 3.2 Click on Compile and you will see the following. Enter your text and im
 
 Note: Please open the Accounts tab and make sure that the default address has a little ETC. 
 
-
+![](/images/figure6.png)
 Figure 6: Deploy the smart contract to Ethereum Classic.
 
 The contract is now deployed on the ETC blockchain, and you can call it’s functions directly from inside BUIDL. 
 
-
+![](/images/figure7.png)
 Figure 7: Calling functions on the deployed contract. 
 
 Step 3.3 Go to the dapp section. Click on the Resources tab, and add the following as resources. 
@@ -202,7 +202,7 @@ function vote (choice) {
 
 Step 3.6 Click on Run to see the dapp in action! You can now vote thumb up or down inside BUIDL. 
 
-
+![](/images/figure8.png)
 Figure 8: The voting dapp in action in BUIDL.
 
 Step 3.7 Finally, you can publish the dapp. Just click on the Publish button and give the dapp a name. Once published, you can share the published URL to the public to vote on your issue!
@@ -211,12 +211,12 @@ The dapp displays the voting text, image, and current results to the public on t
 
 The dapp automatically creates addresses for users. In order to vote, the user must have a little ETC in the selected default address to pay for gas.
 
-
+![](/images/figure9.png)
 Figure 9: The auto-created addresses for users. The user must send a little ETC to the selected default address to pay for gas. 
 
 Or, if the user has Metamask for ETC, she can choose to have Metamask handle accounts and gas payments. 
 
-
+![](/images/figure10.png)
 Figure 10: Use Metamask for ETC to make transactions on the dapp. 
 
 Now, while we consider the requirement for ETC is a feature for this dapp, many dapps will benefit from a lower barrier of entry. Can we waive gas fees altogether for users? Well, in some cases, we can. For gas-less dapps, you could potentially use the Second State DevChain (for development and demonstration only), or the CyberMiles public blockchain. 
