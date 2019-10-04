@@ -11,8 +11,10 @@ Ethereum, the world’s first and dominant smart contract platform, has the larg
 
 Ethereum Classic is the original Ethereum blockchain. With fast confirmation time, ultra-low gas cost, and now with first-class developer tooling from the BUIDL IDE, the Ethereum Classic blockchain is also becoming the best platform for deploying smart contracts and dapps. Checkout how: http://secondstate.io/etc 
 
-“Ethereum Classic is not just the original Ethereum blockchain,” Elizabeth Kukka, Executive Director of Ethereum Classic Labs, said. “It also is the most dapp-friendly Ethereum blockchain with its very low gas fees, store-of-value native cryptocurrency, and fast confirmation times. We look forward to collaborating with Second State to further empower our developer communities.”
-The twin challenges of Ethereum
+*“Ethereum Classic is not just the original Ethereum blockchain,” Elizabeth Kukka, Executive Director of Ethereum Classic Labs, said. “It also is the most dapp-friendly Ethereum blockchain with its very low gas fees, store-of-value native cryptocurrency, and fast confirmation times. We look forward to collaborating with Second State to further empower our developer communities.”*
+
+## The twin challenges of Ethereum
+
 Recently, the Ethereum blockchain is operating near its capacity. The gas price required for developers and users to operate smart contracts is now 10 times the value from earlier in the year. Furthermore, it could take hours for a smart contract transaction to get confirmed on the network.
 
 ![](/images/figure1.png)
