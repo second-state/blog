@@ -7,7 +7,7 @@ categories: ["en"]
 author: "Michael Yuan"
 ---
 
-*Disclaimer: [Second State](https://www.secondstate.io/) sponsored this year’s [ETC Summit](https://etcsummit.com/) and released the [BUIDL for ETC](https://www.secondstate.io/etc/) IDE — even developers can now write and publish complete smart contract powered applications on the Ethereum Classic blockchain in minutes. [Check out a tutorial](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)! All view and opinions expressed in the article are my own.*
+*Disclaimer: [Second State](https://www.secondstate.io/) sponsored this year’s [ETC Summit](https://etcsummit.com/) and released the [BUIDL for ETC](https://www.secondstate.io/etc/) IDE — even novice developers can now write and publish complete smart contract powered applications on the Ethereum Classic blockchain in minutes. [Check out a tutorial](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)! All view and opinions expressed in the article are my own.*
 
 ## Church & State
 
