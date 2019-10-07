@@ -1,5 +1,5 @@
 ---
-title: "ETC Summit"
+title: "ETC 峰会回顾：未来一片光明"
 date: 2019-10-06T10:01:23+08:00
 draft: false
 tags: ["Ethereum Classic","ETC Summit","Developer","BUIDL","ETC"]
