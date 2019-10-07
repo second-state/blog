@@ -7,7 +7,9 @@ categories: ["en"]
 author: "Michael Yuan"
 ---
 
-*Disclaimer: [Second State](https://www.secondstate.io/) sponsored this year’s [ETC Summit](https://etcsummit.com/) and released the [BUIDL for ETC](https://www.secondstate.io/etc/) IDE — even developers can now write and publish complete smart contract powered applications on the Ethereum Classic blockchain in minutes. [Check out a tutorial](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)!*
+*Disclaimer: [Second State](https://www.secondstate.io/) sponsored this year’s [ETC Summit](https://etcsummit.com/) and released the [BUIDL for ETC](https://www.secondstate.io/etc/) IDE — even developers can now write and publish complete smart contract powered applications on the Ethereum Classic blockchain in minutes. [Check out a tutorial](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)! All view and opinions expressed in the article are my own.*
+
+## Church & State
 
 Successful open source communities always have the divide of “church” and “state”. 
 
@@ -52,7 +54,7 @@ The [Hyperledger Besu](https://www.hyperledger.org/projects/besu) client is a ne
 
 The [BUIDL for ETC](https://www.secondstate.io/etc/) an open source IDE that provides one-stop development, debugging, and deployment support for smart contracts and web3 decentralized apps on the Ethereum Classic blockchains. Following the [tutorials](https://docs.secondstate.io/buidl-developer-tool/demo-a-voting-dapp/ethereum-classic), even developers new to the blockchain space can get a dapp up and running on the Ethereum Classic blockchain in minutes.
 
-## Miners
+## What About Miners
 As the Ethereum Classic blockchain will probably be the dominant PoW blockchain in the Ethereum ecosystem. Mining hardware and mining pool operators play major roles in the ecosystem. Miners are well represented in the ETC Summit with multiple talks and panels. 
 
 In fact, a new PoW-based ETC testnet was launched on stage. It is called [Mordor](https://www.thecoinrepublic.com/etc-summit-ethereum-classic-launched-mordor-its-new-testnet/). [Try it](https://github.com/eth-classic/mordor) and mine some Mordor tokens!
@@ -62,7 +64,7 @@ The ETC Mordor testnet.
 
 “ASIC resistant” mining algorithms have recently become a contentious issue in the Ethereum community. As Ethereum Classic positioned to become the dominant PoW blockchain in the ecosystem, its choice of mining algorithm is especially impactful. Even prior to the ETC Summit, there are [controversies](https://bobsummerwill.com/2019/09/17/progpow-author-kristy-leigh-minehan-uninvited-from-etc-summit/) around ProgPoW and its promoters.
 
-Alex Tsankov went on stage to make the case for Ethereum Classic to switch to SHA3 as the mining hash algorithm, and to embrace ASIC miners. I find his reasoning very compelling. If you are interested, Alex has an [excellent write-up](https://medium.com/coinmonks/ecip-1049-why-ethereum-classic-should-adopt-keccak256-for-its-proof-of-work-algorithm-e45aee32d8a9) on the rationale. You can experiment with SHA3 mining today on the [Astor testnet](https://medium.com/@antsankov/the-what-why-and-how-of-astor-testnet-e7366ba2a730) for Ethereum Classic.
+On the other side of the argument, [ECIP-1049](https://github.com/ethereumclassic/ECIPs/issues/13) proposes the Ethereum Classic community to fully embrace ASIC miners with a SHA3-based mining algorithm. It is an argument for algorithmic transparency, which I found very interesting. SHA3 is transparent, safe, and easy to create ASIC machines from. Once Ethereum Classic becomes the dominant PoW blockchain for SHA3 mining, it will create a massive economic disincentive for SHA3 miners, who paid real money for their SHA3 ASIC machines, to attack ETC. The downside, of course, is that ETC can no longer automatically “inherit” today’s ETH miners and their GPU-based hash power. If you are interested, Alex Tsankov has an [excellent write-up](https://medium.com/coinmonks/ecip-1049-why-ethereum-classic-should-adopt-keccak256-for-its-proof-of-work-algorithm-e45aee32d8a9) on the rationale. You can experiment with SHA3 mining today on the [Astor testnet](https://medium.com/@antsankov/the-what-why-and-how-of-astor-testnet-e7366ba2a730) for Ethereum Classic.
 
-## The future is bright
+## The Future is Bright
 Overall, I really enjoyed the ETC Summit both as an attendee from the community, and as a commercial sponsor. Beautiful venue, great food, abundant coffee, and most of important of all, great conversations. From the summit, the future of Ethereum Classic looks bright. I look forward to contributing to the ecosystem.
