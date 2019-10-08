@@ -7,7 +7,7 @@ categories: ["en"]
 author: "Michael Yuan"
 ---
 
-*Disclaimer: [Second State](https://www.secondstate.io/) sponsored this year’s [ETC Summit](https://etcsummit.com/) and released the [BUIDL for ETC](https://www.secondstate.io/etc/) IDE — even novice developers can now write and publish complete smart contract powered applications on the Ethereum Classic blockchain in minutes. [Check out a tutorial](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)! All views and opinions expressed in the article are my own.*
+*Disclaimer: [Second State](https://www.secondstate.io/) sponsored this year’s [ETC Summit](https://etcsummit.com/) and released the [BUIDL for ETC](https://www.secondstate.io/etc/) IDE — even novice developers can now write and publish complete smart contract powered applications on the Ethereum Classic blockchain in minutes. [Check out a tutorial](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)! All views and opinions expressed in the article are my own. [中文版点击这里](https://blog.secondstate.io/post/20191006-etc-summit-recap-zh/)*
 
 ## Church & State
 
@@ -22,6 +22,7 @@ Most blockchain/cryptocurrency conferences I have been to are dominated by the �
 [ETC Summit](https://etcsummit.com) is different. It is a small, intimate conference, which means you can actually talk to people instead of just exchanging business cards or adding friends on social networks. The participants put a lot of emphasis on the political view we express through our software. It feels a lot like a church, and I like it. 
 
 ## Reconciliation & Collaboration
+
 The overriding theme of ETC Summit this year is collaboration and reconciliation. The community looks forward to fresh collaborations with old and new friends. 
 
 The ETC community itself has now put the drama of last year behind us. The ETC now has a well-funded core developer team that recently executed the successful [Atlantis hard fork](https://www.coindesk.com/ethereum-classic-successfully-forks-improving-interoperability-with-ethereum). The [ETC Labs](https://etclabs.org/) is funding developers, accelerator, studio, and other commercial programs. The [ETC Cooperative](https://etccooperative.org/) is organizing community events, building infrastructure, developer programs, and engaging external developers.
