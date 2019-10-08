@@ -7,7 +7,7 @@ categories: ["zh"]
 author: "Michael Yuan"
 ---
 
-*免责声明：[Second State](https://www.secondstate.io/)赞助了今年的ETC峰会，并发布了[ETC 版BUIDL IDE](https://www.secondstate.io/etc/)。有了BUIDL，即便是菜鸟开发者都可以在几分钟内在以太经典区块链（ETC）上编写和发布完整的基于智能合约的应用程序。[点击此处查看教程](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)！本文中表达的所有观点和观点都是我自己的。*
+*免责声明：[Second State](https://www.secondstate.io/)赞助了今年的ETC峰会，并发布了[ETC 版BUIDL IDE](https://www.secondstate.io/etc/)。有了BUIDL，即便是菜鸟开发者都可以在几分钟内在以太经典区块链（ETC）上编写和发布完整的基于智能合约的应用程序。[点击此处查看教程](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)！本文中表达的所有观点和观点仅代表我个人。*
 
 ## 教会与国家
 
