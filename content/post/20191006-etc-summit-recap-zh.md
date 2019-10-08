@@ -1,5 +1,5 @@
 ---
-title: "ETC 峰会回顾：未来一片光明"
+title: "ETC 峰会回顾：未来可期"
 date: 2019-10-06T10:01:23+08:00
 draft: false
 tags: ["Ethereum Classic","ETC Summit","Developer","BUIDL","ETC"]
@@ -7,29 +7,28 @@ categories: ["zh"]
 author: "Michael Yuan"
 ---
 
-*免责声明：[Second State](https://www.secondstate.io/)赞助了今年的ETC峰会，并发布了[ETC 版BUIDL IDE](https://www.secondstate.io/etc/)。有了BUIDL，即便是菜鸟开发者都可以在几分钟内在以太经典区块链（ETC）上编写和发布完整的基于智能合约的应用程序。[点击此处查看教程](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)！本文中表达的所有观点和观点仅代表我个人。*
+*声明：[Second State](https://www.secondstate.io/)赞助了今年的ETC峰会，并发布了[ETC 版BUIDL IDE](https://www.secondstate.io/etc/)。有了BUIDL，即便是菜鸟开发者都可以在几分钟内在以太经典区块链（ETC）上编写和发布完整的基于智能合约的应用程序。[点击此处查看教程](https://hackernoon.com/easier-and-faster-dapps-on-the-ethereum-classic-blockchain-r9qn34a7)！本文中表达的所有观点和观点仅代表我个人。 [Original article in English](https://blog.secondstate.io/post/20191006-etc-summit-recap/)*
 
-## 教会与国家
+## 教堂与国家
 
-成功的开源社区总是存在“教会”和“国家”的分歧。
+成功的开源社区总是存在“神圣的教堂”和“世俗的国家”之分。
 
-* 意识形态活动家，通常是创建者和早期社区组织者，是坚定不移的教会。他们参与该项目以发表声明。权力去中心化！言论自由！对抗审查！没有他们，我们都会把我们的劳动卖给邪恶的一方。
+* 项目的早期开发者与社区组织者，是坚定不移的教堂。他们参与该项目的目的是表达自己的政治观点：权力去中心化！言论自由！对抗审查！没有这些坚持原则的人，我们只能为见利忘义的商业打工。
 
-* 商人，应用程序开发者，投资者或加密货币交易员是“国家”。他们致力于改善社会和自身的实际。
+* 商人，应用程序开发者，投资者或加密货币交易员是“国家”。他们致力于改善社会和自身。是以利益驱动的。
 
-我去过的大多数区块链/加密货币会议都由“国家”主导。人们关心加密货币的价格，挖矿的获利能力，或者至少关心可以在该技术上构建什么样的实际应用。
+我去过的大多数区块链/加密货币会议都由“世俗的国家”主导。人们关心加密货币的价格，挖矿的获利能力，或者至少关心可以在该技术上构建什么样的实际商业应用。
 
-ETC 峰会与众不同。这是一次小型的亲密会议，这意味着你可以与这里的人们交谈，而不仅仅是交换名片或在社交网络上成为朋友。参与者非常重视我们通过软件表达的政治观点。这种感觉很像教会，是我喜欢的氛围。
+ETC 峰会与众不同。这是一次小型的亲密会议，这意味着你可以与这里的人们交谈，而不仅仅是交换名片或在社交网络上成为朋友。参与者非常重视我们通过软件表达的政治观点。这种感觉很像教会，这是我喜欢的氛围。
 
 ## 和解与合作
 
 今年ETC 峰会的首要主题是合作与和解。社区期待与新老朋友进行新的合作。
 
-ETC 社区本身现在已经把去年的情况抛诸脑后。ETC 现在拥有一支资金雄厚的核心开发团队，该团队最近执行了成功的Atlantis 硬分叉。ETC Labs 为开发者、加速器、工作室和其他商业项目提供资金。 ETC Cooperative 正在组织社区活动，建立基础设施、制定开发者计划，并且吸引外部开发者。
+ETC社区本身现在已经成功渡过了去年的各种争议。ETC现在拥有一支资金雄厚的核心开发团队，该团队最近执行了成功的Atlantis 硬分叉。ETC Labs 为开发者、加速器、工作室和其他商业项目提供资金。 ETC Cooperative 正在组织社区活动，建立基础设施、制定开发者计划，并且吸引外部开发者。
 
 ![](/images/20191006-etc-summit-recap-01.png)
 ETC社区两大支柱，ETC Cooperative和ETC Labs在台上握手
-
 
 今年的ETC 峰会，在以太坊基金会的Devcon5 前几天举行，其中一个非常引人注目的主题是ETH 与 ETC 的合作。 ETC 能否成为ETH 2.0 生态系统中的主导PoW（和SoV）区块链？ETC 能否成为ETH 2.0 生态系统中无需信任的入口？随着以太坊变得更加拥堵，ETC 会成为开发者的选择吗？
 
@@ -39,7 +38,7 @@ ETC社区两大支柱，ETC Cooperative和ETC Labs在台上握手
 ![](/images/20191006-etc-summit-recap-03.png)
 ETC 社区正在行动
 
-ETC 社区将来自世界各地的参与者聚集在一起。查看Bob Summerwill 关于ETC 翻译计划的[博客文章](https://bobsummerwill.com/2019/10/03/addressing-east-west-disconnect-in-etc/)。
+ETC社区希望将来自世界各地的参与者聚集在一起。查看Bob Summerwill 关于ETC的“东方遇见西方”的翻译计划[博客文章](https://bobsummerwill.com/2019/10/03/addressing-east-west-disconnect-in-etc/)。
 
 ## 开发者！开发者！
 
@@ -57,7 +56,7 @@ ETC 社区将来自世界各地的参与者聚集在一起。查看Bob Summerwil
 
 ETC 版 BUIDL是一个开源IDE，可为以太经典区块链上的智能合约和Web3去中心化应用程序提供一站式开发，调试和部署支持。遵循这些[教程](https://docs.secondstate.io/buidl-developer-tool/demo-a-voting-dapp/ethereum-classic)，即使是刚接触区块链领域的开发者也可以在几分钟内启动Dapp并在以太坊经典区块链上运行。
 
-## 矿工呢
+## 矿工呢？
 
 由于以太经典区块链可能会成为以太坊生态系统中占主导地位的PoW 区块链。挖矿硬件和矿池运营者在生态系统中扮演着重要角色。矿工在ETC 峰会上有很多演讲和小组讨论。
 
@@ -68,7 +67,8 @@ ETC Mordor 测试链
 
 最近，“防御ASIC”挖掘的算法已成为以太坊社区中一个有争议的问题。随着以太经典自我定位成为生态系统中占主导地位的PoW 区块链，其挖掘算法的选择尤其具有影响力。甚至在ETC 峰会召开之前，围绕ProgPoW 及其布道者就存在一些争议。
 
-另一方面，[ECIP-1049](https://github.com/ethereumclassic/ECIPs/issues/13) 提议，以太坊经典社区通过基于SHA3 的挖掘算法完全接受ASIC 矿工。这是算法透明性的一个主张。这个观点很有趣。SHA3 是透明，安全且易于创建的ASIC 机器。一旦以太坊经典成为SHA3 采矿的主要PoW 区块链，它将为SHA3 矿工带来不攻击以太经典网络巨大的经济诱因，这些矿工为SHA3 ASIC 机器支付了真金白银。当然，不利的一面是，ETC 不能再自动“继承”当今的ETH 矿工及其基于GPU 的哈希功能。如果您有兴趣，[Alex Tsankov](https://medium.com/coinmonks/ecip-1049-why-ethereum-classic-should-adopt-keccak256-for-its-proof-of-work-algorithm-e45aee32d8a9) 可以很好地说明其原理。您可以立即在[Astor 测试网](https://medium.com/@antsankov/the-what-why-and-how-of-astor-testnet-e7366ba2a730) 上试用ETC 的SHA3 挖矿。ETC 持有人可以在此进行[链上投票，表达您的观点](https://opendapps.secondstate.io/ECIP1049_1570410786520.html)。
+另一方面，[ECIP-1049](https://github.com/ethereumclassic/ECIPs/issues/13) 提议，以太坊经典社区通过采用SHA3的挖矿算法，转型接纳支持ASIC矿工。这是算法透明性的一个主张。这个观点很有趣。SHA3 是透明，安全且易于创建的ASIC 机器。一旦以太坊经典成为SHA3 采矿的主要PoW 区块链，它将为SHA3 矿工带来不攻击以太经典网络巨大的经济诱因，这些矿工为SHA3 ASIC 机器支付了真金白银。当然，不利的一面是，ETC 不能再自动“继承”当今的ETH 矿工及其基于GPU 的哈希功能。如果您有兴趣，Alex Tsankov 写了[很好的一篇文章](https://medium.com/coinmonks/ecip-1049-why-ethereum-classic-should-adopt-keccak256-for-its-proof-of-work-algorithm-e45aee32d8a9) 说明其原理。您可以立即在[Astor 测试网](https://medium.com/@antsankov/the-what-why-and-how-of-astor-testnet-e7366ba2a730) 上试用SHA3的挖矿算法。ETC持有人请在[链上投票，表达您的观点](https://opendapps.secondstate.io/ECIP1049_1570410786520.html)。
 
-## 未来是光明的
+## 未来可期
+
 总体而言，无论是作为社区参与者还是商业赞助商，我都非常享受ETC 峰会。惬意的场地，美味的食物，喝到满足的咖啡，最重要的是，收获满满的思维碰撞。从峰会上看，以太经典的前景一片光明。我非常期待为ETC 生态系统做出贡献。
