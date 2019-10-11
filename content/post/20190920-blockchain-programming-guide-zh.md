@@ -115,7 +115,7 @@ contract Celebration {
 
 ```
 /* Don't modify */
-这里的代码不要改，从reload() 开始复制
+这里的代码不要改，从var instance = null; 开始复制
 /* Don't modify */
 
 var instance = null;
