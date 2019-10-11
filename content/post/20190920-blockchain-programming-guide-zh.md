@@ -118,7 +118,12 @@ contract Celebration {
 这里的代码不要改，从reload() 开始复制
 /* Don't modify */
 
-reload();
+var instance = null;
+window.addEventListener('web3Ready', function() {
+  var contract = web3.ss.contract(abi);
+  instance = contract.at(cAddr);
+  reload();
+});
 
 function reload() {
     document.querySelector("#greeting").innerHTML = instance.greeting();
