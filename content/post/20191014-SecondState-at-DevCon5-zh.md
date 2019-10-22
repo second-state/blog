@@ -8,7 +8,7 @@ categories: ["zh"]
 
 ## 解决现下以太坊智能合约开发挑战
 
-![Second State at DevCon5](/images/20191014-SecondState-at-DevCon5-01.png)
+![Second State at Devcon5](/images/20191014-SecondState-at-DevCon5-01.png)
 
 第一张照片来自Devcon第一天，我们的发言现场。观众熙熙攘攘，只有站立空间。我们进行了非常技术性的介绍，通过[BUIDL IDE](https://docs.secondstate.io/buidl-developer-tool/why-buidl) 进行了所有的现场演示，并取得了巨大的成功。
 
@@ -29,3 +29,7 @@ categories: ["zh"]
 总体而言，Second State 上周非常成功的参与了Devcon5和[ETC峰会](/post/20191006-etc-summit-recap-zh/)。我们结交了新朋友，并建立了重要的伙伴关系。
 
 *后续：以太坊基金会一周之后在台北[给Second State团队发奖](/post/20191022-soll-compiler-project/)，表彰我们在SOLL上面做的贡献。*
+
+*后后续：对以太虚拟机的技术演变有兴趣的同学，可以参见我司程序员 Tim McCallum 写的一篇[硬核技术科普文章](https://hackernoon.com/diving-into-ethereums-virtual-machine-the-future-of-ewasm-wrk32iy)！*
+
+
