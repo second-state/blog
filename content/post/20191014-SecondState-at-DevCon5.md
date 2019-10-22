@@ -27,5 +27,8 @@ The second photo is from a Devcon keynote presentation by Terry Culver of [ETC L
 
 The third photo shows the Second State compiler team demonstrating our solution to the Ethereum Foundation Solidity team. The Second State [SOLL](https://github.com/second-state/soll) tool is the world’s first to successfully [compile a Solidity ERC20 contract into WASM bytecode and deploy it on the official Ewasm testnet](https://www.youtube.com/watch?v=X-A6sP_HTy0). The outcome of this meeting is that we will collaborate with the Ethereum Foundation team to build the next-gen compiler toolchain for both Solidity and Vyper languages. 
 
-Overall, Second State had a very successful Devcon5, and ETC Summit in the week before. We made new friends and forged important partnerships. May the force be with us!
+Overall, Second State had a very successful Devcon5, and [ETC Summit](/post/20191006-etc-summit-recap/) in the week before. We made new friends and forged important partnerships. May the force be with us!
 
+*PS. The Second State SOLL team [received a cash award from the Ethereum Foundation](https://blog.secondstate.io/post/20191022-soll-compiler-project/) in the following week in Taipei.*
+
+*PPS. If you are interested in the evolution of EVM technology, please checkout [an excellent article](https://hackernoon.com/diving-into-ethereums-virtual-machine-the-future-of-ewasm-wrk32iy) written by our engineer Tim McCallum*
