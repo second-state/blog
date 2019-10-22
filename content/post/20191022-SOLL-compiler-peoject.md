@@ -8,7 +8,7 @@ categories: ["Ethereum","en","EWASM"]
 
 (Oct 20th, 2019, Taipei) - [Second State](https://www.secondstate.io/), a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source [SOLL compiler project](https://github.com/second-state/soll). Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019. 
 
-![SOLL project](images/20191022-soll-project-01.jpg)
+![SOLL project](/images/20191022-soll-project-01.jpg)
 
 SOLL is the *world’s first*  toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.
 
