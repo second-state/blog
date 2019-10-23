@@ -3,7 +3,7 @@ title: "Second State SOLL 编译器项目获得以太坊基金会的现金奖励
 date: 2019-10-22T01:01:23+08:00
 draft: false
 tags: ["Ethereum", "EWASM", "eth2.0","SOLL","LLVM","Solidity","WebAssembly"]
-categories: ["Ethereum","en","EWASM"]
+categories: ["Ethereum","zh","EWASM"]
 ---
 
 [Second State](https://www.secondstate.io/) 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对[开源SOLL编译器项目](https://www.secondstate.io/)的贡献，获得了以太坊基金会的现金奖励。2019年10月20日在台北举行的CrossLink活动中，以太坊基金会的Vitalik Buterin向Second State 团队颁发了5000美元的奖金。
