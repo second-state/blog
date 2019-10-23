@@ -6,11 +6,11 @@ tags: ["网页", "web", "BUIDL"]
 categories: ["zh"]
 ---
 
-5分钟学会自己建一个去中心化的网站，从此做网站不求人！
+5分钟学会自己建一个去中心化的网站，从此做网站不求人！永久留存，完全去中心化！
 
 ## 准备工作
-1. 在电脑浏览器打开[https://buidl.secondstate.io](https://buidl.secondstate.io) (推荐使用Chrome 浏览器)
-2. 检查开发工具BUIDL 是否连接到区块链上
+1.在电脑浏览器打开[https://buidl.secondstate.io](https://buidl.secondstate.io) (推荐使用Chrome 浏览器)
+2.检查开发工具BUIDL 是否连接到区块链上
 
 ![](/images/20191020-public-comment-01.png)
 
@@ -18,7 +18,7 @@ categories: ["zh"]
 
 ## 完成区块链网页后端——智能合约
 
-1. 点击红色的Contract，清空默认代码，将下面的智能合约代码粘贴上去
+1.点击红色的Contract，清空默认代码，将下面的智能合约代码粘贴上去
 ```
 pragma solidity >= 0.4.0;
 
@@ -47,7 +47,7 @@ contract Celebration {
 }
 ```
 
-2. 点击右上角Compile，在 _greeting 的横线处输入你想在网页上显示的的话，比如，程序员快乐~ 之后点击 Deploy to the chain。
+2.点击右上角Compile，在 _greeting 的横线处输入你想在网页上显示的的话，比如，程序员快乐~ 之后点击 Deploy to the chain。
 
 ![](/images/20190920-BUIDL-demo-03.png)
 
@@ -55,11 +55,11 @@ contract Celebration {
 
 ![](/images/20190920-BUIDL-demo-04.png)
 
-到这里我们就把区块链网站的后端写完了，这部分叫做智能合约，负责与区块链互动。区块链应用的特性主要由智能合约体现。
+到这里我们就把区块链网站的后端写完了，这部分叫做智能合约，负责与区块链互动。区块链应用不可篡改，去中心化等特性主要由智能合约体现。
 
 ## 网页前端
 
-1. 点击绿色的Dapp，可以看到HTML，CSS，JS三个模块，清空这三个模块的代码。
+1.点击绿色的Dapp，可以看到HTML，CSS，JS三个模块，清空这三个模块的代码。
 
 将下面的代码粘贴到HTML 模块
 ```
@@ -150,7 +150,7 @@ function like () {
 }
 ```
 
-2. BUIDL 是一个开源的开发工具，支持添加开源的代码资源，点击Resources 。
+2.BUIDL 是一个开源的开发工具，支持添加开源的代码资源，点击Resources 。
 
 ![](/images/20190920-BUIDL-demo-06.png)
 
@@ -158,10 +158,10 @@ function like () {
 
 在CSS 处点击加号，将下面的CSS 资源粘贴到弹窗里：https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css 并点击确定。
 
-3. 点击最左边的Run，会在页面右侧预览网页样式。然后来输入自己的名字，做个测试吧!
+3.点击最左边的Run，会在页面右侧预览网页样式。然后来输入自己的名字，做个测试吧!
 ![](/images/20191024-build-website-01.png)
 
-4. 点击页面上方的Publish，输入自己网站的名称，比如1024，然后等待大概30秒，点击launched 就可以看到自己的网页。
+4.点击页面上方的Publish，输入自己网站的名称，比如1024，然后等待大概30秒，点击launched 就可以看到自己的网页。
 
 最后把自己的网页分享到社交媒体，让亲朋好友给自己点赞，赢取奖品吧！
 
