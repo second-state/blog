@@ -1,10 +1,10 @@
 ---
 title: "What I learned from Ethereum Devcon5"
-date: 2019-10-22T01:01:23+08:00
+date: 2019-10-24T01:01:23+08:00
 draft: false
 tags: ["Ethereum", "EWASM", "eth2","SOLL","LLVM","Devcon5,"Plasma"]
-categories: ["Ethereum","en"]
-Author: Michael Yuan
+categories: ["en"]
+author: "Michael Yuan"
 ---
 
 The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
