@@ -9,8 +9,11 @@ categories: ["zh"]
 
 5分钟学会自己建一个去中心化的网站，从此做网站不求人！永久留存，完全去中心化！
 
+这样一个网站可以让你写上自己说的话，并可以实现访问这个网页与网页进行交互，为你的网站点赞！
+
 ## 准备工作
 1.在电脑浏览器打开[https://buidl.secondstate.io](https://buidl.secondstate.io) (推荐使用Chrome 浏览器)
+
 2.检查开发工具BUIDL 是否连接到区块链上
 
 ![](/images/20191020-public-comment-01.png)
