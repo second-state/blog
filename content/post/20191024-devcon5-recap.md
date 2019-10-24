@@ -2,7 +2,7 @@
 title: "What I learned from Ethereum Devcon5"
 date: 2019-10-24T01:01:23+08:00
 draft: false
-tags: ["Ethereum", "EWASM", "eth2","SOLL","LLVM","Devcon5,"Plasma"]
+tags: ["Ethereum","EWASM","eth2","SOLL","LLVM","Devcon5","Plasma"]
 categories: ["en"]
 author: "Michael Yuan"
 ---
