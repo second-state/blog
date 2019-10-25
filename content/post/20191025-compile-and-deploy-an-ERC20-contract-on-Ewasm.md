@@ -1,6 +1,6 @@
 ---
-title: "What I learned from Ethereum Devcon5"
-date: 2019-10-24T01:01:23+08:00
+title: "Compile and deploy an ERC20 contract on Ewasm"
+date: 2019-10-25T01:01:23+08:00
 draft: false
 tags: ["Ethereum","EWASM","eth2","SOLL","LLVM"]
 categories: ["en"]
