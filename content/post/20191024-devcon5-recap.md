@@ -58,7 +58,7 @@ In Devcon5, there is a continued focus on developer communities. A lot of sessio
 
 At Second State, we provide [tools for even novice developers](https://docs.secondstate.io/buidl-developer-tool/why-buidl) to quickly get started with Ethereum application development. [Checkout the BUIDL IDE](https://docs.secondstate.io/buidl-developer-tool/getting-started) and you could publish your first web-based dapp on a public blockchain in minutes!
 
-Libra, the elephant in the room
+## Libra, the elephant in the room
 One of the big news in 2019 was Facebook’s entrance into cryptocurrency space via the Libra stablecoin project. The members from the Cosmos Foundation and Ethereum Foundation banded together to announce the OpenLibra project, which aims to create a Libra-like stablecoin, but with open source software and open governance. Many in the Ethereum community, however, do not like this idea.
 
 ![](/images/20191024-devcon5-racap-04.png)
