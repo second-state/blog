@@ -64,7 +64,7 @@ The contract is now deployed on the DevChain, and you could see the Contract Nam
 
 3.3 
 
-Now click open the **Halloween** contract, and click on the **greeting** button to call its greeting() function. In the LOG window, you will see “Happy Halloween”.
+Now click open the **Halloween** contract, and click on the **Call** button to call its `greeting()` function. In the LOG window, you will see “Happy Halloween”.
 
 ![](/images/20191031-halloween-01.png)
 
@@ -75,6 +75,9 @@ That’s it. Happy Halloween on the blockchain!
 BUIDL is a browser-based IDE that enables developers to create and deploy Decentralized Applications (DApps) on blockchains with ease.‪You can #compile, test, and deploy inside a browser. No software download!‬
 
 Further reading:
+
 * [BUIDL Introduction](https://secondstate.io/buidl)
+
 * [BUIDL Documentation](https://docs.secondstate.io/buidl-developer-tool/getting-started)
+
 * [Second State - Middleware for smart contracts](https://www.secondstate.io/)
