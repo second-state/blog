@@ -38,7 +38,7 @@ Open the BUIDL IDE tool in any browser. http://buidl.secondstate.io/
 Step 2
 Check out if the Providers work. The icon, if green, means BUIDL IDE is connected to the Second State DevChain. Please refresh the page when the icon is red.
 
-![](/images/20191031-halloween-04.png)
+![](/images/20191031-Halloween-04.png)
 
 Step 3
 
@@ -59,7 +59,7 @@ contract Halloween {
 
 3.2 Click on **Compile** and you will see the following. Then click on **deploy on chain**.
 
-![](/images/20191031-halloween-03.png)
+![](/images/20191031-Halloween-03.png)
 
 The contract is now deployed on the DevChain, and you could see the Contract Name , TX and Address on the left tab. (TX records this transaction and it is unique. So is the contract address.)
 
@@ -68,6 +68,10 @@ The contract is now deployed on the DevChain, and you could see the Contract Nam
  Now click open the PublicComments contract, and click on the greeting button to call its greeting() function. In the LOG window, you will see Happy Halloween.
 
 ![](/images/20191031-halloween-01.png)
+
+### About BUIDL IDE tools
+
+BUIDL is a browser-based IDE that enables developers to create and deploy Decentralized Applications (DApps) on blockchains with ease.‪You can #compile, test, and deploy inside a browser. No software download!‬
 
 Further reading:
 * [BUIDL  introduction](https://secondstate.io/buidl)
