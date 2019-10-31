@@ -29,21 +29,23 @@ This is a very simple (yet spooky) smart contract example, just like the “Hell
 
 Let’s figure out how it works.
 
-### start coding
+### Start coding
 
-Step 1
+#### Step 1
+
 Open the BUIDL IDE tool in any browser. http://buidl.secondstate.io/
 
-Step 2
+#### Step 2
+
 Check the **Providers** tab on the left panel. The icon, if green, means BUIDL IDE is connected to the Second State DevChain. Please refresh the page if the icon is red.
 
 ![](/images/20191031-Halloween-04.png)
 
-Step 3
+#### Step 3
 
-3.1 Clear the content in the **contract** editor section of BUIDL.
+*3.1* Clear the content in the **contract** editor section of BUIDL.
 
-3.2 Copy and paste the following code to the **contract** section 
+*3.2* Copy and paste the following code to the **contract** section 
 
 ```
 pragma lity ^1.2.4;
@@ -56,15 +58,13 @@ contract Halloween {
 }
 ```
 
-3.2 Click on **Compile** and you will see the following. Then click on **deploy on chain**.
+*3.3* Click on **Compile** and you will see the following. Then click on **deploy on chain**.
 
 ![](/images/20191031-Halloween-03.png)
 
 The contract is now deployed on the DevChain, and you could see the Contract Name , TX and Address on the left tab. (TX records this transaction and it is unique. So is the contract address.)
 
-3.3 
-
-Now click open the **Halloween** contract, and click on the **Call** button to call its `greeting()` function. In the LOG window, you will see “Happy Halloween”.
+*3.4* Now click open the **Halloween** contract, and click on the **Call** button to call its `greeting()` function. In the LOG window, you will see “Happy Halloween”.
 
 ![](/images/20191031-halloween-01.png)
 
