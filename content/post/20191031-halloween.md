@@ -76,7 +76,7 @@ BUIDL is a browser-based IDE that enables developers to create and deploy Decent
 
 Further reading:
 
-* [BUIDL Introduction](https://secondstate.io/buidl)
+* [BUIDL Introduction](https://www.secondstate.io/buidl)
 
 * [BUIDL Documentation](https://docs.secondstate.io/buidl-developer-tool/getting-started)
 
