@@ -2,7 +2,7 @@
 title: "The Next Generation Ethereum Virtual Machine — Ewasm VM"
 date: 2019-11-06T10:01:23+08:00
 draft: false
-tags: ["smart contracts","Halloween"] 
+tags: ["EVM","Ewasm"] 
 categories: ["en"]
 ---
 
