@@ -6,12 +6,12 @@ tags: ["EVM","Ewasm"]
 categories: ["en"]
 ---
 
-
-[Image: image.png]The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan
+![](/images/20191106-Ewasm-01.png)
+The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan
 
 This is a wrap-up for Second State’s VP of Engineering, [Mr. Hung-Ying Tai](https://github.com/hydai)’s presentation on SOLL, Ewasm VM's current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0
 
-EVM bytecode and Webassembly (WASM)
+### EVM bytecode and Webassembly (WASM)
 
 When Ethereum's smart contract transaction is executed, for example, when transfer Token to another address, we read the EVM bytecode into the Ethereum virtual machine, and the EVM bytecode has the following characteristics:
 
@@ -37,7 +37,7 @@ Webassembly (WASM) is a binary programming language that allows suites developed
    Lots of language support (C++, Rust, …)
 
 
-Ewasm 1.0
+### Ewasm 1.0
 
 Let's take a look at the features of Ewasm:
 
@@ -46,15 +46,15 @@ Let's take a look at the features of Ewasm:
 * You can only import the library of Ethereum and avoid importing ㄒ system library.
 * Insert useGAS before each instruction to calculate the cost of GAS
 
-Ethereum Environment Interface
+### Ethereum Environment Interface
 
 There are many high-level instructions in the EVM like SSLOAD and SHA3. These commands are in Ewasm 1.0. because WASM can dynamically read libraries (modules). Ethereum defines the Ethereum Environment Interface so that clients can use different languages. Corresponding to the library, and it is easier to complete the prototype and upgrade.
 
 The following slide is a list of functions defined by the Ethereum Environment Interface.
-[Image: image.png]
+![](/images/20191106-Ewasm-02.png)
 Ethereum Environment Interface Definition.
 
-How to remove illegal instructions?
+### How to remove illegal instructions?
 
 Ewasm uses system contract to remove illegal instructions and add useGas bytecode, such as floating point numbers or illegal imports, in two ways:
 
@@ -63,14 +63,15 @@ Ewasm uses system contract to remove illegal instructions and add useGas bytecod
 * Like the current precompiles running on the client, check the contract before deployment
 
 The following slide shows the Ewasm 1.0 stack. Before the contract deployment, the Ewasm bytecode will be checked by Sentinal. After the successful deployment, the client will communicate with Heru (Wasm Engine) through EVM-C if the contract is to be executed.
-[Image: image.png]Ewasm Stack
+![](/images/20191106-Ewasm-03.png)
+Ewasm Stack
 
 
-Performance problem
+### Performance problem
 
 Does Ewasm perform better? The speaker shared the results of both EVM execution of Sha1 and BN128mul. It can be found that EVM is the faster when running BN128mul, mainly because WASM only supports 32/64-bit operations. For 256-bit it requires additional simulation (ONE 256 bit operations may be replaced by 25 64 bit operations). As EVM provides precompiles, Wasm engine can support `bignum` library to speed up.
 
-Ewasm 2.0
+## Ewasm 2.0
 
 Ewasm 2.0's smart contract is called Execution Environments (EE), which is different from Ewasm 1.0.
 
@@ -80,26 +81,27 @@ Ewasm 2.0's smart contract is called Execution Environments (EE), which is diffe
 * EE is stateless
 
 The following slide shows the ERC20 Token compared to Ewasm 2.0 and Ewasm 1.0 storage. Ewasm 1.0 has a corresponding key for each data, while Ewasm 2.0 only has state root, so it can only interact with state root.
-[Image: image.png]
+![](/images/20191106-Ewasm-04.png)
 Ewasm 2.0 vs Ewasm 1.0
 
-
-Phase One and Done
+## Phase One and Done
 
 At the current stage of Ewasm 2.0 to phase one and done, there are also tested networks that can perform EE on shard blocks, and Ethereum also has open source Ewasm 2.0 test tool: Scout.
-
+![](/images/20191106-Ewasm-05.png)
 Hello World for Ewasm 2.0
 
 The above slide is Eth 2's Hello World EE. You can see that the first line in the main function reads the pre state root, then verify if the block data size is 0, and finally save the state root back. Eth 2's smart contract code are all in this form.
 
 
-Conclusion
+## Conclusion
 
 Ewasm 1.0 currently supports EVM 1 and most of the functions have a test net. Second state develops a compiler SOLL, which can compile solidity into Ewasm. [Check it out](https://blog.secondstate.io/post/20191022-soll-compiler-project/) if interested.
 
 Ewasm 2.0 is still under study. The following slide is the direction of the research and contribution shared by the speaker.
+![](/images/20191106-Ewasm-06.png)
 
-Reference
+
+## Reference
 
 [Crosslink 简报](http://url.hyd.ai/LRFVT)
 [webassembly.org (http://webassembly.org/)](https://webassembly.org/)
