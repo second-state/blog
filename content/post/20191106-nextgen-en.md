@@ -15,19 +15,27 @@ EVM bytecode and Webassembly (WASM)
 
 When Ethereum's smart contract transaction is executed, for example, when transfer Token to another address, we read the EVM bytecode into the Ethereum virtual machine, and the EVM bytecode has the following characteristics:
 
-* 256-bit staked-based virtual machine
-* Many high-level instructions, such as: SSTORE, SLOAD, SHA3, EC, Call/Create contract
-* Different from the physical system architecture (usually 32/64 bits), and 256 bits need to be done by simulation
-* Less programming languages (Vyper, Solidity, ...)
+* 256-bit stack-based virtual machine
+* Too many high level instructions
+      Storage(SSTORE, SLOAD)
+      SHA3(keccak-256)
+      Call, Create Contract…
+* Different from the actual machine architecture (usually 32/64 bit), and 256 bit need to be done by simulation
+* Less language support (Vyper, Solidity, ...)
 
 
 Webassembly (WASM) is a binary programming language that allows suites developed in different programming languages to be used in browsers. WASM has the following features:
 
-* Staked-based virtual machine: has a separate area space (scratchpad or memory), accessing the first three objects of the stack (16 EVM accesses)
+* Stack-based virtual machine: 
+   has locals ( ~= register or memory)
+   only access top 3 items from stack v.s EVM’s 16 
 * Support for 32 / 64 bit operations
 * No high-level instruction
-* The RISC instruction set can also correspond to the CPU ISA
-* Larger community: Mainstream browsers are supported, and there are more programming languages (C++, Rust, GO, ...)
+* RISC Instruction Set, can map to a common CPU ISA
+* Large community power
+   Supported in all major browser
+   Lots of language support (C++, Rust, …)
+
 
 Ewasm 1.0
 
@@ -60,7 +68,7 @@ The following slide shows the Ewasm 1.0 stack. Before the contract deployment, t
 
 Performance problem
 
-Does Ewasm perform better? The speaker shared the results of both EVM execution of Sha1 and BN128mul. It can be found that EVM is the faster when running BN128mul, mainly because WASM only supports 32/64-bit operations. For 256-bit it requires additional simulation (one 256-bit operation equals to twenty five 64-bit operations), so when running BN128mul in WASM will be slower than EVM.
+Does Ewasm perform better? The speaker shared the results of both EVM execution of Sha1 and BN128mul. It can be found that EVM is the faster when running BN128mul, mainly because WASM only supports 32/64-bit operations. For 256-bit it requires additional simulation (ONE 256 bit operations may be replaced by 25 64 bit operations). As EVM provides precompiles, Wasm engine can support `bignum` library to speed up.
 
 Ewasm 2.0
 
