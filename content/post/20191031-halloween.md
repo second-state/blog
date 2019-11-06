@@ -1,5 +1,5 @@
 ---
-title: "Celebrate Halloween with blockchain smart contract"
+title: "Celebrate Halloween with Blockchain Smart Contract"
 date: 2019-10-31T10:01:23+08:00
 draft: false
 tags: ["smart contracts","Halloween"] 
