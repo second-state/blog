@@ -62,7 +62,7 @@ contract Token {
   }
 }
 ```
-#### Complile Contract
+#### Compile Contract
 * Get ABI
 ```
 # soll -action=EmitABI contract.sol
