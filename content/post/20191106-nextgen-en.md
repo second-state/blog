@@ -1,13 +1,12 @@
 ---
-title: "Celebrate Halloween with Blockchain Smart Contract"
+title: "The Next Generation Ethereum Virtual Machine — Ewasm VM"
 date: 2019-10-31T10:01:23+08:00
 draft: false
 tags: ["smart contracts","Halloween"] 
 categories: ["en"]
 ---
-The Next Generation Ethereum Virtual Machine — Ewasm VM
 
-https://medium.com/taipei-ethereum-meetup/the-next-generation-ethereum-virtual-machine-ewasm-vm-2fe3fd9b94a4
+
 [Image: image.png]The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan
 
 This is a wrap-up for Second State’s VP of Engineering, [Mr. Hung-Ying Tai]（https://github.com/hydai）’s presentation on SOLL, Ewasm VM's current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0
@@ -106,3 +105,5 @@ Reference
 [Ewasm updates](https://drive.google.com/file/d/1CRc0qBQTebNKw7NRZXzxbHovrigW0bqf/view)
 [Ewasm design](https://github.com/ewasm/design)
 [wasm-intro](https://rsms.me/wasm-intro)
+
+Translated from traditional Chinese https://medium.com/taipei-ethereum-meetup/the-next-generation-ethereum-virtual-machine-ewasm-vm-2fe3fd9b94a4
