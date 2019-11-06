@@ -1,6 +1,6 @@
 ---
 title: "The Next Generation Ethereum Virtual Machine — Ewasm VM"
-date: 2019-10-31T10:01:23+08:00
+date: 2019-11-06T10:01:23+08:00
 draft: false
 tags: ["smart contracts","Halloween"] 
 categories: ["en"]
@@ -78,7 +78,7 @@ Ewasm 2.0 vs Ewasm 1.0
 
 Phase One and Done
 
-At the current stage of Ewasm 2.0 to phase one and done, there are also tested networks that can perform EE on shard blocks, and Ethereum also has open source Ewasm 2.0 test tool Scout.
+At the current stage of Ewasm 2.0 to phase one and done, there are also tested networks that can perform EE on shard blocks, and Ethereum also has open source Ewasm 2.0 test tool: Scout.
 
 Hello World for Ewasm 2.0
 
