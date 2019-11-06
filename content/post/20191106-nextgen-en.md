@@ -9,7 +9,7 @@ categories: ["en"]
 
 [Image: image.png]The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan
 
-This is a wrap-up for Second State’s VP of Engineering, [Mr. Hung-Ying Tai]（https://github.com/hydai）’s presentation on SOLL, Ewasm VM's current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0
+This is a wrap-up for Second State’s VP of Engineering, [Mr. Hung-Ying Tai](https://github.com/hydai)’s presentation on SOLL, Ewasm VM's current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0
 
 EVM bytecode and Webassembly (WASM)
 
@@ -25,7 +25,7 @@ Webassembly (WASM) is a binary programming language that allows suites developed
 
 * Staked-based virtual machine: has a separate area space (scratchpad or memory), accessing the first three objects of the stack (16 EVM accesses)
 * Support for 32 / 64 bit operations
-* No high-order instructions
+* No high-level instruction
 * The RISC instruction set can also correspond to the CPU ISA
 * Larger community: Mainstream browsers are supported, and there are more programming languages (C++, Rust, GO, ...)
 
