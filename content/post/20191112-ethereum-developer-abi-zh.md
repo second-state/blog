@@ -9,7 +9,7 @@ categories: ["ethereum","zh"]
 快速了解以太坊开发，快速 get 复杂的技术概念！
 Second State 推出以太坊开发A2Z 系列，结合区块链开发的实际情况，带你了解以太坊开发的点点面面。
 
-![](images/20191112-abi-01.png)
+![](/images/20191112-abi-01.png)
 这篇文章是该系列的第一篇，为大家讲述智能合约ABI。
 
 *简短版*：区块链智能合约ABI是智能合约与区块链应用程序之间的接口。智能合约被像BUIDL这样的编译器编译成二进制文件后，会自动生成ABI。ABI是JSON文本文件，记录了智能合约的function 和参数。在用户使用区块链应用程序时，需要通过ABI 来调用智能合约。
@@ -28,7 +28,7 @@ ABI 实现了用户与程序的互动。
 
 以区块链基础软件技术公司Second State 开发的 BUIDL IDE 内置的默认代码为例，合约代码如下：
 
-![](images/20191112-abi-02.png)
+![](/images/20191112-abi-02.png)
 
 经过BUIDL 编译后，我们获得了如下的ABI。智能合约生成的ABI是JSON 格式的数组，包含两组参数，一个是参数名称，一个是参数值。在调用智能合约时，通过ABI 了解该智能合约实现了哪些功能，参数又是什么。
 ```
@@ -39,9 +39,9 @@ ABI 实现了用户与程序的互动。
 
 当我们使用BUIDL 进行下一步DApp 开发工作时，会发现JavaScript 版块记录了当前智能合约的ABI，使应用程序能够调用智能合约，与之互动。
 
-![](images/20191112-abi-03.png)
+![](/images/20191112-abi-03.png)
 
-##关于[BUIDL IDE](https://www.secondstate.io/buidl/) —— 一站式区块链开发工具
+## 关于[BUIDL IDE](https://www.secondstate.io/buidl/) —— 一站式区块链开发工具
 
 BUIDL IDE是完全基于浏览器的集成开发工具，开发者可以用BUIDL轻松地创建和部署区块链应用（DApp），无需安装任何软件和区块链钱包，从而节省大量时间。
 
