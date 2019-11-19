@@ -1,9 +1,9 @@
 ---
 title: " ABI | Ethereum Development A2Z "
-date: 2019-11-12T09:42:14+08:00
+date: 2019-11-19T09:42:14+08:00
 draft: false
 tags: ["blockchain", "Ethereum", "developer","smart contract","BUIDL"]
-categories: ["ethereum","zh"]
+categories: ["ethereum","en"]
 ---
 Learn Ethereum development and acquire complex technical concepts in a snap!
 
@@ -11,9 +11,9 @@ Second State Inc is to release Ethereum development A2Z series article, combined
 
 
 ![](/images/20191112-abi-01.png)
-This article is to introduce Smart Contract ABI, the first piece in the series .
+This article is to introduce Smart Contract ABI, the first piece in the series.
 
-In short: Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like [BUIDL](https://buidl.secondstate.io/), an ABI is automatically generated, recording the functions and parameters of the smart contract. When a user uses a blockchain application, the smart contract is called with this ABI.
+tl;dr Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like [BUIDL](https://buidl.secondstate.io/), an ABI is automatically generated, recording the functions and parameters of the smart contract. When a user uses a blockchain application, the smart contract is called with this ABI.
 
 ## What is an ABI 
 
