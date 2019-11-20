@@ -11,6 +11,8 @@ Second State Inc is to release Ethereum development A2Z series articles to help 
 
 
 ![](/images/20191112-abi-01.png)
+
+
 This article is to introduce Smart Contract ABI, the first piece in the series.
 
 Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like [BUIDL](https://buidl.secondstate.io/), an ABI for this smart contract is automatically generated, recording the functions and parameters of the smart contract. When a user uses a blockchain application, the smart contract will be called with this ABI.
@@ -56,7 +58,7 @@ BUIDL functions:
 * Deployment on Ethereum and any blockchain compatible with Ethereum;
 * Access to the built-in Web3 library；
 * **Support of rule-based smart contracts;**
-* **Built-in real-time smart contract search engine based on ElasticSearch; **
+* **Built-in real-time smart contract search engine based on ElasticSearch;**
 
 
 More Info:
