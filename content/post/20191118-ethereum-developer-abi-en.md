@@ -43,7 +43,7 @@ When we use [BUIDL](https://buidl.secondstate.io/) for subsequent DApp developme
 
 ![](/images/20191112-abi-03.png)
 
-## About [BUIDL IDE](https://www.secondstate.io/buidl/) - One-Stop Blockchain Development Tools
+## About [BUIDL IDE](https://www.secondstate.io/buidl/) - An One-Stop Blockchain Development Tool
 
 The BUIDL IDE is a highly integrated and fully browser-based development tool that allows developers to easily create and deploy blockchain applications (DApps) with BUIDL, saving a lot of time by eliminating the need to install any software and blockchain wallets.
 
