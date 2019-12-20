@@ -1,3 +1,10 @@
+---
+title: "只需 5 分钟，教你如何编写并执行一个 Rust + WebAssembly 程序"
+date: 2019-12-06T09:42:14+08:00
+draft: false
+tags: ["Rust", "WebAssembly"]
+categories: ["ethereum","zh"]
+---
 
 
 > 在探讨 WASM 在服务端的巨大潜力时，我们提到 WASM 的一大优势就是支持有影响力的新锐编程语言，例如 Rust 。这篇文章将展示如何编写并执行一个 Wasm Rust 程序，只有代码。
