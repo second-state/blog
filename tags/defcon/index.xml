@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Defcon on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/defcon/</link>
+    <description>Recent content in Defcon on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 19 Aug 2019 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/defcon/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Team HITCON, with Second State&#39;s developer as a core, scored the second in DEF CON</title>
+      <link>http://blog.secondstate.io/post/20190819-defcon-ctf-winners-overview/</link>
+      <pubDate>Mon, 19 Aug 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190819-defcon-ctf-winners-overview/</guid>
+      <description>Taiwanese hacker team HITCON scored the second in world’s most prestigious hacking competition DEF CON Capture the Flag in Las Vegas. A core team member is a software developer at Second State Inc.
+In the just-concluded DEF CON 27 CTF hacking contest, after three days and two nights of “competition”, HITCON &amp;amp; BFKinesiS team from Taiwan defeated Team Tea deliverses and A*0*E from Tencent and won the runner-up. The core member of the HITCON team is also a software engineers at Second State.</description>
+    </item>
+    
+  </channel>
+</rss>

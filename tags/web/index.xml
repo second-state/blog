@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/web/</link>
+    <description>Recent content in Web on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Oct 2019 20:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Build your own decentralized website with BUIDL IDE</title>
+      <link>http://blog.secondstate.io/post/20191025-build-your-website/</link>
+      <pubDate>Fri, 25 Oct 2019 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191025-build-your-website/</guid>
+      <description>Have you ever tried to build your own website?
+You need to
+ Get Web Hosting Register a Domain name(usually ~$15/year) Set up your website from the web host ········  Way too many steps! But with BUIDL IDE tools, you can build a decentralized website all by yourself in 5 minutes. The website will not only allow you to write any words you want but also allow your friends to access this page and interact with you.</description>
+    </item>
+    
+    <item>
+      <title>教程|5分钟建一个去中心化的网站</title>
+      <link>http://blog.secondstate.io/post/20191024-build-website-zh/</link>
+      <pubDate>Wed, 23 Oct 2019 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191024-build-website-zh/</guid>
+      <description>不用买域名，购买虚拟主机空间，设置域名服务器，工信部备案等等繁琐的流程。 5分钟学会自己建一个去中心化的网站，从此做网站不求人！永久留存，完全</description>
+    </item>
+    
+  </channel>
+</rss>

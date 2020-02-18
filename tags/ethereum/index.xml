@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ethereum on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/ethereum/</link>
+    <description>Recent content in Ethereum on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Feb 2020 20:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second State 又获以太坊生态体系的资助奖励</title>
+      <link>http://blog.secondstate.io/post/20200217-soll-zh/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200217-soll-zh/</guid>
+      <description>Second State 最近获得了以太坊生态最大的去中心化自治组织（DAO） Panvala 的资助奖励。Panvala 由 ConsenSys 创立孵化，为以太坊生态里最重要的基础软件项目提供资金</description>
+    </item>
+    
+    <item>
+      <title>Second State receives another grant award for the SOLL compiler</title>
+      <link>http://blog.secondstate.io/post/20200216-soll-en/</link>
+      <pubDate>Fri, 14 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200216-soll-en/</guid>
+      <description>Second State has been awarded a development grant from Panvala, a leading DAO (Decentralized Autonomous Organization) in the Ethereum ecosystem.
+Founded at ConsenSys, Panvala provides funding support for critical software development efforts in the Ethereum ecosystem. Past Panvala grant awardees include Sigma Prime, Prysmatic Labs, MakerDAO, Aragon, Status, and Gitcoin.
+Prior to the Panvala grant, Second State is already a recognized leader in Ethereum infrastructure development. It is had received funding and prizes from both the Ethereum Foundation and Ethereum Classic Labs.</description>
+    </item>
+    
+    <item>
+      <title> Ethereum Development A2Z| Smart Contract ABI </title>
+      <link>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</link>
+      <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</guid>
+      <description>Learn Ethereum development and acquire complex technical concepts in a snap!
+Second State Inc is to release Ethereum development A2Z series articles to help you learn Ethereum in a short time starting from the basics, with real blockchain development cases.
+This article is to introduce Smart Contract ABI, the first piece in the series.
+Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like BUIDL, an ABI for this smart contract is automatically generated, recording the functions and parameters of the smart contract.</description>
+    </item>
+    
+    <item>
+      <title> ABI | 以太坊开发A2Z </title>
+      <link>http://blog.secondstate.io/post/20191112-ethereum-developer-abi-zh/</link>
+      <pubDate>Tue, 12 Nov 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191112-ethereum-developer-abi-zh/</guid>
+      <description>快速了解以太坊开发，快速 get 复杂的技术概念！ Second State 推出以太坊开发A2Z 系列，结合区块链开发的实际情况，带你了解以太坊开发的点点面面。 这篇文章是该</description>
+    </item>
+    
+    <item>
+      <title>Ewasm Vs EVM：Ewasm 带来了什么改变？</title>
+      <link>http://blog.secondstate.io/post/20191106-ewasm-zh/</link>
+      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191106-ewasm-zh/</guid>
+      <description>这篇文章是 Crosslink 2019 Taiwan 的一个议程纪录：The next generation Ethereum Virtual Machine，由来自Second State 的工程VP Hung-Ying Tai（hydai） 分享 Ewasm VM 目前研究内容及未来</description>
+    </item>
+    
+    <item>
+      <title>Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191029-ewasm/</link>
+      <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191029-ewasm/</guid>
+      <description>Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.
+ “The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).
+ The EVM consists of a stack-based architecture. In order for a smart contract to be deployed, all high level Ethereum smart contract code must first be compiled into machine-readable code (called bytecode).</description>
+    </item>
+    
+    <item>
+      <title>深度剖析以太坊虚拟机（EVM）的未来：Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191029-ewasm-zh/</link>
+      <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191029-ewasm-zh/</guid>
+      <description>以太坊是具有内置图灵完备编程语言的区块链。任何人都可以使用以太坊智能合约来创建去中心化应用程序。 “以太坊虚拟机（EVM）是以太坊处理智能合约</description>
+    </item>
+    
+    <item>
+      <title>Compile and deploy an ERC20 contract on Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</link>
+      <pubDate>Fri, 25 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</guid>
+      <description>Second State provides open source infrastructure technologies for public and enterprise blockchains. The smart contract compiler toolchain and virtual machine runtimes are critical elements of the infrastructure.
+Through its web-based BUIDL IDE, developers can easily access Second State smart contract programming languages, compilers, optimizers, and virtual machines. Even novice developers can write and publish decentralized applications (smart contract + web app) on any Ethereum-compatible blockchain in minutes. See examples on Ethereum Classic and CyberMiles blockchains.</description>
+    </item>
+    
+    <item>
+      <title>一文带你了解Devcon5</title>
+      <link>http://blog.secondstate.io/post/20191025-devcon5-recap-zh/</link>
+      <pubDate>Thu, 24 Oct 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191025-devcon5-recap-zh/</guid>
+      <description>以太坊基金会 Devcon 是以太坊生态系统中最重要的开发者、设计师和研究人员的年度聚会。今年在日本大阪举行的 Devcon5 是第五届以太开发大会，与往年一样，Devc</description>
+    </item>
+    
+    <item>
+      <title>What I learned from Ethereum Devcon5</title>
+      <link>http://blog.secondstate.io/post/20191024-devcon5-recap/</link>
+      <pubDate>Thu, 24 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
+      <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&amp;rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
+    </item>
+    
+    <item>
+      <title>Second State SOLL 编译器项目获得以太坊基金会的现金奖励</title>
+      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</link>
+      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</guid>
+      <description>Second State 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对开源SOLL编译器项目的贡献，获得了以太坊基金会的现金奖励。2019年10月</description>
+    </item>
+    
+    <item>
+      <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
+      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
+      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
+      <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
+SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
+    </item>
+    
+    <item>
+      <title>Second State goes to Devcon5 - Our story told in 3 photos</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</guid>
+      <description>Addressing the challenges of today’s Ethereum smart contract development The first photo is from our session on the first day of Devcon. It is standing room only. We gave a very technical presentation and did all of our live demos from the BUIDL IDE with great success.
+The focus of our session is to address the challenges of today’s Ethereum smart contract development. We discussed solutions we have developed for today’s EVM, as well as future solutions for Ethereum 2.</description>
+    </item>
+    
+    <item>
+      <title>用三张照片讲述Second State与Devcon5的故事</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</guid>
+      <description>解决现下以太坊智能合约开发挑战 第一张照片来自Devcon第一天，我们的发言现场。观众熙熙攘攘，只有站立空间。我们进行了非常技术性的介绍，通过</description>
+    </item>
+    
+    <item>
+      <title>Second State 发布专为以太经典（ETC）打造的BUIDL IDE工具</title>
+      <link>http://blog.secondstate.io/post/20190926-buidl-for-etc-zh/</link>
+      <pubDate>Thu, 26 Sep 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190926-buidl-for-etc-zh/</guid>
+      <description>区块链智能合约平台Second State 发布专为以太经典（Ethereum Classic）打造的BUIDL IDE。BUIDL 集成了以太经典开发环境，</description>
+    </item>
+    
+    <item>
+      <title>Calling All Developers: Second State Launches BUIDL IDE, an Integrated Development Environment Software Application, for Ethereum Classic Blockchain</title>
+      <link>http://blog.secondstate.io/post/20190925-buidl-for-etc/</link>
+      <pubDate>Tue, 24 Sep 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190925-buidl-for-etc/</guid>
+      <description>This news is also seen on PRweb.com
+ SAN FRANCISCO (Sept. 24, 2019) —Second State, developer of an open source, blockchain-based smart contract platform for global business, has announced the launch of its BUIDL IDE, an integrated development environment software application for Ethereum Classic (ETC), the preeminent blockchain for smart contracts and “dapps.” With Second State’s BUIDL IDE, development and deployment on ETC can be done within minutes, from any web browser: secondstate.</description>
+    </item>
+    
+    <item>
+      <title>Ethereum Classic partners with Second State to build the next generation Ethereum infrastructure</title>
+      <link>http://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/</link>
+      <pubDate>Sun, 01 Sep 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/</guid>
+      <description>Ethereum Classic Labs (ETC Labs), the developer and maintainer of the Ethereum Classic blockchain (ETC), announced today that it has entered a partnership with a leading blockchain infrastructure developer, Second State, to create open source toolchain and runtime software that powers the next generation of Ethereum-compatible blockchains, including the Ethereum Classic.
+This partnership will bring high-impact enhancements into the ETC ecosystem, and make the ETC blockchain a premier destination for smart contract developers.</description>
+    </item>
+    
+    <item>
+      <title>Libra First Impressions Part 3: How to Issue ERC20 token on Libra with Move Language</title>
+      <link>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/</link>
+      <pubDate>Fri, 19 Jul 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/</guid>
+      <description>This article is the third and final part of the &amp;ldquo;Libra First impressions&amp;rdquo; series. In the previous two articles, we explored the technical implications of the Libra project and the internal processing and execution of Libra Client and Validator.
+ Libra First Impressions Part 2: Deep dive with a Libra transaction Libra First Impressions Part 1: Smart Contracts are not created equal  Write your token module In this article, we will show you how to use Move IR to write a simple token module.</description>
+    </item>
+    
+    <item>
+      <title>Libra深度剖析③ 如何基于 ERC20 标准在 Libra 上发布金融资产</title>
+      <link>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/</link>
+      <pubDate>Fri, 19 Jul 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/</guid>
+      <description>本文是 「Libra 深度剖析」系列文章的第 3 篇，也是最后一篇。在之前的两篇文章，我们分别探讨了 Libra 项目的技术意义以及 Libra Client 与 Validator 内部处理与执行交易。</description>
+    </item>
+    
+    <item>
+      <title>Libra First Impressions Part 2: Deep dive with a Libra transaction</title>
+      <link>http://blog.secondstate.io/post/20190701-libra-first-impressions/</link>
+      <pubDate>Mon, 01 Jul 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190701-libra-first-impressions/</guid>
+      <description>This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.</description>
+    </item>
+    
+  </channel>
+</rss>

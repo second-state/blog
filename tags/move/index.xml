@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Move on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/move/</link>
+    <description>Recent content in Move on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jul 2019 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/move/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Libra First Impressions Part 2: Deep dive with a Libra transaction</title>
+      <link>http://blog.secondstate.io/post/20190701-libra-first-impressions/</link>
+      <pubDate>Mon, 01 Jul 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190701-libra-first-impressions/</guid>
+      <description>This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.</description>
+    </item>
+    
+    <item>
+      <title>Libra First Impressions Part 1: Smart Contracts are not created equal</title>
+      <link>http://blog.secondstate.io/post/20190619-libra-first-impressions/</link>
+      <pubDate>Thu, 20 Jun 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190619-libra-first-impressions/</guid>
+      <description>One of the most anticipated tech stories of the year is Facebook’s cryptocurrency — the Libra project. On June 18th, 2019, Facebook released the Libra white paper with the first iteration of the project source code and a technical white paper. With a goal of a denationalized global currency (Hayek 1976), Libra project has ambitious cryptoeconomic designs, governance rules, and an impressive coalition of partners.
+The Libra Blockchain is a decentralized, programmable database designed to support a low-volatility cryptocurrency that will have the ability to serve as an efficient medium of exchange for billions of people around the world.</description>
+    </item>
+    
+  </channel>
+</rss>

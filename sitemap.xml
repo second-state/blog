@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://blog.secondstate.io/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20200217-soll-zh/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20200216-soll-en/</loc>
+    <lastmod>2020-02-14T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</loc>
+    <lastmod>2019-12-06T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</loc>
+    <lastmod>2019-11-19T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191112-ethereum-developer-abi-zh/</loc>
+    <lastmod>2019-11-12T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191106-ewasm-en/</loc>
+    <lastmod>2019-11-06T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191106-ewasm-zh/</loc>
+    <lastmod>2019-11-06T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191031-sfbw-zh/</loc>
+    <lastmod>2019-10-31T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191031-halloween/</loc>
+    <lastmod>2019-10-31T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191029-ewasm/</loc>
+    <lastmod>2019-10-29T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191029-ewasm-zh/</loc>
+    <lastmod>2019-10-29T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191025-build-your-website/</loc>
+    <lastmod>2019-10-25T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</loc>
+    <lastmod>2019-10-25T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191025-devcon5-recap-zh/</loc>
+    <lastmod>2019-10-24T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191024-devcon5-recap/</loc>
+    <lastmod>2019-10-24T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191024-build-website-zh/</loc>
+    <lastmod>2019-10-23T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</loc>
+    <lastmod>2019-10-22T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191022-soll-compiler-project/</loc>
+    <lastmod>2019-10-22T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191020-public-comment-zh/</loc>
+    <lastmod>2019-10-20T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</loc>
+    <lastmod>2019-10-14T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</loc>
+    <lastmod>2019-10-14T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191006-etc-summit-recap-zh/</loc>
+    <lastmod>2019-10-06T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191006-etc-summit-recap/</loc>
+    <lastmod>2019-10-06T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191003-easierandfasterdapps-en/</loc>
+    <lastmod>2019-10-03T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20191002-book-etc-en/</loc>
+    <lastmod>2019-10-02T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190926-buidl-for-etc-zh/</loc>
+    <lastmod>2019-09-26T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190925-buidl-for-etc/</loc>
+    <lastmod>2019-09-24T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190920-blockchain-programming-guide-zh/</loc>
+    <lastmod>2019-09-20T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/</loc>
+    <lastmod>2019-09-01T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</loc>
+    <lastmod>2019-08-26T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190819-defcon-ctf-winners-overview/</loc>
+    <lastmod>2019-08-19T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190805-meetup-deep-dive-with-libra-zh/</loc>
+    <lastmod>2019-08-05T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190805-libra-deep-dive/</loc>
+    <lastmod>2019-08-05T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190724-after-raising-3-million-blockchain-technology-startup-second-state-brings-smart-contracts-to-business/</loc>
+    <lastmod>2019-07-24T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/</loc>
+    <lastmod>2019-07-19T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/</loc>
+    <lastmod>2019-07-19T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190715-fairplay-a-new-type-of-dapp/</loc>
+    <lastmod>2019-07-14T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190703-search-engine-overview/</loc>
+    <lastmod>2019-07-03T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190701-libra-first-impressions/</loc>
+    <lastmod>2019-07-01T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190701-libra-first-impressions-zh/</loc>
+    <lastmod>2019-07-01T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190621-libra-first-impressions-zh/</loc>
+    <lastmod>2019-06-21T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190619-libra-first-impressions/</loc>
+    <lastmod>2019-06-20T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190510-howrulesenginehelps-theblockchainapplication-en/</loc>
+    <lastmod>2019-05-10T15:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190419-edcon/</loc>
+    <lastmod>2019-04-19T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190319-lean/</loc>
+    <lastmod>2019-03-19T16:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20180105-pos/</loc>
+    <lastmod>2018-01-05T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20171111-polkadot-safe/</loc>
+    <lastmod>2017-11-11T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/blockchain/</loc>
+    <lastmod>2019-11-19T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/blockchain-application/</loc>
+    <lastmod>2019-09-20T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/blockchain-programming/</loc>
+    <lastmod>2019-09-20T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/blockchain-for-enterprise/</loc>
+    <lastmod>2019-08-26T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/book/</loc>
+    <lastmod>2019-10-03T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/buidl/</loc>
+    <lastmod>2019-11-19T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/building-blockchain-apps/</loc>
+    <lastmod>2019-10-20T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/business/</loc>
+    <lastmod>2019-07-03T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/business/</loc>
+    <lastmod>2019-05-10T15:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/</loc>
+    <lastmod>2019-07-03T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/conference/</loc>
+    <lastmod>2019-04-19T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/cybersecurity/</loc>
+    <lastmod>2019-08-19T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/dapp/</loc>
+    <lastmod>2019-07-14T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/dapp/</loc>
+    <lastmod>2019-10-20T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/defcon/</loc>
+    <lastmod>2019-08-19T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/devcon5/</loc>
+    <lastmod>2019-11-06T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/developer/</loc>
+    <lastmod>2019-09-24T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/developer/</loc>
+    <lastmod>2019-11-19T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/developer-community/</loc>
+    <lastmod>2019-09-20T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/developer-tool/</loc>
+    <lastmod>2019-09-26T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/development/</loc>
+    <lastmod>2019-09-01T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/edcon/</loc>
+    <lastmod>2019-04-19T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/en/</loc>
+    <lastmod>2020-02-14T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/etc/</loc>
+    <lastmod>2019-10-14T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/etc-summit/</loc>
+    <lastmod>2019-10-06T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/eth2/</loc>
+    <lastmod>2019-10-25T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/eth2.0/</loc>
+    <lastmod>2019-10-22T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/ethereum/</loc>
+    <lastmod>2019-12-06T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/ethereum/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/ethereum-classic/</loc>
+    <lastmod>2019-10-06T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/evm/</loc>
+    <lastmod>2019-11-06T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/ewasm/</loc>
+    <lastmod>2019-10-22T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/ewasm/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/hacker/</loc>
+    <lastmod>2019-08-19T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/hackrs/</loc>
+    <lastmod>2019-08-19T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/hacks/</loc>
+    <lastmod>2017-11-11T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/halloween/</loc>
+    <lastmod>2019-10-31T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/hitcon/</loc>
+    <lastmod>2019-08-19T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/libra/</loc>
+    <lastmod>2019-07-19T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/libra/</loc>
+    <lastmod>2019-11-06T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/llvm/</loc>
+    <lastmod>2019-10-25T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/move/</loc>
+    <lastmod>2019-07-01T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/news/</loc>
+    <lastmod>2019-08-26T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/plasma/</loc>
+    <lastmod>2019-10-24T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/pos/</loc>
+    <lastmod>2018-01-05T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/rules-engine/</loc>
+    <lastmod>2019-05-10T15:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/rust/</loc>
+    <lastmod>2019-12-06T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/search/</loc>
+    <lastmod>2019-07-03T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
+    <lastmod>2019-07-14T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
+    <lastmod>2019-07-14T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/second-state/</loc>
+    <lastmod>2019-10-31T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/sfbw/</loc>
+    <lastmod>2019-10-31T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/smart-contract/</loc>
+    <lastmod>2019-06-21T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/smart-contract/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/smart-contracts/</loc>
+    <lastmod>2019-10-31T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/solidity/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/soll/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/startup/</loc>
+    <lastmod>2019-07-24T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/</loc>
+    <lastmod>2019-11-19T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/uniswap/</loc>
+    <lastmod>2019-11-06T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/virtual-machine/</loc>
+    <lastmod>2019-07-19T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/vyper/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/wallet/</loc>
+    <lastmod>2017-11-11T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/web/</loc>
+    <lastmod>2019-10-25T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/webassembly/</loc>
+    <lastmod>2019-12-06T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/zh/</loc>
+    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/%E7%BD%91%E9%A1%B5/</loc>
+    <lastmod>2019-10-23T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

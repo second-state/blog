@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Search on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/search/</link>
+    <description>Recent content in Search on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jul 2019 09:42:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/search/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blockchain search engine — real-time data for decentralized applications (DApps)</title>
+      <link>http://blog.secondstate.io/post/20190703-search-engine-overview/</link>
+      <pubDate>Wed, 03 Jul 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190703-search-engine-overview/</guid>
+      <description>This article articulates the importance of putting decentralized, blockchain, applications (DApps) into the hands of mobile technology users. More specifically, the importance of providing real-time blockchain data to decentralized applications (DApps) which run on mobile devices. This is the first of many articles. This particular article provides an overview of the smart contract search engine architecture and then provides specific code examples for querying the search engine and API. Future articles will explain the inner workings of the product.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/business/</link>
+    <description>Recent content in Business on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 May 2019 15:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/business/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How does rules engine help the blockchain adoption</title>
+      <link>http://blog.secondstate.io/post/20190510-howrulesenginehelps-theblockchainapplication-en/</link>
+      <pubDate>Fri, 10 May 2019 15:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190510-howrulesenginehelps-theblockchainapplication-en/</guid>
+      <description>When you want to integrate blockchain into your business but you dont have so much development resources, do you just give up?
+Don&amp;rsquo;t worry! Rules engine comes to rescue!
+What is a rule engine?
+Is a component embedded in the application that separates business decisions from the code applied.
+The core of the rules engine is to obtain knowledge (knowledge) Apply knowledge to specific data (fact) Use &amp;ldquo;production rules&amp;rdquo; IF  THEN  Rule expression logic (any logic can be expressed this way)</description>
+    </item>
+    
+    <item>
+      <title>The lean blockchain startup — a new strategy to grow and prosper!</title>
+      <link>http://blog.secondstate.io/post/20190319-lean/</link>
+      <pubDate>Tue, 19 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190319-lean/</guid>
+      <description>The concept behind a &amp;ldquo;lean startup&amp;rdquo; is to grow an innovative business idea, as fast as possible, with as little as possible.
+ The overall goal is to grow and prosper!
+ Creating a lean initiative, however, does not mean “going without.” On the contrary, a lean initiative is about getting more bang for your buck. This is achieved by making better decisions. Better decisions though cannot be made using yesterday’s knowledge.</description>
+    </item>
+    
+  </channel>
+</rss>

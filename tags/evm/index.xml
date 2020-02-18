@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Evm on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/evm/</link>
+    <description>Recent content in Evm on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Nov 2019 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/evm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Next Generation Ethereum Virtual Machine — Ewasm VM</title>
+      <link>http://blog.secondstate.io/post/20191106-ewasm-en/</link>
+      <pubDate>Wed, 06 Nov 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191106-ewasm-en/</guid>
+      <description>The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&amp;rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&amp;rsquo;s smart contract transaction is executed,</description>
+    </item>
+    
+    <item>
+      <title>Second State goes to Devcon5 - Our story told in 3 photos</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</guid>
+      <description>Addressing the challenges of today’s Ethereum smart contract development The first photo is from our session on the first day of Devcon. It is standing room only. We gave a very technical presentation and did all of our live demos from the BUIDL IDE with great success.
+The focus of our session is to address the challenges of today’s Ethereum smart contract development. We discussed solutions we have developed for today’s EVM, as well as future solutions for Ethereum 2.</description>
+    </item>
+    
+    <item>
+      <title>用三张照片讲述Second State与Devcon5的故事</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</guid>
+      <description>解决现下以太坊智能合约开发挑战 第一张照片来自Devcon第一天，我们的发言现场。观众熙熙攘攘，只有站立空间。我们进行了非常技术性的介绍，通过</description>
+    </item>
+    
+  </channel>
+</rss>

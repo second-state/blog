@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Blockchain search engine — real-time data for decentralized applications (DApps) - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Timothy McCallum" />
+  <meta name="description" content="This article articulates the importance of putting decentralized, blockchain, applications (DApps) into the hands of mobile technology users. More specifically, the importance of providing real-time blockchain data to decentralized applications (DApps) which run on mobile devices. This is the first of many articles. This particular article provides an overview of the smart contract search engine architecture and then provides specific code examples for querying the search engine and API. Future articles will explain the inner workings of the product." />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20190703-search-engine-overview/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+
+<meta itemprop="name" content="Blockchain search engine — real-time data for decentralized applications (DApps)">
+<meta itemprop="description" content="This article articulates the importance of putting decentralized, blockchain, applications (DApps) into the hands of mobile technology users. More specifically, the importance of providing real-time blockchain data to decentralized applications (DApps) which run on mobile devices. This is the first of many articles. This particular article provides an overview of the smart contract search engine architecture and then provides specific code examples for querying the search engine and API. Future articles will explain the inner workings of the product.">
+
+
+<meta itemprop="datePublished" content="2019-07-03T09:42:14&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-03T09:42:14&#43;08:00" />
+<meta itemprop="wordCount" content="1383">
+
+
+
+<meta itemprop="keywords" content="blockchain,search,DApp," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Blockchain search engine — real-time data for decentralized applications (DApps)"/>
+<meta name="twitter:description" content="This article articulates the importance of putting decentralized, blockchain, applications (DApps) into the hands of mobile technology users. More specifically, the importance of providing real-time blockchain data to decentralized applications (DApps) which run on mobile devices. This is the first of many articles. This particular article provides an overview of the smart contract search engine architecture and then provides specific code examples for querying the search engine and API. Future articles will explain the inner workings of the product."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="Blockchain search engine — real-time data for decentralized applications (DApps) - Second State News and Articles">
+  <meta property="og:description" content="This article articulates the importance of putting decentralized, blockchain, applications (DApps) into the hands of mobile technology users. More specifically, the importance of providing real-time blockchain data to decentralized applications (DApps) which run on mobile devices. This is the first of many articles. This particular article provides an overview of the smart contract search engine architecture and then provides specific code examples for querying the search engine and API. Future articles will explain the inner workings of the product." />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20190703-search-engine-overview/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Blockchain search engine — real-time data for decentralized applications (DApps)</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> July 3, 2019 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/business/"> business </a>
+            <a href="http://blog.secondstate.io/categories/en/"> en </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p>This article articulates the importance of putting decentralized, blockchain, applications (DApps) into the hands of mobile technology users. More specifically, the importance of providing real-time blockchain data to decentralized applications (DApps) which run on mobile devices. This is the first of many articles. This particular article provides an overview of the smart contract search engine architecture and then provides specific code examples for querying the search engine and API. Future articles will explain the inner workings of the product.</p>
+
+<p>Web traffic from smartphones and tablets first overtook traffic from personal computers (PCs) in mid-2016. Since then mobile handheld devices have become ubiquitous. Whilst their primary use may have started out as a way for us to communicate with each other, the functionality of these devices has grown to the point where they have now become a necessity.</p>
+
+<h2 id="mobile-handheld-devices-are-an-essential-part-of-our-future">Mobile handheld devices are an essential part of our future</h2>
+
+<p>Not only do mobiles provide access to music, videos, books and more. They also allow us to access and transact value (online banking) as well as provide us with access to both the online gaming and global online shopping phenomena.</p>
+
+<p><img src="/images/20190703-search-engine-overview-01.jpg" alt="" /></p>
+
+<p>Just as with a traditional centralized smartphone application (App), the adoption of a, blockchain based, decentralized application (DApp) can be accelerated and sustained if it is provided to the end user via a similarly convenient platform i.e. a mobile handheld device.</p>
+
+<hr />
+
+<h2 id="blockchain-dapps-need-data">Blockchain DApps need data.</h2>
+
+<p>Whilst ubiquitous, in terms of mainstream centralised applications (Apps), mobile devices are not able to participate as full blockchain nodes. This is due, largely, to data storage requirements.</p>
+
+<p>In all blockchain protocols each individual node stores all states and processes all transactions. This provides a large amount of security, but in turn requires computational and storage resources which mobile handheld devices do not have.</p>
+
+<blockquote>
+<p>For DApps to thrive, they need a fast and efficient way to access specific blockchain data in real-time.</p>
+</blockquote>
+
+<p>From a DApp&rsquo;s perspective, it is not actually necessary for that DApp to request and process data from every block, transaction and smart contract state/event.  Generally speaking, a DApp only requires access to a very specific portion of the blockchain. For example, access to a specific smart contract&rsquo;s data, or access to smart contract events within a given range of blocks etc.</p>
+
+<h2 id="smart-contract-search-engine">Smart contract search engine</h2>
+
+<p>Second State has developed a smart contract search engine and Machine to Machine (M2M) API for end-users and DApps respectively. The overall design is shown in the diagram below.</p>
+
+<p><img src="/images/20190703-search-engine-overview-02.png" alt="" /></p>
+
+<p>The smart contract search engine can be thought of as a middle layer between a blockchain full node and a decentralised application (DApp). This product is an essential part of the future of DApps.</p>
+
+<blockquote>
+<p>The search engine architecture is modular by design; providing flexibility and versatility, as well as scalability.</p>
+</blockquote>
+
+<h2 id="empowering-the-individual">Empowering the individual</h2>
+
+<p>The ethos of decentralisation is to empower the individual. This smart contract search engine achieves this in the following ways.</p>
+
+<h3 id="free-and-open-source-software-foss">Free and open source software (FOSS)</h3>
+
+<blockquote>
+<p>The smart contract search engine, in-itself, is completely open source.</p>
+</blockquote>
+
+<p>In its purest form, it uses the following FOSS products/code:</p>
+
+<ul>
+<li>Ubuntu</li>
+<li>Apache2</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>Python</li>
+<li>Web3py</li>
+<li>Elasticsearch</li>
+<li>LetsEncrypt</li>
+</ul>
+
+<h3 id="deployment-modalities">Deployment modalities</h3>
+
+<p>The smart contract search engine is built using FOSS products/code which allow it to be run on consumer grade (common store bought) hardware. It can be deployed:</p>
+
+<ul>
+<li>privately on local disk using the file URI scheme</li>
+<li>publicly over HTTPS via Apache2</li>
+</ul>
+
+<h3 id="selectivity">Selectivity</h3>
+
+<p>The smart contract search engine and API can index and deliver any combination of smart contract data. For example a smart contract and DApp development team can specifically index the one and only smart contract that is relevent to their project/product. This is done by simply uploading the ABI and transaction address of their deployed smart contract. This selective design contributes greatly to the speed, performance and efficiency of the smart contract search engine, and greatly reduces harware requirements.</p>
+
+<h2 id="usability-web-browser">Usability - web browser</h2>
+
+<p>Searching via the frontend user interface can be done by simply typing text into the search box. Whilst still under reasonably heavy development, at present there are three separate public smart contract search engine websites running.</p>
+
+<p>As mentioned above this product can be used to index as little as one contract. However, in order to test the scalability on consumer grade hardware, we have begun indexing the entire Ethereum MainNet. At the time of writing, the <a href="https://ethereum.search.secondstate.io/">Ethereum MainNet Search Engine</a> has:</p>
+
+<ul>
+<li>853,073 contracts indexed,</li>
+<li>99 unique ABIs uploaded and</li>
+<li>10,202 contracts with available data (contracts which adhere to the previously uploaded ABIs).</li>
+</ul>
+
+<p><img src="/images/20190703-search-engine-overview-03.png" alt="" /></p>
+
+<p>If you would like to see your contract indexed please <a href="https://ethereum.search.secondstate.io/ethAbi.html">upload your ABI and Transaction Hash here</a>.</p>
+
+<h3 id="cybermiles-mainnet">CyberMiles MainNet</h3>
+
+<p><img src="/images/20190703-search-engine-overview-04.gif" alt="" /></p>
+
+<p><a href="https://cmt.search.secondstate.io/">CyberMiles MainNet Search Engine</a></p>
+
+<h3 id="cybermiles-testnet">CyberMiles TestNet</h3>
+
+<p><img src="/images/20190703-search-engine-overview-05.gif" alt="" /></p>
+
+<p><a href="https://cmt-testnet.search.secondstate.io/">CyberMiles TestNet Search Engine</a></p>
+
+<h3 id="ethereum-mainnet">Ethereum MainNet</h3>
+
+<p><img src="/images/20190703-search-engine-overview-06.gif" alt="" /></p>
+
+<p><a href="https://ethereum.search.secondstate.io/">Ethereum MainNet Search Engine</a></p>
+
+<h2 id="usability-api">Usability - API</h2>
+
+<p>Below is an example of how to interact with each of the public search engine search engine APIs using Javascript (JQuery)</p>
+
+<h3 id="cybermiles-mainnet-1">CyberMiles MainNet</h3>
+
+<p>This example returns any of the <a href="https://github.com/CyberMiles/smart_contracts/tree/master/FairPlay/v1">CyberMiles FairPlay V1</a> contracts which have &ldquo;Win&rdquo; in their title or description.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">_data = {&#34;query&#34;:{&#34;multi_match&#34;:{&#34;fields&#34;:[&#34;functionData.title&#34;,&#34;functionData.desc&#34;],&#34;query&#34;:&#34;Win&#34;}}}
+var _dataString = JSON.stringify(_data);
+response1 = $.ajax({
+    url: &#34;https://cmt.search.secondstate.io/api/es_search&#34;,
+    type: &#34;POST&#34;,
+    data: _dataString,
+    dataType: &#34;json&#34;,
+    contentType: &#34;application/json&#34;,
+    success: function(response) {
+        console.log(response);
+    },
+    error: function(xhr) {
+        console.log(&#34;Get items failed&#34;);
+    }
+});</pre></td></tr></table>
+</div>
+</div>
+<p>Returns</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">1: {_id: &#34;0x0d638513ff5d67da080e5c2657ed3c37adb124d34ea6db2fe0c31aa0027097ff&#34;, _index: &#34;cmtmainnet&#34;, _score: null, _source: {…}, _type: &#34;_doc&#34;, …}
+2: {_id: &#34;0xea63dd160164b7356fb04c40f2441a2097c700d20b51e2bfd78e212f0ced4116&#34;, _index: &#34;cmtmainnet&#34;, _score: null, _source: {…}, _type: &#34;_doc&#34;, …}
+3: {_id: &#34;0xec607e7839aedf6182cbb7becbf7534c519451e02b4b46756c1426ccb67ffedf&#34;, _index: &#34;cmtmainnet&#34;, _score: null, _source: {…}, _type: &#34;_doc&#34;, …}
+4: {_id: &#34;0x94aa083168e823e9de477b49f4f965707a003d880acdf58bbf31595eaa7fbda2&#34;, _index: &#34;cmtmainnet&#34;, _score: null, _source: {…}, _type: &#34;_doc&#34;, …}
+5: {_id: &#34;0x8df105256b349a6e99ad0955a49ba30499936adb845e6ca091ba54857f53d637&#34;, _index: &#34;cmtmainnet&#34;, _score: null, _source: {…}, _type: &#34;_doc&#34;, …}
+6: {_id: &#34;0x6fcfd8f2a7340a5e8849079429d7ebb0a2c44cb7df98b010d9df09ce4b12bef5&#34;, _index: &#34;cmtmainnet&#34;, _score: null, _source: {…}, _type: &#34;_doc&#34;, …}
+7: {_id: &#34;0x00ffd6e223b07f536338198ef96f8c765830620e1409de9b4e26283da38638e4&#34;, _index: &#34;cmtmainnet&#34;, _score: null, _source: {…}, _type: &#34;_doc&#34;, …}</pre></td></tr></table>
+</div>
+</div>
+<h3 id="cybermiles-testnet-1">CyberMiles TestNet</h3>
+
+<p>This example returns one specific type of contract only. Contracts can be searched by passing in the Sha3 hash of the ABI.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">queryMarketplaceABI = {&#34;query&#34;:{&#34;match&#34;:{&#34;abiShaList&#34;: &#34;0xca44fb82aad28d1d2c373a2934e8bc280cd418352b2c0e077d8dd715112434f1&#34;}}}
+var _dataString = JSON.stringify(queryMarketplaceABI);
+$.ajax({
+    url: &#34;https://cmt-testnet.search.secondstate.io/api/es_search&#34;,
+    type: &#34;POST&#34;,
+    data: _dataString,
+    dataType: &#34;json&#34;,
+    contentType: &#34;application/json&#34;,
+    success: function(response) {
+        console.log(response);
+    },
+    error: function(xhr) {
+        console.log(&#34;Get items failed&#34;);
+    }
+});</pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">0: {TxHash: &#34;0x22ca832885b4e5f15c0b085875be0c1659dbcf1d65cc7c664a88340469908268&#34;, abiShaList: Array(1), blockNumber: 2089605, contractAddress: &#34;0xBf2698e6057727EBf96c84B650738aa71C4b5127&#34;, creator: &#34;0x9f36535b7a46850b428d6e997d817019b7fc6d69&#34;, …}
+1: {TxHash: &#34;0xbba681319e7b154fafa2e79f9db8cffdadbb3407bc6469a977b8d46a9428db58&#34;, abiShaList: Array(1), blockNumber: 2066741, contractAddress: &#34;0xb6FA823508Dfb7e434F22c435Bb934c50d13e793&#34;, creator: &#34;0x6b50000354fa74a4f384b9ff35108eb89d652409&#34;, …}
+2: {TxHash: &#34;0x93d12c507a6c239f8d96bf83f64b00f14c981626fa4d41f23b4d536447e4a89e&#34;, abiShaList: Array(1), blockNumber: 2089615, contractAddress: &#34;0x1d86c6419d40CC30a39D447a5Da0A990eeD8ac0d&#34;, creator: &#34;0x9f36535b7a46850b428d6e997d817019b7fc6d69&#34;, …}
+3: {TxHash: &#34;0x32ebb0b05ed0cb3b146290b88ba8717bb86c7ec142ad47487c83d2b1380f4b83&#34;, abiShaList: Array(1), blockNumber: 2066453, contractAddress: &#34;0x36E419FA99848cd6a4c12E62622e6E96F70596ED&#34;, creator: &#34;0x6b50000354fa74a4f384b9ff35108eb89d652409&#34;, …}
+4: {TxHash: &#34;0x2a5bf1205d2fd89ad44d2b5b839f7ef01b6f913c53b63de19f18a0c7a26c703d&#34;, abiShaList: Array(1), blockNumber: 2066770, contractAddress: &#34;0xc32E7688793E0b8fd501ca89F36d33b1d6991DD4&#34;, creator: &#34;0x6b50000354fa74a4f384b9ff35108eb89d652409&#34;, …}</pre></td></tr></table>
+</div>
+</div>
+<h3 id="ethereum-mainnet-1">Ethereum MainNet</h3>
+
+<p>The following example queries the Ethereum MainNet for a) smart contracts that are ERC20 compliant and b) smart contracts which have a <code>transfer()</code> function.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">queryTransferFunction = {&#34;query&#34;:{&#34;match&#34;:{&#34;abiShaList&#34;: &#34;0x7f63f9caca226af6ac1e87fee18b638da04cfbb980f202e8f17855a6d4617a69&#34;}}}
+var _dataString = JSON.stringify(queryTransferFunction);
+$.ajax({
+    url: &#34;https://ethereum.search.secondstate.io/api/es_search&#34;,
+    type: &#34;POST&#34;,
+    data: _dataString,
+    dataType: &#34;json&#34;,
+    contentType: &#34;application/json&#34;,
+    success: function(response) {
+        console.log(response.length + &#34; contracts have the transfer() function&#34;);
+    },
+    error: function(xhr) {
+        console.log(&#34;Get items failed&#34;);
+    }
+});
+
+queryERC20 = {&#34;query&#34;:{&#34;match&#34;:{&#34;abiShaList&#34;: &#34;0x2b5710e2cf7eb7c9bd50bfac8e89070bdfed6eb58f0c26915f034595e5443286&#34;}}}
+var _dataString = JSON.stringify(queryERC20);
+$.ajax({
+    url: &#34;https://ethereum.search.secondstate.io/api/es_search&#34;,
+    type: &#34;POST&#34;,
+    data: _dataString,
+    dataType: &#34;json&#34;,
+    contentType: &#34;application/json&#34;,
+    success: function(response) {
+        console.log(response.length + &#34; contracts are ERC20 compliant&#34;);
+    },
+    error: function(xhr) {
+        console.log(&#34;Get items failed&#34;);
+    }
+});</pre></td></tr></table>
+</div>
+</div>
+<p>The results of the above code are as follows.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">9251 contracts have the transfer() function
+8239 contracts are ERC20 compliant</pre></td></tr></table>
+</div>
+</div>
+<h1 id="conclusion">Conclusion</h1>
+
+<p>This article has introduced the smart contract search engine. This has just been an overview. Subsequent articles will dive deeper into the inner workings of the product. The takeaway points for now are that this product is free and open source and can be installed and operated on consumer grade hardware. It can be used to index as little or as much data as your DApp requires. If you would like to integrate the smart contract search engine into your smart contract/DApp development cycle and/or use this software as a way to take control over the flow of public blockchain data to suit your needs, please contact us via <a href="https://www.secondstate.io/">secondstate.io</a>.</p>
+
+<p>The source code to this project can be found at the following Second State <a href="https://github.com/second-state/smart-contract-search-engine">GitHub</a> repository.</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Timothy McCallum</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">July 3, 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/blockchain/">blockchain</a>
+          <a href="http://blog.secondstate.io/tags/search/">search</a>
+          <a href="http://blog.secondstate.io/tags/dapp/">DApp</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/20190715-fairplay-a-new-type-of-dapp/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">FairPlay: a new type of DApp</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/20190701-libra-first-impressions/">
+            <span class="next-text nav-default">Libra First Impressions Part 2: Deep dive with a Libra transaction</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

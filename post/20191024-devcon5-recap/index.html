@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>What I learned from Ethereum Devcon5 - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Michael Yuan" />
+  <meta name="description" content="The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&amp;rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet." />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20191024-devcon5-recap/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+
+<meta itemprop="name" content="What I learned from Ethereum Devcon5">
+<meta itemprop="description" content="The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.">
+
+
+<meta itemprop="datePublished" content="2019-10-24T01:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-24T01:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="1110">
+
+
+
+<meta itemprop="keywords" content="Ethereum,EWASM,eth2,SOLL,LLVM,Devcon5,Plasma," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What I learned from Ethereum Devcon5"/>
+<meta name="twitter:description" content="The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="What I learned from Ethereum Devcon5 - Second State News and Articles">
+  <meta property="og:description" content="The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&amp;rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet." />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20191024-devcon5-recap/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">What I learned from Ethereum Devcon5</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> October 24, 2019 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/en/"> en </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.</p>
+
+<p><em>Note: My company, <a href="https://www.secondstate.io/">Second State</a>, was invited to <a href="https://blog.secondstate.io/post/20191014-secondstate-at-devcon5/">give a talk at Devcon5</a>, where we showed off <a href="https://blog.secondstate.io/post/20191022-soll-compiler-project/">the world&rsquo;s first toolchain</a> to compile and deploy Solidity smart contracts on the official Ewasm testnet. <a href="https://www.secondstate.io/devcon5/">Learn more</a> about Second State’s smart contract innovation and developer tools @Devcon5.</em></p>
+
+<h2 id="no-news-is-big-news">No news is big news</h2>
+
+<p>In Devcon4 in Prague last year, there was great optimism about ETH 2 (Serenity), as well as Ethereum scaling solutions generally known as Plasma. The overall sentiment in Prague was that we have finally figured out how to build scalable decentralized smart contract platforms. However, fast forward to Osaka in 2019, much of optimism is gone. ETH 2 is still under intensive research. Many experiments in the past year had not produced the results we hoped for.</p>
+
+<p>In Osaka, most people seem to agree that the entire ETH 2 effort requires a reboot. There was very little information about the launch of ETH 2. The lack of concrete ETH 2 news and concrete plans is perhaps the most significant news from Devcon5. CoinDesk published a <a href="https://www.coindesk.com/scam-or-iteration-at-devcon-ethereum-diehards-still-believe-in-2-0">controversial article</a> on this subject on the very first day of the conference.</p>
+
+<h2 id="eth-1-x-is-baaaack">ETH 1.x is baaaack</h2>
+
+<p>With ETH 2 still perhaps years away, there is now renewed focus on making the Ethereum blockchain we have today more usable for application developers. For example, it will attempt to reduce the bloat of state data on nodes by making changes to gas fees, instituting a “state rent”, and optimizing node client storage.</p>
+
+<p>There are also discussions about launching the next generation WebAssembly-based Ethereum Virtual Machine (known as Ethereum flavored WebAssembly, or Ewasm) on the ETH 1.x blockchain. That could significantly improve application developer experience on Ethereum. However, the Ewasm toolchain and execution engine are still work-in-progress.</p>
+
+<p><img src="/images/20191024-devcon5-racap-01.png" alt="" /></p>
+
+<p>One of the contributions my team at Second State made was to create the <a href="https://blog.secondstate.io/post/20191022-soll-compiler-project/">world’s first toolchain</a> to compile and deploy Solidity smart contracts on the official Ewasm testnet. Our toolchain is based on the LLVM infrastructure, making it future proof. You can <a href="https://www.secondstate.io/devcon5/">read more</a> about our effort to improve the EVM experience.</p>
+
+<h2 id="reconciliation-with-etc">Reconciliation with ETC</h2>
+
+<p>The Ethereum Classic (ETC) blockchain is the original ETH 1.x blockchain. It remains committed to PoW consensus while trying to maintain compatibility with ETH 2 at the application layer.</p>
+
+<p>With ETH 2’s move to PoS and multi-chain architecture (sharding), it is possible that ETC will inherit the ETH mining community and become a PoW store-of-value token in the ETH 2 ecosystem.</p>
+
+<p><img src="/images/20191024-devcon5-racap-02.png" alt="" /></p>
+
+<p>At Devcon5, ETCLabs got on the main stage to discuss collaboration and governance. The message of reconciliation echoes the sentiment at <a href="https://blog.secondstate.io/post/20191006-etc-summit-recap/">ETC Summit</a> in Vancouver a few days prior to Devcon5. It is great to see the ETH and ETC communities making amends. We look forward to seeing more innovations and contributions from ETC!</p>
+
+<h2 id="layer-2-scaling">Layer 2 scaling</h2>
+
+<p>With the successful launch of the Bitcoin lightning network, developers were very optimistic about layer 2 scaling solutions for ETH. However, in the past year, Plasma, ETH’s leading candidate for Layer 2 solutions had encountered many problems and setbacks. At Devcon5, we still do not have a working Plasma solution.</p>
+
+<p>However, a new approach emerged. The Uniswap team demonstrated a layer 2 solution that is specifically designed and optimized for the Uniswap Exchange application. It is called the <a href="https://unipig.exchange/">Unipig Exchange</a>. You can go try it out. It is very fast with instant trade confirmations. On Ethereum testnet, it aims to reach 2000 TPS. Would this “application specific layer 2” approach work for most popular applications on Ethereum? We will probably find out in Devcon6 next year.</p>
+
+<h2 id="the-composability-problem">The composability problem</h2>
+
+<p>As the Ethereum evolves to become the public blockchain for decentralized finance (DeFi) applications, a serious concern about the ETH 2 technical architecture was raised. Many DeFi applications rely on the interactions between smart contracts to function. For example, a loan contract might need to interact with token contracts to manage the tokens it lends. Would ETH 2 sharding, with different smart contracts potentially living on different blockchains, continue to guarantee deterministic interactions between smart contracts? Can we still build applications that compose multiple smart contracts? This is known as the composability for ETH 2, and it received a lot of discussion at Devcon5.</p>
+
+<p>During the conference, Vitalik Buterin <a href="https://ethresear.ch/t/cross-shard-defi-composability/6268">published an article</a> addressing this issue. His answer? By and large, application developers can still compose smart contracts except for certain conditions. However, some developers remain unconvinced, as those conditions might just be some DeFi apps require. Interested readers should checkout Vitalik’s article and its comments thread.</p>
+
+<h2 id="continued-focus-on-developer-experience">Continued focus on developer experience</h2>
+
+<p>The diverse and large developer community is always key to the success of Ethereum. It is also why Devcon is called Devcon to begin with.</p>
+
+<p>In Devcon5, there is a continued focus on developer communities. A lot of sessions and speaking time were allocated for developer related content. Joseph Rubin of Consensys went on the main stage and raised the goal of one million Ethereum developers.</p>
+
+<p><img src="/images/20191024-devcon5-racap-03.png" alt="" /></p>
+
+<p>At Second State, we provide <a href="https://docs.secondstate.io/buidl-developer-tool/why-buidl">tools for even novice developers</a> to quickly get started with Ethereum application development. <a href="https://docs.secondstate.io/buidl-developer-tool/getting-started">Checkout the BUIDL IDE</a> and you could publish your first web-based dapp on a public blockchain in minutes!</p>
+
+<h2 id="libra-the-elephant-in-the-room">Libra, the elephant in the room</h2>
+
+<p>One of the big news in 2019 was Facebook’s entrance into cryptocurrency space via the Libra stablecoin project. The members from the Cosmos Foundation and Ethereum Foundation banded together to announce the OpenLibra project, which aims to create a Libra-like stablecoin, but with open source software and open governance. Many in the Ethereum community, however, do not like this idea.</p>
+
+<p><img src="/images/20191024-devcon5-racap-04.png" alt="" /></p>
+
+<p>While Facebook Libra has recently suffered push backs from regulators and partners alike, I believe Libra as a cryptocurrency experiment and software innovation will remain relevant in the years to come. Interested readers could check out <a href="https://medium.com/hackernoon/libra-first-impressions-ed6b5f15ae63">our articles</a> on Libra’s MOVE language and VM.</p>
+
+<h2 id="the-road-ahead">The road ahead</h2>
+
+<p>Overall, I enjoyed my experience at Devcon5. Osaka is a great place to hold such a conference — very safe and clean, great food, easy to get around. While ETH 2 and Plasma development suffered setbacks, the community continues to engage developers and find ways to move forward.</p>
+
+<p>With increased funding for Ethereum 1.x (both from Ethereum Foundation and ETC Labs), I believe that we will continue to see innovations and improvements on the Ethereum application layer, including the new Ewasm virtual machine, tooling, and application-specific layer 2 solutions. We remain optimistic about the future of Ethereum.</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Michael Yuan</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">October 24, 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/ethereum/">Ethereum</a>
+          <a href="http://blog.secondstate.io/tags/ewasm/">EWASM</a>
+          <a href="http://blog.secondstate.io/tags/eth2/">eth2</a>
+          <a href="http://blog.secondstate.io/tags/soll/">SOLL</a>
+          <a href="http://blog.secondstate.io/tags/llvm/">LLVM</a>
+          <a href="http://blog.secondstate.io/tags/devcon5/">Devcon5</a>
+          <a href="http://blog.secondstate.io/tags/plasma/">Plasma</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/20191025-devcon5-recap-zh/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">一文带你了解Devcon5</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/20191024-build-website-zh/">
+            <span class="next-text nav-default">教程|5分钟建一个去中心化的网站</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

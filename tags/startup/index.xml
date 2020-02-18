@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Startup on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/startup/</link>
+    <description>Recent content in Startup on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 24 Jul 2019 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/startup/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>After Raising $3 Million, Blockchain Technology Startup, Second State, Aims to Bring Smart Contracts to Businesses</title>
+      <link>http://blog.secondstate.io/post/20190724-after-raising-3-million-blockchain-technology-startup-second-state-brings-smart-contracts-to-business/</link>
+      <pubDate>Wed, 24 Jul 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190724-after-raising-3-million-blockchain-technology-startup-second-state-brings-smart-contracts-to-business/</guid>
+      <description>AUSTIN, TEXAS (July 23, 2019) — Second State, a developer of an open source blockchain smart contract platform for enterprises, has raised $3 million in Series A funding from a number of top venture capitalists and angel investors, including Susquehanna International Group (SIG), Ethereum Classic Labs, and JBoss creator Dr. Marc Fluery.
+The Second State BUIDL tool, a browser-based IDE, allows developers to quickly write, build and deploy all elements of a decentralized application (“DApp”), including smart contracts, formal rules, web3 scripts, ElasticSearch scripts, HTML, CSS, and Javascript.</description>
+    </item>
+    
+    <item>
+      <title>The lean blockchain startup — a new strategy to grow and prosper!</title>
+      <link>http://blog.secondstate.io/post/20190319-lean/</link>
+      <pubDate>Tue, 19 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190319-lean/</guid>
+      <description>The concept behind a &amp;ldquo;lean startup&amp;rdquo; is to grow an innovative business idea, as fast as possible, with as little as possible.
+ The overall goal is to grow and prosper!
+ Creating a lean initiative, however, does not mean “going without.” On the contrary, a lean initiative is about getting more bang for your buck. This is achieved by making better decisions. Better decisions though cannot be made using yesterday’s knowledge.</description>
+    </item>
+    
+  </channel>
+</rss>

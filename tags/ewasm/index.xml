@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ewasm on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/ewasm/</link>
+    <description>Recent content in Ewasm on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Feb 2020 20:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/ewasm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second State 又获以太坊生态体系的资助奖励</title>
+      <link>http://blog.secondstate.io/post/20200217-soll-zh/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200217-soll-zh/</guid>
+      <description>Second State 最近获得了以太坊生态最大的去中心化自治组织（DAO） Panvala 的资助奖励。Panvala 由 ConsenSys 创立孵化，为以太坊生态里最重要的基础软件项目提供资金</description>
+    </item>
+    
+    <item>
+      <title>Second State receives another grant award for the SOLL compiler</title>
+      <link>http://blog.secondstate.io/post/20200216-soll-en/</link>
+      <pubDate>Fri, 14 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200216-soll-en/</guid>
+      <description>Second State has been awarded a development grant from Panvala, a leading DAO (Decentralized Autonomous Organization) in the Ethereum ecosystem.
+Founded at ConsenSys, Panvala provides funding support for critical software development efforts in the Ethereum ecosystem. Past Panvala grant awardees include Sigma Prime, Prysmatic Labs, MakerDAO, Aragon, Status, and Gitcoin.
+Prior to the Panvala grant, Second State is already a recognized leader in Ethereum infrastructure development. It is had received funding and prizes from both the Ethereum Foundation and Ethereum Classic Labs.</description>
+    </item>
+    
+    <item>
+      <title>The Next Generation Ethereum Virtual Machine — Ewasm VM</title>
+      <link>http://blog.secondstate.io/post/20191106-ewasm-en/</link>
+      <pubDate>Wed, 06 Nov 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191106-ewasm-en/</guid>
+      <description>The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&amp;rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&amp;rsquo;s smart contract transaction is executed,</description>
+    </item>
+    
+    <item>
+      <title>Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191029-ewasm/</link>
+      <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191029-ewasm/</guid>
+      <description>Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.
+ “The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).
+ The EVM consists of a stack-based architecture. In order for a smart contract to be deployed, all high level Ethereum smart contract code must first be compiled into machine-readable code (called bytecode).</description>
+    </item>
+    
+    <item>
+      <title>深度剖析以太坊虚拟机（EVM）的未来：Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191029-ewasm-zh/</link>
+      <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191029-ewasm-zh/</guid>
+      <description>以太坊是具有内置图灵完备编程语言的区块链。任何人都可以使用以太坊智能合约来创建去中心化应用程序。 “以太坊虚拟机（EVM）是以太坊处理智能合约</description>
+    </item>
+    
+    <item>
+      <title>Compile and deploy an ERC20 contract on Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</link>
+      <pubDate>Fri, 25 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</guid>
+      <description>Second State provides open source infrastructure technologies for public and enterprise blockchains. The smart contract compiler toolchain and virtual machine runtimes are critical elements of the infrastructure.
+Through its web-based BUIDL IDE, developers can easily access Second State smart contract programming languages, compilers, optimizers, and virtual machines. Even novice developers can write and publish decentralized applications (smart contract + web app) on any Ethereum-compatible blockchain in minutes. See examples on Ethereum Classic and CyberMiles blockchains.</description>
+    </item>
+    
+    <item>
+      <title>What I learned from Ethereum Devcon5</title>
+      <link>http://blog.secondstate.io/post/20191024-devcon5-recap/</link>
+      <pubDate>Thu, 24 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
+      <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&amp;rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
+    </item>
+    
+    <item>
+      <title>Second State SOLL 编译器项目获得以太坊基金会的现金奖励</title>
+      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</link>
+      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</guid>
+      <description>Second State 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对开源SOLL编译器项目的贡献，获得了以太坊基金会的现金奖励。2019年10月</description>
+    </item>
+    
+    <item>
+      <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
+      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
+      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
+      <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
+SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
+    </item>
+    
+    <item>
+      <title>Second State goes to Devcon5 - Our story told in 3 photos</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</guid>
+      <description>Addressing the challenges of today’s Ethereum smart contract development The first photo is from our session on the first day of Devcon. It is standing room only. We gave a very technical presentation and did all of our live demos from the BUIDL IDE with great success.
+The focus of our session is to address the challenges of today’s Ethereum smart contract development. We discussed solutions we have developed for today’s EVM, as well as future solutions for Ethereum 2.</description>
+    </item>
+    
+    <item>
+      <title>用三张照片讲述Second State与Devcon5的故事</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</guid>
+      <description>解决现下以太坊智能合约开发挑战 第一张照片来自Devcon第一天，我们的发言现场。观众熙熙攘攘，只有站立空间。我们进行了非常技术性的介绍，通过</description>
+    </item>
+    
+    <item>
+      <title>Second State Finalisted in Qualcomm Innovate in Taiwan Challenge, Driving the Blockchain Chips Revolution</title>
+      <link>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</link>
+      <pubDate>Mon, 26 Aug 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</guid>
+      <description>Second State, a developer of an open source blockchain smart contract platform for enterprises was shortlisted in the Qualcomm Innovate in Taiwan Challenge – 2019. They proposed to optimize the popular WebAssemly virtual machine technology with customized chip solutions. The chip-accelerated WebAssemly virtual machine is then applied to the blockchain to efficiently execute smart contracts. So to develop a &amp;ldquo;blockchain chip&amp;rdquo; that is truly valuable and meaningful.
+ Qualcomm, a smartphone chip maker, recently hosted the Qualcomm Innovate in Taiwan Challenge – 2019, and selected 10 teams out of over 100 teams as finalists.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smart Contract on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/categories/smart-contract/</link>
+    <description>Recent content in Smart Contract on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 21 Jun 2019 01:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/categories/smart-contract/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Libra深度剖析:智能合约并非生而平等 ①</title>
+      <link>http://blog.secondstate.io/post/20190621-libra-first-impressions-zh/</link>
+      <pubDate>Fri, 21 Jun 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190621-libra-first-impressions-zh/</guid>
+      <description>本年度最受期待的科技新闻就是Facebook的加密货币Libra项目。Facebook于2019年6月18日发布了白皮书，同时发布了Libr</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Search Engine on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/categories/search-engine/</link>
+    <description>Recent content in Search Engine on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 14 Jul 2019 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/categories/search-engine/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FairPlay: a new type of DApp</title>
+      <link>http://blog.secondstate.io/post/20190715-fairplay-a-new-type-of-dapp/</link>
+      <pubDate>Sun, 14 Jul 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190715-fairplay-a-new-type-of-dapp/</guid>
+      <description>Credits: FairPlay is developed by Second State, an open source enterprise smart contract platform, and deployed on the CyberMiles public blockchain.
+What is FairPlay FairPlay uses smart contracts to conduct automated prize draws that are fair and transparent. It allows anyone to create and participate in product giveaways and e-commerce marketing campaigns. Since its launch, FairPlay has routinely reached a DAU (Daily Active Users) of 1000 (according to Google Analytics), with each giveaway receiving hundreds of on-chain transactions, making it one of the most popular DApps of all public blockchains.</description>
+    </item>
+    
+  </channel>
+</rss>

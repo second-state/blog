@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>深度剖析以太坊虚拟机（EVM）的未来：Ewasm - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Timothy McCallum" />
+  <meta name="description" content="以太坊是具有内置图灵完备编程语言的区块链。任何人都可以使用以太坊智能合约来创建去中心化应用程序。 “以太坊虚拟机（EVM）是以太坊处理智能合约" />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20191029-ewasm-zh/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+
+<meta itemprop="name" content="深度剖析以太坊虚拟机（EVM）的未来：Ewasm">
+<meta itemprop="description" content="以太坊是具有内置图灵完备编程语言的区块链。任何人都可以使用以太坊智能合约来创建去中心化应用程序。 “以太坊虚拟机（EVM）是以太坊处理智能合约">
+
+
+<meta itemprop="datePublished" content="2019-10-29T20:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2019-10-29T20:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="6012">
+
+
+
+<meta itemprop="keywords" content="ewasm,soll,Solidity,Vyper,Ethereum,Smart Contract," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="深度剖析以太坊虚拟机（EVM）的未来：Ewasm"/>
+<meta name="twitter:description" content="以太坊是具有内置图灵完备编程语言的区块链。任何人都可以使用以太坊智能合约来创建去中心化应用程序。 “以太坊虚拟机（EVM）是以太坊处理智能合约"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="深度剖析以太坊虚拟机（EVM）的未来：Ewasm - Second State News and Articles">
+  <meta property="og:description" content="以太坊是具有内置图灵完备编程语言的区块链。任何人都可以使用以太坊智能合约来创建去中心化应用程序。 “以太坊虚拟机（EVM）是以太坊处理智能合约" />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20191029-ewasm-zh/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">深度剖析以太坊虚拟机（EVM）的未来：Ewasm</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> October 29, 2019 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/zh/"> zh </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p>以太坊是具有内置图灵完备编程语言的区块链。任何人都可以使用以太坊智能合约来创建去中心化应用程序。</p>
+
+<blockquote>
+<p>“以太坊虚拟机（EVM）是以太坊处理智能合约部署和执行的一部分”（Antonopoulos and Wood，2018）。</p>
+</blockquote>
+
+<p>EVM 由基于堆栈的架构组成。为了部署智能合约，必须首先将所有高级以太坊智能合约代码编译为机器可读代码（称为字节码）。然后，EVM 通过后进先出堆栈安排来处理此字节码代码（一系列单字节操作码和可选参数）。此操作类似于 Java 虚拟机（JVM），其中每条指令都以单字节操作码和参数开始，如果有参数的话，则占用后面的未对齐的字节，值按大端排序给出（Scott，2009）。</p>
+
+<p>本文的首要目标是解释以太坊基于堆栈的 EVM 的内部工作原理。解释了这些 EVM 基础知识，我们将开始看到以太坊有机地遵循了基于堆栈的虚拟机二进制指令格式，使其有望过渡到 WebAssembly 的光明未来。</p>
+
+<p>让我们带着了解这些的目的，首先看一下 WebAssembly。</p>
+
+<h2 id="webassembly-简称-wasm">WebAssembly(简称 Wasm)</h2>
+
+<p><a href="https://webassembly.org/">WebAssembly</a>(Wasm)是一种可以在现代 Web 浏览器中运行新型代码。它带来了新功能并在性能上有重大进展。Wasm 旨在成为 C，C++和 Rust 等低级源语言的有效编译目标（MDN Web Docs，2019）。</p>
+
+<h2 id="以太坊-web-assembly-简称-ewasm">以太坊 Web Assembly(简称 Ewasm）</h2>
+
+<p>以太坊 Web Assembly （Ewasm）是基于现代标准 WebAssembly 虚拟机构建的确定性智能合约执行引擎。Ewasm 是替代EVM 的主要候选方案，是Ethereum 2.0 “Serenity”路线图的一部分。甚至，还有人建议在以太坊主网上采用 Ewasm （ewasm，2019）。</p>
+
+<h2 id="为什么选择-ewasm">为什么选择 Ewasm</h2>
+
+<p>EVM 的当前架构是释放其原始（raw）性能的最大障碍之一（GitHub EIP48，2019）。例如，虽然 256 位字长可促进本机哈希和椭圆曲线运算（Antonopoulos and Wood，2018），但也使从 EVM 操作码转换成硬件指令的过程难度过大，远超所需。提供更接近硬件映射的架构将大大提高以太坊的性能（GitHub EIP48，2019）。</p>
+
+<p>除了性能增强方面，Ewasm 项目的设计目标之一是还支持跨多种语言和工具进行智能合约开发，即把 LLVM，C，C++，Rust，JavaScript 纳入开发周期。</p>
+
+<p>从理论上讲，可以编译为 Wasm 的任何语言都可以用来编写智能合约。只要实现 <a href="https://github.com/ewasm/design/blob/master/contract_interface.md">Ewasm 合约接口</a>（ECI）和<a href="https://github.com/ewasm/design/blob/master/eth_interface.md">以太坊环境接口</a>（EEI）（ewasm，2019）。</p>
+
+<h2 id="智能合约">智能合约</h2>
+
+<p>通过使用原始 EVM 架构逐步创建、编译和部署以太坊智能合约，来了解一下EVM 的基本要件。</p>
+
+<p>以太坊智能合约就像以太坊执行环境中的“自治代理”，当这个合约被消息或交易“触发”时，总是会执行特定的代码段，并直接控制自己的以太币余额和自己的键 / 值存储，从而跟踪持久变量（Buterin，2013）。</p>
+
+<p>诸如 <a href="https://solidity.readthedocs.io/en/v0.5.12/">Solidity</a>，<a href="https://vyper.readthedocs.io/en/v0.1.0-beta.13/">Vyper</a> 和<a href="https://github.com/second-state/lity">Lity</a> 之类的每种更高级别的智能合约源编程语言都维护着自己的编译器。智能合约的源代码可以编译为各种输出。包括但不限于应用程序二进制接口（ABI），字节码流和操作码。</p>
+
+<h2 id="智能合约编译">智能合约编译</h2>
+
+<p>在本地计算机上安装编译器之前，建议您检查基于Web 的新编译器，例如SecondState 的<a href="http://secondstate.io/buidl">BUIDL 环境</a>。<strong>这将为您节省大量时间。</strong></p>
+
+<p>让我们使用<a href="https://gist.github.com/tpmccallum/bb077c0768631873708b4000a693dde7">简单的存储源代码</a>，并使用 SecondState 的 BUIDL 环境对其进行编译，如下图所示。</p>
+
+<p><img src="/images/20191029-EWASM-01.png" alt="" /></p>
+
+<p>单击编译按钮将立即生成智能合约的 ABI 和字节码，如下所示。</p>
+
+<p><img src="/images/20191029-EWASM-02.png" alt="" /></p>
+
+<p>如果要查看如何在命令行中（使用本地安装的编译器）执行此编译，请参阅本文末尾的附录 A。</p>
+
+<h2 id="分析部署字节码">分析部署字节码</h2>
+
+<p>如果我们查看字节码中的前 4 条指令，则会看到以下内容。</p>
+
+<p><strong>60</strong>80<strong>60</strong>40<strong>5234</strong></p>
+
+<p>如果我们查看<a href="https://ethereum.github.io/yellowpaper/paper.pdf">以太坊黄皮书</a>第 30 页上引用的这些值的助记符表示，我们将看到第一个指令（60）为 PUSH1。</p>
+
+<p><img src="/images/20191029-EWASM-03.png" alt="" /></p>
+
+<h3 id="δ">δ</h3>
+
+<p>助记符右侧标有δ的列表示要通过 PUSH1 指令（在本例中为 0）从堆栈中删除的 item 数。</p>
+
+<h3 id="α">α</h3>
+
+<p>下一个标记为α的列，代表要添加的其他 item 数通过 PUSH1 指令放在堆栈上。在这种情况下为 1；一个字节 0x80。</p>
+
+<p>在下面的示例中，我们现在可以看到第一条指令（0x60） PUSH1 将值 0x80 压入了堆栈，第二条指令（0x60） PUSH1 将值 0x40 压入了堆栈。</p>
+
+<p><strong>60</strong>80<strong>60</strong>40…</p>
+
+<p><strong>PUSH1</strong> 0x80 <strong>PUSH1</strong> 0x40…</p>
+
+<p>如果沿字节码移动，则会遇到值为 0x52 的指令。正如您在下面的黄皮书中所见，该指令具有 MSTORE 的助记符表示形式。</p>
+
+<p>60806040<strong>52</strong>34</p>
+
+<p><img src="/images/20191029-EWASM-04.png" alt="" /></p>
+
+<p>如果再次查看助记符右侧的δ列，我们可以看到 MSTORE 将消耗堆栈顶部的两个 item。总计，MSTORE 将消耗堆栈中的前 2 个 item，但将 0 个 item 放回堆栈中。</p>
+
+<p>在此阶段必须指出，MSTORE 是一项内存操作，其任务是将一个单词保存到内存中。请不要对这里使用“word”这个说法感到困惑。</p>
+
+<p>EVM 的字长为 256 位（Antonopoulos and Wood，2018）。</p>
+
+<p>这个“word”本身不是单词。比如，它可以是账户地址等。</p>
+
+<p>MSTORE 通过首先从堆栈顶部消耗当前条目来开始其操作；即一个地址会被指定在 word 在存储器中的存储位置。在这种情况下，地址位置为 0x60。然后，MSTORE 使用堆栈中的下一个条目并将其（0x80）保存到预先指定的地址（0x60）。在此阶段，堆栈上没有剩余的条目。</p>
+
+<p>下一条指令是（0x34）。它具有 CALLVALUE 的助记符表示形式。</p>
+
+<p>60806040<strong>5234</strong></p>
+
+<p><img src="/images/20191029-EWASM-05.png" alt="" /></p>
+
+<p>如果我们密切注意标记为α的列，作为其标准操作的一部分，我们将看到 CALL VALUE 将在堆栈中放置一项。但是，我们刚才提到堆栈当前为空，因此这引发了以下问题。CALL VALUE 如何获取要放在堆栈中的数据？</p>
+
+<p>从黄皮书中可以看到，所有值在 30s （0x30 至 0x3e）中的指令都与环境信息有关。在这种情况下，CALLVALUE 从负责执行此字节码的消息调用中获取其所需的数据。与环境信息有关的另一个示例是指令 0x33，它具有 CALLER 的助记符表示。CALLER 指令能够自动获取启动字节码执行的以太坊帐户的地址。</p>
+
+<h2 id="部署与运行时字节码">部署与运行时字节码</h2>
+
+<p>在此刻，区分部署字节码和运行时字节码非常重要。如果查看附录 A.1 （获取部署字节码）和附录 A.2 （获取运行时字节码），您会注意到返回的字节码结果并不相同。</p>
+
+<p>运行时字节码是调用已部署的智能合约的功能时执行的字节码。</p>
+
+<p>部署字节码包含其他指令，这些指令仅与部署有关。</p>
+
+<p>有趣的是，运行时字节码始终可以看作是代码的子集，它逐字地驻留在部署字节码内。如下图所示。</p>
+
+<p><img src="/images/20191029-EWASM-06.png" alt="" /></p>
+
+<h2 id="分析运行时字节码">分析运行时字节码</h2>
+
+<p>每个智能合约功能都可以标识为 4 字节功能签名（在运行时字节码内部）。要计算功能签名，我们要先获取功能名称。在我们的例子中，让我们从功能“ set”开始。</p>
+
+<p><img src="/images/20191029-EWASM-07.png" alt="" /></p>
+
+<p>除了函数名称“ set”之外，我们还采用了函数的输入参数数据类型（用逗号分隔并用括号括起来）。例如，在我们的简单情况下，我们以文本集（uint256）结尾。</p>
+
+<p>注意：创建函数选择器文本时，请勿使用任何空格。</p>
+
+<p>获得此信息后，我们将创建 sha3 哈希的十六进制表示，并将其截断为仅 4 个字节。这是 web3.js 和 web3.py 中的示例。</p>
+
+<p><code>selectorHash =“ 0x” str （web3.toHex （web3.sha3 （text =“ set （uint256）”））））[2:10]</code></p>
+
+<p><code>var selectorHash = web3.sha3 （“ set （uint256）”）。substring （0,10）</code></p>
+
+<p>以上两个命令都将返回以下签名0x60fe47b1，我们可以在部署和运行时字节码数据中轻松找到它们。</p>
+
+<p><img src="/images/20191029-EWASM-08.png" alt="" /></p>
+
+<p>在这一阶段，我们了解了字节码中的每条指令是如何执行的（从堆栈中获取和获取信息，然后调用环境和内存等）。我们现在对调用代码如何使用环境信息执行状态转换功能等有了很好的了解，让我们继续以太坊的特定 Ewasm 实现细节。</p>
+
+<h2 id="ewasm-实施">Ewasm 实施</h2>
+
+<p>之前我们提到过，智能合约的源代码可以编译成各种输出。当然，从高级智能合约代码到 Ewasm 的路径是一项复杂的任务，可以通过不同的工具链采用多种多样的编译路径。</p>
+
+<p><a href="https://www.secondstate.io/">Second State</a> 的开发人员最近建立了一个 Solidity 到 Ewasm 的编译器，称为 <a href="https://github.com/second-state/soll">Soll</a>。</p>
+
+<p><img src="/images/20191029-EWASM-09.png" alt="" /></p>
+
+<p>在以下以太坊重要的会议召开前，Second State 已完成了 demo 的原型，这一具有挑战性的任务：</p>
+
+<ul>
+<li><p><a href="https://crosslink.taipei/">Crosslink</a>-在台北举行的全球领先的区块链研究人员和开发者会议</p></li>
+
+<li><p><a href="https://devcon.org/">Devcon5</a>-以太坊开发者国际会议，在日本大阪举行</p></li>
+</ul>
+
+<h3 id="crosslink-2019-年-10-月">Crosslink（2019 年 10 月）</h3>
+
+<p><img src="/images/20191029-EWASM-11.png" alt="" />
+Second State 的开发 Hung-Ying-Ying 因为<a href="https://blog.secondstate.io/post/20191022-soll-compiler-project/">Soll 编译器项目</a>得到以太坊基金会奖金（与 Vitalik Buterin 一起在台北 Crosslink 活动中合照）。</p>
+
+<h3 id="devcon5">Devcon5</h3>
+
+<p>如果您没有参加 Devcon5，以下视频概述了 Soll 的操作。即在新的以太坊 <a href="http://ewasm.ethereum.org/">Ewasm 测试网</a>上部署以太坊 ERC20 Solidity 智能合约，并与之交互。</p>
+
+<p><a href="https://www.youtube.com/watch?v=X-A6sP_HTy0">https://www.youtube.com/watch?v=X-A6sP_HTy0</a></p>
+
+<p>Devcon5 大会非常适合分享 SecondState 团队的最新 Ewasm 开发。在会议的第一天正式介绍 Second State 提出的以太坊 1.X 与以太坊 2.0 的解决方案之后，又进行了一次非正式的公开 demo 和讨论。</p>
+
+<p>在 demo 后，与 Solidity 团队的 Christian Reitwiessner 以及其他人进行的讨论中，展现了 Second State 在最佳协作以及减少未来 Ewasm 领域里不同开发人员和软件项目之间重复工作方面的最佳发展方向。</p>
+
+<p><img src="/images/20191029-EWASM-12.png" alt="" /></p>
+
+<p>在成功完成了从 Solidity 到 LLVM 到 Ewasm 的原型编译之后，Second State 参考 Christian 的宝贵意见，将努力实现执行 Yul 到 llvm 到 Ewasm 的编译路径。</p>
+
+<p><img src="/images/20191029-EWASM-13.png" alt="" /></p>
+
+<h2 id="yul">Yul</h2>
+
+<p>Yul 是以太坊特定的中间语言。以太坊 Solidity 编译器（可能还有 Vyper 编译器）将来的版本会全面支持 Yul 作为中间语言。</p>
+
+<p>Yul 被设计为 EVM 1.0，EVM 1.5 和 Ewasm 都能使用。Yul 的核心组件是函数、区块、变量、literals，for 循环，if 语句，switch 语句，表达式以及对变量的赋值（Solidity-Yul，2019）。</p>
+
+<blockquote>
+<p>后端或目标是从 Yul 到特定字节码的转换器。每个后端都可以公开以后端名称为前缀的函数。Yul 为提出的两个后端保留 evm_和 ewasm_前缀（Solidity-Yul，2019）。</p>
+</blockquote>
+
+<p>在这个领域已经完成了许多工作，因此，让我们简要了解一下从 Solidity 到 Yul 到 Ewasm 之路的已经熟知的部分。</p>
+
+<h2 id="为-yul-编译-solidity">为 Yul 编译 Solidity</h2>
+
+<p>Solidity 编译器具有一个特殊的 flag，可用于将 Solidity 源代码编译为 Yul 的中间表示（IR）。</p>
+
+<p>为了提供此功能的示例，我们在命令行中使用以太坊的 Solidity 编译器，从上方将简单存储示例编译为这种 YUL IR 格式。</p>
+
+<p>您将从下面的<a href="https://gist.github.com/tpmccallum/2a32747848156fe245fe59374f162238#file-solc_yul_ir-md">代码</a>中看到我们可以使用 <strong>IR</strong> flag 执行此任务。</p>
+
+<p><img src="/images/20191029-EWASM-14.png" alt="" /></p>
+
+<h2 id="为-ewasm-编译-yul">为 Ewasm 编译 Yul</h2>
+
+<p>从 Yul 出发的路径的简单概述包括以下步骤。</p>
+
+<p>从 EVM-Yul 代码开始，我们需要：</p>
+
+<p>将每个 256 位（32 字节）变量拆分为 4 个单独的 64 位（8 字节）变量。注意字节序差异。</p>
+
+<p>创建一个库，该库使用内置的等效 Ewasm 作为用户定义的函数来实现每个 EVM 操作码，并使用常规的优化器。</p>
+
+<h2 id="更多-solidity-编译示例">更多 Solidity 编译示例</h2>
+
+<p>如果把上述 YUL IR 代码交给 Solidity 编译器处理，Solidity 可以生成漂亮的打印格式、二进制表达格式和文本表达格式。</p>
+
+<p>这可以通过以下命令实现</p>
+
+<p><code>solc / solc --strict-assembly --optimize〜/ simple_storage / simple_storage_yul_ir.txt</code></p>
+
+<p>各个输出如下：</p>
+
+<p><a href="https://gist.github.com/tpmccallum/2dc42315971c04e4ba42d1ca3475a666#file-pretty_printed_source-md">漂亮的打印格式</a></p>
+
+<p><img src="/images/20191029-EWASM-15.png" alt="" /></p>
+
+<p><a href="https://gist.github.com/tpmccallum/f9017bd1af1954837305bdb21fe47dc8#file-binary_representation-md">二进制表达格式</a></p>
+
+<p><img src="/images/20191029-EWASM-16.png" alt="" /></p>
+
+<p><a href="https://gist.github.com/tpmccallum/ac535ed3c57627508f861e315694ae0f#file-text_representation-md">文本表达格式</a></p>
+
+<p><img src="/images/20191029-EWASM-17.png" alt="" /></p>
+
+<h2 id="内部工作机制的一个例子">内部工作机制的一个例子</h2>
+
+<p>Christian 在 Devcon5 演示的<a href="http://chriseth.github.io/notes/talks/yul_devcon5/#/11">代码示例</a>，展示了 Ewasm 风格的编译过程的内部工作原理。更具体地说，如此处显示，产生等同于 MSTORE 函数所要求的工作。如上面的 demo，使用原始 EVM，MSTORE 接受 2 个参数（首先是标准的 32 字节地址，其次是 256 位（32 字节）的单词）。但是，如您所见，以下代码显示了原始的 Solidity 智能合约 256 位变量被拆分为单独的 64 位变量。您还将注意到发生了字节序交换。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">function mstore （x1，x2，x3，x4，y1，y2，y3，y4）{
+let pos：= u256_to_i32ptr （x1，x2，x3，x4）
+i64.store （pos，endian_swap （x1））
+i64.store （i64.add （pos，8），endian_swap （x2））
+i64.store （i64.add （pos，16），endian_swap （x3））
+i64.store （i64.add （pos，24），endian_swap （x4））}</pre></td></tr></table>
+</div>
+</div>
+<p>可在此网址获得：<a href="http://chriseth.github.io/notes/talks/yul_devcon5/#/11">http://chriseth.github.io/notes/talks/yul_devcon5/#/11</a></p>
+
+<h2 id="字节序">字节序</h2>
+
+<p>出于以下原因，在为 Ewasm 进行编译时，交换字节序（存储和从内存中检索字节的字节顺序）至关重要。以太坊虚拟机规范采用大端字节排序（Wood，2014）。但是，Web Assembly 规范要求所有值都必须以 Little Endian 读写（webassembly.github.io，2019）。</p>
+
+<p>随着这项重要工作的进展，目前正在考虑 / 讨论其他细节。为了简洁起见，以下的附录 B 中概述了其中的一些细节。</p>
+
+<h2 id="结论">结论</h2>
+
+<p>智能合约代码和 Ewasm 之间有许多的路径。Yul 的使用将为当前的以太坊编译器提供目标终端（target endpoints），并为 llvm 到 Ewasm 编译器提供入口。从 Yul 到 llvm 到 Ewasm 的编译器将为任何与 Yul 兼容的智能合约语言（如 Solidity 和 Vyper）带来 Wasm / Ewasm 的基本优势。</p>
+
+<blockquote>
+<p>使用 Yul 是一项重大胜利，因为它可以重复使用几乎所有的优化器组件（Reitwiessner，2019）。</p>
+</blockquote>
+
+<p><img src="/images/20191029-EWASM-18.png" alt="" /></p>
+
+<p>除此之外，鉴于 Rust 等其他语言都将 LLVM 作为其主要的代码源后端（Rust-lang.github.io，2019），上述工具链路径将为其他编程语言成为以太坊的 Ewasm 智能合约生态系统的一部分打开大门 。</p>
+
+<p><img src="/images/20191029-EWASM-19.png" alt="" /></p>
+
+<p>附录 A 在命令行中编译简单存储智能合约</p>
+
+<p>如以上文章所述，可以在命令行中手动执行编译。例如，在安装 Solidity，Vyper 或 Lity 之后，您将可以访问适当的本地编译环境。</p>
+
+<p>这是一个示例，说明了如何使用 SecondState 的 Lity 编译器来编译简单的存储智能合约，以获得各种不同的输出。</p>
+
+<p>A.1 获取部署字节码</p>
+
+<p><code>tpmccallum$ lityc/lityc --bin ~/simple_storage/simple_storage.sol</code></p>
+
+<p><code>608060405234801561001057600080fd5b5060ec8061001f6000396000f3fe6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146085575b600080fd5b348015605957600080fd5b50608360048036036020811015606e57600080fd5b810190808035906020019092919050505060ad565b005b348015609057600080fd5b50609760b7565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea165627a7a7230582037a6182517eb7335095ca48cb7b895cbcbbdb824f48911f3f69fdc1869c7263e0029</code></p>
+
+<p>A.2 获取运行时字节码</p>
+
+<p><code>tpmccallum$ lityc/lityc --bin-runtime ~/simple_storage/simple_storage.sol</code></p>
+
+<p><code>6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146085575b600080fd5b348015605957600080fd5b50608360048036036020811015606e57600080fd5b810190808035906020019092919050505060ad565b005b348015609057600080fd5b50609760b7565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea165627a7a7230582037a6182517eb7335095ca48cb7b895cbcbbdb824f48911f3f69fdc1869c7263e0029</code></p>
+
+<p>A.3 获取操作码</p>
+
+<p><code>tpmccallum$ lityc/lityc --opcodes ~/simple_storage/simple_storage.sol</code></p>
+
+<p><code>PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xec DUP1 PUSH2 0x1f PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x49 JUMPI PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xffffffff AND DUP1 PUSH4 0x60fe47b1 EQ PUSH1 0x4e JUMPI DUP1 PUSH4 0x6d4ce63c EQ PUSH1 0x85 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x59 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x83 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x6e JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 ADD SWAP1 DUP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP3 SWAP2 SWAP1 POP POP POP PUSH1 0xad JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x90 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x97 PUSH1 0xb7 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST DUP1 PUSH1 0x0 DUP2 SWAP1 SSTORE POP POP JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD SWAP1 POP SWAP1 JUMP INVALID LOG1 PUSH6 0x627a7a723058 KECCAK256 CALLDATACOPY 0xa6 XOR 0x25 OR 0xeb PUSH20 0x35095ca48cb7b895cbcbbdb824f48911f3f69fdc XOR PUSH10 0xc7263e00290000000000</code></p>
+
+<p>A.4 获取 ABI</p>
+
+<p><code>tpmccallum$ lityc/lityc --abi ~/simple_storage/simple_storage.sol</code></p>
+
+<p><code>[{&quot;constant&quot;:false,&quot;inputs&quot;:[{&quot;name&quot;:&quot;x&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;name&quot;:&quot;set&quot;,&quot;outputs&quot;:[],&quot;payable&quot;:false,&quot;stateMutability&quot;:&quot;nonpayable&quot;,&quot;type&quot;:&quot;function&quot;},{&quot;constant&quot;:true,&quot;inputs&quot;:[],&quot;name&quot;:&quot;get&quot;,&quot;outputs&quot;:[{&quot;name&quot;:&quot;&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;payable&quot;:false,&quot;stateMutability&quot;:&quot;view&quot;,&quot;type&quot;:&quot;function&quot;}]</code></p>
+
+<p>附录 B 待考虑 / 讨论的议题：</p>
+
+<p>1.与 1.x EVM 的其余部分交互</p>
+
+<p>除了典型的字节码操作，即堆栈，内存和存储访问之外，原始 EVM 还可以访问帐户信息，即地址和余额以及区块信息和当前 gas 价格（Antonopoulos 和 Wood，2018 年）。对存储的访问有助于正确操作。例如，有效交易的执行始于对状态的不可撤销的更改：发件人帐户的 nonce （Wood，2014 年）。</p>
+
+<p>根据以太坊 1.x 路线图，关于 Ewasm 将如何与 EVM 状态的其余部分（即合约存储，以太坊余额等）相互作用的问题尚待解决。有一种方法是排除 Ewasm 代码直接访问 EVM 状态，但允许 Ewasm 在被调用时交换输入 / 输出（Docs.ethhub.io，2019）。</p>
+
+<p>2.确定性行为</p>
+
+<p>众所周知，Ewasm 是 Wasm 的子集，而 Wasm 具有一些不确定的特征。随着 Ewasm 的发展，需要一种方法来拒绝具有不确定性特征的任何合约（Docs.ethhub.io，2019）。目前看来，这可以通过一份定点合约来实现。前哨是系统合约（已启用创世纪或硬叉 Ewasm 的一部分）。前哨合约具有原始接口，该接口用于在部署期间进行合约验证。在发生意外问题时，前哨合约执行无效操作（调用常规故障）或在曾经检测到无效输入的情况下，前哨合约执行还原操作。</p>
+
+<p>3.Gas 计量</p>
+
+<p>Ewasm 合约部署和交互的 gas 的计算尚未确定。目前提出使用自动上限估计。可以对字节码执行静态分析，并且对于代码的子集，还可以计算已执行指令（虚拟气体）的上限（Docs.ethhub.io，2019）。</p>
+
+<p>参考文献</p>
+
+<ul>
+<li><p>Antonopoulos, A. and Wood, G. (2018). 《精通以太坊第一版》 O’Reilly Media.</p></li>
+
+<li><p><a href="https://github.com/ethereum/wiki/wiki/White-Pape">Docs.ethhub.io</a>. (2019). 以太坊 1.x — EthHub.</p></li>
+
+<li><p><a href="https://github.com/ewasm/testnet">Ewasm</a>. (2019).</p></li>
+
+<li><p>GitHub EIP48. (2019). <a href="https://github.com/ethereum/EIPs/issues/48">以太坊 EIP48</a>.</p></li>
+
+<li><p>网站：<a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">MDN Web Docs</a>.</p></li>
+
+<li><p>Reitwiessner, C. (2019). <a href="http://chriseth.github.io/notes/talks/yul_devcon5/#/">Yul,、eWasm 与 Solidity 的进展与未来计划</a></p></li>
+
+<li><p><a href="https://rust-lang.github.io/rustc-guide/codegen/updating-llvm.html">Rust-lang.github.io</a>.</p></li>
+
+<li><p>Scott, M. (2009). 《编程语言论》第三版 Amsterdam: Elsevier/Morgan Kaufmann Pub.</p></li>
+
+<li><p>Solidity — Yul. (2019). Yul — <a href="https://solidity.readthedocs.io/en/v0.5.12/yul.html">Solidity 0.5.12 文档</a>.</p></li>
+
+<li><p><a href="https://webassembly.github.io/spec/core/_download/WebAssembly.pdf">Webassembly.github.io</a>. (2019). WebAssembly 分类 .</p></li>
+
+<li><p>Wood, G., 2014.《以太坊黄皮书》 以太坊：一个安全的去中心化通用交易账本</p></li>
+</ul>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Timothy McCallum</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">October 29, 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/ewasm/">ewasm</a>
+          <a href="http://blog.secondstate.io/tags/soll/">soll</a>
+          <a href="http://blog.secondstate.io/tags/solidity/">Solidity</a>
+          <a href="http://blog.secondstate.io/tags/vyper/">Vyper</a>
+          <a href="http://blog.secondstate.io/tags/ethereum/">Ethereum</a>
+          <a href="http://blog.secondstate.io/tags/smart-contract/">Smart Contract</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/20191029-ewasm/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/20191025-build-your-website/">
+            <span class="next-text nav-default">Build your own decentralized website with BUIDL IDE</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

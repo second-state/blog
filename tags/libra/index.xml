@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Libra on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/libra/</link>
+    <description>Recent content in Libra on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Nov 2019 09:42:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/libra/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ewasm Vs EVM：Ewasm 带来了什么改变？</title>
+      <link>http://blog.secondstate.io/post/20191106-ewasm-zh/</link>
+      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191106-ewasm-zh/</guid>
+      <description>这篇文章是 Crosslink 2019 Taiwan 的一个议程纪录：The next generation Ethereum Virtual Machine，由来自Second State 的工程VP Hung-Ying Tai（hydai） 分享 Ewasm VM 目前研究内容及未来</description>
+    </item>
+    
+    <item>
+      <title>一文带你了解Devcon5</title>
+      <link>http://blog.secondstate.io/post/20191025-devcon5-recap-zh/</link>
+      <pubDate>Thu, 24 Oct 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191025-devcon5-recap-zh/</guid>
+      <description>以太坊基金会 Devcon 是以太坊生态系统中最重要的开发者、设计师和研究人员的年度聚会。今年在日本大阪举行的 Devcon5 是第五届以太开发大会，与往年一样，Devc</description>
+    </item>
+    
+    <item>
+      <title>Meetup#7：Libra 智能合约技术详解</title>
+      <link>http://blog.secondstate.io/post/20190805-meetup-deep-dive-with-libra-zh/</link>
+      <pubDate>Mon, 05 Aug 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190805-meetup-deep-dive-with-libra-zh/</guid>
+      <description>Libra 在国会听证后，该何去何从？ 在Libra 开发与在以太坊上开发有什么不同？ ERC 20 token 能否在Libra 上做交互？ 如何快速入手DApp 开发？ 8月3日，</description>
+    </item>
+    
+    <item>
+      <title>Smart Contract Meetup 7:  Libra Deep Dive</title>
+      <link>http://blog.secondstate.io/post/20190805-libra-deep-dive/</link>
+      <pubDate>Mon, 05 Aug 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190805-libra-deep-dive/</guid>
+      <description>With Libra being scrutinized, if not attacked, at Congressional hearing, where is the anticipated ambitious global stable coin is heading towards?
+ What is the difference between the programming on Libra and Ethereum?
+ Can ERC 20 token interact with Libra?
+ How to get started with DApp programming in a few minutes?
+  These are discussed in detail at the tech workshop &amp;ldquo;Libra Smart Contract Deep Dive&amp;rdquo; held in Beijing, China, on August 3rd.</description>
+    </item>
+    
+    <item>
+      <title>Libra First Impressions Part 3: How to Issue ERC20 token on Libra with Move Language</title>
+      <link>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/</link>
+      <pubDate>Fri, 19 Jul 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/</guid>
+      <description>This article is the third and final part of the &amp;ldquo;Libra First impressions&amp;rdquo; series. In the previous two articles, we explored the technical implications of the Libra project and the internal processing and execution of Libra Client and Validator.
+ Libra First Impressions Part 2: Deep dive with a Libra transaction Libra First Impressions Part 1: Smart Contracts are not created equal  Write your token module In this article, we will show you how to use Move IR to write a simple token module.</description>
+    </item>
+    
+    <item>
+      <title>Libra深度剖析③ 如何基于 ERC20 标准在 Libra 上发布金融资产</title>
+      <link>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/</link>
+      <pubDate>Fri, 19 Jul 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/</guid>
+      <description>本文是 「Libra 深度剖析」系列文章的第 3 篇，也是最后一篇。在之前的两篇文章，我们分别探讨了 Libra 项目的技术意义以及 Libra Client 与 Validator 内部处理与执行交易。</description>
+    </item>
+    
+    <item>
+      <title>Libra First Impressions Part 2: Deep dive with a Libra transaction</title>
+      <link>http://blog.secondstate.io/post/20190701-libra-first-impressions/</link>
+      <pubDate>Mon, 01 Jul 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190701-libra-first-impressions/</guid>
+      <description>This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.</description>
+    </item>
+    
+    <item>
+      <title>Libra深度剖析② Validator 如何验证交易</title>
+      <link>http://blog.secondstate.io/post/20190701-libra-first-impressions-zh/</link>
+      <pubDate>Mon, 01 Jul 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190701-libra-first-impressions-zh/</guid>
+      <description>在上一篇文章中，我们初步探索了 Libra &amp;amp; Move 语言 。在这篇文章中，我们将探讨使用者如何跟 Libra 进行互动。本文以向 Libra 水龙头(Faucet)索取 Libra 币为例子，解</description>
+    </item>
+    
+    <item>
+      <title>Libra深度剖析:智能合约并非生而平等 ①</title>
+      <link>http://blog.secondstate.io/post/20190621-libra-first-impressions-zh/</link>
+      <pubDate>Fri, 21 Jun 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190621-libra-first-impressions-zh/</guid>
+      <description>本年度最受期待的科技新闻就是Facebook的加密货币Libra项目。Facebook于2019年6月18日发布了白皮书，同时发布了Libr</description>
+    </item>
+    
+    <item>
+      <title>Libra First Impressions Part 1: Smart Contracts are not created equal</title>
+      <link>http://blog.secondstate.io/post/20190619-libra-first-impressions/</link>
+      <pubDate>Thu, 20 Jun 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190619-libra-first-impressions/</guid>
+      <description>One of the most anticipated tech stories of the year is Facebook’s cryptocurrency — the Libra project. On June 18th, 2019, Facebook released the Libra white paper with the first iteration of the project source code and a technical white paper. With a goal of a denationalized global currency (Hayek 1976), Libra project has ambitious cryptoeconomic designs, governance rules, and an impressive coalition of partners.
+The Libra Blockchain is a decentralized, programmable database designed to support a low-volatility cryptocurrency that will have the ability to serve as an efficient medium of exchange for billions of people around the world.</description>
+    </item>
+    
+  </channel>
+</rss>

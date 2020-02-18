@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>News on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/categories/news/</link>
+    <description>Recent content in News on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Aug 2019 09:42:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/categories/news/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second State Finalisted in Qualcomm Innovate in Taiwan Challenge, Driving the Blockchain Chips Revolution</title>
+      <link>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</link>
+      <pubDate>Mon, 26 Aug 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</guid>
+      <description>Second State, a developer of an open source blockchain smart contract platform for enterprises was shortlisted in the Qualcomm Innovate in Taiwan Challenge – 2019. They proposed to optimize the popular WebAssemly virtual machine technology with customized chip solutions. The chip-accelerated WebAssemly virtual machine is then applied to the blockchain to efficiently execute smart contracts. So to develop a &amp;ldquo;blockchain chip&amp;rdquo; that is truly valuable and meaningful.
+ Qualcomm, a smartphone chip maker, recently hosted the Qualcomm Innovate in Taiwan Challenge – 2019, and selected 10 teams out of over 100 teams as finalists.</description>
+    </item>
+    
+    <item>
+      <title>After Raising $3 Million, Blockchain Technology Startup, Second State, Aims to Bring Smart Contracts to Businesses</title>
+      <link>http://blog.secondstate.io/post/20190724-after-raising-3-million-blockchain-technology-startup-second-state-brings-smart-contracts-to-business/</link>
+      <pubDate>Wed, 24 Jul 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190724-after-raising-3-million-blockchain-technology-startup-second-state-brings-smart-contracts-to-business/</guid>
+      <description>AUSTIN, TEXAS (July 23, 2019) — Second State, a developer of an open source blockchain smart contract platform for enterprises, has raised $3 million in Series A funding from a number of top venture capitalists and angel investors, including Susquehanna International Group (SIG), Ethereum Classic Labs, and JBoss creator Dr. Marc Fluery.
+The Second State BUIDL tool, a browser-based IDE, allows developers to quickly write, build and deploy all elements of a decentralized application (“DApp”), including smart contracts, formal rules, web3 scripts, ElasticSearch scripts, HTML, CSS, and Javascript.</description>
+    </item>
+    
+  </channel>
+</rss>

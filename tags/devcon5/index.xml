@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Devcon5 on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/devcon5/</link>
+    <description>Recent content in Devcon5 on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 06 Nov 2019 09:42:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/devcon5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ewasm Vs EVM：Ewasm 带来了什么改变？</title>
+      <link>http://blog.secondstate.io/post/20191106-ewasm-zh/</link>
+      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191106-ewasm-zh/</guid>
+      <description>这篇文章是 Crosslink 2019 Taiwan 的一个议程纪录：The next generation Ethereum Virtual Machine，由来自Second State 的工程VP Hung-Ying Tai（hydai） 分享 Ewasm VM 目前研究内容及未来</description>
+    </item>
+    
+    <item>
+      <title>一文带你了解Devcon5</title>
+      <link>http://blog.secondstate.io/post/20191025-devcon5-recap-zh/</link>
+      <pubDate>Thu, 24 Oct 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191025-devcon5-recap-zh/</guid>
+      <description>以太坊基金会 Devcon 是以太坊生态系统中最重要的开发者、设计师和研究人员的年度聚会。今年在日本大阪举行的 Devcon5 是第五届以太开发大会，与往年一样，Devc</description>
+    </item>
+    
+    <item>
+      <title>What I learned from Ethereum Devcon5</title>
+      <link>http://blog.secondstate.io/post/20191024-devcon5-recap/</link>
+      <pubDate>Thu, 24 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
+      <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&amp;rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
+    </item>
+    
+    <item>
+      <title>Second State goes to Devcon5 - Our story told in 3 photos</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</guid>
+      <description>Addressing the challenges of today’s Ethereum smart contract development The first photo is from our session on the first day of Devcon. It is standing room only. We gave a very technical presentation and did all of our live demos from the BUIDL IDE with great success.
+The focus of our session is to address the challenges of today’s Ethereum smart contract development. We discussed solutions we have developed for today’s EVM, as well as future solutions for Ethereum 2.</description>
+    </item>
+    
+    <item>
+      <title>用三张照片讲述Second State与Devcon5的故事</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</guid>
+      <description>解决现下以太坊智能合约开发挑战 第一张照片来自Devcon第一天，我们的发言现场。观众熙熙攘攘，只有站立空间。我们进行了非常技术性的介绍，通过</description>
+    </item>
+    
+  </channel>
+</rss>

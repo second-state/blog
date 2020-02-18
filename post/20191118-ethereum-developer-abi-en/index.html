@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> Ethereum Development A2Z| Smart Contract ABI  - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="Learn Ethereum development and acquire complex technical concepts in a snap!
+Second State Inc is to release Ethereum development A2Z series articles to help you learn Ethereum in a short time starting from the basics, with real blockchain development cases.
+This article is to introduce Smart Contract ABI, the first piece in the series.
+Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like BUIDL, an ABI for this smart contract is automatically generated, recording the functions and parameters of the smart contract." />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+
+<meta itemprop="name" content=" Ethereum Development A2Z| Smart Contract ABI ">
+<meta itemprop="description" content="Learn Ethereum development and acquire complex technical concepts in a snap!
+Second State Inc is to release Ethereum development A2Z series articles to help you learn Ethereum in a short time starting from the basics, with real blockchain development cases.
+This article is to introduce Smart Contract ABI, the first piece in the series.
+Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like BUIDL, an ABI for this smart contract is automatically generated, recording the functions and parameters of the smart contract.">
+
+
+<meta itemprop="datePublished" content="2019-11-19T09:42:14&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-19T09:42:14&#43;08:00" />
+<meta itemprop="wordCount" content="552">
+
+
+
+<meta itemprop="keywords" content="blockchain,Ethereum,developer,smart contract,BUIDL," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=" Ethereum Development A2Z| Smart Contract ABI "/>
+<meta name="twitter:description" content="Learn Ethereum development and acquire complex technical concepts in a snap!
+Second State Inc is to release Ethereum development A2Z series articles to help you learn Ethereum in a short time starting from the basics, with real blockchain development cases.
+This article is to introduce Smart Contract ABI, the first piece in the series.
+Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like BUIDL, an ABI for this smart contract is automatically generated, recording the functions and parameters of the smart contract."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content=" Ethereum Development A2Z| Smart Contract ABI  - Second State News and Articles">
+  <meta property="og:description" content="Learn Ethereum development and acquire complex technical concepts in a snap!
+Second State Inc is to release Ethereum development A2Z series articles to help you learn Ethereum in a short time starting from the basics, with real blockchain development cases.
+This article is to introduce Smart Contract ABI, the first piece in the series.
+Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like BUIDL, an ABI for this smart contract is automatically generated, recording the functions and parameters of the smart contract." />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title"> Ethereum Development A2Z| Smart Contract ABI </h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> November 19, 2019 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/ethereum/"> ethereum </a>
+            <a href="http://blog.secondstate.io/categories/en/"> en </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p>Learn Ethereum development and acquire complex technical concepts in a snap!</p>
+
+<p>Second State Inc is to release Ethereum development A2Z series articles to help you learn Ethereum in a short time starting from the basics, with real blockchain development cases.</p>
+
+<p><img src="/images/20191112-abi-01.png" alt="" /></p>
+
+<p>This article is to introduce Smart Contract ABI, the first piece in the series.</p>
+
+<p>Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like <a href="https://buidl.secondstate.io/">BUIDL</a>, an ABI for this smart contract is automatically generated, recording the functions and parameters of the smart contract. When a user uses a blockchain application, the smart contract will be called with this ABI.</p>
+
+<h2 id="what-is-an-abi">What is an ABI</h2>
+
+<p>ABI is the abbreviation for Application Binary Interface, which is the interface for applications to call binary application files. ABI is a convention that is customary.</p>
+
+<p>Just like we press the buttons on the remote control to  lower/adjust the temperature, we use ABI to control a program’s parameters. The remote control is equivalent to an ABI, which records the functions and parameters, like the air conditioner’s heating/cooling, and the highest and lowest temperature that the air conditioner can achieve. As the functions of the air conditioner expand: the sleep mode, ventilation, etc., the buttons on the remote control (ABI) also grow.</p>
+
+<p>An ABI enables user&rsquo;s interaction with the program.</p>
+
+<h2 id="abi-in-the-development-of-ethereum">ABI in the development of Ethereum</h2>
+
+<p>In the Ethereum/Blockchain development, smart contract ABI is very common. After a smart contract is compiled, the compiler automatically generates an ABI to record the functions and parameters of the smart contract. When blockchain applications are used, people use ABIs to call smart contracts to implement related functions.</p>
+
+<p><img src="/images/20191112-abi-02.png" alt="" /></p>
+
+<p>Take the default code in the <a href="https://buidl.secondstate.io/">BUIDL</a> IDE developed by Second State Inc, a blockchain infrastructure software technology company, as an example. The code of the smart contract is as follows:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">[{&#34;constant&#34;: false,&#34;inputs&#34;: [{&#34;name&#34;: &#34;x&#34;,&#34;type&#34;: &#34;uint256&#34;}],&#34;name&#34;: &#34;set&#34;,&#34;outputs&#34;: [],&#34;payable&#34;: false,&#34;stateMutability&#34;: &#34;nonpayable&#34;,&#34;type&#34;: &#34;function&#34;},{&#34;constant&#34;: true,&#34;inputs&#34;: [],&#34;name&#34;: &#34;get&#34;,&#34;outputs&#34;: [{&#34;name&#34;: &#34;&#34;,&#34;type&#34;: &#34;uint256&#34;}],&#34;payable&#34;: false,&#34;stateMutability&#34;: &#34;view&#34;,&#34;type&#34;: &#34;function&#34;}]</pre></td></tr></table>
+</div>
+</div>
+<p>The ABI generated by the smart contract is an array of JSON format, with a parameters name-value pair. When the smart contract is called, it is via ABI we know what certain functions the smart contract implement and what the parameters are.</p>
+
+<p>Note: ABI is not unique. The smart contract implementations with the same functionality can have the same ABI.</p>
+
+<p>When we use <a href="https://buidl.secondstate.io/">BUIDL</a> for subsequent DApp development work, we find that the JavaScript section records the ABI of the current smart contract, enabling the application to call smart contracts and interact with them.</p>
+
+<p><img src="/images/20191112-abi-03.png" alt="" /></p>
+
+<h2 id="about-buidl-ide-https-www-secondstate-io-buidl-an-one-stop-blockchain-development-tool">About <a href="https://www.secondstate.io/buidl/">BUIDL IDE</a> - An One-Stop Blockchain Development Tool</h2>
+
+<p>The BUIDL IDE is a highly integrated and fully browser-based development tool that allows developers to easily create and deploy blockchain applications (DApps) with BUIDL, saving a lot of time by eliminating the need to install any software and blockchain wallets.</p>
+
+<p>BUIDL functions:</p>
+
+<ul>
+<li><strong>Built-in account management system, no wallet software required;</strong></li>
+<li>Write, compile and deploy smart contracts;</li>
+<li><strong>Development DApps with HTML5 and JavaScript;</strong></li>
+<li><strong>One-click publishing of DApps to Github Pages</strong>；</li>
+<li>Deployment on Ethereum and any blockchain compatible with Ethereum;</li>
+<li>Access to the built-in Web3 library；</li>
+<li><strong>Support of rule-based smart contracts;</strong></li>
+<li><strong>Built-in real-time smart contract search engine based on ElasticSearch;</strong></li>
+</ul>
+
+<p>More Info:</p>
+
+<ul>
+<li>BUIDL Intro Page
+<a href="https://www.secondstate.io/buidl/">https://www.secondstate.io/buidl/</a></li>
+<li>BUIDL IDE
+<a href="https://buidl.secondstate.io/">https://buidl.secondstate.io/</a></li>
+<li>BUIDL Documentation
+<a href="https://docs.secondstate.io/buidl-developer-tool/getting-started">https://docs.secondstate.io/buidl-developer-tool/getting-started</a></li>
+<li>BUIDL GitHub Repo
+<a href="https://github.com/second-state">https://github.com/second-state</a></li>
+</ul>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">November 19, 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/blockchain/">blockchain</a>
+          <a href="http://blog.secondstate.io/tags/ethereum/">Ethereum</a>
+          <a href="http://blog.secondstate.io/tags/developer/">developer</a>
+          <a href="http://blog.secondstate.io/tags/smart-contract/">smart contract</a>
+          <a href="http://blog.secondstate.io/tags/buidl/">BUIDL</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/20191220-rust-webassembly-zh/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">只需 5 分钟，教你如何编写并执行一个 Rust &#43; WebAssembly 程序</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/20191112-ethereum-developer-abi-zh/">
+            <span class="next-text nav-default"> ABI | 以太坊开发A2Z </span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

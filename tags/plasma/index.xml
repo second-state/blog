@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plasma on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/plasma/</link>
+    <description>Recent content in Plasma on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 24 Oct 2019 01:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/plasma/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What I learned from Ethereum Devcon5</title>
+      <link>http://blog.secondstate.io/post/20191024-devcon5-recap/</link>
+      <pubDate>Thu, 24 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
+      <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&amp;rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
+    </item>
+    
+  </channel>
+</rss>

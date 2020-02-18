@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>The Next Generation Ethereum Virtual Machine — Ewasm VM - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&amp;rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&amp;rsquo;s smart contract transaction is executed," />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20191106-ewasm-en/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+
+<meta itemprop="name" content="The Next Generation Ethereum Virtual Machine — Ewasm VM">
+<meta itemprop="description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&rsquo;s smart contract transaction is executed,">
+
+
+<meta itemprop="datePublished" content="2019-11-06T10:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-06T10:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="864">
+
+
+
+<meta itemprop="keywords" content="EVM,Ewasm," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The Next Generation Ethereum Virtual Machine — Ewasm VM"/>
+<meta name="twitter:description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&rsquo;s smart contract transaction is executed,"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="The Next Generation Ethereum Virtual Machine — Ewasm VM - Second State News and Articles">
+  <meta property="og:description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&amp;rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&amp;rsquo;s smart contract transaction is executed," />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20191106-ewasm-en/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">The Next Generation Ethereum Virtual Machine — Ewasm VM</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> November 6, 2019 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/en/"> en </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p><img src="/images/20191106-Ewasm-01.png" alt="" />
+The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan</p>
+
+<p>This is a wrap-up for Second State’s VP of Engineering, <a href="https://github.com/hydai">Mr. Hung-Ying Tai</a>’s presentation on SOLL, Ewasm VM&rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0</p>
+
+<h3 id="evm-bytecode-and-webassembly-wasm">EVM bytecode and Webassembly (WASM)</h3>
+
+<p>When Ethereum&rsquo;s smart contract transaction is executed, for example, when transfer Token to another address, we read the EVM bytecode into the Ethereum virtual machine, and the EVM bytecode has the following characteristics:</p>
+
+<ul>
+<li>256-bit stack-based virtual machine</li>
+<li>Too many high level instructions
+  Storage(SSTORE, SLOAD)
+  SHA3(keccak-256)
+  Call, Create Contract…</li>
+<li>Different from the actual machine architecture (usually <sup>32</sup>&frasl;<sub>64</sub> bit), and 256 bit need to be done by simulation</li>
+<li>Less language support (Vyper, Solidity, &hellip;)</li>
+</ul>
+
+<p>Webassembly (WASM) is a binary programming language that allows suites developed in different programming languages to be used in browsers. WASM has the following features:</p>
+
+<ul>
+<li>Stack-based virtual machine:
+has locals ( ~= register or memory)
+only access top 3 items from stack v.s EVM’s 16</li>
+<li>Support for 32 / 64 bit operations</li>
+<li>No high-level instruction</li>
+<li>RISC Instruction Set, can map to a common CPU ISA</li>
+<li>Large community power
+Supported in all major browser
+Lots of language support (C++, Rust, …)</li>
+</ul>
+
+<h3 id="ewasm-1-0">Ewasm 1.0</h3>
+
+<p>Let&rsquo;s take a look at the features of Ewasm:</p>
+
+<ul>
+<li>Ewasm is a subset of wasm</li>
+<li>Floating point arithmetic is not supported because no error is allowed</li>
+<li>You can only import the library of Ethereum and avoid importing ㄒ system library.</li>
+<li>Insert useGAS before each instruction to calculate the cost of GAS</li>
+</ul>
+
+<h3 id="ethereum-environment-interface">Ethereum Environment Interface</h3>
+
+<p>There are many high-level instructions in the EVM like SSLOAD and SHA3. These commands are in Ewasm 1.0. because WASM can dynamically read libraries (modules). Ethereum defines the Ethereum Environment Interface so that clients can use different languages. Corresponding to the library, and it is easier to complete the prototype and upgrade.</p>
+
+<p>The following slide is a list of functions defined by the Ethereum Environment Interface.
+<img src="/images/20191106-Ewasm-02.png" alt="" />
+Ethereum Environment Interface Definition.</p>
+
+<h3 id="how-to-remove-illegal-instructions">How to remove illegal instructions?</h3>
+
+<p>Ewasm uses system contract to remove illegal instructions and add useGas bytecode, such as floating point numbers or illegal imports, in two ways:</p>
+
+<ul>
+<li>Check the contract&rsquo;s bytecode using the system contract</li>
+<li>Like the current precompiles running on the client, check the contract before deployment</li>
+</ul>
+
+<p>The following slide shows the Ewasm 1.0 stack. Before the contract deployment, the Ewasm bytecode will be checked by Sentinal. After the successful deployment, the client will communicate with Heru (Wasm Engine) through EVM-C if the contract is to be executed.
+<img src="/images/20191106-Ewasm-03.png" alt="" />
+Ewasm Stack</p>
+
+<h3 id="performance-problem">Performance problem</h3>
+
+<p>Does Ewasm perform better? The speaker shared the results of both EVM execution of Sha1 and BN128mul. It can be found that EVM is the faster when running BN128mul, mainly because WASM only supports <sup>32</sup>&frasl;<sub>64</sub>-bit operations. For 256-bit it requires additional simulation (ONE 256 bit operations may be replaced by 25 64 bit operations). As EVM provides precompiles, Wasm engine can support <code>bignum</code> library to speed up.</p>
+
+<h2 id="ewasm-2-0">Ewasm 2.0</h2>
+
+<p>Ewasm 2.0&rsquo;s smart contract is called Execution Environments (EE), which is different from Ewasm 1.0.</p>
+
+<ul>
+<li>EE is all written by WASM</li>
+<li>Because of the cross shard support, each EE is executed on a shard</li>
+<li>EE can only get state root, and the execution of the contract is not the same as before.</li>
+<li>EE is stateless</li>
+</ul>
+
+<p>The following slide shows the ERC20 Token compared to Ewasm 2.0 and Ewasm 1.0 storage. Ewasm 1.0 has a corresponding key for each data, while Ewasm 2.0 only has state root, so it can only interact with state root.
+<img src="/images/20191106-Ewasm-04.png" alt="" />
+Ewasm 2.0 vs Ewasm 1.0</p>
+
+<h2 id="phase-one-and-done">Phase One and Done</h2>
+
+<p>At the current stage of Ewasm 2.0 to phase one and done, there are also tested networks that can perform EE on shard blocks, and Ethereum also has open source Ewasm 2.0 test tool: Scout.
+<img src="/images/20191106-Ewasm-05.png" alt="" />
+Hello World for Ewasm 2.0</p>
+
+<p>The above slide is Eth 2&rsquo;s Hello World EE. You can see that the first line in the main function reads the pre state root, then verify if the block data size is 0, and finally save the state root back. Eth 2&rsquo;s smart contract code are all in this form.</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Ewasm 1.0 currently supports EVM 1 and most of the functions have a test net. Second state develops a compiler SOLL, which can compile solidity into Ewasm. <a href="https://blog.secondstate.io/post/20191022-soll-compiler-project/">Check it out</a> if interested.</p>
+
+<p>Ewasm 2.0 is still under study. The following slide is the direction of the research and contribution shared by the speaker.
+<img src="/images/20191106-Ewasm-06.png" alt="" /></p>
+
+<h2 id="reference">Reference</h2>
+
+<p>1.<a href="http://url.hyd.ai/LRFVT">Crosslink 简报</a>
+2.<a href="https://webassembly.org/">webassembly.org (http://webassembly.org/)</a>
+3.<a href="https://github.com/ewasm/scout">Scout</a>
+4.<a href="https://github.com/second-state/soll">Second State’s Soll Compiler</a>
+5.<a href="https://www.youtube.com/watch?v=X-A6sP_HTy0">Compiling and deploying an ERC20 contract onto the eWASM testnet— YouTube</a>
+6.<a href="https://www.youtube.com/watch?v=YW6hszjjMqo&amp;feature=youtu.be">Ewasm overview and the precompile problem: Alex Beregszaszi and Casey Detrio @ Ethereum \\ Part 1 — YouTube</a>
+7.<a href="https://www.youtube.com/watch?v=a9hbycBMr_A">Ewasm overview and the precompile problem: Alex Beregszaszi and Casey Detrio @ Ethereum \\ Part 2 — YouTube</a>
+8.<a href="https://www.youtube.com/watch?v=iwU10WkWSBY">Wasm for blockchain&amp;Eth2 execution: Paul Dworzanski,Alex Beregszaszi,Casey Detrio@Ethereum \\ Part 2 — YouTube</a>
+9.<a href="https://drive.google.com/file/d/19t4qCqEK2RPt0p1XYx-a2FdZSAlCq7H0/view">Ewasm for sharding</a>
+10.<a href="https://drive.google.com/file/d/1CRc0qBQTebNKw7NRZXzxbHovrigW0bqf/view">Ewasm updates</a>
+11.<a href="https://github.com/ewasm/design">Ewasm design</a>
+12.<a href="https://rsms.me/wasm-intro">wasm-intro</a></p>
+
+<p>Translated from <a href="https://medium.com/taipei-ethereum-meetup/the-next-generation-ethereum-virtual-machine-ewasm-vm-2fe3fd9b94a4">traditional Chinese</a> by Ethereum Taipei</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">November 6, 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/evm/">EVM</a>
+          <a href="http://blog.secondstate.io/tags/ewasm/">Ewasm</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/20191112-ethereum-developer-abi-zh/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default"> ABI | 以太坊开发A2Z </span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/20191106-ewasm-zh/">
+            <span class="next-text nav-default">Ewasm Vs EVM：Ewasm 带来了什么改变？</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

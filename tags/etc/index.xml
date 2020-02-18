@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Etc on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/etc/</link>
+    <description>Recent content in Etc on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Oct 2019 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/etc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second State goes to Devcon5 - Our story told in 3 photos</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</guid>
+      <description>Addressing the challenges of today’s Ethereum smart contract development The first photo is from our session on the first day of Devcon. It is standing room only. We gave a very technical presentation and did all of our live demos from the BUIDL IDE with great success.
+The focus of our session is to address the challenges of today’s Ethereum smart contract development. We discussed solutions we have developed for today’s EVM, as well as future solutions for Ethereum 2.</description>
+    </item>
+    
+    <item>
+      <title>用三张照片讲述Second State与Devcon5的故事</title>
+      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</link>
+      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</guid>
+      <description>解决现下以太坊智能合约开发挑战 第一张照片来自Devcon第一天，我们的发言现场。观众熙熙攘攘，只有站立空间。我们进行了非常技术性的介绍，通过</description>
+    </item>
+    
+    <item>
+      <title>ETC 峰会回顾：未来可期</title>
+      <link>http://blog.secondstate.io/post/20191006-etc-summit-recap-zh/</link>
+      <pubDate>Sun, 06 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191006-etc-summit-recap-zh/</guid>
+      <description>声明：Second State赞助了今年的ETC峰会，并发布了ETC 版BUIDL IDE。有了BUIDL，即便是菜鸟开发者都可以在几分钟内在以太</description>
+    </item>
+    
+    <item>
+      <title>What I learned from ETC Summit</title>
+      <link>http://blog.secondstate.io/post/20191006-etc-summit-recap/</link>
+      <pubDate>Sun, 06 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191006-etc-summit-recap/</guid>
+      <description>Disclaimer: Second State sponsored this year’s ETC Summit and released the BUIDL for ETC IDE — even novice developers can now write and publish complete smart contract powered applications on the Ethereum Classic blockchain in minutes. Check out a tutorial! All views and opinions expressed in the article are my own. 中文版点击这里 Church &amp;amp; State Successful open source communities</description>
+    </item>
+    
+    <item>
+      <title>Easier and faster dapps on the Ethereum Classic blockchain</title>
+      <link>http://blog.secondstate.io/post/20191003-easierandfasterdapps-en/</link>
+      <pubDate>Thu, 03 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191003-easierandfasterdapps-en/</guid>
+      <description>Ethereum, the world’s first and dominant smart contract platform, has the largest dapp ecosystem with more than a million deployed smart contracts and hundreds of millions of dollars in monthly transactions.
+Ethereum Classic is the original Ethereum blockchain. With fast confirmation time, ultra-low gas cost, and now with first-class developer tooling from the BUIDL IDE, the Ethereum Classic blockchain is also becoming the best platform for deploying smart contracts and dapps.</description>
+    </item>
+    
+    <item>
+      <title>Treasure Hunt -- Ethereum Classic Edition</title>
+      <link>http://blog.secondstate.io/post/20191002-book-etc-en/</link>
+      <pubDate>Wed, 02 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191002-book-etc-en/</guid>
+      <description>The Building Blockchain Apps book is to be published by Addison-Wesley in 2019. It provides a comprehensive guide for developers to incorporate the blockchain technology into existing and future applications. You can pre-order it from Amazon or InformIT.
+How to get the 35% discount code The discount code is “hidden in plain sight” in a smart contract deployed on the Ethereum Classic blockchain. Using BUIDL for ETC, you can instantiate an instance of this contract and call it’s functions to get its state.</description>
+    </item>
+    
+  </channel>
+</rss>

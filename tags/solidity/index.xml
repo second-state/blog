@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Solidity on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/solidity/</link>
+    <description>Recent content in Solidity on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 16 Feb 2020 20:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/solidity/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second State 又获以太坊生态体系的资助奖励</title>
+      <link>http://blog.secondstate.io/post/20200217-soll-zh/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200217-soll-zh/</guid>
+      <description>Second State 最近获得了以太坊生态最大的去中心化自治组织（DAO） Panvala 的资助奖励。Panvala 由 ConsenSys 创立孵化，为以太坊生态里最重要的基础软件项目提供资金</description>
+    </item>
+    
+    <item>
+      <title>Second State receives another grant award for the SOLL compiler</title>
+      <link>http://blog.secondstate.io/post/20200216-soll-en/</link>
+      <pubDate>Fri, 14 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200216-soll-en/</guid>
+      <description>Second State has been awarded a development grant from Panvala, a leading DAO (Decentralized Autonomous Organization) in the Ethereum ecosystem.
+Founded at ConsenSys, Panvala provides funding support for critical software development efforts in the Ethereum ecosystem. Past Panvala grant awardees include Sigma Prime, Prysmatic Labs, MakerDAO, Aragon, Status, and Gitcoin.
+Prior to the Panvala grant, Second State is already a recognized leader in Ethereum infrastructure development. It is had received funding and prizes from both the Ethereum Foundation and Ethereum Classic Labs.</description>
+    </item>
+    
+    <item>
+      <title>Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191029-ewasm/</link>
+      <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191029-ewasm/</guid>
+      <description>Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.
+ “The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).
+ The EVM consists of a stack-based architecture. In order for a smart contract to be deployed, all high level Ethereum smart contract code must first be compiled into machine-readable code (called bytecode).</description>
+    </item>
+    
+    <item>
+      <title>深度剖析以太坊虚拟机（EVM）的未来：Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191029-ewasm-zh/</link>
+      <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191029-ewasm-zh/</guid>
+      <description>以太坊是具有内置图灵完备编程语言的区块链。任何人都可以使用以太坊智能合约来创建去中心化应用程序。 “以太坊虚拟机（EVM）是以太坊处理智能合约</description>
+    </item>
+    
+    <item>
+      <title>Second State SOLL 编译器项目获得以太坊基金会的现金奖励</title>
+      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</link>
+      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</guid>
+      <description>Second State 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对开源SOLL编译器项目的贡献，获得了以太坊基金会的现金奖励。2019年10月</description>
+    </item>
+    
+    <item>
+      <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
+      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
+      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
+      <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
+SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
+    </item>
+    
+  </channel>
+</rss>

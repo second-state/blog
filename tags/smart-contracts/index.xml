@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Smart Contracts on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/smart-contracts/</link>
+    <description>Recent content in Smart Contracts on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 31 Oct 2019 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/smart-contracts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Celebrate Halloween with Blockchain Smart Contract</title>
+      <link>http://blog.secondstate.io/post/20191031-halloween/</link>
+      <pubDate>Thu, 31 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191031-halloween/</guid>
+      <description>Halloween is finally here! Are you ready for the spookiest night of the year?
+BUIDL IDE tools now has an upgraded UI just for Halloween. Trick or treat! A spooky pumpkin on the top welcomes you to the BUIDL’s Halloween.
+Now, for developers, can you tell what the following code is for?
+1 2 3 4 5 6 7 8  pragma lity ^1.2.4; contract Halloween { function greet() pure public returns (string) { return &amp;#34;Happy Halloween&amp;#34;; } }   This is a very simple (yet spooky) smart contract example, just like the “Hello World” on the internet.</description>
+    </item>
+    
+    <item>
+      <title>Second State Finalisted in Qualcomm Innovate in Taiwan Challenge, Driving the Blockchain Chips Revolution</title>
+      <link>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</link>
+      <pubDate>Mon, 26 Aug 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</guid>
+      <description>Second State, a developer of an open source blockchain smart contract platform for enterprises was shortlisted in the Qualcomm Innovate in Taiwan Challenge – 2019. They proposed to optimize the popular WebAssemly virtual machine technology with customized chip solutions. The chip-accelerated WebAssemly virtual machine is then applied to the blockchain to efficiently execute smart contracts. So to develop a &amp;ldquo;blockchain chip&amp;rdquo; that is truly valuable and meaningful.
+ Qualcomm, a smartphone chip maker, recently hosted the Qualcomm Innovate in Taiwan Challenge – 2019, and selected 10 teams out of over 100 teams as finalists.</description>
+    </item>
+    
+  </channel>
+</rss>

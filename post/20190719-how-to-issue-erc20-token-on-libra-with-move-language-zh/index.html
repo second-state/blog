@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Libra深度剖析③ 如何基于 ERC20 标准在 Libra 上发布金融资产 - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="本文是 「Libra 深度剖析」系列文章的第 3 篇，也是最后一篇。在之前的两篇文章，我们分别探讨了 Libra 项目的技术意义以及 Libra Client 与 Validator 内部处理与执行交易。" />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+
+<meta itemprop="name" content="Libra深度剖析③ 如何基于 ERC20 标准在 Libra 上发布金融资产">
+<meta itemprop="description" content="本文是 「Libra 深度剖析」系列文章的第 3 篇，也是最后一篇。在之前的两篇文章，我们分别探讨了 Libra 项目的技术意义以及 Libra Client 与 Validator 内部处理与执行交易。">
+
+
+<meta itemprop="datePublished" content="2019-07-19T01:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-19T01:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="3631">
+
+
+
+<meta itemprop="keywords" content="Ethereum,Libra,Smart contract,virtual machine," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Libra深度剖析③ 如何基于 ERC20 标准在 Libra 上发布金融资产"/>
+<meta name="twitter:description" content="本文是 「Libra 深度剖析」系列文章的第 3 篇，也是最后一篇。在之前的两篇文章，我们分别探讨了 Libra 项目的技术意义以及 Libra Client 与 Validator 内部处理与执行交易。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="Libra深度剖析③ 如何基于 ERC20 标准在 Libra 上发布金融资产 - Second State News and Articles">
+  <meta property="og:description" content="本文是 「Libra 深度剖析」系列文章的第 3 篇，也是最后一篇。在之前的两篇文章，我们分别探讨了 Libra 项目的技术意义以及 Libra Client 与 Validator 内部处理与执行交易。" />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Libra深度剖析③ 如何基于 ERC20 标准在 Libra 上发布金融资产</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> July 19, 2019 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/libra/"> libra </a>
+            <a href="http://blog.secondstate.io/categories/zh/"> zh </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p>本文是 「Libra 深度剖析」系列文章的第 3 篇，也是最后一篇。在之前的两篇文章，我们分别探讨了 Libra 项目的技术意义以及 Libra Client 与 Validator 内部处理与执行交易。</p>
+
+<ul>
+<li><p>Part1：<a href="https://blog.secondstate.io/post/20190621-libra-first-impressions-zh/">Libra深度剖析①:智能合约并非生而平等</a></p></li>
+
+<li><p>Part2：<a href="https://blog.secondstate.io/post/20190701-libra-first-impressions-zh/">Libra深度剖析② Validator 如何验证交易</a></p></li>
+</ul>
+
+<p>Libra 作为法币稳定币，成为一个金融系统还需要具有债券股票以及各种证券资产与衍生品，本文将从技术角度入手，使用 ERC20 标准在 Libra 区块链上发布金融资产。主要分为以下两部分：</p>
+
+<ul>
+<li>编写 token moudule</li>
+<li>编译、部署 token moudule</li>
+</ul>
+
+<p>希望这个教程可以让你对 Libra 的技术细节有更深刻的了解。</p>
+
+<h2 id="编写-token-moudule">编写 token moudule</h2>
+
+<p>如何使用 Move IR 编写一个简单的 token module？</p>
+
+<p>为方便理解，我们选择 Ethereum 的 ERC20 token 作为范例，分别执行 mint、balanceOf 和 transfer 三个功能。</p>
+
+<p>开始前，我们需要了解 Libra 与以太坊在处理 resource 的逻辑方面有什么不同。</p>
+
+<p>与 Ethereum global state 不同的是，Libra 并不设置统一集中存储的 global resource，而是将 resource 分散在各个账户存放。因此，以太坊智能合约撰写  &ldquo;address storage owner = 0x&rdquo; 这类变量需要用不同的逻辑来实现。每个人拥有多少 token 也分别存放在各自账户的 resource 下，而不是采用 &ldquo;mapping(address=&gt;uint256) &rdquo; 这样的统一存储方式处理。</p>
+
+<p><strong>1、Capability</strong></p>
+
+<p>目前 Libra 开发团队推荐的处理 global variable 的方式是使用一个 singleton pattern 的 module 来进行模拟。</p>
+
+<p>因此，我们将事件拥有所有者的 (owner) 权限定义为一种只能被发布一次的 resource，比如 &ldquo;resource T{}&ldquo;。针对这个 T 进行的操作有两个方法，一是在初始化时执行 &ldquo;grant()&rdquo; 用来确保 Token Capability 被移交给所有者；而 &ldquo;borrow_sender_capability()&rdquo; 则是检查操作者是否拥有所有者的权限。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">module TokenCapability {
+    resource T {}
+    // Grant Token Capability to the owner
+    public grant() {}
+    // Return an immutable reference to the TokenCapability of the sender if it exists. This will only succeed if the transaction sender is the owner.
+    public borrow_sender_capability(): &amp;mut R#Self.T {}
+7}</pre></td></tr></table>
+</div>
+</div>
+<p><strong>a) grant()</strong></p>
+
+<p>如何执行 &ldquo;grant()&rdquo; ？</p>
+
+<p>首先，我们需要定义两个角色，调用这个函数的交易发起者与实际上的所有者 owner。很可惜的是目前 Move IR 并没有提供类似 &ldquo;Self.published_address&rdquo; 的方式来让我们获得发布该 module 的账户，因此我们只能在代码中写死 module 所有者的地址，代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"> // Grant Token Capability to the owner
+ public grant() {
+     let sender: address;
+     let owner: address;
+     let t: R#Self.T;
+ 
+     sender = get_txn_sender();
+ 
+     owner = 0x1234;
+    // 假设 0x1234 是所有者的地址
+    assert(move(sender) == move(owner), 77);
+    // 检查交易发起者是否为所有者
+
+    t = T{};
+    // 为所有者建立新的 Token Capability
+    move_to_sender&lt;T&gt;(move(t));
+    // 将 TokenCapability.T 转移给所有者。
+    return;
+}</pre></td></tr></table>
+</div>
+</div>
+<p>从上面的代码中我们可以发现，只有通过 &ldquo;sender == owner&rdquo; 检查才能取得所有者的 resource T，因此我们可以确保 resource T 只会被所有者所拥有，其他的账户都没有机会获得这个 resource T。</p>
+
+<p>此外，&rdquo;move_to_sender<structure type>(resource)&rdquo; 是 Move IR 提供的内建函数，它代表了将 resource 移交给交易发起者的账户。</p>
+
+<p><strong>b) Borrow_sender_capability()</strong></p>
+
+<p>如何检查并确认交易发起者拥有所有者的 resource？</p>
+
+<p>借助 Move IR 提供的辅助函数 &ldquo;borrow_global<structure type>(resource account)&rdquo; 处理。borrow_global 会去该账户下面调取出 resource，如果该账户下没有持有这个 resource 则会触发意外情况，交易也会失败。若成功则会返回可变的 resource reference。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"> // 如果存在，则返回对交易发起者的 TokenCapability 的不可变引用。
+ // 只有在交易发起者是所有者才会执行成功。
+ public borrow_sender_capability(): &amp;mut R#Self.T {
+     let sender: address;
+     let t_ref: &amp;mut R#Self.T;
+ 
+     sender = get_txn_sender();
+     t_ref = borrow_global&lt;T&gt;(move(sender));
+ 
+    return move(t_ref);
+ }</pre></td></tr></table>
+</div>
+</div>
+<p><strong>2、Token</strong></p>
+
+<p>Libra 的权限管理方式比较特别，上文已着重介绍，接下来撰写 Token module！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"> module Token {
+ 
+     import Transaction.TokenCapability;
+ 
+  // Token resource, 代表一个账户的总余额.
+     resource T {
+         value: u64,
+     }
+ 
+    // 建立一个新的 Token.T ， value值为0
+    public zero(): R#Self.T {
+    return T{value: 0};
+    }
+
+    // 返回 Token的值
+    public value(token_ref: &amp;R#Self.T): u64 {
+    return *&amp;move(token_ref).value;
+    }
+
+    // 为交易发起者发布初始余额为0的Token
+    public publish() {}
+
+    // `mint_to_address` 只能由所有者调用.
+    // 这会给收款人一个新的Token ,价值是amount 
+    public mint_to_address(payee: address, amount: u64) {}
+
+    // Mint 一个新的Token，价值是`value`.
+    mint(value: u64, capability: &amp;mut R#TokenCapability.T): R#Self.T {}
+    // 返回Token 余额 `account`.
+    public balanceOf(account: address): u64 {}
+
+    // 返回交易发起者的Token 余额.
+    public balance(): u64 {}
+
+    // 将 `to_deposit` 的token 存入 the `payee`\&#39;s 账户
+    public deposit(payee: address, to_deposit: R#Self.T) {}
+    public withdraw(to_withdraw: &amp;mut R#Self.T, amount: u64): R#Self.T {}
+    // 将Token从交易发起者转到收款人
+    public transfer(payee: address, amount: u64) {}
+}</pre></td></tr></table>
+</div>
+</div>
+<p><strong>a) Token Resource</strong></p>
+
+<p>整个 Token module 的结构如上。定义这个 Token 的 resource T {value: u64} 代表了未来每个账户将会持有多少数量 (T.value) 的 token，也要定义两个跟 T 相关的辅助函数 zero() 制作一个数量为零的 Token.T，value() 回传该 Token.T 的实际数值。</p>
+
+<p><strong>b) Publish</strong></p>
+
+<p>如同 Capability 一样，每个账户都是分别持有自己的 resource。Libra 的设计逻辑中并不允许在没经过某账户的同意下为其增加额外的 resource，不像以太坊中只要有地址就可以收到别人的转账。因此，我们需要一个辅助函数供 Token 的所有者调用，为他们建立 Token.T 的 resource。这是 Publish 负责的事情。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">// 为交易发起者 publish 一个初始余额为0的 token
+
+     public publish() {
+        let t: R#Self.T;
+        // 建立一个新的数值为0的 Token.T
+        t = Self.zero(); 
+        // 将 Token.T 转移到交易发起者的账户下
+        move_to_sender&lt;T&gt;(move(t)); 
+        return;
+}</pre></td></tr></table>
+</div>
+</div>
+<p><strong>c) Minting</strong></p>
+
+<p>让账户拥有 resource Token.T 的下一步便是发送一些 token，因此接下来将具体解释 mint 功能如何实现！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"> public mint_to_address(payee: address, amount: u64) {
+    let capability_ref: &amp;mut R#TokenCapability.T;
+    let mint_token: R#Self.T;
+
+    // 使用 TokenCapability 来确保只有所有者有权限可以增发 token
+    capability_ref = TokenCapability.borrow_sender_capability(); 
+
+    // 呼叫下方的 mint() 来建立数量为 amount 的 Token.T
+    mint_token = Self.mint(copy(amount), move(capability_ref)); 
+
+    // 将 mint 出来的 Token.T 合并到收款人的名下，这个函数我们在下面解释。
+    Self.deposit(move(payee), move(mint_token)); 
+    return;
+}
+
+mint(amount: u64, capability: &amp;mut R#TokenCapability.T): R#Self.T {
+    // 为确保只有交易发起者拥有 TokenCapability.T，直接发布 resource 即可。
+    release(move(capability)); 
+
+    // 建立一个有 amount 数量的 Token.T 
+    return T{value: move(amount)}; 
+}</pre></td></tr></table>
+</div>
+</div>
+<p>增发 token 时，我们应先确保 sender 有增发的权限，如果没有这个权限，transaction 便会失效；然后建立要增发给 payee 的Token.T，最后通过 Token.deposit  函数将新建的 Token.T 与 payee account 下的 resource Token.T 合并。</p>
+
+<p><strong>d) Balance</strong></p>
+
+<p>增发 token 后，还缺乏查询名下 Token 数量的方法，这就需要撰写 balance 了！</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"> public balanceOf(account: address): u64 { 
+     let token_ref: &amp;mut R#Self.T;
+     let token_const_ref: &amp;R#Self.T;
+     let token_val: u64;
+
+     // 从该账户下取得 resource reference
+     token_ref = borrow_global&lt;T&gt;(move(account)); 
+ 
+     // 因为我们没有计划改动 resource 的数值，因此把可变的 reference 冻结，改成不可变的 reference
+    token_const_ref = freeze(move(token_ref)); 
+
+    // 调用 value() 来取得实际的余额
+    token_val = Self.value(move(token_const_ref)); 
+    return move(token_val);
+}
+
+
+// 这个 balance() 是直接包装 balanceOf() ，提供交易发起者一个简单的接口可以查询。
+public balance(): u64 {
+    let sender: address;
+    let balance_val: u64;
+    sender = get_txn_sender();
+    balance_val = Self.balanceOf(move(sender));
+    return move(balance_val);
+}</pre></td></tr></table>
+</div>
+</div>
+<p><strong>e) 转账 Transfer</strong></p>
+
+<p>重头戏当然是转账，transfer 一共分为三个步骤：
+* 从交易发起者借用 resource Token.T；
+* 将交易发起者的 resource Token.T 分割成要转账的部分与余额 (由 withdraw 函数负责)；
+* 将交易发起者转账的部分与付款人的 resource Token.T 合并 (deposit 函数负责)。</p>
+
+<p>因此整个 transfer 函数如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"> public transfer(payee: address, amount: u64) {
+     let to_pay: &amp;mut R#Self.T;
+     let sender: address;
+     let to_withdraw: R#Self.T;
+ 
+     sender = get_txn_sender();
+ 
+     // 借用交易发起者的 resource Token.T
+     to_pay = borrow_global&lt;T&gt;(move(sender)); 
+
+     // 分割出要给收款人的部分
+     to_withdraw = Self.withdraw(move(to_pay), move(amount)); 
+
+     // 将要给收款人的部分与收款人账户下原有的 Token.T 合并
+     Self.deposit(move(payee), move(to_withdraw)); 
+
+    return;
+}</pre></td></tr></table>
+</div>
+</div>
+<p>而 Withdraw 与 Deposit 实现如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma"> public deposit(payee: address, to_deposit: R#Self.T) {
+    let deposit_value: u64;
+    let payee_token_ref: &amp;mut R#Self.T;
+    let payee_token_const_ref: &amp;R#Self.T;
+    let payee_token_value: u64;
+
+    // 取出要合并的数值
+    T{ value: deposit_value } = move(to_deposit);
+
+    // 获得付款人的 Token.T reference 与现有的数值
+    payee_token_ref = borrow_global&lt;T&gt;(move(payee));
+    payee_token_const_ref = freeze(copy(payee_token_ref));
+    payee_token_value = Self.value(move(payee_token_const_ref));
+
+    // 修改付款人的 Token.T 的数值
+    *(&amp;mut move(payee_token_ref).value) = move(payee_token_value) + 
+    move(deposit_value);
+    return;
+}
+
+public withdraw(to_withdraw: &amp;mut R#Self.T, amount: u64): R#Self.T {
+    let value: u64;
+
+    // 取得交易发起者的 Token.T 数量，并确认是否足够支付这次转账
+    value = *(&amp;mut copy(to_withdraw).value);
+    assert(copy(value) &gt;= copy(amount), 10);
+
+    // 修改交易发起者的 Token.T 数量，并将分割后的 Token.T 转出去
+    *(&amp;mut move(to_withdraw).value) = move(value) - copy(amount);
+    return T{value: move(amount)};
+}</pre></td></tr></table>
+</div>
+</div>
+<p><strong>3、测试 module</strong></p>
+
+<p>一个 mvir 的档案含有两个区块，分别是 modules 与 script，在 modules 中会撰写交易中需要部署的所有 modules，script 是在这次交易中我们想执行的程序。</p>
+
+<p><strong>a) Test Script</strong></p>
+
+<p>在我们的范例中，通过使用交易 script 的区块来进行测试。在这个测试中，我们把交易发起者作为所有者，并且 mint 1314 个 token 给交易发起者，最后检查交易发起者的余额是否跟 mint 的数值：1314 一致。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">script:
+import Transaction.TokenCapability;
+import Transaction.Token;
+main() {
+    let sender: address;
+    let balance_val: u64;
+    let sender_balance: u64;
+    sender = get_txn_sender();
+ 
+    // Grant owner\&#39;s capability
+    TokenCapability.grant();
+
+    // Publish an Token account
+    Token.publish();
+
+    // Mint 1314 tokens to the owner
+    Token.mint_to_address(copy(sender), 1314);
+
+    // Check balance == 1314
+    balance_val = Token.balanceOf(copy(sender));
+    assert(copy(balance_val) == 1314, 2);
+    sender_balance = Token.balance();
+    assert(move(sender_balance) == move(balance_val), 1);
+    return;
+}</pre></td></tr></table>
+</div>
+</div>
+<p><strong>b) 测试</strong></p>
+
+<p>在撰写完 modules 与 script 后，依据 Libra 团队的建议，需将档案放入 &ldquo;language/functional_tests/tests/testsuite/modules/&rdquo; 下，并执行 &ldquo;cargo test -p functional_tests <file name>&ldquo;，Libra 就会加载并将执行刚才所撰写的合约，结果如下图：</p>
+
+<p><img src="/images/20190719-How-to-Issue-ERC20-token-on-Libra-with-Move-Language-01.jpeg" alt="" /></p>
+
+<h2 id="编译-部署到-local-testnet">编译、部署到 local testnet</h2>
+
+<p>如今 Libra testnet 尚未开放直接部署 modules，只能通过建立自己的 local testnet 来进行测试。现在部署的工具还在非常早期的阶段，对开发者的使用上也不是十分友好，以下是整理后的部署流程。</p>
+
+<ol>
+<li>编译 Libra 后，可以在 &ldquo;targe/debug/&rdquo; 资料夹下找到 compiler 和 transaciton_builder 两个工具；</li>
+<li>通过使用 compiler 将撰写的 mvir 编译成 program，&rdquo;./target/debug/compiler -o <output_file_name> <input.mvir>&ldquo;；</li>
+<li>通过 transaction_builder 把 sender, program、argument 等封装成 raw transaction，&rdquo;./target/debug/transaction_builder <sender_address> <sequence_number> <path_to_program_file> <output_transaction_file_name> &ndash;args [<Arguments>]&ldquo;；</li>
+<li>最后进到 libra cli 中使用submit <sender_address/sender_account_ref> <path_to_transaction_file>对 Libra cli 发出交易。</li>
+</ol>
+
+<p>注：我们也编写了几笔交易的 scripts 用来操作 Token
+<a href="https://github.com/second-state/libra-research/tree/master/examples/ERC20Token/transaction_scripts">请参考此链接</a>：
+<a href="https://github.com/second-state/libra-research/tree/master/examples/ERC20Token/transaction_scripts">https://github.com/second-state/libra-research/tree/master/examples/ERC20Token/transaction_scripts</a></p>
+
+<p><strong>部署与使用 Token 的顺序</strong></p>
+
+<ol>
+<li>先将 token.mvir (含有 Token、TokenCapability 的 module) 部署到 Libra；</li>
+<li>要想使用该 token 账户，必须先调用 init.mvir 将 Token.T 发布到账户的 resource 中；</li>
+<li>所有者可通过 mint.mvir 给其他拥有 resource Token.T 的账户增发 token；</li>
+<li>两个拥有 resource Token.T 的 account 可以通过 transfer.mvir 进行 token 转移。</li>
+</ol>
+
+<h2 id="开启允许部署-modules-的权限">开启允许部署 modules 的权限</h2>
+
+<p>Libra 在编译时期 (compilation-time) 时从 genesis file 里面读取是否可以设定部署 modules 的权限。因此，为把 modules 部署到 local testnet，我们需要在编译前修改这项设定。</p>
+
+<p>在 &ldquo;language/vm/vm_genesis/genesis/vm_config.toml&rdquo; 这个档案，只需将 &ldquo;[publishing_options]&rdquo; 中的 &ldquo;type=Locked&rdquo; 改为 &ldquo;type=Open&rdquo; 即可。更改完以后，一定要重新编译使设定生效。</p>
+
+<p>参考链接:
+1. <a href="https://community.libra.org/t/any-notion-of-global-variables/355/2">Singleton Pattern Capability</a>
+2. <a href="https://github.com/second-state/libra-research/blob/master/examples/ERC20Token/token.mvir#L3">TokenCapability</a>
+3. <a href="https://github.com/second-state/libra-research/tree/master/examples/ERC20Token">Token Source Code</a></p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">July 19, 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/ethereum/">Ethereum</a>
+          <a href="http://blog.secondstate.io/tags/libra/">Libra</a>
+          <a href="http://blog.secondstate.io/tags/smart-contract/">Smart contract</a>
+          <a href="http://blog.secondstate.io/tags/virtual-machine/">virtual machine</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Libra First Impressions Part 3: How to Issue ERC20 token on Libra with Move Language</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/20190715-fairplay-a-new-type-of-dapp/">
+            <span class="next-text nav-default">FairPlay: a new type of DApp</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Libra深度剖析:智能合约并非生而平等 ① - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="本年度最受期待的科技新闻就是Facebook的加密货币Libra项目。Facebook于2019年6月18日发布了白皮书，同时发布了Libr" />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20190621-libra-first-impressions-zh/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+
+<meta itemprop="name" content="Libra深度剖析:智能合约并非生而平等 ①">
+<meta itemprop="description" content="本年度最受期待的科技新闻就是Facebook的加密货币Libra项目。Facebook于2019年6月18日发布了白皮书，同时发布了Libr">
+
+
+<meta itemprop="datePublished" content="2019-06-21T01:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2019-06-21T01:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="2695">
+
+
+
+<meta itemprop="keywords" content="Ethereum,Libra,Smart contract," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Libra深度剖析:智能合约并非生而平等 ①"/>
+<meta name="twitter:description" content="本年度最受期待的科技新闻就是Facebook的加密货币Libra项目。Facebook于2019年6月18日发布了白皮书，同时发布了Libr"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="Libra深度剖析:智能合约并非生而平等 ① - Second State News and Articles">
+  <meta property="og:description" content="本年度最受期待的科技新闻就是Facebook的加密货币Libra项目。Facebook于2019年6月18日发布了白皮书，同时发布了Libr" />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20190621-libra-first-impressions-zh/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Libra深度剖析:智能合约并非生而平等 ①</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> June 21, 2019 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/smart-contract/"> Smart Contract </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p>本年度最受期待的科技新闻就是Facebook的加密货币Libra项目。Facebook于2019年6月18日发布了白皮书，同时发布了Libra项目第一版源代码以及技术白皮书。根据白皮书，Libra 的目标是建立去中心化的全球货币，该项目有着非常野心勃勃的加密经济学设计管理规则，同时其联盟中的合作伙伴也非常重磅。</p>
+
+<p><img src="/images/20190621-Libra-first-impressions-01.png" alt="" /></p>
+
+<blockquote>
+<p>Libra区块链是一个去中心化的可编程的数据库，其被设计成用于支持一个波动性低的加密货币，它能作为有效的交换媒介服务世界上几十亿人 。——Libra白皮书。</p>
+</blockquote>
+
+<p>但是，作为技术人员，我们对于其运用区块链技术的方式最感兴趣。为什么Libra项目要求有自己的一条区块链呢？对于应用程序开发者来说机会在哪里？对于企业以及传统的IT公司而言，从中可以得到哪些推断？我们将分三篇文章来讨论这几个问题。</p>
+
+<ol>
+<li>回顾Libra项目开发应用程序使用的是什么方法</li>
+<li>深度的解析Libra项目的一项核心应用</li>
+<li>怎样开发应用程序的教程</li>
+</ol>
+
+<p>深度剖析Libra系列文章由Second State 出品。Second State 主要提供针对企业的区块链智能合约解决方案，已获得一线VC投资，目前处于未公开阶段。Second State 正在为业内领先的开源项目做贡献，即将发布第一批产品。</p>
+
+<h3 id="智能合约先行">智能合约先行</h3>
+
+<p>Libra项目中最引人瞩目的设计功能之一，就是其智能合约先行的策略。就算是像以太坊这样的智能合约平台，智能合约的执行仅仅是一种交易的类型。以太坊原生操作仍然是币（coin）的交易。而Libra不同。智能合约是Libra上的一等公民。</p>
+
+<p><img src="/images/20190621-Libra-first-impressions-02.png" alt="" /></p>
+
+<p>Libra 区块链本身是用Rust 编写的，但是Libra上的应用程序是使用新的编程语言Move来编写。所有来自外部的区块链互动都由Move 程序来处理，在Libra 上，即便是一个币的转账，也是由Move程序来处理的。每一个Libra 节点都会运行一个虚拟机。虚拟机执行程序，并且记录共识达成后的结果。Second State认为智能合约先行的方式能够让Libra项目建立起一个功能多样的基础设施，这也能适用于未来的需要。</p>
+
+<h3 id="为什么使用move-编程语言">为什么使用Move 编程语言</h3>
+
+<p>那么，为什么我们需要一种新的编程语言？是因为安全和性能的要求。Libra 要建造一条新的链，因为目前市场上的区块链解决方案没有办法满足其对性能和安全的要求。</p>
+
+<p>Facebook 和 Libra 想要建立专注于支付和资产数字化的区块链，因此他们创造了Move编程语言，内置了对不可更改且不可复制的资产的支持。Move编程语言是一个用于数字资产管理的DSL（域名特定语言）。</p>
+
+<blockquote>
+<p>比特币在加密方面成就非凡，能够在数字世界创建无法复制的东西，有着非常巨大的价值。——艾里克斯米特，谷歌主席</p>
+</blockquote>
+
+<p>Move 编程语言的名字来自于Move本身支持的基础操作器。Move操作器负责移动资产。Move  消除了原本常见的两步操作：减掉前面一个账户的余额，然后加到另外一个账户。Move 语言将资产与资源放在一等公民的地位。当然，Move语言也有其他重要的特性，使其在资产管理方面更加安全，更加健壮。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">public deposit(payee: address, to_deposit: Coin) { 
+let to_deposit_value: u64 = Unpack(move(to_deposit)); 
+let coin_ref: &amp;mut Coin = BorrowGlobal(move(payee)); 
+let coin_value_ref: &amp;mut u64 = &amp;mut move(coin_ref).value; 
+let coin_value: u64 = *move(coin_value_ref); 
+*move(coin_value_ref) = move(coin_value) + move(to_deposit_value); 
+}</pre></td></tr></table>
+</div>
+</div>
+<p>（Move 操作器，存款示例）</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">public withdraw_from_sender(amount: u64): Coin { 
+let transaction_sender_address: address = GetTxnSenderAddress(); 
+let coin_ref: &amp;mut Coin = BorrowGlobal(move(transaction_sender_address)); 
+let coin_value_ref: &amp;mut u64 = &amp;mut move(coin_ref).value; 
+let coin_value: u64 = *move(coin_value_ref); 
+RejectUnless(copy(coin_value) &gt;= copy(amount));
+*move(coin_value_ref) = move(coin_value) - copy(amount); 
+let new_coin: Coin = Pack(move(amount));
+return move(new_coin); 
+}</pre></td></tr></table>
+</div>
+</div>
+<p>(Move 操作器，取款示例)</p>
+
+<p>Move编程语言是静态的，并且由编译器工具来发现错误和潜在的问题。</p>
+
+<p>Move源代码被编译为由虚拟机执行的静态的IR (intermediate representation)代码。IR代码由工具进行检查并验证是否正确。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">public main(payee: address, amount: u64) { 
+let coin: 0x0.Currency.Coin = 0x0.Currency.withdraw_from_sender(copy(amount)); 
+0x0.Currency.deposit(copy(payee), move(coin)); 
+}</pre></td></tr></table>
+</div>
+</div>
+<p>实际上，目前的Libra 资料仅仅有Move IR代码的案例。Move源代码的细节，在本文章发表时还未公布。</p>
+
+<p>Move 编程语言和虚拟机是Libra项目的关键创新之处，但是Move 编程语言与传统的solidity 和vyper 智能合约语言，以及以太坊虚拟机和WebAssembly区块链虚拟机相比，所做出的妥协有哪些呢？</p>
+
+<h3 id="图灵完备性的牺牲">图灵完备性的牺牲</h3>
+
+<p>大多数DSL 特定语言系统都会就具体的任务进行优化，因此并不适用于广泛意义上的计算。Libra 并未直接表示Move编程语言是不是一个图灵完备的体系，但是，Move 专门针对金融交易进行优化，Move 系统可能并不适合用在开发加密货币游戏或博彩。</p>
+
+<p>也就是说，Libra 软件对于大多数企业智能合约用例来说并不合适。</p>
+
+<p>但还有其他的方面，Move编程语言在很大程度上不是智能合约。</p>
+
+<h3 id="move程序是真的智能合约吗">Move程序是真的智能合约吗？</h3>
+
+<p>Move程序必须进行编译，并且集成到一个Libra节点软件当中，对普通用户来说才是可用的。Libra区块链如果要支持新的Move程序，必须要暂停整条链，并且所有三分之二的验证人节点进行软件升级，才能够支持同样的Move程序，这在本质上意味着，每次要添加新的Move程序到区块链，都要进行硬分叉，期间伴随着区块链服务暂停。这不是智能合约，而是<a href="https://hyperledger-fabric.readthedocs.io/en/release-1.4/chaincode.html">chaincode</a>。</p>
+
+<p>智能合约的一个决定性的特点就是它有能力按照要求在区块链在并不需要暂停服务的情况下，通过共识，部署并且执行新代码，这个对于企业区块链或者是公链来说非常重要。</p>
+
+<p>•   公链必须允许任何人在不需要得到授权也不需要暂停服务的情况下部署并执行智能合约代码。
+•   企业级的区块链特别需要使用智能合约来创造自动化的商务决策。比如在不同几方之间，进行担保交易。雇员与合伙人必须能够按照实际需要来修改和部署智能合约，同时不需要暂停整条链</p>
+
+<p>Libra项目作为一个，专注于金融交易的准入式区块链，它的最初的方案，是使用不可更改的chaincode。这样能够让整个系统更加安全，而且更加稳定，因为所有的Move程序都会至少要得到100个验证人节点中的67位的检查和允许。但是Libra项目所声称的目标是在接下来五年当中，进化成一条公链。我们相信Move架构会与区块链共同进化。</p>
+
+<h3 id="写在最后">写在最后</h3>
+
+<p>本篇文章中我们聚焦讨论了Move编程语言以及由其驱动的智能合约。当然，Libra还有其它很有意思的技术创新。比如以下值得关注的点：</p>
+
+<ol>
+<li>以太坊每个节点都维护了一个全球性的数据库，在每个区块更新之后，数据库也会跟着更新；而Libra与以太坊不同，Libra 的数据库是基于不同版本的。Libra的状态数据库在每个交易完成后得到更新。对Libra来说，相较交易的概念而言，区块的概念没有那么重要。</li>
+<li>Libra 区块链表示，其最初的性能目标是每秒1000笔交易。很显然，这对于一个全球性的支付企业或者全球性的电商场景而言，已经足够了，因为VISA平均的TPS 在1700 左右。Libra 没有不切实际、不负责任地吹嘘百万TPS。</li>
+</ol>
+
+<p>在接下来的系列文章中，我们将提供对Move 程序的深度解读，并向读者展示Move具体是如何工作的。敬请期待。</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">June 21, 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/ethereum/">Ethereum</a>
+          <a href="http://blog.secondstate.io/tags/libra/">Libra</a>
+          <a href="http://blog.secondstate.io/tags/smart-contract/">Smart contract</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/20190701-libra-first-impressions-zh/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Libra深度剖析② Validator 如何验证交易</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/20190619-libra-first-impressions/">
+            <span class="next-text nav-default">Libra First Impressions Part 1: Smart Contracts are not created equal</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

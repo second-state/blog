@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dapp on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/dapp/</link>
+    <description>Recent content in Dapp on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 20 Oct 2019 01:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/dapp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>如何使用BUIDL 发起投票议题</title>
+      <link>http://blog.secondstate.io/post/20191020-public-comment-zh/</link>
+      <pubDate>Sun, 20 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191020-public-comment-zh/</guid>
+      <description>在区块链世界里，您留下的评论会永远留存，不能被篡改，永远不会消失~ DApp小科普 区块链应用（DApp）通常以智能合约为后端，以HTML 和 Ja</description>
+    </item>
+    
+    <item>
+      <title>After Raising $3 Million, Blockchain Technology Startup, Second State, Aims to Bring Smart Contracts to Businesses</title>
+      <link>http://blog.secondstate.io/post/20190724-after-raising-3-million-blockchain-technology-startup-second-state-brings-smart-contracts-to-business/</link>
+      <pubDate>Wed, 24 Jul 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190724-after-raising-3-million-blockchain-technology-startup-second-state-brings-smart-contracts-to-business/</guid>
+      <description>AUSTIN, TEXAS (July 23, 2019) — Second State, a developer of an open source blockchain smart contract platform for enterprises, has raised $3 million in Series A funding from a number of top venture capitalists and angel investors, including Susquehanna International Group (SIG), Ethereum Classic Labs, and JBoss creator Dr. Marc Fluery.
+The Second State BUIDL tool, a browser-based IDE, allows developers to quickly write, build and deploy all elements of a decentralized application (“DApp”), including smart contracts, formal rules, web3 scripts, ElasticSearch scripts, HTML, CSS, and Javascript.</description>
+    </item>
+    
+    <item>
+      <title>FairPlay: a new type of DApp</title>
+      <link>http://blog.secondstate.io/post/20190715-fairplay-a-new-type-of-dapp/</link>
+      <pubDate>Sun, 14 Jul 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190715-fairplay-a-new-type-of-dapp/</guid>
+      <description>Credits: FairPlay is developed by Second State, an open source enterprise smart contract platform, and deployed on the CyberMiles public blockchain.
+What is FairPlay FairPlay uses smart contracts to conduct automated prize draws that are fair and transparent. It allows anyone to create and participate in product giveaways and e-commerce marketing campaigns. Since its launch, FairPlay has routinely reached a DAU (Daily Active Users) of 1000 (according to Google Analytics), with each giveaway receiving hundreds of on-chain transactions, making it one of the most popular DApps of all public blockchains.</description>
+    </item>
+    
+    <item>
+      <title>Blockchain search engine — real-time data for decentralized applications (DApps)</title>
+      <link>http://blog.secondstate.io/post/20190703-search-engine-overview/</link>
+      <pubDate>Wed, 03 Jul 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190703-search-engine-overview/</guid>
+      <description>This article articulates the importance of putting decentralized, blockchain, applications (DApps) into the hands of mobile technology users. More specifically, the importance of providing real-time blockchain data to decentralized applications (DApps) which run on mobile devices. This is the first of many articles. This particular article provides an overview of the smart contract search engine architecture and then provides specific code examples for querying the search engine and API. Future articles will explain the inner workings of the product.</description>
+    </item>
+    
+  </channel>
+</rss>

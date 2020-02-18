@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Libra First Impressions Part 2: Deep dive with a Libra transaction - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction." />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20190701-libra-first-impressions/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+
+<meta itemprop="name" content="Libra First Impressions Part 2: Deep dive with a Libra transaction">
+<meta itemprop="description" content="This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.">
+
+
+<meta itemprop="datePublished" content="2019-07-01T10:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2019-07-01T10:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="1428">
+
+
+
+<meta itemprop="keywords" content="Libra,smart contract,virtual machine,Ethereum,Move,blockchain," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Libra First Impressions Part 2: Deep dive with a Libra transaction"/>
+<meta name="twitter:description" content="This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="Libra First Impressions Part 2: Deep dive with a Libra transaction - Second State News and Articles">
+  <meta property="og:description" content="This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction." />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20190701-libra-first-impressions/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Libra First Impressions Part 2: Deep dive with a Libra transaction</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> July 1, 2019 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/libra/"> libra </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      
+
+<p>This is the second article in a 3-article series on the technology behind Libra. The first article is <a href="https://blog.secondstate.io/post/20190619-libra-first-impressions/">an overview of Libra and its smart contract programming language Move</a>. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.</p>
+
+<p>This article is researched by Hydai from Second State, a VC-funded, enterprise-focused, <a href="www.secondstate.io">smart contract platform company</a>. We are still in stealth mode while making contributions to leading open source projects. We are launching our first products soon.</p>
+
+<h3 id="interacting-with-libra">Interacting with Libra</h3>
+
+<p>We can explain the relationship between Libra Client and Validator through the following diagram from the Libra Technical White Paper.</p>
+
+<p><img src="/images/20190701-Libra-first-impression2-01.png" alt="" /></p>
+
+<p>Libra has two categories of blockchain participants: Client (User) and Validators (LibraBFT consensus nodes). An average user needs to submit the transactions and database queries to Validators through the Client.</p>
+
+<h3 id="request-libra-coin-from-the-faucet">Request Libra Coin from the faucet</h3>
+
+<ol>
+<li><p>Start Libra client and wait for Libra CLI to be connected to testnet. Libra CLI shows <code>libra%</code> and is now ready for user commands.</p></li>
+
+<li><p>When a user enters <code>account mint &lt;MyAddr&gt; &lt;NumberOfCoins&gt;</code> in Libra CLI to mint some coins, Libra CLI will package the current sender <code>&lt;MyAddr&gt;</code>, the minting operation’s transaction script (<code>libra/language/stdlib/transaction_scriptsmint.mvir</code>), and the quantity to be requested into a transaction (see the reference part below for the transaction format).</p></li>
+
+<li><p>The Libra client submits this transaction to the validator after signing it.</p></li>
+
+<li><p>When the Validator receives the transaction, it will be placed in the mempool and shared with other Validators.</p></li>
+
+<li><p>Validators’ governance design is LibraBFT: Each validator takes turns to act as a leader. The leader picks up the transactions he wants to execute from mempool into the proposed block and broadcasts it to other validators. Wait until 2f+1 validators to vote for this proposed block, the Leader will make a quorum certificate and broadcast it to all validators.</p></li>
+
+<li><p>At this moment the transactions in this proposed block will be executed and committed on the versioned database.</p></li>
+</ol>
+
+<h3 id="how-does-the-validator-execute-a-transaction">How does the validator execute a Transaction</h3>
+
+<p>Libra designed a Move VM specifically for Move Language. When a validator executes a transaction, it uses the Move VM! Let’s see how. There are 6 steps: Check signature, prologue, verify, publish module, run the transaction script, and finally, epilogue.</p>
+
+<p><img src="/images/20190701-Libra-first-impression2-02.png" alt="" /></p>
+
+<p><em>Check Signature:</em> Check if the Transaction Signature matches the Transaction Data and the sender’s public key. At this stage, it just verifies the transaction details. It has not yet interacted with the versioned database and Move VM.</p>
+
+<p><em>Run Prologue:</em></p>
+
+<p>There are three checks in the following order:</p>
+
+<ol>
+<li><p>Check if the sender public key in the Transaction is the same as the authentication key held by the sender account in the database.
+<code>HASH(Sender Public Key) == SenderAddr.LibraAccount.T.AuthenticationKey</code></p></li>
+
+<li><p>Check if Sender has enough Libra Coin to pay for Gas Fee
+<code>TX.gasPrice * TX.maxGasAmount &lt;=
+SenderAddr.LibraAccount.T.balance</code></p></li>
+
+<li><p>Check if the sequence number of the transaction matches the sequence number of the sender account in the current database.
+<code>TX.SequenceNumber ==
+SenderAddr.LibraAccount.T.SequenceNumber</code></p></li>
+</ol>
+
+<p>All checks are performed by executing the procedure <code>prologue()</code> of built-in module <code>0x0.LibraAccount</code>.</p>
+
+<p>Since <code>the prologue()</code> work is required by the system, Libra does not charge a gas fee on the <code>0x0.LibraAccount.prologue()</code> procedure, even as <code>prologue()</code> is executed by the Move VM.</p>
+
+<p><em>Verify Transaction Script and Module:</em> Security is a top priority in designing Move. To ensure security, the VM uses the Move bytecode verifier to check the transaction script or deployed module to ensure the security of type, reference, and resource.</p>
+
+<p><em>Publish Module:</em> IF there is a module to be deployed, then deploy module to the sender address at this stage.</p>
+
+<p><em>Run transaction script:</em> The Move VM ties transaction parameters and the arguments corresponding to this transaction script. Then run the script.</p>
+
+<p>If successful, events will be generated and the result will be written back to the global state.</p>
+
+<p>If it fails (including out of gas, execution error, etc.), the modification to the global state will be reverted.</p>
+
+<p><em>Run Epilogue:</em> Success or failure, the VM will execute this step for all transactions.</p>
+
+<p>The Move VM calls the built-in module <code>0x0.LibraAccount</code>’s procedure <code>epilogue()</code>:</p>
+
+<ul>
+<li>Charge the gas fee: <code>SenderAddr.LibraAccount.T.Balance -= TX.gasPrice * TX.gasUse</code></li>
+<li>Adjust the sequence number: <code>SenderAddr.LibraAccount.T.SequenceNumber += 1.</code></li>
+</ul>
+
+<p>Similar to the <code>prologue()</code>, even though <code>LibraAccount.epilogue()</code> is run via Move VM, the sender won’t be charged any gas fee for the <code>epilogue()</code> itself.</p>
+
+<h3 id="a-concrete-example">A concrete example</h3>
+
+<p>Now we have seen how the transaction is processed by the validators. Let’s use a complete example to demonstrate how to mint or create some Libra coins on the testnet. The process starts from the Libra CLI (Command Line Interface).</p>
+
+<p>When we start the Libra CLI, it goes through the following process to initialize the client and allow the user to enter commands to interact with Libra testnet. In this section, let’s review how the CLI processes <code>the account mint &lt;address&gt; &lt;number of coin&gt;</code> command.</p>
+
+<p><img src="/images/20190701-Libra-first-impression2-03.png" alt="" /></p>
+
+<p>Before the user sees the input prompt of libra %, the Libra CLI loads the genesis, faucet account, local account and other information from the configuration file, and starts the <code>ClientProxy</code>. In subsequent operations, the user’s instructions are wrapped by <code>ClientProxy</code>, the corresponding transaction being composed and sent to Libra’s validator.</p>
+
+<h3 id="libracommand">LibraCommand</h3>
+
+<p>When the user wants to request 100 libra coins for their first account, he enters <code>account mint 0 100</code> and the Libra CLI will parse the entire input string and send it to <code>LibraCommand</code> for executing.</p>
+
+<p>The <code>account</code> keyword in the string means that command will call <code>LibraCommandAccount::execute()</code> to execute <code>mint 0 100</code> . When <code>LibraCommandAccount</code> identifies keyword <code>mint</code> in the command, it calls subcommand <code>LibraCommandAccountMint::execute()</code> with 0 100.</p>
+
+<p><img src="/images/20190701-Libra-first-impression2-04.png" alt="" /></p>
+
+<h3 id="clientproxy">ClientProxy</h3>
+
+<p>But <code>AccountCommandMint::execute()</code> does not directly send a transaction to the libra validator. Instead, it goes through the Libra CLI’s most important element: <code>ClientProxy</code>. Let’s take a look at the process!</p>
+
+<p><img src="/images/20190701-Libra-first-impression2-05.png" alt="" /></p>
+
+<p><code>AccountCommandMint::execute()</code> sends <code>0</code> (the first account), <code>100</code> (the number of Libra coins) to <code>ClientProxy::mint_coins()</code>.</p>
+
+<p>The <code>ClientProxy</code> will first confirm whether there is a faucet account on the local machine.</p>
+
+<p>If the local machine does not have a faucet account, <code>ClientProxy</code> calls the <code>mint_coins_with_faucet_service()</code> method and wraps <code>mint 0 100</code> into a url (<code>https://&lt;faucet server&gt;?amount=100&amp;account=0</code>) to send the request to a remote faucet server.</p>
+
+<p>When there is a local faucet account, <code>ClientProxy</code> uses a completely different path to execute the mint request and call <code>ClientProxy::mint_coins_with_local_faucet_account()</code> instead. At this point, a Libra transaction will be created:</p>
+
+<ul>
+<li>The <code>vm_genesis::encode_mint_program()</code> method loads the <code>mint.mvir</code> transaction script written in the Move language under <code>language/stdlib/transaction_scripts</code>.</li>
+<li>The <code>ClientProxy</code> then calls <code>ClientProxy::create_submit_transaction_req()</code> to include information such as transaction script, sender address, gas price, max gas amount into the Libra transaction.</li>
+<li>Finally, the <code>ClientProxy</code> uses <code>GRPCClient::submit_transaction()</code> to send this transaction to the validator.</li>
+</ul>
+
+<p>If the user requires the transaction to complete before returning <code>account mint 0 100</code>, <code>ClientProxy</code> will call <code>wait_for_transaction()</code> and display “waiting …” until the transaction is completed.</p>
+
+<h3 id="what-s-next">What’s next</h3>
+
+<p>In this article, we demonstrated how Libra processes a transaction through a review of its source code. In the next article in this series, we will create new Libra modules to support our own coins on the Libra blockchain. Stay tuned!</p>
+
+<h3 id="references">References</h3>
+
+<h4 id="transaction-format">Transaction Format</h4>
+
+<p>Libra defines in detail that a Transaction should have the following fields:</p>
+
+<p><img src="/images/20190701-Libra-first-impression2-06.png" alt="" /></p>
+
+<ul>
+<li><p>Sender Address: The sender’s address that will be used to query the Libra account for this Address in the ledger.</p></li>
+
+<li><p>Sender Public Key: The sender’s public key, which will be used to verify that this Transaction is signed by Sender; and to check if this public key matches the authentication key retained by LibraAccount in Address.</p></li>
+
+<li><p>Program: Move Module or Transaction Script.</p></li>
+
+<li><p>Gas Price: The gas price for this transaction.</p></li>
+
+<li><p>Max Gas Amount: The Gas limit for this transaction.</p></li>
+
+<li><p>Sequence Number: This needs to match the LibraAccount.T.SequenceNumber in the current Address. It is the verification field used to check for attacks such as a replay attack.</p></li>
+</ul>
+
+<h4 id="libra-storage-layout">Libra Storage Layout</h4>
+
+<p>Each Address has a Module section and a Resource section.</p>
+
+<p>Each Address can have multiple Modules. The only restriction is that there can only be one Module with the same name in the Address. In the following figure, for example, <code>0x0</code> already has the <code>Account</code> module. When the user tries to publish another Account module to <code>0x0</code>, the transaction would fail with an error.</p>
+
+<p>In Libra, each Address has an independent namespace. Therefore if a module is deployed in different addresses, each module deployment has a different name. For example, in the figure below, even though <code>0x0</code> and <code>0x4</code> have the same account module, <code>0x0.Account.T {…}</code> and <code>0x4.Account.T {…}</code> are entirely different resources.</p>
+
+<p><img src="/images/20190701-Libra-first-impression2-07.png" alt="" /></p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">July 1, 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/libra/">Libra</a>
+          <a href="http://blog.secondstate.io/tags/smart-contract/">smart contract</a>
+          <a href="http://blog.secondstate.io/tags/virtual-machine/">virtual machine</a>
+          <a href="http://blog.secondstate.io/tags/ethereum/">Ethereum</a>
+          <a href="http://blog.secondstate.io/tags/move/">Move</a>
+          <a href="http://blog.secondstate.io/tags/blockchain/">blockchain</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/20190703-search-engine-overview/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Blockchain search engine — real-time data for decentralized applications (DApps)</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/20190701-libra-first-impressions-zh/">
+            <span class="next-text nav-default">Libra深度剖析② Validator 如何验证交易</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

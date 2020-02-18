@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Business on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/categories/business/</link>
+    <description>Recent content in Business on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jul 2019 09:42:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/categories/business/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blockchain search engine — real-time data for decentralized applications (DApps)</title>
+      <link>http://blog.secondstate.io/post/20190703-search-engine-overview/</link>
+      <pubDate>Wed, 03 Jul 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190703-search-engine-overview/</guid>
+      <description>This article articulates the importance of putting decentralized, blockchain, applications (DApps) into the hands of mobile technology users. More specifically, the importance of providing real-time blockchain data to decentralized applications (DApps) which run on mobile devices. This is the first of many articles. This particular article provides an overview of the smart contract search engine architecture and then provides specific code examples for querying the search engine and API. Future articles will explain the inner workings of the product.</description>
+    </item>
+    
+    <item>
+      <title>The lean blockchain startup — a new strategy to grow and prosper!</title>
+      <link>http://blog.secondstate.io/post/20190319-lean/</link>
+      <pubDate>Tue, 19 Mar 2019 16:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190319-lean/</guid>
+      <description>The concept behind a &amp;ldquo;lean startup&amp;rdquo; is to grow an innovative business idea, as fast as possible, with as little as possible.
+ The overall goal is to grow and prosper!
+ Creating a lean initiative, however, does not mean “going without.” On the contrary, a lean initiative is about getting more bang for your buck. This is achieved by making better decisions. Better decisions though cannot be made using yesterday’s knowledge.</description>
+    </item>
+    
+  </channel>
+</rss>

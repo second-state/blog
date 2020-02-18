@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eth2 on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/eth2/</link>
+    <description>Recent content in Eth2 on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Oct 2019 01:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/eth2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compile and deploy an ERC20 contract on Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</link>
+      <pubDate>Fri, 25 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</guid>
+      <description>Second State provides open source infrastructure technologies for public and enterprise blockchains. The smart contract compiler toolchain and virtual machine runtimes are critical elements of the infrastructure.
+Through its web-based BUIDL IDE, developers can easily access Second State smart contract programming languages, compilers, optimizers, and virtual machines. Even novice developers can write and publish decentralized applications (smart contract + web app) on any Ethereum-compatible blockchain in minutes. See examples on Ethereum Classic and CyberMiles blockchains.</description>
+    </item>
+    
+    <item>
+      <title>What I learned from Ethereum Devcon5</title>
+      <link>http://blog.secondstate.io/post/20191024-devcon5-recap/</link>
+      <pubDate>Thu, 24 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
+      <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&amp;rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
+    </item>
+    
+  </channel>
+</rss>

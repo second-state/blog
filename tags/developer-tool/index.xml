@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Developer Tool on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/developer-tool/</link>
+    <description>Recent content in Developer Tool on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Sep 2019 09:42:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/developer-tool/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second State 发布专为以太经典（ETC）打造的BUIDL IDE工具</title>
+      <link>http://blog.secondstate.io/post/20190926-buidl-for-etc-zh/</link>
+      <pubDate>Thu, 26 Sep 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190926-buidl-for-etc-zh/</guid>
+      <description>区块链智能合约平台Second State 发布专为以太经典（Ethereum Classic）打造的BUIDL IDE。BUIDL 集成了以太经典开发环境，</description>
+    </item>
+    
+    <item>
+      <title>Calling All Developers: Second State Launches BUIDL IDE, an Integrated Development Environment Software Application, for Ethereum Classic Blockchain</title>
+      <link>http://blog.secondstate.io/post/20190925-buidl-for-etc/</link>
+      <pubDate>Tue, 24 Sep 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190925-buidl-for-etc/</guid>
+      <description>This news is also seen on PRweb.com
+ SAN FRANCISCO (Sept. 24, 2019) —Second State, developer of an open source, blockchain-based smart contract platform for global business, has announced the launch of its BUIDL IDE, an integrated development environment software application for Ethereum Classic (ETC), the preeminent blockchain for smart contracts and “dapps.” With Second State’s BUIDL IDE, development and deployment on ETC can be done within minutes, from any web browser: secondstate.</description>
+    </item>
+    
+  </channel>
+</rss>
