@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Libra on Second State News and Articles</title>
@@ -45,9 +45,9 @@
       
       <guid>http://blog.secondstate.io/post/20190805-libra-deep-dive/</guid>
       <description>With Libra being scrutinized, if not attacked, at Congressional hearing, where is the anticipated ambitious global stable coin is heading towards?
- What is the difference between the programming on Libra and Ethereum?
- Can ERC 20 token interact with Libra?
- How to get started with DApp programming in a few minutes?
+  What is the difference between the programming on Libra and Ethereum?
+  Can ERC 20 token interact with Libra?
+  How to get started with DApp programming in a few minutes?
   These are discussed in detail at the tech workshop &amp;ldquo;Libra Smart Contract Deep Dive&amp;rdquo; held in Beijing, China, on August 3rd.</description>
     </item>
     

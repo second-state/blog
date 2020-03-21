@@ -34,7 +34,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20191220-rust-webassembly-zh/" />
@@ -58,19 +58,15 @@
 
 
 
-
 <meta itemprop="name" content="只需 5 分钟，教你如何编写并执行一个 Rust &#43; WebAssembly 程序">
 <meta itemprop="description" content="在探讨 WASM 在服务端的巨大潜力时，我们提到 WASM 的一大优势就是支持有影响力的新锐编程语言，例如 Rust 。这篇文章将展示如何编写并执行一个 Wasm Rust 程序，只有代码">
-
-
 <meta itemprop="datePublished" content="2019-12-06T09:42:14&#43;08:00" />
 <meta itemprop="dateModified" content="2019-12-06T09:42:14&#43;08:00" />
 <meta itemprop="wordCount" content="903">
 
 
 
-<meta itemprop="keywords" content="Rust,WebAssembly," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Rust,WebAssembly," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="只需 5 分钟，教你如何编写并执行一个 Rust &#43; WebAssembly 程序"/>
 <meta name="twitter:description" content="在探讨 WASM 在服务端的巨大潜力时，我们提到 WASM 的一大优势就是支持有影响力的新锐编程语言，例如 Rust 。这篇文章将展示如何编写并执行一个 Wasm Rust 程序，只有代码"/>
 
@@ -290,23 +286,17 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      
-
-<blockquote>
+      <blockquote>
 <p>在探讨 WASM 在服务端的巨大潜力时，我们提到 WASM 的一大优势就是支持有影响力的新锐编程语言，例如 Rust 。这篇文章将展示如何编写并执行一个 Wasm Rust 程序，只有代码。
 本文作者： Second State 的研究员、开源核心开发 Tim McCallum。</p>
 </blockquote>
-
 <p>以下为正文：</p>
-
 <p>该演示是使用 Ubuntu Linux 操作系统和 Google 的 Chrome 浏览器进行的。其他组合尚未经过测试。</p>
-
-<h3 id="第1步-安装-apache2-和-rust">第1步：安装 Apache2 和 Rust</h3>
-
+<h3 id="第1步安装-apache2-和-rust">第1步：安装 Apache2 和 Rust</h3>
 <p>运行以下所有 Ubuntu 系统设置命令（更新，安装 Apache2 和 Rust ）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -314,101 +304,95 @@ if (!doNotTrack) {
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">sudo apt-get update
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get -y install apache2
 sudo chown -R $USER:$USER /var/www/html
 curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source $HOME/.cargo/env
 rustup target add wasm32-wasi
-rustup override set nightly</pre></td></tr></table>
+rustup override set nightly
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="第2步-创建一个新的-rust-项目">第2步：创建一个新的 Rust 项目</h3>
-
+</div><h3 id="第2步创建一个新的-rust-项目">第2步：创建一个新的 Rust 项目</h3>
 <p>创建一个快速的 Rust 项目</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">cd ~
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">cd ~
 cargo new --lib triple
-cd triple</pre></td></tr></table>
+cd triple
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="第3步-为-wasm-配置-rust">第3步：为 Wasm 配置 Rust</h3>
-
+</div><h3 id="第3步为-wasm-配置-rust">第3步：为 Wasm 配置 Rust</h3>
 <p>通过将下面的配置添加到 〜/ triple / Cargo.toml 文件的 lib 部分来配置 rust</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">[lib]
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[lib]
 name = &#34;triple_lib&#34;
 path = &#34;src/triple.rs&#34;
-crate-type =[&#34;cdylib&#34;]</pre></td></tr></table>
+crate-type =[&#34;cdylib&#34;]
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="第4步-指定构建目标">第4步：指定构建目标</h3>
-
+</div><h3 id="第4步指定构建目标">第4步：指定构建目标</h3>
 <p>通过在 〜/ .cargo.config 中创建一个新文件并添加以下配置来完成 Rust 的配置</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">[build]
-target = &#34;wasm32-wasi&#34;</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[build]
+target = &#34;wasm32-wasi&#34;
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="第5步-写-rust">第5步：写 Rust</h3>
-
+</div><h3 id="第5步写-rust">第5步：写 Rust</h3>
 <p>编写一个快速的 Rust 程序并将其保存为 Triple.rs（在 〜/ triple / src 目录中）</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">#[no_mangle]
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">#[no_mangle]
 pub extern fn triple(x: i32) -&gt; i32 {
  return 3 * x;
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="第6步-构建-wasm-代码">第6步：构建 Wasm 代码</h3>
-
+</div><h3 id="第6步构建-wasm-代码">第6步：构建 Wasm 代码</h3>
 <p>将 Rust 代码构建到 Wasm 中，然后将 Wasm 文件复制到 Apache2 Web 服务器区域</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">cd ~/triple
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">cd ~/triple
 cargo build - release
-cp -rp ~/triple/target/wasm32-wasi/release/triple_lib.wasm /var/www/html/triple.wasm</pre></td></tr></table>
+cp -rp ~/triple/target/wasm32-wasi/release/triple_lib.wasm /var/www/html/triple.wasm
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="第7步-制作-html-网页">第7步：制作 HTML 网页</h3>
-
+</div><h3 id="第7步制作-html-网页">第7步：制作 HTML 网页</h3>
 <p>在 var / www / html / 目录中创建一个名为 Triple.html 的新文件，并使用以下代码填充它。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -463,9 +447,9 @@ cp -rp ~/triple/target/wasm32-wasi/release/triple_lib.wasm /var/www/html/triple.
 </span><span class="lnt">53
 </span><span class="lnt">54
 </span><span class="lnt">55
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">&lt;html&gt;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;html&gt;
 	&lt;head&gt;
 		&lt;link rel=&#34;stylesheet&#34; href=&#34;https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css&#34; integrity=&#34;sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T&#34; crossorigin=&#34;anonymous&#34; /&gt;
 		&lt;script&gt;
@@ -519,25 +503,19 @@ cp -rp ~/triple/target/wasm32-wasi/release/triple_lib.wasm /var/www/html/triple.
   src=&#34;https://code.jquery.com/jquery-3.4.1.js&#34;
   integrity=&#34;sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=&#34;
   crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-	&lt;/html&gt;</pre></td></tr></table>
+	&lt;/html&gt;
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="第8步-单击鼠标执行写好的-rust-代码">第8步：单击鼠标执行写好的 Rust 代码</h3>
-
-<p>在 triple HTML 页面：<a href="http://12.345.456.78/triple.html">http://12.345.456.78/triple.html</a> 上访问计算机的IP。</p>
-
+</div><h3 id="第8步单击鼠标执行写好的-rust-代码">第8步：单击鼠标执行写好的 Rust 代码</h3>
+<p>在 triple HTML 页面：http://12.345.456.78/triple.html 上访问计算机的IP。</p>
 <p>然后单击 “Triple the number” 按钮。
-<img src="images/20191220-rust-webassembly-01.png" alt="" /></p>
-
+<img src="images/20191220-rust-webassembly-01.png" alt=""></p>
 <p>将显示以下提示。
-<img src="images/20191220-rust-webassembly-02.png" alt="" /></p>
-
+<img src="images/20191220-rust-webassembly-02.png" alt=""></p>
 <p>（如图所示：8的三倍等于24）</p>
-
 <p>到这里我们就完成了一个Rust + WebAssembly 程序，你也来试试吧！</p>
-
 <p>作者：Michael_Yuan
-链接：<a href="https://juejin.im/post/5de62000e51d4557f852a141">https://juejin.im/post/5de62000e51d4557f852a141</a></p>
+链接：https://juejin.im/post/5de62000e51d4557f852a141</p>
 
     </div>
 

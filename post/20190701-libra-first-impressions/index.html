@@ -34,7 +34,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20190701-libra-first-impressions/" />
@@ -58,19 +58,15 @@
 
 
 
-
 <meta itemprop="name" content="Libra First Impressions Part 2: Deep dive with a Libra transaction">
 <meta itemprop="description" content="This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.">
-
-
 <meta itemprop="datePublished" content="2019-07-01T10:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-01T10:01:23&#43;08:00" />
 <meta itemprop="wordCount" content="1428">
 
 
 
-<meta itemprop="keywords" content="Libra,smart contract,virtual machine,Ethereum,Move,blockchain," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Libra,smart contract,virtual machine,Ethereum,Move,blockchain," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Libra First Impressions Part 2: Deep dive with a Libra transaction"/>
 <meta name="twitter:description" content="This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction."/>
 
@@ -289,161 +285,120 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      
-
-<p>This is the second article in a 3-article series on the technology behind Libra. The first article is <a href="https://blog.secondstate.io/post/20190619-libra-first-impressions/">an overview of Libra and its smart contract programming language Move</a>. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.</p>
-
+      <p>This is the second article in a 3-article series on the technology behind Libra. The first article is <a href="https://blog.secondstate.io/post/20190619-libra-first-impressions/">an overview of Libra and its smart contract programming language Move</a>. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.</p>
 <p>This article is researched by Hydai from Second State, a VC-funded, enterprise-focused, <a href="www.secondstate.io">smart contract platform company</a>. We are still in stealth mode while making contributions to leading open source projects. We are launching our first products soon.</p>
-
 <h3 id="interacting-with-libra">Interacting with Libra</h3>
-
 <p>We can explain the relationship between Libra Client and Validator through the following diagram from the Libra Technical White Paper.</p>
-
-<p><img src="/images/20190701-Libra-first-impression2-01.png" alt="" /></p>
-
+<p><img src="/images/20190701-Libra-first-impression2-01.png" alt=""></p>
 <p>Libra has two categories of blockchain participants: Client (User) and Validators (LibraBFT consensus nodes). An average user needs to submit the transactions and database queries to Validators through the Client.</p>
-
 <h3 id="request-libra-coin-from-the-faucet">Request Libra Coin from the faucet</h3>
-
 <ol>
-<li><p>Start Libra client and wait for Libra CLI to be connected to testnet. Libra CLI shows <code>libra%</code> and is now ready for user commands.</p></li>
-
-<li><p>When a user enters <code>account mint &lt;MyAddr&gt; &lt;NumberOfCoins&gt;</code> in Libra CLI to mint some coins, Libra CLI will package the current sender <code>&lt;MyAddr&gt;</code>, the minting operation’s transaction script (<code>libra/language/stdlib/transaction_scriptsmint.mvir</code>), and the quantity to be requested into a transaction (see the reference part below for the transaction format).</p></li>
-
-<li><p>The Libra client submits this transaction to the validator after signing it.</p></li>
-
-<li><p>When the Validator receives the transaction, it will be placed in the mempool and shared with other Validators.</p></li>
-
-<li><p>Validators’ governance design is LibraBFT: Each validator takes turns to act as a leader. The leader picks up the transactions he wants to execute from mempool into the proposed block and broadcasts it to other validators. Wait until 2f+1 validators to vote for this proposed block, the Leader will make a quorum certificate and broadcast it to all validators.</p></li>
-
-<li><p>At this moment the transactions in this proposed block will be executed and committed on the versioned database.</p></li>
+<li>
+<p>Start Libra client and wait for Libra CLI to be connected to testnet. Libra CLI shows <code>libra%</code> and is now ready for user commands.</p>
+</li>
+<li>
+<p>When a user enters <code>account mint &lt;MyAddr&gt; &lt;NumberOfCoins&gt;</code> in Libra CLI to mint some coins, Libra CLI will package the current sender <code>&lt;MyAddr&gt;</code>, the minting operation’s transaction script (<code>libra/language/stdlib/transaction_scriptsmint.mvir</code>), and the quantity to be requested into a transaction (see the reference part below for the transaction format).</p>
+</li>
+<li>
+<p>The Libra client submits this transaction to the validator after signing it.</p>
+</li>
+<li>
+<p>When the Validator receives the transaction, it will be placed in the mempool and shared with other Validators.</p>
+</li>
+<li>
+<p>Validators’ governance design is LibraBFT: Each validator takes turns to act as a leader. The leader picks up the transactions he wants to execute from mempool into the proposed block and broadcasts it to other validators. Wait until 2f+1 validators to vote for this proposed block, the Leader will make a quorum certificate and broadcast it to all validators.</p>
+</li>
+<li>
+<p>At this moment the transactions in this proposed block will be executed and committed on the versioned database.</p>
+</li>
 </ol>
-
 <h3 id="how-does-the-validator-execute-a-transaction">How does the validator execute a Transaction</h3>
-
 <p>Libra designed a Move VM specifically for Move Language. When a validator executes a transaction, it uses the Move VM! Let’s see how. There are 6 steps: Check signature, prologue, verify, publish module, run the transaction script, and finally, epilogue.</p>
-
-<p><img src="/images/20190701-Libra-first-impression2-02.png" alt="" /></p>
-
+<p><img src="/images/20190701-Libra-first-impression2-02.png" alt=""></p>
 <p><em>Check Signature:</em> Check if the Transaction Signature matches the Transaction Data and the sender’s public key. At this stage, it just verifies the transaction details. It has not yet interacted with the versioned database and Move VM.</p>
-
 <p><em>Run Prologue:</em></p>
-
 <p>There are three checks in the following order:</p>
-
 <ol>
-<li><p>Check if the sender public key in the Transaction is the same as the authentication key held by the sender account in the database.
-<code>HASH(Sender Public Key) == SenderAddr.LibraAccount.T.AuthenticationKey</code></p></li>
-
-<li><p>Check if Sender has enough Libra Coin to pay for Gas Fee
-<code>TX.gasPrice * TX.maxGasAmount &lt;=
-SenderAddr.LibraAccount.T.balance</code></p></li>
-
-<li><p>Check if the sequence number of the transaction matches the sequence number of the sender account in the current database.
-<code>TX.SequenceNumber ==
-SenderAddr.LibraAccount.T.SequenceNumber</code></p></li>
+<li>
+<p>Check if the sender public key in the Transaction is the same as the authentication key held by the sender account in the database.
+<code>HASH(Sender Public Key) == SenderAddr.LibraAccount.T.AuthenticationKey</code></p>
+</li>
+<li>
+<p>Check if Sender has enough Libra Coin to pay for Gas Fee
+<code>TX.gasPrice * TX.maxGasAmount &lt;= SenderAddr.LibraAccount.T.balance</code></p>
+</li>
+<li>
+<p>Check if the sequence number of the transaction matches the sequence number of the sender account in the current database.
+<code>TX.SequenceNumber == SenderAddr.LibraAccount.T.SequenceNumber</code></p>
+</li>
 </ol>
-
 <p>All checks are performed by executing the procedure <code>prologue()</code> of built-in module <code>0x0.LibraAccount</code>.</p>
-
 <p>Since <code>the prologue()</code> work is required by the system, Libra does not charge a gas fee on the <code>0x0.LibraAccount.prologue()</code> procedure, even as <code>prologue()</code> is executed by the Move VM.</p>
-
 <p><em>Verify Transaction Script and Module:</em> Security is a top priority in designing Move. To ensure security, the VM uses the Move bytecode verifier to check the transaction script or deployed module to ensure the security of type, reference, and resource.</p>
-
 <p><em>Publish Module:</em> IF there is a module to be deployed, then deploy module to the sender address at this stage.</p>
-
 <p><em>Run transaction script:</em> The Move VM ties transaction parameters and the arguments corresponding to this transaction script. Then run the script.</p>
-
 <p>If successful, events will be generated and the result will be written back to the global state.</p>
-
 <p>If it fails (including out of gas, execution error, etc.), the modification to the global state will be reverted.</p>
-
 <p><em>Run Epilogue:</em> Success or failure, the VM will execute this step for all transactions.</p>
-
 <p>The Move VM calls the built-in module <code>0x0.LibraAccount</code>’s procedure <code>epilogue()</code>:</p>
-
 <ul>
 <li>Charge the gas fee: <code>SenderAddr.LibraAccount.T.Balance -= TX.gasPrice * TX.gasUse</code></li>
 <li>Adjust the sequence number: <code>SenderAddr.LibraAccount.T.SequenceNumber += 1.</code></li>
 </ul>
-
 <p>Similar to the <code>prologue()</code>, even though <code>LibraAccount.epilogue()</code> is run via Move VM, the sender won’t be charged any gas fee for the <code>epilogue()</code> itself.</p>
-
 <h3 id="a-concrete-example">A concrete example</h3>
-
 <p>Now we have seen how the transaction is processed by the validators. Let’s use a complete example to demonstrate how to mint or create some Libra coins on the testnet. The process starts from the Libra CLI (Command Line Interface).</p>
-
 <p>When we start the Libra CLI, it goes through the following process to initialize the client and allow the user to enter commands to interact with Libra testnet. In this section, let’s review how the CLI processes <code>the account mint &lt;address&gt; &lt;number of coin&gt;</code> command.</p>
-
-<p><img src="/images/20190701-Libra-first-impression2-03.png" alt="" /></p>
-
+<p><img src="/images/20190701-Libra-first-impression2-03.png" alt=""></p>
 <p>Before the user sees the input prompt of libra %, the Libra CLI loads the genesis, faucet account, local account and other information from the configuration file, and starts the <code>ClientProxy</code>. In subsequent operations, the user’s instructions are wrapped by <code>ClientProxy</code>, the corresponding transaction being composed and sent to Libra’s validator.</p>
-
 <h3 id="libracommand">LibraCommand</h3>
-
 <p>When the user wants to request 100 libra coins for their first account, he enters <code>account mint 0 100</code> and the Libra CLI will parse the entire input string and send it to <code>LibraCommand</code> for executing.</p>
-
 <p>The <code>account</code> keyword in the string means that command will call <code>LibraCommandAccount::execute()</code> to execute <code>mint 0 100</code> . When <code>LibraCommandAccount</code> identifies keyword <code>mint</code> in the command, it calls subcommand <code>LibraCommandAccountMint::execute()</code> with 0 100.</p>
-
-<p><img src="/images/20190701-Libra-first-impression2-04.png" alt="" /></p>
-
+<p><img src="/images/20190701-Libra-first-impression2-04.png" alt=""></p>
 <h3 id="clientproxy">ClientProxy</h3>
-
 <p>But <code>AccountCommandMint::execute()</code> does not directly send a transaction to the libra validator. Instead, it goes through the Libra CLI’s most important element: <code>ClientProxy</code>. Let’s take a look at the process!</p>
-
-<p><img src="/images/20190701-Libra-first-impression2-05.png" alt="" /></p>
-
+<p><img src="/images/20190701-Libra-first-impression2-05.png" alt=""></p>
 <p><code>AccountCommandMint::execute()</code> sends <code>0</code> (the first account), <code>100</code> (the number of Libra coins) to <code>ClientProxy::mint_coins()</code>.</p>
-
 <p>The <code>ClientProxy</code> will first confirm whether there is a faucet account on the local machine.</p>
-
 <p>If the local machine does not have a faucet account, <code>ClientProxy</code> calls the <code>mint_coins_with_faucet_service()</code> method and wraps <code>mint 0 100</code> into a url (<code>https://&lt;faucet server&gt;?amount=100&amp;account=0</code>) to send the request to a remote faucet server.</p>
-
 <p>When there is a local faucet account, <code>ClientProxy</code> uses a completely different path to execute the mint request and call <code>ClientProxy::mint_coins_with_local_faucet_account()</code> instead. At this point, a Libra transaction will be created:</p>
-
 <ul>
 <li>The <code>vm_genesis::encode_mint_program()</code> method loads the <code>mint.mvir</code> transaction script written in the Move language under <code>language/stdlib/transaction_scripts</code>.</li>
 <li>The <code>ClientProxy</code> then calls <code>ClientProxy::create_submit_transaction_req()</code> to include information such as transaction script, sender address, gas price, max gas amount into the Libra transaction.</li>
 <li>Finally, the <code>ClientProxy</code> uses <code>GRPCClient::submit_transaction()</code> to send this transaction to the validator.</li>
 </ul>
-
 <p>If the user requires the transaction to complete before returning <code>account mint 0 100</code>, <code>ClientProxy</code> will call <code>wait_for_transaction()</code> and display “waiting …” until the transaction is completed.</p>
-
-<h3 id="what-s-next">What’s next</h3>
-
+<h3 id="whats-next">What’s next</h3>
 <p>In this article, we demonstrated how Libra processes a transaction through a review of its source code. In the next article in this series, we will create new Libra modules to support our own coins on the Libra blockchain. Stay tuned!</p>
-
 <h3 id="references">References</h3>
-
 <h4 id="transaction-format">Transaction Format</h4>
-
 <p>Libra defines in detail that a Transaction should have the following fields:</p>
-
-<p><img src="/images/20190701-Libra-first-impression2-06.png" alt="" /></p>
-
+<p><img src="/images/20190701-Libra-first-impression2-06.png" alt=""></p>
 <ul>
-<li><p>Sender Address: The sender’s address that will be used to query the Libra account for this Address in the ledger.</p></li>
-
-<li><p>Sender Public Key: The sender’s public key, which will be used to verify that this Transaction is signed by Sender; and to check if this public key matches the authentication key retained by LibraAccount in Address.</p></li>
-
-<li><p>Program: Move Module or Transaction Script.</p></li>
-
-<li><p>Gas Price: The gas price for this transaction.</p></li>
-
-<li><p>Max Gas Amount: The Gas limit for this transaction.</p></li>
-
-<li><p>Sequence Number: This needs to match the LibraAccount.T.SequenceNumber in the current Address. It is the verification field used to check for attacks such as a replay attack.</p></li>
+<li>
+<p>Sender Address: The sender’s address that will be used to query the Libra account for this Address in the ledger.</p>
+</li>
+<li>
+<p>Sender Public Key: The sender’s public key, which will be used to verify that this Transaction is signed by Sender; and to check if this public key matches the authentication key retained by LibraAccount in Address.</p>
+</li>
+<li>
+<p>Program: Move Module or Transaction Script.</p>
+</li>
+<li>
+<p>Gas Price: The gas price for this transaction.</p>
+</li>
+<li>
+<p>Max Gas Amount: The Gas limit for this transaction.</p>
+</li>
+<li>
+<p>Sequence Number: This needs to match the LibraAccount.T.SequenceNumber in the current Address. It is the verification field used to check for attacks such as a replay attack.</p>
+</li>
 </ul>
-
 <h4 id="libra-storage-layout">Libra Storage Layout</h4>
-
 <p>Each Address has a Module section and a Resource section.</p>
-
 <p>Each Address can have multiple Modules. The only restriction is that there can only be one Module with the same name in the Address. In the following figure, for example, <code>0x0</code> already has the <code>Account</code> module. When the user tries to publish another Account module to <code>0x0</code>, the transaction would fail with an error.</p>
-
 <p>In Libra, each Address has an independent namespace. Therefore if a module is deployed in different addresses, each module deployment has a different name. For example, in the figure below, even though <code>0x0</code> and <code>0x4</code> have the same account module, <code>0x0.Account.T {…}</code> and <code>0x4.Account.T {…}</code> are entirely different resources.</p>
-
-<p><img src="/images/20190701-Libra-first-impression2-07.png" alt="" /></p>
+<p><img src="/images/20190701-Libra-first-impression2-07.png" alt=""></p>
 
     </div>
 

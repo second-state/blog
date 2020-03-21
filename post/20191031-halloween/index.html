@@ -37,7 +37,7 @@ Now, for developers, can you tell what the following code is for?
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20191031-halloween/" />
@@ -61,22 +61,18 @@ Now, for developers, can you tell what the following code is for?
 
 
 
-
 <meta itemprop="name" content="Celebrate Halloween with Blockchain Smart Contract">
 <meta itemprop="description" content="Halloween is finally here! Are you ready for the spookiest night of the year?
 BUIDL IDE tools now has an upgraded UI just for Halloween. Trick or treat! A spooky pumpkin on the top welcomes you to the BUIDL’s Halloween.
 Now, for developers, can you tell what the following code is for?
 1 2 3 4 5 6 7 8  pragma lity ^1.2.4; contract Halloween { function greet() pure public returns (string) { return &#34;Happy Halloween&#34;; } }   This is a very simple (yet spooky) smart contract example, just like the “Hello World” on the internet.">
-
-
 <meta itemprop="datePublished" content="2019-10-31T10:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-31T10:01:23&#43;08:00" />
 <meta itemprop="wordCount" content="331">
 
 
 
-<meta itemprop="keywords" content="smart contracts,Halloween," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="smart contracts,Halloween," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Celebrate Halloween with Blockchain Smart Contract"/>
 <meta name="twitter:description" content="Halloween is finally here! Are you ready for the spookiest night of the year?
 BUIDL IDE tools now has an upgraded UI just for Halloween. Trick or treat! A spooky pumpkin on the top welcomes you to the BUIDL’s Halloween.
@@ -301,18 +297,13 @@ Now, for developers, can you tell what the following code is for?
 
     
     <div class="post-content">
-      
-
-<p>Halloween is finally here! Are you ready for the spookiest night of the year?</p>
-
+      <p>Halloween is finally here! Are you ready for the spookiest night of the year?</p>
 <p><a href="https://secondstate.io/buidl">BUIDL IDE  tools</a> now has an upgraded UI just for Halloween. Trick or treat! A spooky pumpkin on the top welcomes you to the BUIDL’s Halloween.</p>
-
-<p><img src="/images/20191031-halloween-02.png" alt="" /></p>
-
+<p><img src="/images/20191031-halloween-02.png" alt=""></p>
 <p>Now, for developers, can you tell what the following code is for?</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -320,42 +311,32 @@ Now, for developers, can you tell what the following code is for?
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">pragma lity ^1.2.4;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">pragma lity ^1.2.4;
 
 contract Halloween {
     
   function greet() pure public returns (string) {
     return &#34;Happy Halloween&#34;;
   }
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>This is a very simple (yet spooky) smart contract example, just like the “Hello World” on the internet.</p>
-
+</div><p>This is a very simple (yet spooky) smart contract example, just like the “Hello World” on the internet.</p>
 <p>Let’s figure out how it works.</p>
-
 <h3 id="start-coding">Start coding</h3>
-
 <h4 id="step-1">Step 1</h4>
-
 <p>Open the BUIDL IDE tool in any browser. <a href="http://buidl.secondstate.io/">http://buidl.secondstate.io/</a></p>
-
 <h4 id="step-2">Step 2</h4>
-
 <p>Check the <strong>Providers</strong> tab on the left panel. The icon, if green, means BUIDL IDE is connected to the Second State DevChain. Please refresh the page if the icon is red.</p>
-
-<p><img src="/images/20191031-Halloween-04.png" alt="" /></p>
-
+<p><img src="/images/20191031-Halloween-04.png" alt=""></p>
 <h4 id="step-3">Step 3</h4>
-
 <p><em>3.1</em> Clear the content in the <strong>contract</strong> editor section of BUIDL.</p>
-
 <p><em>3.2</em> Copy and paste the following code to the <strong>contract</strong> section</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
@@ -363,42 +344,37 @@ contract Halloween {
 </span><span class="lnt">6
 </span><span class="lnt">7
 </span><span class="lnt">8
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">pragma lity ^1.2.4;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">pragma lity ^1.2.4;
 
 contract Halloween {
     
   function greet() pure public returns (string) {
     return &#34;Happy Halloween&#34;;
   }
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p><em>3.3</em> Click on <strong>Compile</strong> and you will see the following. Then click on <strong>deploy on chain</strong>.</p>
-
-<p><img src="/images/20191031-Halloween-03.png" alt="" /></p>
-
+</div><p><em>3.3</em> Click on <strong>Compile</strong> and you will see the following. Then click on <strong>deploy on chain</strong>.</p>
+<p><img src="/images/20191031-Halloween-03.png" alt=""></p>
 <p>The contract is now deployed on the DevChain, and you could see the Contract Name , TX and Address on the left tab. (TX records this transaction and it is unique. So is the contract address.)</p>
-
 <p><em>3.4</em> Now click open the <strong>Halloween</strong> contract, and click on the <strong>Call</strong> button to call its <code>greeting()</code> function. In the LOG window, you will see “Happy Halloween”.</p>
-
-<p><img src="/images/20191031-halloween-01.png" alt="" /></p>
-
+<p><img src="/images/20191031-halloween-01.png" alt=""></p>
 <p>That’s it. Happy Halloween on the blockchain!</p>
-
 <h3 id="about-buidl-ide-tools">About BUIDL IDE tools</h3>
-
 <p>BUIDL is a browser-based IDE that enables developers to create and deploy Decentralized Applications (DApps) on blockchains with ease.‪You can #compile, test, and deploy inside a browser. No software download!‬</p>
-
 <p>Further reading:</p>
-
 <ul>
-<li><p><a href="https://www.secondstate.io/buidl">BUIDL Introduction</a></p></li>
-
-<li><p><a href="https://docs.secondstate.io/buidl-developer-tool/getting-started">BUIDL Documentation</a></p></li>
-
-<li><p><a href="https://www.secondstate.io/">Second State - Middleware for smart contracts</a></p></li>
+<li>
+<p><a href="https://www.secondstate.io/buidl">BUIDL Introduction</a></p>
+</li>
+<li>
+<p><a href="https://docs.secondstate.io/buidl-developer-tool/getting-started">BUIDL Documentation</a></p>
+</li>
+<li>
+<p><a href="https://www.secondstate.io/">Second State - Middleware for smart contracts</a></p>
+</li>
 </ul>
 
     </div>

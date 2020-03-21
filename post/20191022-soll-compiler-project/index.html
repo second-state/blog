@@ -35,7 +35,7 @@ SOLL is the world’s first toolchain that compiles Solidity smart contracts int
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20191022-soll-compiler-project/" />
@@ -59,20 +59,16 @@ SOLL is the world’s first toolchain that compiles Solidity smart contracts int
 
 
 
-
 <meta itemprop="name" content="Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler">
 <meta itemprop="description" content="(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
 SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.">
-
-
 <meta itemprop="datePublished" content="2019-10-22T01:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-22T01:01:23&#43;08:00" />
 <meta itemprop="wordCount" content="612">
 
 
 
-<meta itemprop="keywords" content="Ethereum,EWASM,eth2.0,SOLL,LLVM,Solidity,WebAssembly," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Ethereum,EWASM,eth2.0,SOLL,LLVM,Solidity,WebAssembly," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler"/>
 <meta name="twitter:description" content="(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
 SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet."/>
@@ -295,40 +291,24 @@ SOLL is the world’s first toolchain that compiles Solidity smart contracts int
 
     
     <div class="post-content">
-      
-
-<p>(Oct 20th, 2019, Taipei) - <a href="https://www.secondstate.io/">Second State</a>, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source <a href="https://github.com/second-state/soll">SOLL compiler project</a>. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.</p>
-
-<p><img src="/images/20191022-soll-project-01.jpg" alt="SOLL project" /></p>
-
+      <p>(Oct 20th, 2019, Taipei) - <a href="https://www.secondstate.io/">Second State</a>, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source <a href="https://github.com/second-state/soll">SOLL compiler project</a>. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.</p>
+<p><img src="/images/20191022-soll-project-01.jpg" alt="SOLL project"></p>
 <p>SOLL is the <em>world’s first</em>  toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</p>
-
-<p>The Second State team <a href="https://www.youtube.com/watch?v=X-A6sP_HTy0">demonstrated</a> an early release of its SOLL compiler project at the 2019 Ethereum Foundation Devcon5 at Osaka, Japan. Learn more here (<a href="https://www.secondstate.io/devcon5/">https://www.secondstate.io/devcon5/</a>).</p>
-
+<p>The Second State team <a href="https://www.youtube.com/watch?v=X-A6sP_HTy0">demonstrated</a> an early release of its SOLL compiler project at the 2019 Ethereum Foundation Devcon5 at Osaka, Japan. Learn more here (<a href="https://www.secondstate.io/devcon5/)">https://www.secondstate.io/devcon5/)</a>.</p>
 <h2 id="on-the-critical-path-to-eth-2">On the critical path to ETH 2</h2>
-
 <p>The ETH 2 roadmap calls for a new smart contract execution engine known as the Ewasm (Ethereum flavored WebAssembly) virtual machine. However, after years of development, the developer toolchain around Ewasm is still missing. Prior to SOLL, there were no easy tools to compile and deploy Solidity smart contracts to Ewasm-based blockchains.</p>
-
 <p><a href="https://github.com/second-state/soll">SOLL</a> not only completes the missing toolchain for Ewasm, but also brings modern compiler infrastructure to the Solidity programming language through its support for the LLVM. You can watch a video demonstration on <a href="https://www.youtube.com/watch?v=X-A6sP_HTy0">how to use SOLL to compile an ERC20 contract in Solidity and then deploy it on the official Ewasm testnet</a>.</p>
-
 <p>With LLVM support, SOLL could not only support multiple  smart contract programming languages on the front end, such as Rust and C++, but also support various VMs on the back end, such as Ewasm and the EVM 1.x. Application development on the blockchain will be more flexible and efficient.</p>
-
 <blockquote>
 <p><a href="http://www.michaelyuan.com/">Michael Yuan</a>, CEO of Second State, explained the rationale behind the SOLL project. He said “the SOLL Project builds a bridge between enterprise developers and the blockchain world. We invite all developers to try out the SOLL for Ewasm toolchain.”</p>
 </blockquote>
-
 <h2 id="beyond-ewasm">Beyond Ewasm</h2>
-
 <p>A key benefit of an LLVM-based compiler toolchain is the ability to support multiple execution engines on the backend. For example, <a href="https://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/">the ongoing collaboration between Second State and ETC Labs</a> is working toward an EVM 1.0 backend for SOLL. That allows LLVM-based tools and optimizations to become available on today’s EVM-based blockchains, such as the Ethereum Classic, CyberMiles, and many others.</p>
-
 <blockquote>
 <p>“The SOLL EVM project has a very exciting journey ahead as it will effectively shape the entire dapps ecosystem built around the EVM execution environment,” said Alan Li, the core developer of Ethereum Classic.</p>
 </blockquote>
-
 <p>Furthermore, the Second State BUIDL tool aims to incorporate the SOLL compiler toolchain into a very easy-to-use web-based IDE. The <a href="https://docs.secondstate.io/buidl-developer-tool/getting-started">BUIDL IDE</a> can build and deploy complete dapps with smart contract as backend and web3 as front end within minutes.</p>
-
 <p>Further reading</p>
-
 <ul>
 <li><a href="https://github.com/second-state/soll">Source code repo to the SOLL project</a>.</li>
 <li><a href="https://www.youtube.com/watch?v=X-A6sP_HTy0">A video demonstration of SOLL on Ewasm</a>.</li>
@@ -336,11 +316,8 @@ SOLL is the world’s first toolchain that compiles Solidity smart contracts int
 <li><a href="https://github.com/second-state/buidl">The Second State BUIDL IDE project</a>.</li>
 <li><a href="https://docs.secondstate.io/buidl-developer-tool/getting-started">BUIDL Getting Started guide</a></li>
 </ul>
-
 <p>About Second State</p>
-
 <p>Second State focuses on building and commercializing open-source blockchain infrastructure software. It develops a full stack of developer tools and runtime technologies for smart contract platforms, including the BUIDL IDE. Based in Austin, Texas, Second State has development offices in China (Beijing and Taipei) and Australia. A member of the ETC Labs incubator program, it recently closed a $3 million funding round led by Susquehanna International Group.</p>
-
 <p>Founded in 2019, Second State’s vision is that complex, versatile business applications will drive enterprise blockchain adoption. Unlike traditional blockchain software providers who focus on the data ledger, Second State develops and commercializes “blockchain middleware,” which consists of <a href="https://github.com/second-state/lityvm">virtual machine</a>, <a href="https://www.litylang.org/business_rules/">rules engine</a>, <a href="https://github.com/second-state/smart-contract-search-engine">search engine</a>, and data services that empower a new generation of blockchain applications with much-improved user experience and developer productivity.</p>
 
     </div>
@@ -381,14 +358,14 @@ SOLL is the world’s first toolchain that compiles Solidity smart contracts int
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/20191022-soll-compiler-project-zh/">
+          <a class="prev" href="/post/20191024-build-website-zh/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Second State SOLL 编译器项目获得以太坊基金会的现金奖励</span>
+            <span class="prev-text nav-default">教程|5分钟建一个去中心化的网站</span>
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/20191020-public-comment-zh/">
-            <span class="next-text nav-default">如何使用BUIDL 发起投票议题</span>
+          <a class="next" href="/post/20191022-soll-compiler-project-zh/">
+            <span class="next-text nav-default">Second State SOLL 编译器项目获得以太坊基金会的现金奖励</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

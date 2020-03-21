@@ -35,7 +35,7 @@ How to get the 35% discount code The discount code is “hidden in plain sight�
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20191002-book-etc-en/" />
@@ -59,20 +59,16 @@ How to get the 35% discount code The discount code is “hidden in plain sight�
 
 
 
-
 <meta itemprop="name" content="Treasure Hunt -- Ethereum Classic Edition">
 <meta itemprop="description" content="The Building Blockchain Apps book is to be published by Addison-Wesley in 2019. It provides a comprehensive guide for developers to incorporate the blockchain technology into existing and future applications. You can pre-order it from Amazon or InformIT.
 How to get the 35% discount code The discount code is “hidden in plain sight” in a smart contract deployed on the Ethereum Classic blockchain. Using BUIDL for ETC, you can instantiate an instance of this contract and call it’s functions to get its state.">
-
-
 <meta itemprop="datePublished" content="2019-10-02T01:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-02T01:01:23&#43;08:00" />
 <meta itemprop="wordCount" content="1074">
 
 
 
-<meta itemprop="keywords" content="Ethereum Classic,Building Blockchain Apps,book,BUIDL,ETC," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Ethereum Classic,Building Blockchain Apps,book,BUIDL,ETC," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Treasure Hunt -- Ethereum Classic Edition"/>
 <meta name="twitter:description" content="The Building Blockchain Apps book is to be published by Addison-Wesley in 2019. It provides a comprehensive guide for developers to incorporate the blockchain technology into existing and future applications. You can pre-order it from Amazon or InformIT.
 How to get the 35% discount code The discount code is “hidden in plain sight” in a smart contract deployed on the Ethereum Classic blockchain. Using BUIDL for ETC, you can instantiate an instance of this contract and call it’s functions to get its state."/>
@@ -293,22 +289,15 @@ How to get the 35% discount code The discount code is “hidden in plain sight�
 
     
     <div class="post-content">
-      
-
-<p>The <em>Building Blockchain Apps</em> book is to be published by Addison-Wesley in 2019. It provides a comprehensive guide for developers to incorporate the blockchain technology into existing and future applications. You can pre-order it from <a href="https://www.amazon.com/Building-Blockchain-Apps-Michael-Yuan/dp/0135172322/">Amazon</a> or <a href="http://www.informit.com/store/building-blockchain-apps-9780135172322">InformIT</a>.</p>
-
-<p><img src="/images/20191002-book-etc-01.png" alt="" /></p>
-
+      <p>The <em>Building Blockchain Apps</em> book is to be published by Addison-Wesley in 2019. It provides a comprehensive guide for developers to incorporate the blockchain technology into existing and future applications. You can pre-order it from <a href="https://www.amazon.com/Building-Blockchain-Apps-Michael-Yuan/dp/0135172322/">Amazon</a> or <a href="http://www.informit.com/store/building-blockchain-apps-9780135172322">InformIT</a>.</p>
+<p><img src="/images/20191002-book-etc-01.png" alt=""></p>
 <h2 id="how-to-get-the-35-discount-code">How to get the 35% discount code</h2>
-
 <p>The discount code is “hidden in plain sight” in a smart contract deployed on the Ethereum Classic blockchain. Using <a href="http://secondstate.io/etc">BUIDL for ETC</a>, you can instantiate an instance of this contract and call it’s functions to get its state. So, let’s get started.</p>
-
 <p><strong>Step 1</strong>: Launch the BUIDL for ETC from any browser: <a href="https://buidl.secondstate.io/etc">https://buidl.secondstate.io/etc</a></p>
-
 <p><strong>Step 2</strong>: In the <strong>contract</strong> section, copy and paste in the smart contract code below.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -345,9 +334,9 @@ How to get the 35% discount code The discount code is “hidden in plain sight�
 </span><span class="lnt">35
 </span><span class="lnt">36
 </span><span class="lnt">37
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">pragma solidity &gt;= 0.4.0;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">pragma solidity &gt;= 0.4.0;
 
 contract PublicComments {
 
@@ -383,42 +372,30 @@ contract PublicComments {
     function getAddrs () public constant returns (address []) {
         return addrs;
     }
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p><strong>Step 3</strong>: Hit the <strong>Compile</strong> button. And you will see the compiled interface of the contract as below.</p>
-
-<p><img src="/images/20191002-book-etc-02.png" alt="" /></p>
-
+</div><p><strong>Step 3</strong>: Hit the <strong>Compile</strong> button. And you will see the compiled interface of the contract as below.</p>
+<p><img src="/images/20191002-book-etc-02.png" alt=""></p>
 <p><strong>Step 4</strong>: Now, instead of deploying a new instance of this contract, we need to instantiate an instance of an existing contract on the blockchain. Enter the contract address <code>0x52a8e808254e1a3de50ac493a1011d2eded3d1dd</code> on the line with <code>0x</code>, and click on the <strong>At</strong> button.</p>
-
-<p><img src="/images/20191002-book-etc-03.png" alt="" /></p>
-
+<p><img src="/images/20191002-book-etc-03.png" alt=""></p>
 <p><strong>Step 5</strong>: Now click open the <em>PublicComments</em> contract, and click on the <strong>greeting</strong> button to call its <code>greeting()</code> function. In the LOG window, you will see the discount code and purchase link stored in the contract.</p>
-
-<p><img src="/images/20191002-book-etc-04.png" alt="" /></p>
-
+<p><img src="/images/20191002-book-etc-04.png" alt=""></p>
 <h2 id="build-a-dapp">Build a dapp</h2>
-
 <p>Now you have interacted with a smart contract on the blockchain. With BUIDL, you can go one step further and create a web UI around the smart contract. That is called a decentralized app (dapp). Let’s do that as a learning exercise!</p>
-
-<p>As you probably already noticed, the smart contract has logic to store user comments. We will build a dapp that allows users to leave comments from the web. Since the Ethereum Classic blockchain requires a little gas fee for storing data inside smart contracts, you will need a little ETCs for this exercise. If you do not have ETCs, email us at etc@secondstate.io and we will send you a little.</p>
-
+<p>As you probably already noticed, the smart contract has logic to store user comments. We will build a dapp that allows users to leave comments from the web. Since the Ethereum Classic blockchain requires a little gas fee for storing data inside smart contracts, you will need a little ETCs for this exercise. If you do not have ETCs, email us at <a href="mailto:etc@secondstate.io">etc@secondstate.io</a> and we will send you a little.</p>
 <blockquote>
 <p>If you leave a comment in the smart contract, your comment will be forever stored on the Ethereum Classic blockchain and we will send you a digital gift!</p>
 </blockquote>
-
 <p><strong>Step 6</strong>: Go to the <em>dapp</em> section. Open the <strong>Resources</strong> tab, and enter the following CSS and JavaScript resources.</p>
-
 <ul>
 <li>Javascript: <a href="https://code.jquery.com/jquery-3.4.1.min.js">https://code.jquery.com/jquery-3.4.1.min.js</a></li>
 <li>CSS: <a href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css</a></li>
 </ul>
-
 <p><strong>Step 7</strong>: Copy and paste in the HTML code into the HTML editor.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -456,9 +433,9 @@ contract PublicComments {
 </span><span class="lnt">36
 </span><span class="lnt">37
 </span><span class="lnt">38
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">&lt;div class=&#34;container&#34;&gt;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;div class=&#34;container&#34;&gt;
     &lt;br/&gt;
     &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;If you have MetaMask for ETC, select MetaMask in the accounts widget at bottom right.&lt;/div&gt;
     &lt;div class=&#34;jumbotron&#34;&gt;
@@ -495,13 +472,13 @@ contract PublicComments {
         &lt;/tbody&gt;
     &lt;/table&gt;
     &lt;p style=&#34;text-align:center&#34;&gt;Created with &lt;a target=&#34;_blank&#34; href=&#34;https://www.secondstate.io/etc/&#34;&gt;BUIDL for ETC&lt;/a&gt;.&lt;/p&gt;
-&lt;/div&gt;</pre></td></tr></table>
+&lt;/div&gt;
+</code></pre></td></tr></table>
 </div>
-</div>
-<p><strong>Step 8</strong>: Copy and paste in the Javascript code into the JS editor.</p>
+</div><p><strong>Step 8</strong>: Copy and paste in the Javascript code into the JS editor.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -569,9 +546,9 @@ contract PublicComments {
 </span><span class="lnt">66
 </span><span class="lnt">67
 </span><span class="lnt">68
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">var instance = null;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">var instance = null;
 window.addEventListener(&#39;web3Ready&#39;, function() {
   var contract = web3.ss.contract(abi);
   instance = contract.at(cAddr);
@@ -638,15 +615,13 @@ $(&#34;#submit&#34;).click(function() {
         }
     });
     return false;
-});</pre></td></tr></table>
+});
+</code></pre></td></tr></table>
 </div>
-</div>
-<p><strong>Step 9</strong>: Now, hit the <strong>Run</strong> button. You will see the dapp UI running in the right panel. You can see all the comments in the smart contract, and leave your own comment now! Please leave your email so that we can get in touch!</p>
-
+</div><p><strong>Step 9</strong>: Now, hit the <strong>Run</strong> button. You will see the dapp UI running in the right panel. You can see all the comments in the smart contract, and leave your own comment now! Please leave your email so that we can get in touch!</p>
 <blockquote>
 <p>As we mentioned, you will need to have a little ETC in your account to pay for gas. Your default account is randomly generated in the <em>Accounts</em> tab. You could send some ETCs to it, or your could import one of your existing addresses into the <em>Accounts</em> tab.</p>
 </blockquote>
-
 <p><strong>Bonus step</strong>: You could hit the <strong>Publish</strong> button and publish your dapp to the web for anyone to see.</p>
 
     </div>

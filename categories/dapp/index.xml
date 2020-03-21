@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dapp on Second State News and Articles</title>
+    <title>DApp on Second State News and Articles</title>
     <link>http://blog.secondstate.io/categories/dapp/</link>
-    <description>Recent content in Dapp on Second State News and Articles</description>
+    <description>Recent content in DApp on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 14 Jul 2019 10:01:23 +0800</lastBuildDate>

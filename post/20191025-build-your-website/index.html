@@ -36,7 +36,7 @@ You need to
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20191025-build-your-website/" />
@@ -60,21 +60,17 @@ You need to
 
 
 
-
 <meta itemprop="name" content="Build your own decentralized website with BUIDL IDE">
 <meta itemprop="description" content="Have you ever tried to build your own website?
 You need to
  Get Web Hosting Register a Domain name(usually ~$15/year) Set up your website from the web host ········  Way too many steps! But with BUIDL IDE tools, you can build a decentralized website all by yourself in 5 minutes. The website will not only allow you to write any words you want but also allow your friends to access this page and interact with you.">
-
-
 <meta itemprop="datePublished" content="2019-10-25T20:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-25T20:01:23&#43;08:00" />
 <meta itemprop="wordCount" content="820">
 
 
 
-<meta itemprop="keywords" content="web,BUIDL," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="web,BUIDL," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Build your own decentralized website with BUIDL IDE"/>
 <meta name="twitter:description" content="Have you ever tried to build your own website?
 You need to
@@ -297,44 +293,30 @@ You need to
 
     
     <div class="post-content">
-      
-
-<p>Have you ever tried to build your own website?</p>
-
+      <p>Have you ever tried to build your own website?</p>
 <p>You need to</p>
-
 <ul>
 <li>Get Web Hosting</li>
 <li>Register a Domain name(usually ~$15/year)</li>
 <li>Set up your website from the web host</li>
 <li>········</li>
 </ul>
-
 <p>Way too many steps! But with BUIDL IDE tools, you can build a decentralized website all by yourself in 5 minutes. The website will not only allow you to write any words you want but also allow your friends to access this page and interact with you. Click <a href="https://opendapps.secondstate.io/bitcoin_1571992686948.html">here</a> to see an example.</p>
-
-<p><img src="/images/20191025-build-your-own-website-01.png" alt="" /></p>
-
+<p><img src="/images/20191025-build-your-own-website-01.png" alt=""></p>
 <p>Share your website link and invite them to leave a comment or “thumb up”.</p>
-
 <h2 id="the-basic-knowledge">The basic knowledge</h2>
-
 <p>Blockchain applications with smart contracts as the back end, with HTML, CSS, and Javascript as the front end. Smart contracts replace the usual connection between website and the web host on our decentralized website.</p>
-
 <h2 id="start-coding">start coding</h2>
-
 <p><strong>Step 1</strong>
 Open the BUIDL IDE tool in any browser. <a href="http://buidl.secondstate.io/">http://buidl.secondstate.io/</a></p>
-
 <p><strong>Step 2</strong>
 Check out if the Providers work. The icon, if green, means BUIDL IDE is connected to the Second State DevChain. Please refresh the page when the icon is red.
-<img src="/images/20191020-public-comment-01.png" alt="" /></p>
-
+<img src="/images/20191020-public-comment-01.png" alt=""></p>
 <p><strong>Step 3</strong></p>
-
 <p>3.1 Copy and paste the following code to the contract section of BUIDL.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -359,9 +341,9 @@ Check out if the Providers work. The icon, if green, means BUIDL IDE is connecte
 </span><span class="lnt">23
 </span><span class="lnt">24
 </span><span class="lnt">25
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">pragma solidity &gt;= 0.4.0;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">pragma solidity &gt;= 0.4.0;
 
 contract Celebration {
 
@@ -385,27 +367,20 @@ contract Celebration {
     function getAddrs () public view returns (address []) {
         return addrs;
     }
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>3.2 Click on Compile and you will see the following. Enter your text in <code>_greeting</code>, and then click on deploy on chain.</p>
-
-<p><img src="/images/20190920-BUIDL-demo-03.png" alt="" /></p>
-
+</div><p>3.2 Click on Compile and you will see the following. Enter your text in <code>_greeting</code>, and then click on deploy on chain.</p>
+<p><img src="/images/20190920-BUIDL-demo-03.png" alt=""></p>
 <p>The contract is now deployed on the DevChain, and you could see the Contract Name, TX and Address on the left tab. (TX records this transaction and it is unique. So is the contract address.)</p>
-
-<p><img src="/images/20190920-BUIDL-demo-04.png" alt="" /></p>
-
+<p><img src="/images/20190920-BUIDL-demo-04.png" alt=""></p>
 <p>We have completed the back end of the website. Smart contract will connect the blockchain.</p>
-
 <p><strong>Step 4</strong></p>
-
-<p>4.1 Go to the dapp section. Clear the codes in the HTML, CSS, and JS editor. (Note: Please do not clear the code of “Don&rsquo;t modify” section)</p>
-
+<p>4.1 Go to the dapp section. Clear the codes in the HTML, CSS, and JS editor. (Note: Please do not clear the code of “Don't modify” section)</p>
 <p>4.2 Copy and paste the following HTML code into the HTML editor.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -430,9 +405,9 @@ contract Celebration {
 </span><span class="lnt">23
 </span><span class="lnt">24
 </span><span class="lnt">25
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">&lt;div class=&#34;container&#34;&gt;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;div class=&#34;container&#34;&gt;
     &lt;br/&gt;
     &lt;div class=&#34;jumbotron&#34;&gt;
         &lt;p class=&#34;lead&#34; id=&#34;greeting&#34;&gt;&lt;/p&gt;
@@ -456,13 +431,13 @@ contract Celebration {
     Created by the &lt;a href=&#34;https://buidl.secondstate.io/&#34;&gt;BUIDL IDE&lt;/a&gt;
      &lt;br/&gt;&lt;br/&gt;
     [&lt;a href=&#34;https://docs.secondstate.io/buidl-developer-tool/why-buidl&#34;&gt;Learn more&lt;/a&gt; | &lt;a href=&#34;https://blog.secondstate.io/post/20191025-build-your-website/&#34;&gt;Check out the tutorial&lt;/a&gt;]
-&lt;/div&gt;</pre></td></tr></table>
+&lt;/div&gt;
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>4.3 Copy and paste the following JavaScript code from var instance = null into the JS editor.</p>
+</div><p>4.3 Copy and paste the following JavaScript code from var instance = null into the JS editor.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -518,9 +493,9 @@ contract Celebration {
 </span><span class="lnt">54
 </span><span class="lnt">55
 </span><span class="lnt">56
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">/* Don&#39;t modify */
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/* Don&#39;t modify */
 Do not change the code Paste from `var instance = null; `
 /* Don&#39;t modify */
 
@@ -575,24 +550,18 @@ function like () {
         }
     });
     return false;
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>4.4 Click on the Resources tab, and add the following as resources.</p>
-
+</div><p>4.4 Click on the Resources tab, and add the following as resources.</p>
 <ul>
 <li>CSS: <a href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css</a></li>
 <li>JavaScript: <a href="https://code.jquery.com/jquery-3.4.1.min.js">https://code.jquery.com/jquery-3.4.1.min.js</a></li>
 </ul>
-
-<p><img src="/images/20190920-BUIDL-demo-06.png" alt="" /></p>
-
+<p><img src="/images/20190920-BUIDL-demo-06.png" alt=""></p>
 <p>4.5 Click on Run to see your dapp in action and enter your name in BUIDL to test if this works. You will be able to see your name on the right.</p>
-
-<p><img src="/images/20191025-build-your-own-website-01.png" alt="" /></p>
-
+<p><img src="/images/20191025-build-your-own-website-01.png" alt=""></p>
 <p>4.6 Finally, you can publish the dapp.</p>
-
 <p>Just click on the Publish button to name the webpage. Once published, you can share the published URL online for everyone to give you a “like”.</p>
 
     </div>

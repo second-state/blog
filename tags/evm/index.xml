@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Evm on Second State News and Articles</title>
+    <title>EVM on Second State News and Articles</title>
     <link>http://blog.secondstate.io/tags/evm/</link>
-    <description>Recent content in Evm on Second State News and Articles</description>
+    <description>Recent content in EVM on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 06 Nov 2019 10:01:23 +0800</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Wed, 06 Nov 2019 10:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/post/20191106-ewasm-en/</guid>
-      <description>The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&amp;rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&amp;rsquo;s smart contract transaction is executed,</description>
+      <description>The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&#39;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&#39;s smart contract transaction is executed,</description>
     </item>
     
     <item>

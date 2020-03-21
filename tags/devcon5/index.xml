@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Devcon5 on Second State News and Articles</title>
+    <title>DevCon5 on Second State News and Articles</title>
     <link>http://blog.secondstate.io/tags/devcon5/</link>
-    <description>Recent content in Devcon5 on Second State News and Articles</description>
+    <description>Recent content in DevCon5 on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 06 Nov 2019 09:42:14 +0800</lastBuildDate>
@@ -36,7 +36,7 @@
       
       <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
       <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
-Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&amp;rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&#39;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
     </item>
     
     <item>

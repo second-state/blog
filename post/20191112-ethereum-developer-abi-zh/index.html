@@ -34,7 +34,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20191112-ethereum-developer-abi-zh/" />
@@ -58,19 +58,15 @@
 
 
 
-
 <meta itemprop="name" content=" ABI | 以太坊开发A2Z ">
 <meta itemprop="description" content="快速了解以太坊开发，快速 get 复杂的技术概念！ Second State 推出以太坊开发A2Z 系列，结合区块链开发的实际情况，带你了解以太坊开发的点点面面。 这篇文章是该">
-
-
 <meta itemprop="datePublished" content="2019-11-12T09:42:14&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-12T09:42:14&#43;08:00" />
 <meta itemprop="wordCount" content="1112">
 
 
 
-<meta itemprop="keywords" content="blockchain,Ethereum,developer,smart contract,BUIDL," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="blockchain,Ethereum,developer,smart contract,BUIDL," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=" ABI | 以太坊开发A2Z "/>
 <meta name="twitter:description" content="快速了解以太坊开发，快速 get 复杂的技术概念！ Second State 推出以太坊开发A2Z 系列，结合区块链开发的实际情况，带你了解以太坊开发的点点面面。 这篇文章是该"/>
 
@@ -290,53 +286,34 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      
-
-<p>快速了解以太坊开发，快速 get 复杂的技术概念！
+      <p>快速了解以太坊开发，快速 get 复杂的技术概念！
 Second State 推出以太坊开发A2Z 系列，结合区块链开发的实际情况，带你了解以太坊开发的点点面面。</p>
-
-<p><img src="/images/20191112-abi-01.png" alt="" />
+<p><img src="/images/20191112-abi-01.png" alt="">
 这篇文章是该系列的第一篇，为大家讲述智能合约ABI。</p>
-
 <p>简短版：区块链智能合约ABI是智能合约与区块链应用程序之间的接口。智能合约被像BUIDL这样的编译器编译成二进制文件后，会自动生成ABI。ABI是JSON文本文件，记录了智能合约的function 和参数。在用户使用区块链应用程序时，需要通过ABI 来调用智能合约。</p>
-
 <h2 id="什么是abi">什么是ABI</h2>
-
 <p>ABI是Application Binary Interface的缩写，是其他应用程序调用二进制应用程序文件的接口。ABI 是一种约定俗成的规范。</p>
-
 <p>举例来说，夏天打开空调降温，通常需要一个遥控器。我们通过调节遥控器的按钮，来让空调执行制冷，降低/调高温度等操作。遥控器就相当于一个ABI，上面记录了与之相匹配的空调能够实现的功能与参数：制热/制热，空调能够达到的最高与最低温度是多少。随着空调本身功能的增多，比如增加了睡眠模式，通风等，遥控器（ABI）上的按钮也会随之丰富起来。</p>
-
 <p>ABI 实现了用户与程序的互动。</p>
-
 <h2 id="以太坊开发中的abi">以太坊开发中的ABI</h2>
-
 <p>在以太坊/区块链开发中，智能合约ABI 非常常见。智能合约编译后，编译器自动生成ABI 来记录智能合约的function与参数。当区块链应用被使用时，人们通过ABI 来调用智能合约，实现相关功能。</p>
-
 <p>以区块链基础软件技术公司Second State 开发的 BUIDL IDE 内置的默认代码为例，合约代码如下：</p>
-
-<p><img src="/images/20191112-abi-02.png" alt="" /></p>
-
+<p><img src="/images/20191112-abi-02.png" alt=""></p>
 <p>经过BUIDL 编译后，我们获得了如下的ABI。智能合约生成的ABI是JSON 格式的数组，包含两组参数，一个是参数名称，一个是参数值。在调用智能合约时，通过ABI 了解该智能合约实现了哪些功能，参数又是什么。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">[{&#34;constant&#34;: false,&#34;inputs&#34;: [{&#34;name&#34;: &#34;x&#34;,&#34;type&#34;: &#34;uint256&#34;}],&#34;name&#34;: &#34;set&#34;,&#34;outputs&#34;: [],&#34;payable&#34;: false,&#34;stateMutability&#34;: &#34;nonpayable&#34;,&#34;type&#34;: &#34;function&#34;},{&#34;constant&#34;: true,&#34;inputs&#34;: [],&#34;name&#34;: &#34;get&#34;,&#34;outputs&#34;: [{&#34;name&#34;: &#34;&#34;,&#34;type&#34;: &#34;uint256&#34;}],&#34;payable&#34;: false,&#34;stateMutability&#34;: &#34;view&#34;,&#34;type&#34;: &#34;function&#34;}]</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[{&#34;constant&#34;: false,&#34;inputs&#34;: [{&#34;name&#34;: &#34;x&#34;,&#34;type&#34;: &#34;uint256&#34;}],&#34;name&#34;: &#34;set&#34;,&#34;outputs&#34;: [],&#34;payable&#34;: false,&#34;stateMutability&#34;: &#34;nonpayable&#34;,&#34;type&#34;: &#34;function&#34;},{&#34;constant&#34;: true,&#34;inputs&#34;: [],&#34;name&#34;: &#34;get&#34;,&#34;outputs&#34;: [{&#34;name&#34;: &#34;&#34;,&#34;type&#34;: &#34;uint256&#34;}],&#34;payable&#34;: false,&#34;stateMutability&#34;: &#34;view&#34;,&#34;type&#34;: &#34;function&#34;}]
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>注意：ABI 并不是唯一的。如果智能合约实现的功能一样，那么编译出的ABI 也是一样的。</p>
-
+</div><p>注意：ABI 并不是唯一的。如果智能合约实现的功能一样，那么编译出的ABI 也是一样的。</p>
 <p>当我们使用BUIDL 进行下一步DApp 开发工作时，会发现JavaScript 版块记录了当前智能合约的ABI，使应用程序能够调用智能合约，与之互动。</p>
-
-<p><img src="/images/20191112-abi-03.png" alt="" /></p>
-
-<h2 id="关于-buidl-ide-https-www-secondstate-io-buidl-一站式区块链开发工具">关于<a href="https://www.secondstate.io/buidl/">BUIDL IDE</a> —— 一站式区块链开发工具</h2>
-
+<p><img src="/images/20191112-abi-03.png" alt=""></p>
+<h2 id="关于buidl-idehttpswwwsecondstateiobuidl--一站式区块链开发工具">关于<a href="https://www.secondstate.io/buidl/">BUIDL IDE</a> —— 一站式区块链开发工具</h2>
 <p>BUIDL IDE是完全基于浏览器的集成开发工具，开发者可以用BUIDL轻松地创建和部署区块链应用（DApp），无需安装任何软件和区块链钱包，从而节省大量时间。</p>
-
 <p>BUIDL 功能介绍：</p>
-
 <ul>
 <li><strong>内置账户管理系统，不需钱包软件；</strong></li>
 <li>编写，编译和部署智能合约；</li>
@@ -347,9 +324,7 @@ Second State 推出以太坊开发A2Z 系列，结合区块链开发的实际情
 <li><strong>支持基于规则的智能合约；</strong></li>
 <li><strong>内置基于ElasticSearch 的实时智能合约搜索引擎；</strong></li>
 </ul>
-
 <p>更多资料：</p>
-
 <ul>
 <li>BUIDL 介绍页
 <a href="https://www.secondstate.io/buidl/">https://www.secondstate.io/buidl/</a></li>

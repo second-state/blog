@@ -34,7 +34,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20191024-build-website-zh/" />
@@ -58,19 +58,15 @@
 
 
 
-
 <meta itemprop="name" content="教程|5分钟建一个去中心化的网站">
 <meta itemprop="description" content="不用买域名，购买虚拟主机空间，设置域名服务器，工信部备案等等繁琐的流程。 5分钟学会自己建一个去中心化的网站，从此做网站不求人！永久留存，完全">
-
-
 <meta itemprop="datePublished" content="2019-10-23T20:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-23T20:01:23&#43;08:00" />
 <meta itemprop="wordCount" content="1633">
 
 
 
-<meta itemprop="keywords" content="网页,web,BUIDL," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="网页,web,BUIDL," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="教程|5分钟建一个去中心化的网站"/>
 <meta name="twitter:description" content="不用买域名，购买虚拟主机空间，设置域名服务器，工信部备案等等繁琐的流程。 5分钟学会自己建一个去中心化的网站，从此做网站不求人！永久留存，完全"/>
 
@@ -289,32 +285,20 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      
-
-<p>不用买域名，购买虚拟主机空间，设置域名服务器，工信部备案等等繁琐的流程。</p>
-
+      <p>不用买域名，购买虚拟主机空间，设置域名服务器，工信部备案等等繁琐的流程。</p>
 <p>5分钟学会自己建一个去中心化的网站，从此做网站不求人！永久留存，完全去中心化！</p>
-
-<p><img src="/images/20191024-build-website-02.png" alt="" /></p>
-
+<p><img src="/images/20191024-build-website-02.png" alt=""></p>
 <p>这样一个网站可以让你写上自己说的话，并可以实现访问这个网页与网页进行交互，为你的网站点赞！</p>
-
 <h2 id="准备工作">准备工作</h2>
-
 <p>1.在电脑浏览器打开<a href="https://buidl.secondstate.io">https://buidl.secondstate.io</a> (推荐使用Chrome 浏览器)</p>
-
 <p>2.检查开发工具BUIDL 是否连接到区块链上</p>
-
-<p><img src="/images/20191020-public-comment-01.png" alt="" /></p>
-
+<p><img src="/images/20191020-public-comment-01.png" alt=""></p>
 <p>检查方法：查看页面左下方 Providers 是否是绿色图标，绿色表明已经连接到Second State DevChain链上，红色表明尚未连接，请刷新重试。</p>
-
-<h2 id="完成区块链网页后端-智能合约">完成区块链网页后端——智能合约</h2>
-
+<h2 id="完成区块链网页后端智能合约">完成区块链网页后端——智能合约</h2>
 <p>1.点击红色的Contract，清空默认代码，将下面的智能合约代码粘贴上去</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -339,9 +323,9 @@ if (!doNotTrack) {
 </span><span class="lnt">23
 </span><span class="lnt">24
 </span><span class="lnt">25
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">pragma solidity &gt;= 0.4.0;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">pragma solidity &gt;= 0.4.0;
 
 contract Celebration {
 
@@ -365,27 +349,20 @@ contract Celebration {
     function getAddrs () public view returns (address []) {
         return addrs;
     }
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>2.点击右上角Compile，在 _greeting 的横线处输入你想在网页上显示的的话，比如，程序员快乐~ 之后点击 Deploy to the chain。</p>
-
-<p><img src="/images/20190920-BUIDL-demo-03.png" alt="" /></p>
-
+</div><p>2.点击右上角Compile，在 _greeting 的横线处输入你想在网页上显示的的话，比如，程序员快乐~ 之后点击 Deploy to the chain。</p>
+<p><img src="/images/20190920-BUIDL-demo-03.png" alt=""></p>
 <p>这一步实施的是将合约部署到Second State DevChain上，部署成功的标志是在页面左上角出现合约名字 PublicComments 及TX和Address，页面下方log 出现TX 及 Success 字样。（小科普：TX是这笔交易的哈希值，是唯一的。Address 是合约地址，也是唯一的）</p>
-
-<p><img src="/images/20190920-BUIDL-demo-04.png" alt="" /></p>
-
+<p><img src="/images/20190920-BUIDL-demo-04.png" alt=""></p>
 <p>到这里我们就把区块链网站的后端写完了，这部分叫做智能合约，负责与区块链互动。区块链应用不可篡改，去中心化等特性主要由智能合约体现。</p>
-
 <h2 id="网页前端">网页前端</h2>
-
 <p>1.点击绿色的Dapp，可以看到HTML，CSS，JS三个模块，清空这三个模块的代码。</p>
-
 <p>将下面的代码粘贴到HTML 模块</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -410,9 +387,9 @@ contract Celebration {
 </span><span class="lnt">23
 </span><span class="lnt">24
 </span><span class="lnt">25
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">&lt;div class=&#34;container&#34;&gt;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;div class=&#34;container&#34;&gt;
     &lt;br/&gt;
     &lt;div class=&#34;jumbotron&#34;&gt;
         &lt;p class=&#34;lead&#34; id=&#34;greeting&#34;&gt;&lt;/p&gt;
@@ -436,13 +413,13 @@ contract Celebration {
     Created by the &lt;a href=&#34;https://buidl.secondstate.io/&#34;&gt;BUIDL IDE&lt;/a&gt;
      &lt;br/&gt;&lt;br/&gt;
     [&lt;a href=&#34;https://docs.secondstate.io/buidl-developer-tool/why-buidl&#34;&gt;了解更多&lt;/a&gt; | &lt;a href=&#34;https://blog.secondstate.io/post/20191024-build-website-zh/&#34;&gt;教程&lt;/a&gt;]
-&lt;/div&gt;</pre></td></tr></table>
+&lt;/div&gt;
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>将下面的代码粘贴到JS 模块，从 var instance 开始粘贴。</p>
+</div><p>将下面的代码粘贴到JS 模块，从 var instance 开始粘贴。</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -498,9 +475,9 @@ contract Celebration {
 </span><span class="lnt">54
 </span><span class="lnt">55
 </span><span class="lnt">56
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">/* Don&#39;t modify */
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/* Don&#39;t modify */
 这里的代码不要改，从var instance = null; 开始复制
 /* Don&#39;t modify */
 
@@ -555,22 +532,16 @@ function like () {
         }
     });
     return false;
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>2.BUIDL 是一个开源的开发工具，支持添加开源的代码资源，点击Resources 。</p>
-
-<p><img src="/images/20190920-BUIDL-demo-06.png" alt="" /></p>
-
-<p>在JavaScript 点击加号，将下面的JS资源粘贴到弹窗里：<a href="https://code.jquery.com/jquery-3.4.1.min.js">https://code.jquery.com/jquery-3.4.1.min.js</a> 并点击确定。</p>
-
-<p>在CSS 处点击加号，将下面的CSS 资源粘贴到弹窗里：<a href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css</a> 并点击确定。</p>
-
+</div><p>2.BUIDL 是一个开源的开发工具，支持添加开源的代码资源，点击Resources 。</p>
+<p><img src="/images/20190920-BUIDL-demo-06.png" alt=""></p>
+<p>在JavaScript 点击加号，将下面的JS资源粘贴到弹窗里：https://code.jquery.com/jquery-3.4.1.min.js 并点击确定。</p>
+<p>在CSS 处点击加号，将下面的CSS 资源粘贴到弹窗里：https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css 并点击确定。</p>
 <p>3.点击最左边的Run，会在页面右侧预览网页样式。然后来输入自己的名字，做个测试吧!
-<img src="/images/20191024-build-website-01.png" alt="" /></p>
-
+<img src="/images/20191024-build-website-01.png" alt=""></p>
 <p>4.点击页面上方的Publish，输入自己网站的名称，比如1024，然后等待大概30秒，点击launched 就可以看到自己的网页。</p>
-
 <p>最后把自己的网页分享到社交媒体，让亲朋好友给自己点赞，赢取奖品吧！</p>
 
     </div>
@@ -613,8 +584,8 @@ function like () {
             <span class="prev-text nav-mobile">Prev</span>
           </a>
         
-          <a class="next" href="/post/20191022-soll-compiler-project-zh/">
-            <span class="next-text nav-default">Second State SOLL 编译器项目获得以太坊基金会的现金奖励</span>
+          <a class="next" href="/post/20191022-soll-compiler-project/">
+            <span class="next-text nav-default">Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</span>
             <span class="prev-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

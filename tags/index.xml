@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Second State News and Articles</title>
@@ -6,13 +6,85 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 Nov 2019 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2020 20:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blockchain</title>
+      <title>Ethereum</title>
+      <link>http://blog.secondstate.io/tags/ethereum/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ewasm</title>
+      <link>http://blog.secondstate.io/tags/ewasm/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/ewasm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>smart contract</title>
+      <link>http://blog.secondstate.io/tags/smart-contract/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/smart-contract/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Solidity</title>
+      <link>http://blog.secondstate.io/tags/solidity/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/solidity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SOLL</title>
+      <link>http://blog.secondstate.io/tags/soll/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/soll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vyper</title>
+      <link>http://blog.secondstate.io/tags/vyper/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/vyper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>http://blog.secondstate.io/tags/rust/</link>
+      <pubDate>Fri, 06 Dec 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>http://blog.secondstate.io/tags/webassembly/</link>
+      <pubDate>Fri, 06 Dec 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blockchain</title>
       <link>http://blog.secondstate.io/tags/blockchain/</link>
       <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
       
@@ -21,110 +93,11 @@
     </item>
     
     <item>
-      <title>Blockchain Application</title>
-      <link>http://blog.secondstate.io/tags/blockchain-application/</link>
-      <pubDate>Fri, 20 Sep 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/blockchain-application/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blockchain Programming</title>
-      <link>http://blog.secondstate.io/tags/blockchain-programming/</link>
-      <pubDate>Fri, 20 Sep 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/blockchain-programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blockchain for Enterprise</title>
-      <link>http://blog.secondstate.io/tags/blockchain-for-enterprise/</link>
-      <pubDate>Mon, 26 Aug 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/blockchain-for-enterprise/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Book</title>
-      <link>http://blog.secondstate.io/tags/book/</link>
-      <pubDate>Thu, 03 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/book/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Buidl</title>
+      <title>BUIDL</title>
       <link>http://blog.secondstate.io/tags/buidl/</link>
       <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/buidl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Building Blockchain Apps</title>
-      <link>http://blog.secondstate.io/tags/building-blockchain-apps/</link>
-      <pubDate>Sun, 20 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/building-blockchain-apps/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Business</title>
-      <link>http://blog.secondstate.io/tags/business/</link>
-      <pubDate>Fri, 10 May 2019 15:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/business/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Conference</title>
-      <link>http://blog.secondstate.io/tags/conference/</link>
-      <pubDate>Fri, 19 Apr 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/conference/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cybersecurity</title>
-      <link>http://blog.secondstate.io/tags/cybersecurity/</link>
-      <pubDate>Mon, 19 Aug 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/cybersecurity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dapp</title>
-      <link>http://blog.secondstate.io/tags/dapp/</link>
-      <pubDate>Sun, 20 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/dapp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Defcon</title>
-      <link>http://blog.secondstate.io/tags/defcon/</link>
-      <pubDate>Mon, 19 Aug 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/defcon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Devcon5</title>
-      <link>http://blog.secondstate.io/tags/devcon5/</link>
-      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/devcon5/</guid>
       <description></description>
     </item>
     
@@ -138,56 +111,83 @@
     </item>
     
     <item>
-      <title>Developer Community</title>
-      <link>http://blog.secondstate.io/tags/developer-community/</link>
-      <pubDate>Fri, 20 Sep 2019 09:42:14 +0800</pubDate>
+      <title>EVM</title>
+      <link>http://blog.secondstate.io/tags/evm/</link>
+      <pubDate>Wed, 06 Nov 2019 10:01:23 +0800</pubDate>
       
-      <guid>http://blog.secondstate.io/tags/developer-community/</guid>
+      <guid>http://blog.secondstate.io/tags/evm/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Developer Tool</title>
-      <link>http://blog.secondstate.io/tags/developer-tool/</link>
-      <pubDate>Thu, 26 Sep 2019 09:42:14 +0800</pubDate>
+      <title>DevCon5</title>
+      <link>http://blog.secondstate.io/tags/devcon5/</link>
+      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
       
-      <guid>http://blog.secondstate.io/tags/developer-tool/</guid>
+      <guid>http://blog.secondstate.io/tags/devcon5/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Development</title>
-      <link>http://blog.secondstate.io/tags/development/</link>
-      <pubDate>Sun, 01 Sep 2019 01:01:23 +0800</pubDate>
+      <title>Libra</title>
+      <link>http://blog.secondstate.io/tags/libra/</link>
+      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
       
-      <guid>http://blog.secondstate.io/tags/development/</guid>
+      <guid>http://blog.secondstate.io/tags/libra/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Edcon</title>
-      <link>http://blog.secondstate.io/tags/edcon/</link>
-      <pubDate>Fri, 19 Apr 2019 01:01:23 +0800</pubDate>
+      <title>Uniswap</title>
+      <link>http://blog.secondstate.io/tags/uniswap/</link>
+      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
       
-      <guid>http://blog.secondstate.io/tags/edcon/</guid>
+      <guid>http://blog.secondstate.io/tags/uniswap/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Etc</title>
-      <link>http://blog.secondstate.io/tags/etc/</link>
-      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
+      <title>Second State</title>
+      <link>http://blog.secondstate.io/tags/second-state/</link>
+      <pubDate>Thu, 31 Oct 2019 20:01:23 +0800</pubDate>
       
-      <guid>http://blog.secondstate.io/tags/etc/</guid>
+      <guid>http://blog.secondstate.io/tags/second-state/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Etc Summit</title>
-      <link>http://blog.secondstate.io/tags/etc-summit/</link>
-      <pubDate>Sun, 06 Oct 2019 10:01:23 +0800</pubDate>
+      <title>SFBW</title>
+      <link>http://blog.secondstate.io/tags/sfbw/</link>
+      <pubDate>Thu, 31 Oct 2019 20:01:23 +0800</pubDate>
       
-      <guid>http://blog.secondstate.io/tags/etc-summit/</guid>
+      <guid>http://blog.secondstate.io/tags/sfbw/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Halloween</title>
+      <link>http://blog.secondstate.io/tags/halloween/</link>
+      <pubDate>Thu, 31 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/halloween/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Smart contracts</title>
+      <link>http://blog.secondstate.io/tags/smart-contracts/</link>
+      <pubDate>Thu, 31 Oct 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/smart-contracts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>http://blog.secondstate.io/tags/web/</link>
+      <pubDate>Fri, 25 Oct 2019 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/web/</guid>
       <description></description>
     </item>
     

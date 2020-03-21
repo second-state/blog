@@ -25,7 +25,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Second State" />
-  <meta name="description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&amp;rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&amp;rsquo;s smart contract transaction is executed," />
+  <meta name="description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&#39;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&#39;s smart contract transaction is executed," />
 
   <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
 
@@ -34,7 +34,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20191106-ewasm-en/" />
@@ -58,21 +58,17 @@
 
 
 
-
 <meta itemprop="name" content="The Next Generation Ethereum Virtual Machine — Ewasm VM">
-<meta itemprop="description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&rsquo;s smart contract transaction is executed,">
-
-
+<meta itemprop="description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&#39;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&#39;s smart contract transaction is executed,">
 <meta itemprop="datePublished" content="2019-11-06T10:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-06T10:01:23&#43;08:00" />
 <meta itemprop="wordCount" content="864">
 
 
 
-<meta itemprop="keywords" content="EVM,Ewasm," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="EVM,Ewasm," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="The Next Generation Ethereum Virtual Machine — Ewasm VM"/>
-<meta name="twitter:description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&rsquo;s smart contract transaction is executed,"/>
+<meta name="twitter:description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&#39;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&#39;s smart contract transaction is executed,"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -96,7 +92,7 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 <meta property="og:title" content="The Next Generation Ethereum Virtual Machine — Ewasm VM - Second State News and Articles">
-  <meta property="og:description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&amp;rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&amp;rsquo;s smart contract transaction is executed," />
+  <meta property="og:description" content="The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&#39;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&#39;s smart contract transaction is executed," />
 <meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
 <meta property="og:url" content="http://blog.secondstate.io/post/20191106-ewasm-en/">
 
@@ -289,29 +285,21 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      
-
-<p><img src="/images/20191106-Ewasm-01.png" alt="" />
+      <p><img src="/images/20191106-Ewasm-01.png" alt="">
 The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan</p>
-
-<p>This is a wrap-up for Second State’s VP of Engineering, <a href="https://github.com/hydai">Mr. Hung-Ying Tai</a>’s presentation on SOLL, Ewasm VM&rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0</p>
-
+<p>This is a wrap-up for Second State’s VP of Engineering, <a href="https://github.com/hydai">Mr. Hung-Ying Tai</a>’s presentation on SOLL, Ewasm VM's current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0</p>
 <h3 id="evm-bytecode-and-webassembly-wasm">EVM bytecode and Webassembly (WASM)</h3>
-
-<p>When Ethereum&rsquo;s smart contract transaction is executed, for example, when transfer Token to another address, we read the EVM bytecode into the Ethereum virtual machine, and the EVM bytecode has the following characteristics:</p>
-
+<p>When Ethereum's smart contract transaction is executed, for example, when transfer Token to another address, we read the EVM bytecode into the Ethereum virtual machine, and the EVM bytecode has the following characteristics:</p>
 <ul>
 <li>256-bit stack-based virtual machine</li>
 <li>Too many high level instructions
-  Storage(SSTORE, SLOAD)
-  SHA3(keccak-256)
-  Call, Create Contract…</li>
-<li>Different from the actual machine architecture (usually <sup>32</sup>&frasl;<sub>64</sub> bit), and 256 bit need to be done by simulation</li>
+Storage(SSTORE, SLOAD)
+SHA3(keccak-256)
+Call, Create Contract…</li>
+<li>Different from the actual machine architecture (usually 32/64 bit), and 256 bit need to be done by simulation</li>
 <li>Less language support (Vyper, Solidity, &hellip;)</li>
 </ul>
-
 <p>Webassembly (WASM) is a binary programming language that allows suites developed in different programming languages to be used in browsers. WASM has the following features:</p>
-
 <ul>
 <li>Stack-based virtual machine:
 has locals ( ~= register or memory)
@@ -323,75 +311,51 @@ only access top 3 items from stack v.s EVM’s 16</li>
 Supported in all major browser
 Lots of language support (C++, Rust, …)</li>
 </ul>
-
-<h3 id="ewasm-1-0">Ewasm 1.0</h3>
-
-<p>Let&rsquo;s take a look at the features of Ewasm:</p>
-
+<h3 id="ewasm-10">Ewasm 1.0</h3>
+<p>Let's take a look at the features of Ewasm:</p>
 <ul>
 <li>Ewasm is a subset of wasm</li>
 <li>Floating point arithmetic is not supported because no error is allowed</li>
 <li>You can only import the library of Ethereum and avoid importing ㄒ system library.</li>
 <li>Insert useGAS before each instruction to calculate the cost of GAS</li>
 </ul>
-
 <h3 id="ethereum-environment-interface">Ethereum Environment Interface</h3>
-
 <p>There are many high-level instructions in the EVM like SSLOAD and SHA3. These commands are in Ewasm 1.0. because WASM can dynamically read libraries (modules). Ethereum defines the Ethereum Environment Interface so that clients can use different languages. Corresponding to the library, and it is easier to complete the prototype and upgrade.</p>
-
 <p>The following slide is a list of functions defined by the Ethereum Environment Interface.
-<img src="/images/20191106-Ewasm-02.png" alt="" />
+<img src="/images/20191106-Ewasm-02.png" alt="">
 Ethereum Environment Interface Definition.</p>
-
 <h3 id="how-to-remove-illegal-instructions">How to remove illegal instructions?</h3>
-
 <p>Ewasm uses system contract to remove illegal instructions and add useGas bytecode, such as floating point numbers or illegal imports, in two ways:</p>
-
 <ul>
-<li>Check the contract&rsquo;s bytecode using the system contract</li>
+<li>Check the contract's bytecode using the system contract</li>
 <li>Like the current precompiles running on the client, check the contract before deployment</li>
 </ul>
-
 <p>The following slide shows the Ewasm 1.0 stack. Before the contract deployment, the Ewasm bytecode will be checked by Sentinal. After the successful deployment, the client will communicate with Heru (Wasm Engine) through EVM-C if the contract is to be executed.
-<img src="/images/20191106-Ewasm-03.png" alt="" />
+<img src="/images/20191106-Ewasm-03.png" alt="">
 Ewasm Stack</p>
-
 <h3 id="performance-problem">Performance problem</h3>
-
-<p>Does Ewasm perform better? The speaker shared the results of both EVM execution of Sha1 and BN128mul. It can be found that EVM is the faster when running BN128mul, mainly because WASM only supports <sup>32</sup>&frasl;<sub>64</sub>-bit operations. For 256-bit it requires additional simulation (ONE 256 bit operations may be replaced by 25 64 bit operations). As EVM provides precompiles, Wasm engine can support <code>bignum</code> library to speed up.</p>
-
-<h2 id="ewasm-2-0">Ewasm 2.0</h2>
-
-<p>Ewasm 2.0&rsquo;s smart contract is called Execution Environments (EE), which is different from Ewasm 1.0.</p>
-
+<p>Does Ewasm perform better? The speaker shared the results of both EVM execution of Sha1 and BN128mul. It can be found that EVM is the faster when running BN128mul, mainly because WASM only supports 32/64-bit operations. For 256-bit it requires additional simulation (ONE 256 bit operations may be replaced by 25 64 bit operations). As EVM provides precompiles, Wasm engine can support <code>bignum</code> library to speed up.</p>
+<h2 id="ewasm-20">Ewasm 2.0</h2>
+<p>Ewasm 2.0's smart contract is called Execution Environments (EE), which is different from Ewasm 1.0.</p>
 <ul>
 <li>EE is all written by WASM</li>
 <li>Because of the cross shard support, each EE is executed on a shard</li>
 <li>EE can only get state root, and the execution of the contract is not the same as before.</li>
 <li>EE is stateless</li>
 </ul>
-
 <p>The following slide shows the ERC20 Token compared to Ewasm 2.0 and Ewasm 1.0 storage. Ewasm 1.0 has a corresponding key for each data, while Ewasm 2.0 only has state root, so it can only interact with state root.
-<img src="/images/20191106-Ewasm-04.png" alt="" />
+<img src="/images/20191106-Ewasm-04.png" alt="">
 Ewasm 2.0 vs Ewasm 1.0</p>
-
 <h2 id="phase-one-and-done">Phase One and Done</h2>
-
 <p>At the current stage of Ewasm 2.0 to phase one and done, there are also tested networks that can perform EE on shard blocks, and Ethereum also has open source Ewasm 2.0 test tool: Scout.
-<img src="/images/20191106-Ewasm-05.png" alt="" />
+<img src="/images/20191106-Ewasm-05.png" alt="">
 Hello World for Ewasm 2.0</p>
-
-<p>The above slide is Eth 2&rsquo;s Hello World EE. You can see that the first line in the main function reads the pre state root, then verify if the block data size is 0, and finally save the state root back. Eth 2&rsquo;s smart contract code are all in this form.</p>
-
+<p>The above slide is Eth 2's Hello World EE. You can see that the first line in the main function reads the pre state root, then verify if the block data size is 0, and finally save the state root back. Eth 2's smart contract code are all in this form.</p>
 <h2 id="conclusion">Conclusion</h2>
-
 <p>Ewasm 1.0 currently supports EVM 1 and most of the functions have a test net. Second state develops a compiler SOLL, which can compile solidity into Ewasm. <a href="https://blog.secondstate.io/post/20191022-soll-compiler-project/">Check it out</a> if interested.</p>
-
 <p>Ewasm 2.0 is still under study. The following slide is the direction of the research and contribution shared by the speaker.
-<img src="/images/20191106-Ewasm-06.png" alt="" /></p>
-
+<img src="/images/20191106-Ewasm-06.png" alt=""></p>
 <h2 id="reference">Reference</h2>
-
 <p>1.<a href="http://url.hyd.ai/LRFVT">Crosslink 简报</a>
 2.<a href="https://webassembly.org/">webassembly.org (http://webassembly.org/)</a>
 3.<a href="https://github.com/ewasm/scout">Scout</a>
@@ -404,7 +368,6 @@ Hello World for Ewasm 2.0</p>
 10.<a href="https://drive.google.com/file/d/1CRc0qBQTebNKw7NRZXzxbHovrigW0bqf/view">Ewasm updates</a>
 11.<a href="https://github.com/ewasm/design">Ewasm design</a>
 12.<a href="https://rsms.me/wasm-intro">wasm-intro</a></p>
-
 <p>Translated from <a href="https://medium.com/taipei-ethereum-meetup/the-next-generation-ethereum-virtual-machine-ewasm-vm-2fe3fd9b94a4">traditional Chinese</a> by Ethereum Taipei</p>
 
     </div>

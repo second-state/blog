@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Solidity on Second State News and Articles</title>
@@ -52,15 +52,6 @@ Prior to the Panvala grant, Second State is already a recognized leader in Ether
     </item>
     
     <item>
-      <title>Second State SOLL 编译器项目获得以太坊基金会的现金奖励</title>
-      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</link>
-      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</guid>
-      <description>Second State 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对开源SOLL编译器项目的贡献，获得了以太坊基金会的现金奖励。2019年10月</description>
-    </item>
-    
-    <item>
       <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
       <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
       <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
@@ -68,6 +59,15 @@ Prior to the Panvala grant, Second State is already a recognized leader in Ether
       <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
       <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
 SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
+    </item>
+    
+    <item>
+      <title>Second State SOLL 编译器项目获得以太坊基金会的现金奖励</title>
+      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</link>
+      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</guid>
+      <description>Second State 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对开源SOLL编译器项目的贡献，获得了以太坊基金会的现金奖励。2019年10月</description>
     </item>
     
   </channel>

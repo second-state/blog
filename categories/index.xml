@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Second State News and Articles</title>
@@ -6,40 +6,22 @@
     <description>Recent content in Categories on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jul 2019 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 16 Feb 2020 20:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Business</title>
-      <link>http://blog.secondstate.io/categories/business/</link>
-      <pubDate>Wed, 03 Jul 2019 09:42:14 +0800</pubDate>
+      <title>zh</title>
+      <link>http://blog.secondstate.io/categories/zh/</link>
+      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
       
-      <guid>http://blog.secondstate.io/categories/business/</guid>
+      <guid>http://blog.secondstate.io/categories/zh/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Dapp</title>
-      <link>http://blog.secondstate.io/categories/dapp/</link>
-      <pubDate>Sun, 14 Jul 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/categories/dapp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Developer</title>
-      <link>http://blog.secondstate.io/categories/developer/</link>
-      <pubDate>Tue, 24 Sep 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/categories/developer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>En</title>
+      <title>en</title>
       <link>http://blog.secondstate.io/categories/en/</link>
       <pubDate>Fri, 14 Feb 2020 20:01:23 +0800</pubDate>
       
@@ -57,7 +39,7 @@
     </item>
     
     <item>
-      <title>Ewasm</title>
+      <title>EWASM</title>
       <link>http://blog.secondstate.io/categories/ewasm/</link>
       <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
       
@@ -66,20 +48,11 @@
     </item>
     
     <item>
-      <title>Hacker</title>
-      <link>http://blog.secondstate.io/categories/hacker/</link>
-      <pubDate>Mon, 19 Aug 2019 10:01:23 +0800</pubDate>
+      <title>developer</title>
+      <link>http://blog.secondstate.io/categories/developer/</link>
+      <pubDate>Tue, 24 Sep 2019 09:42:14 +0800</pubDate>
       
-      <guid>http://blog.secondstate.io/categories/hacker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Libra</title>
-      <link>http://blog.secondstate.io/categories/libra/</link>
-      <pubDate>Fri, 19 Jul 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/categories/libra/</guid>
+      <guid>http://blog.secondstate.io/categories/developer/</guid>
       <description></description>
     </item>
     
@@ -93,11 +66,47 @@
     </item>
     
     <item>
-      <title>Search Engine</title>
+      <title>hacker</title>
+      <link>http://blog.secondstate.io/categories/hacker/</link>
+      <pubDate>Mon, 19 Aug 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/categories/hacker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>libra</title>
+      <link>http://blog.secondstate.io/categories/libra/</link>
+      <pubDate>Fri, 19 Jul 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/categories/libra/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DApp</title>
+      <link>http://blog.secondstate.io/categories/dapp/</link>
+      <pubDate>Sun, 14 Jul 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/categories/dapp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>search engine</title>
       <link>http://blog.secondstate.io/categories/search-engine/</link>
       <pubDate>Sun, 14 Jul 2019 10:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/categories/search-engine/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>business</title>
+      <link>http://blog.secondstate.io/categories/business/</link>
+      <pubDate>Wed, 03 Jul 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/categories/business/</guid>
       <description></description>
     </item>
     
@@ -107,15 +116,6 @@
       <pubDate>Fri, 21 Jun 2019 01:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/categories/smart-contract/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Zh</title>
-      <link>http://blog.secondstate.io/categories/zh/</link>
-      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/categories/zh/</guid>
       <description></description>
     </item>
     

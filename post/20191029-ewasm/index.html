@@ -36,7 +36,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20191029-ewasm/" />
@@ -60,21 +60,17 @@
 
 
 
-
 <meta itemprop="name" content="Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm">
 <meta itemprop="description" content="Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.
  “The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).
  The EVM consists of a stack-based architecture. In order for a smart contract to be deployed, all high level Ethereum smart contract code must first be compiled into machine-readable code (called bytecode).">
-
-
 <meta itemprop="datePublished" content="2019-10-29T20:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2019-10-29T20:01:23&#43;08:00" />
-<meta itemprop="wordCount" content="3260">
+<meta itemprop="wordCount" content="3258">
 
 
 
-<meta itemprop="keywords" content="ewasm,soll,Solidity,Vyper,Ethereum,Smart Contract," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="ewasm,soll,Solidity,Vyper,Ethereum,Smart Contract," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm"/>
 <meta name="twitter:description" content="Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.
  “The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).
@@ -297,350 +293,197 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      
-
-<p>Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.</p>
-
+      <p>Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.</p>
 <blockquote>
 <p>“The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).</p>
 </blockquote>
-
 <p>The EVM consists of a stack-based architecture. In order for a smart contract to be deployed, all high level Ethereum smart contract code must first be compiled into machine-readable code (called bytecode). This bytecode code (a series of single-byte opcodes and optional arguments) is then processed by the EVM via a last-in-first-out stack arrangement. This operation is similar to the Java Virtual Machine (JVM) whereby every instruction begins with a single-byte opcode and arguments, if any, occupy subsequent (unaligned) bytes, with values given in big-endian order (Scott, 2009).</p>
-
 <p>The first goal of this article is to explain the inner workings of Ethereum’s stack-based EVM. Once these EVM fundamentals are explained we will begin to see that Ethereum’s organic conformity to the binary instruction format for a stack-based virtual machine has it poised to transition into the bright future of web assembly.</p>
-
 <p>Let’s start with the end in mind by taking a look at web assembly.</p>
-
 <h2 id="web-assembly-abbreviated-wasm">Web Assembly (abbreviated Wasm)</h2>
-
 <p><a href="https://webassembly.org/">WebAssembly</a> (abbreviated Wasm) is a new type of code that can be run in modern web browsers. It provides new features and major gains in performance. Wasm is designed to be an effective compilation target for low-level source languages like C, C++ and Rust etc (MDN Web Docs, 2019).</p>
-
 <h2 id="ethereum-web-assembly-abbreviated-ewasm">Ethereum Web Assembly (abbreviated Ewasm)</h2>
-
 <p>Ethereum Web Assembly (abbreviated Ewasm) is a deterministic smart contract execution engine built on the modern, standard WebAssembly virtual machine. Ewasm is the primary candidate to replace the EVM as part of the Ethereum 2.0 “Serenity” roadmap. Ewasm is also proposed for adoption on the Ethereum mainnet (ewasm, 2019).</p>
-
 <h2 id="why-ewasm">Why Ewasm?</h2>
-
 <p>The current architecture of the EVM is one of the greatest blockers to raw performance (GitHub EIP48, 2019). For example, whilst the 256-bit word size facilitates native hashing and elliptic curve operations (Antonopoulos and Wood, 2018), it also makes translation from EVM opcodes to hardware instructions more difficult than needed; an architecture that provides a closer mapping to hardware will considerably enhance Ethereum’s performance (GitHub EIP48, 2019).</p>
-
 <p>Aside from the performance enhancement aspect, one of the design goals of the Ewasm project is to also support smart contract development across a wider range of languages and tooling i.e. incorporating LLVM, C, C++, Rust, JavaScript into the development cycle.
 In theory any language, that can be compiled to Wasm, can be used to write a smart contract. As long as it implements the <a href="https://github.com/ewasm/design/blob/master/contract_interface.md">Ewasm Contract Interface</a>(ECI) and <a href="https://github.com/ewasm/design/blob/master/eth_interface.md">Ethereum Environment Interface</a>(EEI) (ewasm, 2019).</p>
-
 <h2 id="smart-contracts">Smart Contracts</h2>
-
 <p>Let’s take a minute to understand the fundamentals of the EVM by walking through the creation, compilation and deployment of an Ethereum smart contract, using the original EVM architecture.</p>
-
 <blockquote>
 <p>Ethereum smart contracts are like “autonomous agents” that live inside of the Ethereum execution environment, always executing a specific piece of code when “poked” by a message or transaction, and having direct control over their own ether balance and their own key/value store to keep track of persistent variables (Buterin, 2013).</p>
 </blockquote>
-
 <p>Each of the higher level smart contract source programming languages such as <a href="https://solidity.readthedocs.io/en/v0.5.12/">Solidity</a>, <a href="https://vyper.readthedocs.io/en/v0.1.0-beta.13/">Vyper</a> and <a href="https://github.com/second-state/lity">Lity</a> maintain their own compiler. A smart contract’s source code can be compiled into a variety of outputs. Including, but not limited to the application binary interface (ABI), bytecode stream and opcode.</p>
-
 <h2 id="compiling">Compiling</h2>
-
 <p>Before installing a compiler on your local machine, I would urge you to check out new web-based compilers such as <a href="http://buidl.secondstate.io/">SecondState’s BUIDL environment</a>. <strong>This will save you an incredible amount of time</strong>.</p>
-
 <p>Let’s take <a href="https://gist.github.com/tpmccallum/bb077c0768631873708b4000a693dde7">the simple storage source</a> code and compile it using SecondState’s BUIDL environment, as pictured below.</p>
-
-<p><img src="/images/20191029-EWASM-01.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-01.png" alt=""></p>
 <p>Clicking the compile button will immediately produce the smart contract’s ABI and bytecode, as shown below.</p>
-
-<p><img src="/images/20191029-EWASM-02.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-02.png" alt=""></p>
 <p>If you would like to see how this compilation is performed in the command line (with a locally installed compiler), please see <strong>Appendix A</strong>, at the end of this article.</p>
-
 <h2 id="analysing-the-deployment-bytecode">Analysing the deployment bytecode</h2>
-
 <p>If we look at the first 4 instructions in the bytecode we see the following.</p>
-
 <p><strong>60</strong>80<strong>60</strong>40<strong>5234</strong></p>
-
 <p>If we view the Mnemonic representations of these values, as referenced on page 30 of the <a href="https://ethereum.github.io/yellowpaper/paper.pdf">Ethereum Yellow Paper</a>, we will see that the first instruction (60) is PUSH1.</p>
-
-<p><img src="/images/20191029-EWASM-03.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-03.png" alt=""></p>
 <h3 id="δ">δ</h3>
-
 <p>The column labelled <strong>δ</strong> to the right of Mnemonic, represents the number of items to be removed from the stack by the PUSH1 instruction (in this case 0).</p>
-
 <h3 id="α">α</h3>
-
 <p>The next column over, labelled <strong>α</strong>, represents the number of additional items to be placed on the stack, by the PUSH1 instruction. In this case 1; a single byte 0x80.</p>
-
 <p>In the example below we can now see that the first instruction (0x60) PUSH1, has pushed the value of 0x80 to the stack and that the second instruction (0x60) called PUSH1, has pushed the value of 0x40 to the stack.</p>
-
 <p><strong>60</strong>80<strong>60</strong>40…</p>
-
 <p><strong>PUSH1</strong> 0x80 <strong>PUSH1</strong> 0x40…</p>
-
 <p>If we move along the bytecode, we then encounter the instruction with a value of 0x52. As you can see in the Yellow Paper below, this instruction has the Mnemonic representation of MSTORE.</p>
-
 <p>60806040<strong>52</strong>34</p>
-
-<p><img src="/images/20191029-EWASM-04.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-04.png" alt=""></p>
 <p>If we again look at the column labelled <strong>δ</strong> to the right of Mnemonic we can see that MSTORE is going to consume two items from the top of the stack. In total, MSTORE will consume the top 2 items from the stack but place 0 items back on the stack.</p>
-
 <p>It is important to point out, at this stage, that MSTORE is a Memory Operation which is tasked with saving a word to memory. Please don’t get confused about the use of the term “word”.</p>
-
 <blockquote>
 <p>The EVM works with a word size of 256 bit (Antonopoulos and Wood, 2018).</p>
 </blockquote>
-
 <p>This “word” is not a word per se. For example, it can be an account address etc.</p>
-
 <p>MSTORE starts its operation by first consuming the current item from the top of the stack; namely an address which specifies where the word will be stored in memory. In this case the address location of 0x60. MSTORE then consumes the next item from the stack and saves it (0x80) to the pre-specified address(0x60). At this stage there are no items left on the stack.</p>
-
 <p>The next instruction is (0x34). It has the Mnemonic representation of CALLVALUE.</p>
-
 <p>60806040<strong>5234</strong></p>
-
-<p><img src="/images/20191029-EWASM-05.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-05.png" alt=""></p>
 <p>If we pay close attention to the column labelled α, we see that CALLVALUE will be placing one item on the stack, as part of its standard operation. However, we did just mentioned that the stack is currently empty and so this raises the following question. How does CALLVALUE obtain the data which it intends to place on the stack?</p>
-
 <p>As you can see from the Yellow Paper, all instructions which have values in the 30s (0x30 to 0x3e) relate to Environmental Information. In this case CALLVALUE obtains its required data from the message call responsible for executing this bytecode. Another example relating to Environmental Information is the instruction 0x33 which has the Mnemonic representation of CALLER. The CALLER instruction is able to automatically get the address of the Ethereum account which initiated the bytecode’s execution.</p>
-
 <h2 id="deployment-vs-runtime-bytecode">Deployment vs Runtime bytecode</h2>
-
 <p>It is important to differentiate between the deployment and runtime bytecode at this juncture. If you look at Appendix A.1 (obtaining deployment bytecode) and Appendix A.2 (obtaining runtime bytecode) you will notice that the bytecode results, which are returned, are not identical.</p>
-
 <p>The runtime bytecode is the bytecode that is executed when functions of the deployed smart contract are called.</p>
-
 <p>The deployment bytecode contains additional instructions, relating specifically to deployment only.</p>
-
 <p>Interestingly, the runtime bytecode can always be seen as a subset of code, which resides verbatim inside the deployment bytecode. This is illustrated in the image below.</p>
-
-<p><img src="/images/20191029-EWASM-06.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-06.png" alt=""></p>
 <h2 id="analysing-the-runtime-bytecode">Analysing the runtime bytecode</h2>
-
 <p>Each of the smart contract functions can be identified (inside the runtime bytecode) as a 4 byte function signature. To calculate the function signature we first take the function’s name. In our case, let’s start with our function “set”.</p>
-
-<p><img src="/images/20191029-EWASM-07.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-07.png" alt=""></p>
 <p>Along with the function name “set”, we also take the function’s input argument data types (separated by comma and wrapped in parentheses). For example, in our simple case we end up with the text set(uint256).</p>
-
 <p><strong>Note: Do not use any spaces when creating the function selector text.</strong></p>
-
 <p>Once we have this information we then create the hexadecimal representation of a sha3 hash and truncate it to only 4 bytes. Here are examples in both web3.js and web3.py</p>
-
 <p><code>selectorHash = &quot;0x&quot; + str(web3.toHex(web3.sha3(text=&quot;set(uint256)&quot;)))[2:10]</code></p>
-
 <p><code>var selectorHash = web3.sha3(&quot;set(uint256)&quot;).substring(0,10)</code></p>
-
 <p>Both of the above commands will return the following signature 0x60fe47b1 which we can easily locate in both the deployment and runtime bytecode data.</p>
-
-<p><img src="/images/20191029-EWASM-08.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-08.png" alt=""></p>
 <p>At this stage we have an understanding of how each instruction in the bytecode is carried out (giving and taking information from the stack, then calling environment and memory etc). We could continue to analyse each instruction in the bytecode and reference the Yellow Paper. However, we now have a good understanding of how calling code can execute state transition functions using environmental information and so forth so let’s now move on to Ethereum’s specific Ewasm implementation nuances.</p>
-
 <h2 id="ewasm-implementation">Ewasm implementation</h2>
-
 <p>We mentioned a little while ago that a smart contract’s source code can be compiled into a variety of outputs. Of course the path from high level smart contract code to Ewasm is a complex task which can take on many and varied compilation paths through different toolchains.</p>
-
-<p><img src="/images/20191029-EWASM-09.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-09.png" alt=""></p>
 <p><a href="https://www.secondstate.io/">Second State</a> developers recently built <a href="https://github.com/second-state/soll">a Solidity to Ewasm compiler called Soll</a>.</p>
-
-<p><img src="/images/20191029-EWASM-10.png" alt="" /></p>
-
-<p>This challenging task was completed (as a prototype for demonstration purposes) prior to both:
-* <a href="https://crosslink.taipei/">Crosslink</a> - a conference for the world&rsquo;s leading blockchain researchers and developers, held in Taiwan&rsquo;s capital, Taipei)
-* <a href="https://devcon.org/">Devcon5</a>- an international conference for Ethereum developers, held in Osaka Japan)</p>
-
+<p><img src="/images/20191029-EWASM-10.png" alt=""></p>
+<p>This challenging task was completed (as a prototype for demonstration purposes) prior to both:</p>
+<ul>
+<li><a href="https://crosslink.taipei/">Crosslink</a> - a conference for the world's leading blockchain researchers and developers, held in Taiwan's capital, Taipei)</li>
+<li><a href="https://devcon.org/">Devcon5</a>- an international conference for Ethereum developers, held in Osaka Japan)</li>
+</ul>
 <h2 id="crosslink-october-2019">Crosslink (October 2019)</h2>
-
-<p><img src="/images/20191029-EWASM-11.png" alt="" /></p>
-
-<p>Picture: SecondState&rsquo;s Hung-Ying Tai receiving an Ethereum Foundation Grant for the <a href="https://blog.secondstate.io/post/20191022-soll-compiler-project/">Soll compiler project</a> (pictured with Vitalik Buterin at the Crosslink Taipei event).</p>
-
+<p><img src="/images/20191029-EWASM-11.png" alt=""></p>
+<p>Picture: SecondState's Hung-Ying Tai receiving an Ethereum Foundation Grant for the <a href="https://blog.secondstate.io/post/20191022-soll-compiler-project/">Soll compiler project</a> (pictured with Vitalik Buterin at the Crosslink Taipei event).</p>
 <h2 id="devcon5-october-2019">Devcon5 (October 2019)</h2>
-
 <p>For those who were not at Devcon5, the following video provides an overview of Soll’s operation. Namely deploying and interacting with an Ethereum ERC20 Solidity smart contract on the new <a href="http://ewasm.ethereum.org/">Ethereum Ewasm testnet</a>.</p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/X-A6sP_HTy0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<!-- raw HTML omitted -->
 <p>Devcon5 was the perfect conference to share the latest Ewasm developments from the SecondState team. After formally presenting on the first day of the conference, an additional informal and open demonstration &amp; discussion took place.</p>
-
 <p>The post-demo discussion with Solidity maintainer Christian Reitwiessner, and others, revealed SecondState’s best path forward in terms of optimal collaboration and reduction of duplication of effort amongst different developers and software projects in the future Ewasm space.</p>
-
-<p><img src="/images/20191029-EWASM-12.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-12.png" alt=""></p>
 <p>Having succeeded in prototyping compilation from <strong>Solidity</strong> to <strong>LLVM</strong> to <strong>Ewasm</strong>, SecondState, in response to valuable peer input, is looking forward to making extensive use of <a href="https://solidity.readthedocs.io/en/v0.5.12/yul.html">Yul</a> in a bid to perform Yul to llvm to Ewasm compilation path.</p>
-
-<p><img src="/images/20191029-EWASM-13.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-13.png" alt=""></p>
 <h2 id="yul">Yul</h2>
-
 <p>Yul is an Ethereum specific intermediate language. Future versions of the Ethereum Solidity compiler (and possibly the Ethreum Vyper compiler) will comprehensively support Yul as an intermediate language.</p>
-
 <p>Yul is designed to be a usable common denominator of EVM 1.0, EVM 1.5 and Ewasm. The core components of Yul are functions, blocks, variables, literals, for-loops, if-statements, switch-statements, expressions and assignments to variables (Solidity — Yul, 2019).</p>
-
 <blockquote>
 <p>Backends or targets are the translators from Yul to a specific bytecode. Each of the backends can expose functions prefixed with the name of the backend. Yul reserves evm_ and ewasm_ prefixes for the two proposed backends (Solidity — Yul, 2019).</p>
 </blockquote>
-
 <p>A lot of work has already been done in this space, so let’s take a brief look at what we already know about the path from Solidity to Yul to Ewasm.</p>
-
 <h2 id="compiling-solidity-for-yul">Compiling Solidity for Yul</h2>
-
 <p>The solidity compiler has a special flag which can be used to compile Solidity source code into an intermediate representation (IR) of Yul.</p>
-
 <p>In order to provide an example of this feature, let’s use Ethereum’s Solidity compiler in the command line to compile our simple storage example from above into this YUL IR format.</p>
-
 <p>You will see from <a href="https://gist.github.com/tpmccallum/2a32747848156fe245fe59374f162238#file-solc_yul_ir-md">the code below</a> that we can perform this task using the <strong>ir</strong> flag.</p>
-
-<p><img src="/images/20191029-EWASM-14.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-14.png" alt=""></p>
 <h2 id="compiling-yul-for-ewasm">Compiling Yul for Ewasm</h2>
-
 <p>A simple overview of the path from Yul includes the following steps.</p>
-
 <p>Starting with the EVM-Yul code, we need to:
 Split each 256 bit (32 byte) variable into <strong>4 individual</strong> 64 bit (8 byte) variablesTake care of endian differencesCreate a library that implements each EVM opcode as user a defined function, using the equivalent Ewasm built in functionUtilise the regular optimiser.</p>
-
 <h2 id="further-solidity-compilation-examples">Further Solidity compilation examples</h2>
-
 <p>If fed the above Yul IR, Solidity can also produce pretty printed source, binary representation and text representation.</p>
-
 <p>This is achieved with the following command</p>
-
 <p><code>solc/solc --strict-assembly --optimize ~/simple_storage/simple_storage_yul_ir.txt</code></p>
-
 <p>The individual outputs are as follows</p>
-
 <p><a href="https://gist.github.com/tpmccallum/2dc42315971c04e4ba42d1ca3475a666#file-pretty_printed_source-md">Pretty printed source</a></p>
-
-<p><img src="/images/20191029-EWASM-15.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-15.png" alt=""></p>
 <p><a href="https://gist.github.com/tpmccallum/f9017bd1af1954837305bdb21fe47dc8#file-binary_representation-md">Binary representation</a></p>
-
-<p><img src="/images/20191029-EWASM-16.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-16.png" alt=""></p>
 <p><a href="https://gist.github.com/tpmccallum/ac535ed3c57627508f861e315694ae0f#file-text_representation-md">Text representation</a></p>
-
-<p><img src="/images/20191029-EWASM-17.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-17.png" alt=""></p>
 <h2 id="an-example-of-the-inner-workings">An example of the inner workings</h2>
-
 <p>Christian’s Devcon5 <a href="http://chriseth.github.io/notes/talks/yul_devcon5/#/11">presentation code example</a>, revealed the inner workings of the Ewasm flavoured compilation process. More specifically, as shown here, the work required to produce the equivalent of the MSTORE function. As we demonstrated above, using the original EVM, MSTORE accepts 2 arguments (firstly a standard 32 byte address, and secondly a 256 bit (32 byte) word). However, as you can see, the code below shows the original Solidity smart contract 256 bit variables being split into separate 64 bit variables. You will also notice that endian swaps are occurring.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">function mstore(x1, x2, x3, x4, y1, y2, y3, y4) {
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">function mstore(x1, x2, x3, x4, y1, y2, y3, y4) {
     let pos := u256_to_i32ptr(x1, x2, x3, x4)
     i64.store(pos, endian_swap(x1))
     i64.store(i64.add(pos, 8), endian_swap(x2))
     i64.store(i64.add(pos, 16), endian_swap(x3))
     i64.store(i64.add(pos, 24), endian_swap(x4))
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>Available at: <a href="http://chriseth.github.io/notes/talks/yul_devcon5/#/11">http://chriseth.github.io/notes/talks/yul_devcon5/#/11</a></p>
-
+</div><p>Available at: <a href="http://chriseth.github.io/notes/talks/yul_devcon5/#/11">http://chriseth.github.io/notes/talks/yul_devcon5/#/11</a></p>
 <h2 id="endianness">Endianness</h2>
-
 <p>The swapping of endianness (the byte order for storing and retrieving bytes from memory) when compiling for Ewasm is crucial for the following reasons. The Ethereum Virtual Machine Specification employs big-endian byte ordering (Wood, 2014). However, the Web Assembly specification requires that all values are read and written in little endian (webassembly.github.io, 2019).</p>
-
 <p>As not to undersell any of the other required design efforts and hard work ahead, there are additional details which are currently undergoing consideration/discussion as this important work progresses. A few of these have been outlined in Appendix B below for brevity.</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>Whilst there are many potential paths between smart contract code and Ewasm. The use of Yul will provide a targeted endpoint for the current Ethereum compilers as well as an entry point for the llvm to Ewasm compiler. The Yul to llvm to Ewasm compiler will bring about the fundamental advantages of Wasm/Ewasm to any of the Yul compliant smart contract languages like Solidity and Vyper.</p>
-
 <blockquote>
 <p>Using Yul is a big win, because it can re-use almost all optimiser components (Reitwiessner, 2019).</p>
 </blockquote>
-
-<p><img src="/images/20191029-EWASM-18.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-18.png" alt=""></p>
 <p>Further to this, given that other languages like Rust use LLVM as their primary codegen backend (Rust-lang.github.io, 2019), the above toolchain path will open the door for other programming languages to become part of Ethereum’s Ewasm smart contract ecosystem.</p>
-
-<p><img src="/images/20191029-EWASM-19.png" alt="" /></p>
-
+<p><img src="/images/20191029-EWASM-19.png" alt=""></p>
 <p>CC BY 3.0 (<a href="https://creativecommons.org/licenses/by/3.0">https://creativecommons.org/licenses/by/3.0</a>)</p>
-
 <h2 id="references">References</h2>
-
 <p>Antonopoulos, A. and Wood, G. (2018). Mastering Ethereum. 1st ed. O’Reilly Media.</p>
-
 <p>Buterin, V., 2013. Ethereum white paper.(2013). URL <a href="https://github.com/ethereum/wiki/wiki/White-Pape">https://github.com/ethereum/wiki/wiki/White-Paper</a>.</p>
-
 <p>Docs.ethhub.io. (2019). Ethereum 1.x — EthHub. [online] Available at: <a href="https://docs.ethhub.io/ethereum-roadmap/ethereum-1.x/">https://docs.ethhub.io/ethereum-roadmap/ethereum-1.x/</a> [Accessed 18 Oct. 2019].</p>
-
 <p>Ewasm. (2019). ewasm/testnet. [online] Available at: <a href="https://github.com/ewasm/testnet">https://github.com/ewasm/testnet</a> [Accessed 18 Oct. 2019].</p>
-
 <p>GitHub EIP48. (2019). ethereum EIP48. [online] Available at: <a href="https://github.com/ethereum/EIPs/issues/48">https://github.com/ethereum/EIPs/issues/48</a> [Accessed 18 Oct. 2019].</p>
-
 <p>MDN Web Docs. (2019). WebAssembly Concepts. [online] Available at: <a href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts">https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts</a> [Accessed 18 Oct. 2019].</p>
-
 <p>Reitwiessner, C. (2019). Yul, eWasm, Solidity: Progress and Future Plans. Available at: <a href="http://chriseth.github.io/notes/talks/yul_devcon5/#/">http://chriseth.github.io/notes/talks/yul_devcon5/#/</a></p>
-
 <p>Rust-lang.github.io. (2019). Updating LLVM — Guide to Rustc Development. [online] Available at: <a href="https://rust-lang.github.io/rustc-guide/codegen/updating-llvm.html">https://rust-lang.github.io/rustc-guide/codegen/updating-llvm.html</a> [Accessed 20 Oct. 2019].</p>
-
 <p>Scott, M. (2009). Programming language pragmatics. 3rd ed. Amsterdam: Elsevier/Morgan Kaufmann Pub.</p>
-
 <p>Solidity — Yul. (2019). Yul — Solidity 0.5.12 documentation. [online] Available at: <a href="https://solidity.readthedocs.io/en/v0.5.12/yul.html">https://solidity.readthedocs.io/en/v0.5.12/yul.html</a>[Accessed 19 Oct. 2019].</p>
-
 <p>Webassembly.github.io. (2019). WebAssembly Specification. [online] Available at: <a href="https://webassembly.github.io/spec/core/_download/WebAssembly.pdf">https://webassembly.github.io/spec/core/_download/WebAssembly.pdf</a> [Accessed 20 Oct. 2019].</p>
-
 <p>Wood, G., 2014. Ethereum: A secure decentralised generalised transaction ledger. Ethereum project yellow paper, 151(2014), pp.1–32.
 Appendix ACompiling the simple storage smart contract in the command line</p>
-
 <p>As mentioned in the above article, compilation can be performed manually in the command line. For example after installing <a href="https://solidity.readthedocs.io/en/v0.5.12/installing-solidity.html#building-from-source">Solidity</a>, <a href="https://vyper.readthedocs.io/en/v0.1.0-beta.13/installing-vyper.html#installation">Vyper</a> or <a href="https://lity.readthedocs.io/en/latest/getting-started.html#dependencies">Lity</a> you will have access to the appropriate local compilation environment.</p>
-
 <p>Here is an example of how we would compile the simple storage smart contract, to obtain a variety of different outputs, using SecondState’s Lity compiler.</p>
-
 <p>A.1 Obtaining deployment bytecode</p>
-
 <p><code>tpmccallum$ lityc/lityc --bin ~/simple_storage/simple_storage.sol</code></p>
-
 <p><code>608060405234801561001057600080fd5b5060ec8061001f6000396000f3fe6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146085575b600080fd5b348015605957600080fd5b50608360048036036020811015606e57600080fd5b810190808035906020019092919050505060ad565b005b348015609057600080fd5b50609760b7565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea165627a7a7230582037a6182517eb7335095ca48cb7b895cbcbbdb824f48911f3f69fdc1869c7263e0029</code></p>
-
 <p>A.2 Obtaining runtime bytecode</p>
-
 <p><code>tpmccallum$ lityc/lityc --bin-runtime ~/simple_storage/simple_storage.sol</code></p>
-
 <p><code>6080604052600436106049576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff16806360fe47b114604e5780636d4ce63c146085575b600080fd5b348015605957600080fd5b50608360048036036020811015606e57600080fd5b810190808035906020019092919050505060ad565b005b348015609057600080fd5b50609760b7565b6040518082815260200191505060405180910390f35b8060008190555050565b6000805490509056fea165627a7a7230582037a6182517eb7335095ca48cb7b895cbcbbdb824f48911f3f69fdc1869c7263e0029</code></p>
-
 <p>A.3 Obtaining opcodes</p>
-
 <p><code>tpmccallum$ lityc/lityc --opcodes ~/simple_storage/simple_storage.sol</code></p>
-
-<p><code>PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xec DUP1 PUSH2 0x1f PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x49 JUMPI PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xffffffff AND DUP1 PUSH4 0x60fe47b1 EQ PUSH1 0x4e JUMPI DUP1 PUSH4 0x6d4ce63c EQ PUSH1 0x85 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x59 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x83 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x6e JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 ADD SWAP1 DUP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP3 SWAP2 SWAP1 POP POP POP PUSH1 0xad JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x90 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x97 PUSH1 0xb7 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST DUP1 PUSH1 0x0 DUP2 SWAP1 SSTORE POP POP JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD SWAP1 POP SWAP1 JUMP INVALID LOG1 PUSH6 0x627a7a723058 KECCAK256 CALLDATACOPY 0xa6 XOR 0x25 OR 0xeb PUSH20 0x35095ca48cb7b895cbcbbdb824f48911f3f69fdc XOR PUSH10 0xc7263e00290000000000</code></p>
-
+<p><code>PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH2 0x10 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0xec DUP1 PUSH2 0x1f PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x4 CALLDATASIZE LT PUSH1 0x49 JUMPI PUSH1 0x0 CALLDATALOAD PUSH29 0x100000000000000000000000000000000000000000000000000000000 SWAP1 DIV PUSH4 0xffffffff AND DUP1 PUSH4 0x60fe47b1 EQ PUSH1 0x4e JUMPI DUP1 PUSH4 0x6d4ce63c EQ PUSH1 0x85 JUMPI JUMPDEST PUSH1 0x0 DUP1 REVERT JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x59 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x83 PUSH1 0x4 DUP1 CALLDATASIZE SUB PUSH1 0x20 DUP2 LT ISZERO PUSH1 0x6e JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST DUP2 ADD SWAP1 DUP1 DUP1 CALLDATALOAD SWAP1 PUSH1 0x20 ADD SWAP1 SWAP3 SWAP2 SWAP1 POP POP POP PUSH1 0xad JUMP JUMPDEST STOP JUMPDEST CALLVALUE DUP1 ISZERO PUSH1 0x90 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x97 PUSH1 0xb7 JUMP JUMPDEST PUSH1 0x40 MLOAD DUP1 DUP3 DUP2 MSTORE PUSH1 0x20 ADD SWAP2 POP POP PUSH1 0x40 MLOAD DUP1 SWAP2 SUB SWAP1 RETURN JUMPDEST DUP1 PUSH1 0x0 DUP2 SWAP1 SSTORE POP POP JUMP JUMPDEST PUSH1 0x0 DUP1 SLOAD SWAP1 POP SWAP1 JUMP INVALID LOG1 PUSH6 0x627a7a723058 KECCAK256 CALLDATACOPY 0xa6 XOR 0x25 OR 0xeb PUSH20 0x35095ca48cb7b895cbcbbdb824f48911f3f69fdc XOR PUSH10 0xc7263e00290000000000 </code></p>
 <p>A.4 Obtaining ABI</p>
-
 <p><code>tpmccallum$ lityc/lityc --abi ~/simple_storage/simple_storage.sol</code></p>
-
 <p><code>[{&quot;constant&quot;:false,&quot;inputs&quot;:[{&quot;name&quot;:&quot;x&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;name&quot;:&quot;set&quot;,&quot;outputs&quot;:[],&quot;payable&quot;:false,&quot;stateMutability&quot;:&quot;nonpayable&quot;,&quot;type&quot;:&quot;function&quot;},{&quot;constant&quot;:true,&quot;inputs&quot;:[],&quot;name&quot;:&quot;get&quot;,&quot;outputs&quot;:[{&quot;name&quot;:&quot;&quot;,&quot;type&quot;:&quot;uint256&quot;}],&quot;payable&quot;:false,&quot;stateMutability&quot;:&quot;view&quot;,&quot;type&quot;:&quot;function&quot;}]</code></p>
-
 <p>Appendix B</p>
-
 <p>Topics for future consideration/discussion</p>
-
-<h3 id="interacting-with-the-rest-of-the-1-x-evm">Interacting with the rest of the 1.x EVM</h3>
-
+<h3 id="interacting-with-the-rest-of-the-1x-evm">Interacting with the rest of the 1.x EVM</h3>
 <p>In addition to the typical bytecode operations, i.e. stack, memory, and storage access, the original EVM also has access to account information, i.e. addresses and balances as well as block information and current gas price (Antonopoulos and Wood, 2018). Storage access is instrumental for correct operation. For example, the execution of a valid transaction begins with an irrevocable change made to the state: the nonce of the account of the sender (Wood, 2014).</p>
-
 <p>The Ethereum 1.x roadmap indicates that there are unresolved questions about how Ewasm will interact with the rest of the EVM state i.e. contract storage, ether balances and so forth. One approach is to exclude Ewasm code from directly accessing EVM state, but allow it to exchange input/output when called (Docs.ethhub.io, 2019).</p>
-
 <h3 id="deterministic-behaviour">Deterministic behaviour</h3>
-
 <p>As we know, Ewasm is a subset of Wasm, and Wasm has a couple of features which are non-deterministic. As Ewasm moves forward there will need to be a way to reject any contracts which have non-deterministic features (Docs.ethhub.io, 2019). At present it appears that this can be achieved by a single <a href="https://github.com/ewasm/design/blob/master/sentinel.md">sentinel contract</a>. The sentinel is a system contract (part of the genesis or hardfork Ewasm is enabled on). The sentinel contract has a raw interface which is used for contract validation during deployment. It works by deliberately issuing an invalid operation (invoking a regular failure) when an unexpected issue occurs or deliberately issuing the revert operation if invalid input is ever detected.</p>
-
 <h3 id="gas-metering">Gas metering</h3>
-
 <p>The calculation of gas for Ewasm contract deployment and interactions requires some future work. It is presently proposed that automatic upper bound estimations are used. Static analysis can be performed on the bytecode and, for a subset of codes, the upper bounds for executed instructions (virtual gas) can also be calculated (Docs.ethhub.io, 2019).</p>
 
     </div>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blockchain on Second State News and Articles</title>
+    <title>blockchain on Second State News and Articles</title>
     <link>http://blog.secondstate.io/tags/blockchain/</link>
-    <description>Recent content in Blockchain on Second State News and Articles</description>
+    <description>Recent content in blockchain on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Tue, 19 Nov 2019 09:42:14 +0800</lastBuildDate>
@@ -75,9 +75,9 @@ Blockchain Smart Contract ABI is the interface between smart contracts and block
       
       <guid>http://blog.secondstate.io/post/20190805-libra-deep-dive/</guid>
       <description>With Libra being scrutinized, if not attacked, at Congressional hearing, where is the anticipated ambitious global stable coin is heading towards?
- What is the difference between the programming on Libra and Ethereum?
- Can ERC 20 token interact with Libra?
- How to get started with DApp programming in a few minutes?
+  What is the difference between the programming on Libra and Ethereum?
+  Can ERC 20 token interact with Libra?
+  How to get started with DApp programming in a few minutes?
   These are discussed in detail at the tech workshop &amp;ldquo;Libra Smart Contract Deep Dive&amp;rdquo; held in Beijing, China, on August 3rd.</description>
     </item>
     
@@ -117,7 +117,7 @@ The Libra Blockchain is a decentralized, programmable database designed to suppo
       <guid>http://blog.secondstate.io/post/20171111-polkadot-safe/</guid>
       <description>Github user devops199 said on Twitter “I accidentally killed it”. Before anyone can blink an eye, his “accident” has “killed” Ethereum accounts holding over $300M in crypto assets. On average, each of his 4 words cost $75M.
 One of those Ethereum accounts belongs to the Polkadot project, and it held close to $90M before it was “killed”.
-Someone asked devops199 after the incident: Why did you do it? His response?</description>
+Someone asked devops199 after the incident: Why did you do it? His response? “I am just a beginner poking around the system!</description>
     </item>
     
   </channel>

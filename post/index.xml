@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Second State News and Articles</title>
@@ -67,7 +67,7 @@ Blockchain Smart Contract ABI is the interface between smart contracts and block
       <pubDate>Wed, 06 Nov 2019 10:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/post/20191106-ewasm-en/</guid>
-      <description>The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&amp;rsquo;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&amp;rsquo;s smart contract transaction is executed,</description>
+      <description>The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&#39;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&#39;s smart contract transaction is executed,</description>
     </item>
     
     <item>
@@ -157,7 +157,7 @@ Through its web-based BUIDL IDE, developers can easily access Second State smart
       
       <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
       <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
-Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&amp;rsquo;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&#39;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
     </item>
     
     <item>
@@ -170,15 +170,6 @@ Note: My company, Second State, was invited to give a talk at Devcon5, where we 
     </item>
     
     <item>
-      <title>Second State SOLL 编译器项目获得以太坊基金会的现金奖励</title>
-      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</link>
-      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</guid>
-      <description>Second State 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对开源SOLL编译器项目的贡献，获得了以太坊基金会的现金奖励。2019年10月</description>
-    </item>
-    
-    <item>
       <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
       <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
       <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
@@ -186,6 +177,15 @@ Note: My company, Second State, was invited to give a talk at Devcon5, where we 
       <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
       <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
 SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
+    </item>
+    
+    <item>
+      <title>Second State SOLL 编译器项目获得以太坊基金会的现金奖励</title>
+      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</link>
+      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</guid>
+      <description>Second State 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对开源SOLL编译器项目的贡献，获得了以太坊基金会的现金奖励。2019年10月</description>
     </item>
     
     <item>

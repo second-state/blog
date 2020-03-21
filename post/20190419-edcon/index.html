@@ -35,7 +35,7 @@ The upbeat and playful community atmosphere continued throughout the entire conf
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20190419-edcon/" />
@@ -59,20 +59,16 @@ The upbeat and playful community atmosphere continued throughout the entire conf
 
 
 
-
 <meta itemprop="name" content="EDCON 2019 — The annual community Ethereum development conference">
 <meta itemprop="description" content="EDCON2019 EDCON 2019 kicked off, in Sydney Australia, with a pleasantly surprising ice breaker. Vitalik Buterin, Karl Floersch and Co. captured the audience with a live on-stage hip-hop performance; waxing lyrical about eth2.0, merkle proofs, plasma chains, zkSNARKs, eWASM and account abstraction.
 The upbeat and playful community atmosphere continued throughout the entire conference. The days were not only filled with conference presentations. They were filled with lively community interactions, the sharing of ideas, collaborative coding opportunities and even physical puzzle challenges.">
-
-
 <meta itemprop="datePublished" content="2019-04-19T01:01:23&#43;08:00" />
 <meta itemprop="dateModified" content="2019-04-19T01:01:23&#43;08:00" />
 <meta itemprop="wordCount" content="2628">
 
 
 
-<meta itemprop="keywords" content="Ethereum,conference,eth2.0,EDCON,development," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="Ethereum,conference,eth2.0,EDCON,development," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="EDCON 2019 — The annual community Ethereum development conference"/>
 <meta name="twitter:description" content="EDCON2019 EDCON 2019 kicked off, in Sydney Australia, with a pleasantly surprising ice breaker. Vitalik Buterin, Karl Floersch and Co. captured the audience with a live on-stage hip-hop performance; waxing lyrical about eth2.0, merkle proofs, plasma chains, zkSNARKs, eWASM and account abstraction.
 The upbeat and playful community atmosphere continued throughout the entire conference. The days were not only filled with conference presentations. They were filled with lively community interactions, the sharing of ideas, collaborative coding opportunities and even physical puzzle challenges."/>
@@ -293,103 +289,68 @@ The upbeat and playful community atmosphere continued throughout the entire conf
 
     
     <div class="post-content">
-      
-
-<h2 id="edcon2019">EDCON2019</h2>
-
+      <h2 id="edcon2019">EDCON2019</h2>
 <p>EDCON 2019 kicked off, in Sydney Australia, with a pleasantly surprising ice breaker. Vitalik Buterin, Karl Floersch and Co. captured the audience with a live on-stage <a href="https://www.youtube.com/watch?v=j7MeJionPMA">hip-hop performance</a>; waxing lyrical about eth2.0, merkle proofs, plasma chains, zkSNARKs, eWASM and account abstraction.</p>
-
-<p><img src="/images/20190419-edcon-01.jpg" alt="" /></p>
-
+<p><img src="/images/20190419-edcon-01.jpg" alt=""></p>
 <p>The upbeat and playful community atmosphere continued throughout the entire conference. The days were not only filled with conference presentations. They were filled with lively community interactions, the sharing of ideas, collaborative coding opportunities and even physical puzzle challenges. There was a constant buzz, and the Ethereum researchers and contributors walked the floor during the breaks; sharing conversations and enjoying the amazing conference catering.</p>
-
 <h3 id="casper-cbc">Casper CBC</h3>
-
 <p>After the initial opening performance Vitalik Buterin, who by now needed no further introduction, took to the stage with his contemplative presentation about correct-by-construction (Casper CBC). More specifically, how the Casper CBC family of consensus protocols would work in Ethereum 2.0.</p>
-
-<p><img src="/images/20190419-edcon-02.jpg" alt="" /></p>
-
+<p><img src="/images/20190419-edcon-02.jpg" alt=""></p>
 <p>One of the most interesting facts I discovered, during his talk, was that Casper CBC actually has no &ldquo;in-protocol&rdquo; fault tolerance threshold. Instead, safety is chosen on the client side. Essentially each Ethereum 2.0 client can nominate how they interact with the protocol by choosing their own time vs certainty requirements.</p>
-
 <p>In point form:</p>
-
 <ul>
 <li>Finality is client-side</li>
 <li>There is no finality thresholds in the Ethereum 2.0 protocol</li>
 </ul>
-
 <p>Here are a few more points which I also found very interesting:</p>
-
 <ul>
 <li>Validators choose which chain is &ldquo;canonical&rdquo; based on a fork choice rule</li>
-<li>Validators build blocks (on a particular chain) which reinforces that chain&rsquo;s dominance</li>
+<li>Validators build blocks (on a particular chain) which reinforces that chain's dominance</li>
 <li>Validators can not maliciously switch to another chain because this would produce a provable violation</li>
 </ul>
-
 <p>These points are all part of a new school of safe-under-asynchrony BFT consensus which was originally invented by Vlad Zamfir.</p>
-
-<h3 id="ethereum-2-0-validators">Ethereum 2.0 validators</h3>
-
+<h3 id="ethereum-20-validators">Ethereum 2.0 validators</h3>
 <p>The roles and responsibilities of an Ethereum 2.0 validator became more and more apparent as the presentations went on. For example, becoming a validator requires a deposit of 32ETH (deposited to the appropriate contract on the main Ethereum 1.0 chain). Once the 32 ETH has been confirmed, the validator begins their life on the beacon chain. The beacon chain, which is the system chain for Ethereum 2.0, is where validators live, where random numbers are generated, where deposits are held and where slashing occurs.</p>
-
 <p>Once a validator is chosen (using pseudo random sampling) they serve on the beacon chain for approximately 2 weeks. These validators take on responsibilities to, amongst other things, propose valid Ethereum 2.0 blocks, create crosslinks (communications between sharded chains) and vote on correct cross shard links.</p>
-
-<h3 id="ethereum-2-0-validator-rewards-and-penalties">Ethereum 2.0 validator rewards and penalties</h3>
-
+<h3 id="ethereum-20-validator-rewards-and-penalties">Ethereum 2.0 validator rewards and penalties</h3>
 <p>Of course no staking system would be complete without penalties. Validator penalties include, but are not limited to, general <strong>in</strong>activity, attesting to incorrect data and/or falsely attesting to data which is not actually available. All of the presentations, at this conference, were more about the overarching technical architecture and as such, did not go into actual details about the profitability of being a validator. If you are interested in more of these details, the <a href="https://github.com/ethereum/eth2.0-specs/blob/dev/specs/core/0_beacon-chain.md#reward-and-penalty-quotients">penalty and reward quotients section</a> of the official Ethereum 2.0 specification provides concrete values as well as an annual reward percentage, based on a particular assumption.</p>
-
 <p>Ethereum Core Researcher Hsiao-Wei Wang, gave an excellent presentation which essentially outlined &ldquo;a day in the life of an Ethereum Beacon Chain Validator&rdquo;. Danny Ryan provided a great explanation of how sharding and proof of stake come together into a single design to create Ethereum 2.0. Danny also provided a simple overview diagram which I have included below.</p>
-
-<p><img src="/images/20190419-edcon-03.jpg" alt="" /></p>
-
-<h3 id="ethereum-2-0-roadmap-phase-0">Ethereum 2.0 roadmap (Phase 0)</h3>
-
+<p><img src="/images/20190419-edcon-03.jpg" alt=""></p>
+<h3 id="ethereum-20-roadmap-phase-0">Ethereum 2.0 roadmap (Phase 0)</h3>
 <p>Most of the presentations also referenced the Ethereum 2.0 roadmap. Specifically, the talks referenced the first phase of Ethereum 2.0 (commonly known as Phase 0). At this stage the specifications of Ethereum 2.0 are concrete. The path forward is now focused primarily on engineering and development. Sights are set on releasing the core system level proof of stake chain (beacon chain pictured above) by the end of this year.</p>
-
 <blockquote>
 <p>The Phase 0 implementation is scheduled for Q4 of 2019.</p>
 </blockquote>
-
 <p>The reason for the phased implementation of Ethereum 2.0 is to allow developers, testers and the community to take a more conservative approach. For example Phase 0 implements the beacon chain but does not facilitate externally owned user accounts or any user activity whatsoever.</p>
-
 <p>Similarly, Phase 1 (which will of course come after Phase 0) will introduce sharded chains, but with test data only. Again, no user accounts or user activity. It is expected that the Phase 2 implementation of Ethereum 2.0 will eventually add accounts, smart contracts and so forth.</p>
-
-<h3 id="ethereum-2-0-clients">Ethereum 2.0 clients</h3>
-
+<h3 id="ethereum-20-clients">Ethereum 2.0 clients</h3>
 <p>Preston Van Loon, Co-founder &amp; Tech lead at Prysmatic Labs, gave an excellent presentation entitled &ldquo;How to Build a Production-ready Ethereum 2.0 Client&rdquo;. Whilst it was originally thought that the existing Ethereum 1.0 clients could be updated/upgraded, developers have since learned that the Ethereum 2.0 clients have to be written from the ground up.</p>
-
 <p>One of the upsides of this fresh approach, is that developers can now entertain completely new ideas without worrying about how they would have to integrate with existing Ethereum 1.0 clients.</p>
-
 <p>One of the challenges which this brings however, is that eventually all of these different new clients will need to align from an interoperability standpoint.</p>
-
 <blockquote>
 <p>Over 100 people, from all over the world, are currently contributing to the development of almost a dozen different Ethereum 2.0 clients</p>
 </blockquote>
-
 <p>It was really great to see so many different projects presenting so many different ideas. The community engagement and collaboration was a good fit for Second State. There was an overriding focus on providing innovative blockchain solutions. Dr Yuan demonstrated how SecondState can achieve new heights, providing solutions which are performant, yet still safe and user friendly.</p>
-
-<h3 id="how-about-ethereum-1-x">How about Ethereum 1.x?</h3>
-
-<p>It is clear that Ethereum 2.0 is still months (or maybe even years) away from being useful. However, that does not mean current Ethereum users and developers are stuck with outdated and slow technology for a long period of time. Many innovations for Ethereum 2.0 are coming to fruition in today&rsquo;s Ethereum blockchain. For example,</p>
-
+<h3 id="how-about-ethereum-1x">How about Ethereum 1.x?</h3>
+<p>It is clear that Ethereum 2.0 is still months (or maybe even years) away from being useful. However, that does not mean current Ethereum users and developers are stuck with outdated and slow technology for a long period of time. Many innovations for Ethereum 2.0 are coming to fruition in today's Ethereum blockchain. For example,</p>
 <ul>
-<li><p>One of the most common discussion topics throughout the conference is layer 2 networks. Layer 2 networks could scale the current Ethereum blockchain to tens of thousands of transactions per second (TPS). While various implementation efforts of Plasma clearly have the most mindshare, other solutions ranging from Liquidity Network to Celer Networks are debated and discussed in depth in the conference halls.</p></li>
-
-<li><p>New developer tools are being created to improve Ethereum user and developer experience. Examples I found particularly interesting include the Embark Framework for integrated DApp development and deployment (see below), Amberdata for blockchain data visualization and query services, and Tokenscript for automated token related operations in wallet applications. Developer tools is also a focus of innovation for the Second State and Lity project. Stay tuned.</p></li>
-
-<li><p>On-chain applications that store the entire application data on the blockchain are becoming part of the standard Ethereum infrastructure (<a href="/post/20190319-lean/">see our previous article on this topic</a>). That is especially true for Defi (Decentralized Finance) applications such as Uniswap, Kyber Network, and MakerDAO. For instance, since its launch 6 months ago, Uniswap now has $10M worth of ETH locked in liquidity pools, and reaches $2M in daily transactions. MakerDAO, on the other hand, has locked over $300M worth of ETHs in its deposit pools. Defi, including ERC220 token contracts, could well be the standard infrastructure of Ethereum.</p></li>
-
-<li><p>Ethereum core developer Lane Rettig gave a talk on Ethereum 1.x roadmap. He discussed many interesting improvements that will happen on the current PoW Ethereum blockchain, including language improvements to Solidity and Vyper, as well as the new intermediate language between Solidity and the bytecode in preparation for Ethereum 2.0&rsquo;s new eWASM (Ethereum flavored WebAssembly) Virtual Machine. Those improvements will make the Ethereum platform more useable and performant in the virtual machine layer. Again, this is area where Second State is looking to make active contributions to the community (see below).</p></li>
+<li>
+<p>One of the most common discussion topics throughout the conference is layer 2 networks. Layer 2 networks could scale the current Ethereum blockchain to tens of thousands of transactions per second (TPS). While various implementation efforts of Plasma clearly have the most mindshare, other solutions ranging from Liquidity Network to Celer Networks are debated and discussed in depth in the conference halls.</p>
+</li>
+<li>
+<p>New developer tools are being created to improve Ethereum user and developer experience. Examples I found particularly interesting include the Embark Framework for integrated DApp development and deployment (see below), Amberdata for blockchain data visualization and query services, and Tokenscript for automated token related operations in wallet applications. Developer tools is also a focus of innovation for the Second State and Lity project. Stay tuned.</p>
+</li>
+<li>
+<p>On-chain applications that store the entire application data on the blockchain are becoming part of the standard Ethereum infrastructure (<a href="/post/20190319-lean/">see our previous article on this topic</a>). That is especially true for Defi (Decentralized Finance) applications such as Uniswap, Kyber Network, and MakerDAO. For instance, since its launch 6 months ago, Uniswap now has $10M worth of ETH locked in liquidity pools, and reaches $2M in daily transactions. MakerDAO, on the other hand, has locked over $300M worth of ETHs in its deposit pools. Defi, including ERC220 token contracts, could well be the standard infrastructure of Ethereum.</p>
+</li>
+<li>
+<p>Ethereum core developer Lane Rettig gave a talk on Ethereum 1.x roadmap. He discussed many interesting improvements that will happen on the current PoW Ethereum blockchain, including language improvements to Solidity and Vyper, as well as the new intermediate language between Solidity and the bytecode in preparation for Ethereum 2.0's new eWASM (Ethereum flavored WebAssembly) Virtual Machine. Those improvements will make the Ethereum platform more useable and performant in the virtual machine layer. Again, this is area where Second State is looking to make active contributions to the community (see below).</p>
+</li>
 </ul>
-
 <h3 id="lity-and-second-state">Lity and Second State</h3>
-
 <p>Our very own Dr. Yuan gave an engaging presentation which explained how Lity (an extension of Solidity) provides unprecedented features to blockchain programming.</p>
-
-<p><img src="/images/20190419-edcon-04.jpg" alt="" /></p>
-
+<p><img src="/images/20190419-edcon-04.jpg" alt=""></p>
 <p>For example:</p>
-
 <ul>
 <li>compiler and runtime support</li>
 <li>built-in functions such as safe random numbers</li>
@@ -397,116 +358,85 @@ The upbeat and playful community atmosphere continued throughout the entire conf
 <li>new data types such as safe integer (safeuint)</li>
 <li>new constructs such as the blockchain rules engine</li>
 </ul>
-
-<h3 id="blockchain-rules-engine-a-declarative-language-for-non-programmers">Blockchain Rules Engine - a declarative language for non-programmers</h3>
-
-<p><img src="/images/20190419-edcon-05.jpg" alt="" /></p>
-
-<p>Smart contract code is rigid; once deployed the smart contract&rsquo;s logic is set in stone. Naturally, at the time of deployment only a finite set of possible conditions and logical outcomes are shipped. Many real world applications challenge this rigidity. Complex interactions require a more dynamic solution and this is where rules engines comes to the rescue.</p>
-
+<h3 id="blockchain-rules-engine---a-declarative-language-for-non-programmers">Blockchain Rules Engine - a declarative language for non-programmers</h3>
+<p><img src="/images/20190419-edcon-05.jpg" alt=""></p>
+<p>Smart contract code is rigid; once deployed the smart contract's logic is set in stone. Naturally, at the time of deployment only a finite set of possible conditions and logical outcomes are shipped. Many real world applications challenge this rigidity. Complex interactions require a more dynamic solution and this is where rules engines comes to the rescue.</p>
 <p>Rules engines are already available in many &ldquo;non-blockchain&rdquo; enterprise programming languages and frameworks. For example the <a href="https://www.drools.org/">Drools</a>, <a href="https://www.jessrules.com/">Jess</a> and the <a href="https://www.pega.com/business-rules">Pega</a> business rules platforms, to name a few. Rules engines already provide value to many industries including finance, commerce, travel and government. Dr Yuan cleverly introduced and then demonstrated with code, how rules engines can be used in the future of blockchain programming.</p>
-
 <p>The rules engine provides modularity. This is an important feature because a large portion of business analysts who create the business logic, are not smart contract programmers. Modularity also allows for code re-usability as well as parallel development. The blockchain rules engine which Dr Yuan demonstrated, introduces a mechanism for business analysts to design and create rules without needing to write smart contract code. Dr Yuan walked the audience through a few real-world applications which helped explained the necessity for the rules engine to be a declarative language for non-programmers.</p>
-
-<p><img src="/images/20190419-edcon-06.jpg" alt="" /></p>
-
+<p><img src="/images/20190419-edcon-06.jpg" alt=""></p>
 <p>Dr Yuan gave many examples of the usefulness of rules engines. Perhaps the simplest to articulate, in this article, was the semi-complex fast food order in which, after some time, individual items on the menu begin to qualify as becoming part of a &ldquo;combo&rdquo;. Naturally, without the Rules Engine, the traditional smart contract code would be lengthy; difficult to write and comprehend. As you can see from the image below, the rules syntax is quite simple.</p>
-
-<p><img src="/images/20190419-edcon-07.jpg" alt="" /></p>
-
+<p><img src="/images/20190419-edcon-07.jpg" alt=""></p>
 <p>The rules engine provides a succinct solution (for non-programmers) which is easy to write, comprehend and maintain. The rules engine is robust. Once deployed, the rules engine employs the Rete algorithm; a pattern matching algorithm which is used to determine the correct order of rule execution.</p>
-
 <h3 id="ethereum-community-collaboration">Ethereum community collaboration</h3>
-
 <p>I was fortunate enough to sit with Hayden Adams (the creator of Uniswap) and discuss one of my recent ideas. The idea is to store multiple values inside a single uint256 integer.</p>
-
-<p><img src="/images/20190419-edcon-08.jpg" alt="" /></p>
-
+<p><img src="/images/20190419-edcon-08.jpg" alt=""></p>
 <p>The logic behind this idea is as follows. A single uint256 data slot can store any value between 0 and 115792089237316195423570985008687907853269984665640564039457584007913129639935 and as such it may be feasible to create a pattern which obeys a certain convention which ultimately allows many application variables to be stored in one single slot. The pseudo code (design pattern) for the idea, which I have dubbed <a href="https://github.com/second-state/micro-slots">micro-slots</a> is shown below.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">((_value % (10 ** _position)) - (_value % (10 ** (_position - _size)))) / (10 ** (_position - _size));</pre></td></tr></table>
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">((_value % (10 ** _position)) - (_value % (10 ** (_position - _size)))) / (10 ** (_position - _size));
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>I also very briefly ran this idea past Vitalik, showing him my pseudo code during one of the breaks, and was pleased to hear that this pattern could be implemented in not just Solidity but also in Ethereum&rsquo;s Vyper programming language.</p>
-
+</div><p>I also very briefly ran this idea past Vitalik, showing him my pseudo code during one of the breaks, and was pleased to hear that this pattern could be implemented in not just Solidity but also in Ethereum's Vyper programming language.</p>
 <p>There was more than enough room at EDCON2019 for developers to sit down and code so I took a small window of opportunity to write and test the design in both Solidity and Vyper.</p>
-
 <h3 id="solidity">Solidity</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">contract uintTool {
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">contract uintTool {
     function getInt(uint256 _value, uint256 _position, uint256 _size) public pure returns(uint256){
         uint256 a = ((_value % (10 ** _position)) - (_value % (10 ** (_position - _size)))) / (10 ** (_position - _size));
         return a;
     }
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<h3 id="vyper">Vyper</h3>
+</div><h3 id="vyper">Vyper</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">@public
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">@public
 @constant
 def getInt(_value: uint256, _position: uint256, _size: uint256) -&gt; uint256:
     a: uint256 = ((_value % (10 ** _position)) - (_value % (10 ** (_position - _size)))) / (10 ** (_position - _size))
-    return a</pre></td></tr></table>
+    return a
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>I am hopeful that this design may be useful for Uniswap version 2.0 and as such I will continue to research and develop the idea and its implementation in the very near future. The next step (as per Hayden&rsquo;s advice) is to research the gas efficiencies of this design.</p>
-
+</div><p>I am hopeful that this design may be useful for Uniswap version 2.0 and as such I will continue to research and develop the idea and its implementation in the very near future. The next step (as per Hayden's advice) is to research the gas efficiencies of this design.</p>
 <h3 id="conclusion">Conclusion</h3>
-
 <p>There were so many amazing presenters, teams and projects at this conference. Just before we conclude, I would like to quickly mention a couple of projects as well as an idea; all of which I found inspirational and interesting.</p>
-
 <h4 id="embark">Embark</h4>
-
 <p>Originally released in 2015, <a href="https://embark.status.im/">Embark</a> is an Ethereum development framework which provides developers with the ability to create private blockchains, debug smart contracts and much more. From my understanding &ldquo;Embark saves time&rdquo;. Embark has a powerful CLI, a web UI dashboard, an explorer, its own code editor, and also integrates with decentralized services such as IPFS. Embark is a <strong>fully open source effort</strong>, created for developers, by developers.</p>
-
 <h4 id="ethereum-classic-labs">Ethereum Classic Labs</h4>
-
 <p>Ethereum Classic Labs gave a great presentation which introduced me to a clever project called <a href="https://github.com/open-rpc/spec">Open RPC</a>. In my view, this project will help to provide a ubiquitous communication protocol which will greatly improve the Ethereum DApp development environment. Ethereum Classic Labs also offer <a href="https://etclabs.org/program/">incubator programs</a> to provide startups with funding. There seemed to be an overriding message that whilst most development is created by the Ethereum Classic Labs <strong>(ETC)</strong>, it is intended to be used by the wider Ethereum <strong>(ETH)</strong> community.</p>
-
 <h4 id="ethereum-cat-herder">Ethereum Cat Herder</h4>
-
 <p>The Ethereum Cat Herder project is an effort to provide decentralized project management support for a large collaboration like Ethereum. The speaker recalled early days of Ethereum when decisions are centralized and funds were spent carelessly, much like many crypto projects today. The evolution of Ethereum into a highly organized project with many conflicting stakeholders is testmony to the power of the community, and serves as a good example for other projects that follow it.</p>
-
-<h4 id="virgil-griffith-parametric-insurance-insurance-based-on-a-measurable-condition">Virgil Griffith - Parametric insurance (insurance based on a measurable condition)</h4>
-
+<h4 id="virgil-griffith---parametric-insurance-insurance-based-on-a-measurable-condition">Virgil Griffith - Parametric insurance (insurance based on a measurable condition)</h4>
 <p>The Special Projects Lead at the Ethereum Foundation, Virgil Griffith, gave a great talk about decentralized insurance protocols and products. Virgil gave examples of how real-world outcomes could automatically invoke payment. One example was weather insurance whereby the purchaser of the insurance policy would automatically receive an insurance payout based on a simple metric such as wind speed. For example instant payouts are triggered when the wind speed registered by weather stations (in proximity to the insured property) exceed a threshold.</p>
-
 <blockquote>
 <p>No insurance assessors and no delays.</p>
 </blockquote>
-
 <p>Another example was that of flight delay insurance whereby a payout is issued based on how long the flight is delayed.</p>
-
 <blockquote>
 <p>No paperwork, no waiting.</p>
 </blockquote>
-
-<p>This particular talk made me revisit Dr Yuan&rsquo;s presentation about the blockchain Rules Engine. In his talk Dr Yuan gave the example of how the Rules Engine could resolve complex issues such as accounting for rewards in complex situations. For example a passenger achieving Gold frequent-flyer status shortly after take-off, but not soon enough to have redeemed the rewards for that particular flight.</p>
-
+<p>This particular talk made me revisit Dr Yuan's presentation about the blockchain Rules Engine. In his talk Dr Yuan gave the example of how the Rules Engine could resolve complex issues such as accounting for rewards in complex situations. For example a passenger achieving Gold frequent-flyer status shortly after take-off, but not soon enough to have redeemed the rewards for that particular flight.</p>
 <p>I am imagining scores of real-world scenarios in the field of parametric (parameter based) insurance (and other parametric services); partly harvested crops, health insurance and much more. In my mind it boils down to the fact that Business analysts (and other professionals who create policies, models and contracts) work at a very high level of abstraction. On the other hand, blockchain developers and engineers work at an extremely niche level; writing and building decentralized infrastructure. The Rules Engine approach allows the high level business logic to seamlessly make its way into the decentralized application (DApp) layer.</p>
-
 <p>All in all, EDCON2019 was a highly productive, yet friendly and relaxed community event.</p>
 
     </div>

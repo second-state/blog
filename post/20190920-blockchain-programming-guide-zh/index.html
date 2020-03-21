@@ -34,7 +34,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.62.2" />
 
 
 <link rel="canonical" href="http://blog.secondstate.io/post/20190920-blockchain-programming-guide-zh/" />
@@ -58,19 +58,15 @@
 
 
 
-
 <meta itemprop="name" content="如何使用BUIDL 发布一个自己的区块链网站">
 <meta itemprop="description" content="欢迎来到区块链的世界，在区块链应用里，您留下的足迹会永远留存，永远不会消失~ 小科普 区块链应用通常以智能合约为后端，以HTML 和 JavaScr">
-
-
 <meta itemprop="datePublished" content="2019-09-20T09:42:14&#43;08:00" />
 <meta itemprop="dateModified" content="2019-09-20T09:42:14&#43;08:00" />
 <meta itemprop="wordCount" content="1696">
 
 
 
-<meta itemprop="keywords" content="blockchain application,developer Community,blockchain programming," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="blockchain application,developer Community,blockchain programming," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="如何使用BUIDL 发布一个自己的区块链网站"/>
 <meta name="twitter:description" content="欢迎来到区块链的世界，在区块链应用里，您留下的足迹会永远留存，永远不会消失~ 小科普 区块链应用通常以智能合约为后端，以HTML 和 JavaScr"/>
 
@@ -290,40 +286,24 @@ if (!doNotTrack) {
 
     
     <div class="post-content">
-      
-
-<p>欢迎来到区块链的世界，在区块链应用里，您留下的足迹会永远留存，永远不会消失~</p>
-
+      <p>欢迎来到区块链的世界，在区块链应用里，您留下的足迹会永远留存，永远不会消失~</p>
 <h2 id="小科普">小科普</h2>
-
 <p>区块链应用通常以智能合约为后端，以HTML 和 JavaScript为前端。智能合约是区块链应用的核心，负责与区块链互动，现下流行的智能合约语言有Solidity 和Lity。</p>
-
 <p>区块链的不可篡改，永久留存特性通常由智能合约来保证。</p>
-
-<h2 id="在开始之前-您需要准备以下工作">在开始之前，您需要准备以下工作</h2>
-
+<h2 id="在开始之前您需要准备以下工作">在开始之前，您需要准备以下工作</h2>
 <p><strong>#1</strong> 在电脑浏览器打开 <a href="https://buidl.secondstate.io/xiaoxiao">https://buidl.secondstate.io/cmt</a> （推荐使用Chrome 浏览器）</p>
-
 <p><strong>#2</strong> 检查开发工具BUIDL是否连接到区块链上</p>
-
-<p><img src="/images/20190920-BUIDL-demo-01.png" alt="BUIDL" /></p>
-
+<p><img src="/images/20190920-BUIDL-demo-01.png" alt="BUIDL"></p>
 <p>检查方法：查看页面左下方 Providers 是否是绿色图标，绿色表明已经连接到CyberMiles链上，红色表明尚未连接，请刷新重试。如果多次刷新后，仍然是红色，请及时告知。</p>
-
 <p><strong>#3</strong> 点击Account，找到当下使用的账号，然后往账号中打入少量 CMT。</p>
-
 <p>如果没有 CMT，也可以复制此账号，发给我们，我们将给您的账号转1个CMT，以支付gas 费。（gas 费是区块链常见的名词，用以向网络中帮忙确认此笔交易的节点或矿工支付“薪水”。）</p>
-
-<p><img src="/images/20190920-BUIDL-demo-02.png" alt="BUIDL" /></p>
-
+<p><img src="/images/20190920-BUIDL-demo-02.png" alt="BUIDL"></p>
 <p>这样就把正式开发之前的准备做完了。</p>
-
-<h2 id="区块链网页后端-智能合约">区块链网页后端——智能合约</h2>
-
+<h2 id="区块链网页后端智能合约">区块链网页后端——智能合约</h2>
 <p><strong>#1</strong> 点击红色的Contract，清空默认代码，将下面的智能合约代码粘贴上去</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -348,9 +328,9 @@ if (!doNotTrack) {
 </span><span class="lnt">23
 </span><span class="lnt">24
 </span><span class="lnt">25
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">pragma solidity &gt;= 0.4.0;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">pragma solidity &gt;= 0.4.0;
 
 contract Celebration {
 
@@ -374,29 +354,21 @@ contract Celebration {
     function getAddrs () public view returns (address []) {
         return addrs;
     }
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p><strong>#2</strong> 点击右上角Compile，在 _greeting 的横线处输入你想在网页上写的话，之后点击 Deploy to the chain，此处需要等待大概20秒。</p>
-
-<p><img src="/images/20190920-BUIDL-demo-03.png" alt="BUIDL" /></p>
-
+</div><p><strong>#2</strong> 点击右上角Compile，在 _greeting 的横线处输入你想在网页上写的话，之后点击 Deploy to the chain，此处需要等待大概20秒。</p>
+<p><img src="/images/20190920-BUIDL-demo-03.png" alt="BUIDL"></p>
 <p>这一步实施的是将BUIDL 部署到CyberMiles 链上，部署成功的标志是在页面左上角出现合约名字 Celebration 及TX和Address，页面下方log 出现TX 及 Success 字样。（小科普：TX是这笔交易的哈希值，是唯一的。Address 是合约地址，也是唯一的）</p>
-
-<p><img src="/images/20190920-BUIDL-demo-04.png" alt="BUIDL" /></p>
-
+<p><img src="/images/20190920-BUIDL-demo-04.png" alt="BUIDL"></p>
 <p>到这里我们就把区块链网站的后端写完了，这部分叫做智能合约，负责与区块链互动。区块链应用的特性主要由智能合约体现。</p>
-
 <h2 id="区块链网页前端">区块链网页前端</h2>
-
 <p>接下来是前端部分。</p>
-
 <p><strong>#1</strong> 点击绿色的Dapp，看到HTML，CSS，JS三个模块，清空这三个模块的代码。</p>
-
 <p>将下面的代码粘贴到HTML 模块</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -423,9 +395,9 @@ contract Celebration {
 </span><span class="lnt">25
 </span><span class="lnt">26
 </span><span class="lnt">27
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">&lt;div class=&#34;container&#34;&gt;
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">&lt;div class=&#34;container&#34;&gt;
     &lt;br/&gt;
     &lt;div class=&#34;jumbotron&#34;&gt;
         &lt;p class=&#34;lead&#34; id=&#34;greeting&#34;&gt;&lt;/p&gt;
@@ -451,13 +423,13 @@ contract Celebration {
     All &#34;likes&#34; are permanently recorded on the &lt;a href=&#34;https://app.cybermiles.io&#34;&gt;CyberMiles public blockchain&lt;/a&gt;.
     &lt;br/&gt;
     [&lt;a href=&#34;https://docs.secondstate.io/buidl-developer-tool/why-buidl&#34;&gt;Learn more&lt;/a&gt; | &lt;a href=&#34;https://github.com/second-state/buidl/tree/master/demo/celebration&#34;&gt;Source code&lt;/a&gt;]
-&lt;/div&gt;</pre></td></tr></table>
+&lt;/div&gt;
+</code></pre></td></tr></table>
 </div>
-</div>
-<p>将下面的代码粘贴到JS 模块</p>
+</div><p>将下面的代码粘贴到JS 模块</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -513,9 +485,9 @@ contract Celebration {
 </span><span class="lnt">54
 </span><span class="lnt">55
 </span><span class="lnt">56
-</span></pre></td>
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma">/* Don&#39;t modify */
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/* Don&#39;t modify */
 这里的代码不要改，从var instance = null; 开始复制
 /* Don&#39;t modify */
 
@@ -570,29 +542,24 @@ function like () {
         }
     });
     return false;
-}</pre></td></tr></table>
+}
+</code></pre></td></tr></table>
 </div>
-</div>
-<p><strong>#2</strong> BUIDL 是一个开源的开发工具，支持添加开源的代码资源，点击Resources 。</p>
-
+</div><p><strong>#2</strong> BUIDL 是一个开源的开发工具，支持添加开源的代码资源，点击Resources 。</p>
 <ul>
-<li><p>在JavaScript 点击加号，将下面的JS资源粘贴到弹窗里：<a href="https://code.jquery.com/jquery-3.4.1.min.js">https://code.jquery.com/jquery-3.4.1.min.js</a> 并点击确定</p></li>
-
-<li><p>在CSS 处点击加号，将下面的CSS 资源粘贴到弹窗里：<a href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css</a> 并点击确定。</p></li>
+<li>
+<p>在JavaScript 点击加号，将下面的JS资源粘贴到弹窗里：https://code.jquery.com/jquery-3.4.1.min.js 并点击确定</p>
+</li>
+<li>
+<p>在CSS 处点击加号，将下面的CSS 资源粘贴到弹窗里：https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css 并点击确定。</p>
+</li>
 </ul>
-
 <p>添加好后，再次点击Resources，将输入框收回。</p>
-
-<p><img src="/images/20190920-BUIDL-demo-06.png" alt="BUIDL" /></p>
-
+<p><img src="/images/20190920-BUIDL-demo-06.png" alt="BUIDL"></p>
 <p><strong>#3</strong> 点击最左边的Run，会在页面右侧预览网页样式。然后来输入自己的名字，做个测试吧!（输入自己名字后，需要等大概20秒左右。分布在全球的节点达成共识需要一点时间）</p>
-
-<p><img src="/images/20190920-BUIDL-demo-07.png" alt="BUIDL" /></p>
-
+<p><img src="/images/20190920-BUIDL-demo-07.png" alt="BUIDL"></p>
 <p><strong>#4</strong> 点击页面上方的Publish，输入自己网站的名称，比如孩子的小名，然后等待大概30秒，点击launched 就可以看到自己的网页。</p>
-
-<p><img src="/images/20190920-BUIDL-demo-08.png" alt="BUIDL" /></p>
-
+<p><img src="/images/20190920-BUIDL-demo-08.png" alt="BUIDL"></p>
 <p>接下来就把自己的网页分享到社交媒体，让亲朋好友给自己点赞留念吧！</p>
 
     </div>
