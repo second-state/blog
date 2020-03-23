@@ -6,10 +6,20 @@
     <description>Recent content in en on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 14 Feb 2020 20:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 20:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State awarded a grant to bring next-gen Ethereum infrastructure to Polkadot ecosystem</title>
+      <link>http://blog.secondstate.io/post/20200228-polkadot-en/</link>
+      <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200228-polkadot-en/</guid>
+      <description>(02/28/2020, Austin TX USA)The Web3 Foundation has awarded Second State, a leading cloud and blockchain infrastructure company, a grant to bring the Ethereum flavored WebAssembly (Ewasm) virtual machine to the Polkadot ecosystem. Get this project from GitHub here: https://github.com/second-state/substrate-ewasm
+The virtual machine is a key infrastructure component for public blockchains. It allows any user from the public to submit untrusted code to the blockchain platform, in the form of smart contracts, and pay for its execution based on resource consumption.</description>
+    </item>
     
     <item>
       <title>Second State receives another grant award for the SOLL compiler</title>
@@ -207,16 +217,6 @@ In the just-concluded DEF CON 27 CTF hacking contest, after three days and two n
       <guid>http://blog.secondstate.io/post/20190724-after-raising-3-million-blockchain-technology-startup-second-state-brings-smart-contracts-to-business/</guid>
       <description>AUSTIN, TEXAS (July 23, 2019) — Second State, a developer of an open source blockchain smart contract platform for enterprises, has raised $3 million in Series A funding from a number of top venture capitalists and angel investors, including Susquehanna International Group (SIG), Ethereum Classic Labs, and JBoss creator Dr. Marc Fluery.
 The Second State BUIDL tool, a browser-based IDE, allows developers to quickly write, build and deploy all elements of a decentralized application (“DApp”), including smart contracts, formal rules, web3 scripts, ElasticSearch scripts, HTML, CSS, and Javascript.</description>
-    </item>
-    
-    <item>
-      <title>Libra First Impressions Part 3: How to Issue ERC20 token on Libra with Move Language</title>
-      <link>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/</link>
-      <pubDate>Fri, 19 Jul 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/</guid>
-      <description>This article is the third and final part of the &amp;ldquo;Libra First impressions&amp;rdquo; series. In the previous two articles, we explored the technical implications of the Libra project and the internal processing and execution of Libra Client and Validator.
- Libra First Impressions Part 2: Deep dive with a Libra transaction Libra First Impressions Part 1: Smart Contracts are not created equal  Write your token module In this article, we will show you how to use Move IR to write a simple token module.</description>
     </item>
     
   </channel>

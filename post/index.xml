@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Feb 2020 20:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 20:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State awarded a grant to bring next-gen Ethereum infrastructure to Polkadot ecosystem</title>
+      <link>http://blog.secondstate.io/post/20200228-polkadot-en/</link>
+      <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200228-polkadot-en/</guid>
+      <description>(02/28/2020, Austin TX USA)The Web3 Foundation has awarded Second State, a leading cloud and blockchain infrastructure company, a grant to bring the Ethereum flavored WebAssembly (Ewasm) virtual machine to the Polkadot ecosystem. Get this project from GitHub here: https://github.com/second-state/substrate-ewasm
+The virtual machine is a key infrastructure component for public blockchains. It allows any user from the public to submit untrusted code to the blockchain platform, in the form of smart contracts, and pay for its execution based on resource consumption.</description>
+    </item>
     
     <item>
       <title>Second State 又获以太坊生态体系的资助奖励</title>
@@ -195,16 +205,6 @@ SOLL is the world’s first toolchain that compiles Solidity smart contracts int
       
       <guid>http://blog.secondstate.io/post/20191020-public-comment-zh/</guid>
       <description>在区块链世界里，您留下的评论会永远留存，不能被篡改，永远不会消失~ DApp小科普 区块链应用（DApp）通常以智能合约为后端，以HTML 和 Ja</description>
-    </item>
-    
-    <item>
-      <title>Second State goes to Devcon5 - Our story told in 3 photos</title>
-      <link>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</link>
-      <pubDate>Mon, 14 Oct 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</guid>
-      <description>Addressing the challenges of today’s Ethereum smart contract development The first photo is from our session on the first day of Devcon. It is standing room only. We gave a very technical presentation and did all of our live demos from the BUIDL IDE with great success.
-The focus of our session is to address the challenges of today’s Ethereum smart contract development. We discussed solutions we have developed for today’s EVM, as well as future solutions for Ethereum 2.</description>
     </item>
     
   </channel>

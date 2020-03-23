@@ -6,10 +6,20 @@
     <description>Recent content in Ethereum on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Feb 2020 20:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 28 Feb 2020 20:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State awarded a grant to bring next-gen Ethereum infrastructure to Polkadot ecosystem</title>
+      <link>http://blog.secondstate.io/post/20200228-polkadot-en/</link>
+      <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200228-polkadot-en/</guid>
+      <description>(02/28/2020, Austin TX USA)The Web3 Foundation has awarded Second State, a leading cloud and blockchain infrastructure company, a grant to bring the Ethereum flavored WebAssembly (Ewasm) virtual machine to the Polkadot ecosystem. Get this project from GitHub here: https://github.com/second-state/substrate-ewasm
+The virtual machine is a key infrastructure component for public blockchains. It allows any user from the public to submit untrusted code to the blockchain platform, in the form of smart contracts, and pay for its execution based on resource consumption.</description>
+    </item>
     
     <item>
       <title>Second State 又获以太坊生态体系的资助奖励</title>
@@ -194,15 +204,6 @@ This partnership will bring high-impact enhancements into the ETC ecosystem, and
       
       <guid>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language-zh/</guid>
       <description>本文是 「Libra 深度剖析」系列文章的第 3 篇，也是最后一篇。在之前的两篇文章，我们分别探讨了 Libra 项目的技术意义以及 Libra Client 与 Validator 内部处理与执行交易。</description>
-    </item>
-    
-    <item>
-      <title>Libra First Impressions Part 2: Deep dive with a Libra transaction</title>
-      <link>http://blog.secondstate.io/post/20190701-libra-first-impressions/</link>
-      <pubDate>Mon, 01 Jul 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20190701-libra-first-impressions/</guid>
-      <description>This is the second article in a 3-article series on the technology behind Libra. The first article is an overview of Libra and its smart contract programming language Move. In this piece, we will deep dive into the technology stack and use the source code to show what happens behind the scene when users interact with Libra. Taking “getting Libra coins” as an example, let’s examine how Libra Client and Validator Faucet process and run a transaction.</description>
     </item>
     
   </channel>
