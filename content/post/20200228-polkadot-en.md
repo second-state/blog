@@ -8,6 +8,8 @@ categories: ["en"]
 
 (02/28/2020, Austin TX USA)[The Web3 Foundation](https://web3.foundation/) has awarded [Second State](https://www.secondstate.io/), a leading cloud and blockchain infrastructure company, a grant to bring the Ethereum flavored WebAssembly (Ewasm) virtual machine to the [Polkadot](https://polkadot.network/) ecosystem. Get this project from GitHub here: https://github.com/second-state/substrate-ewasm
 
+![](/images/20200228-polkadot-01.png)
+
 The virtual machine is a key infrastructure component for public blockchains. It allows any user from the public to submit untrusted code to the blockchain platform, in the form of smart contracts, and pay for its execution based on resource consumption. The Ethereum flavored WebAssembly (Ewasm) virtual machine is posed to be the dominant virtual machine in the upcoming Ethereum 2.0 blockchain platform.
 
 Through the Web3 Foundation grant, Second State will create extensions to its [high-performance WebAssembly virtual machine](https://github.com/second-state/SSVM), the Second State VM (SSVM). Those extensions would allow the SSVM to function as a blockchain virtual machine in accordance with the Ewasm specification. It will develop the necessary software to bootstrap and load SSVM as a Substrate module. The [SSVM-Ewasm Substrate module](https://github.com/second-state/substrate-ewasm) will allow developers to create blockchains that can deploy and execute Ethereum smart contracts in the Polkadot ecosystem.
