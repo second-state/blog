@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Feb 2020 20:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2020 20:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Ethereum</title>
       <link>http://blog.secondstate.io/tags/ethereum/</link>
-      <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
+      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/ethereum/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>ewasm</title>
       <link>http://blog.secondstate.io/tags/ewasm/</link>
-      <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
+      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/ewasm/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>polkadot</title>
       <link>http://blog.secondstate.io/tags/polkadot/</link>
-      <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
+      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/polkadot/</guid>
       <description></description>
@@ -41,9 +41,27 @@
     <item>
       <title>Solidity</title>
       <link>http://blog.secondstate.io/tags/solidity/</link>
-      <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
+      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/solidity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web3</title>
+      <link>http://blog.secondstate.io/tags/web3/</link>
+      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/web3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>http://blog.secondstate.io/tags/webassembly/</link>
+      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
       <description></description>
     </item>
     
@@ -53,24 +71,6 @@
       <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/soll/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web3</title>
-      <link>http://blog.secondstate.io/tags/web3/</link>
-      <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/web3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WebAssembly</title>
-      <link>http://blog.secondstate.io/tags/webassembly/</link>
-      <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
       <description></description>
     </item>
     

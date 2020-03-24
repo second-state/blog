@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Feb 2020 20:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2020 20:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Polkadot is getting WebAssembly-based Ethereum 2.0 virtual machine from Second State</title>
+      <link>http://blog.secondstate.io/post/20200302-polkadot-en/</link>
+      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200302-polkadot-en/</guid>
+      <description>Polkadot’s founder, Dr. Gavin Wood, is one of the original architects of the Ethereum Virtual Machine (EVM). Dr. Wood, the co-author of “Mastering Ethereum”, is also the author of the Ethereum yellow paper; a formal definition of the Ethereum protocol (in mathematical terms), which also provides an in-depth explanation of how the EVM actually works.
+Some may be aware that the Polkadot ecosystem did not initially come with a Turing-complete virtual machine like the EVM.</description>
+    </item>
     
     <item>
       <title>Second State awarded a grant to bring next-gen Ethereum infrastructure to Polkadot ecosystem</title>
@@ -196,15 +206,6 @@ SOLL is the world’s first toolchain that compiles Solidity smart contracts int
       
       <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</guid>
       <description>Second State 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对开源SOLL编译器项目的贡献，获得了以太坊基金会的现金奖励。2019年10月</description>
-    </item>
-    
-    <item>
-      <title>如何使用BUIDL 发起投票议题</title>
-      <link>http://blog.secondstate.io/post/20191020-public-comment-zh/</link>
-      <pubDate>Sun, 20 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191020-public-comment-zh/</guid>
-      <description>在区块链世界里，您留下的评论会永远留存，不能被篡改，永远不会消失~ DApp小科普 区块链应用（DApp）通常以智能合约为后端，以HTML 和 Ja</description>
     </item>
     
   </channel>
