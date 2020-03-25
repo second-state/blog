@@ -6,10 +6,20 @@
     <description>Recent content in blockchain on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 Nov 2019 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/blockchain/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State joins Microsoft for Startups to develop the next generation software infrastructure for cloud computing</title>
+      <link>http://blog.secondstate.io/post/20200325-microsoft-for-startups/</link>
+      <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200325-microsoft-for-startups/</guid>
+      <description>Second State joins the Microsoft for Startups program to develop and commercialize the next generation software infrastructure for cloud computing. With Microsoft for Startups, Second State will create open source software frameworks and developer tools for the cloud and for blockchains based on the WebAssembly technology.
+WebAssembly was originally created as a high-performance execution engine for web browsers. As it becomes increasingly popular in the developer community, WebAssembly is moving from the client-side to the server-side, powering the next generation cloud services.</description>
+    </item>
     
     <item>
       <title> Ethereum Development A2Z| Smart Contract ABI </title>

@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Mar 2020 20:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blockchain</title>
+      <link>http://blog.secondstate.io/tags/blockchain/</link>
+      <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloud computing</title>
+      <link>http://blog.secondstate.io/tags/cloud-computing/</link>
+      <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/cloud-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Microsoft</title>
+      <link>http://blog.secondstate.io/tags/microsoft/</link>
+      <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/microsoft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>http://blog.secondstate.io/tags/webassembly/</link>
+      <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ethereum</title>
@@ -57,15 +93,6 @@
     </item>
     
     <item>
-      <title>WebAssembly</title>
-      <link>http://blog.secondstate.io/tags/webassembly/</link>
-      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SOLL</title>
       <link>http://blog.secondstate.io/tags/soll/</link>
       <pubDate>Fri, 28 Feb 2020 20:01:23 +0800</pubDate>
@@ -98,15 +125,6 @@
       <pubDate>Fri, 06 Dec 2019 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blockchain</title>
-      <link>http://blog.secondstate.io/tags/blockchain/</link>
-      <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/blockchain/</guid>
       <description></description>
     </item>
     
@@ -170,24 +188,6 @@
       <pubDate>Thu, 31 Oct 2019 20:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/second-state/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SFBW</title>
-      <link>http://blog.secondstate.io/tags/sfbw/</link>
-      <pubDate>Thu, 31 Oct 2019 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/sfbw/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Halloween</title>
-      <link>http://blog.secondstate.io/tags/halloween/</link>
-      <pubDate>Thu, 31 Oct 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/halloween/</guid>
       <description></description>
     </item>
     

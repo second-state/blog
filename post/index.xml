@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Mar 2020 20:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 25 Mar 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State joins Microsoft for Startups to develop the next generation software infrastructure for cloud computing</title>
+      <link>http://blog.secondstate.io/post/20200325-microsoft-for-startups/</link>
+      <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200325-microsoft-for-startups/</guid>
+      <description>Second State joins the Microsoft for Startups program to develop and commercialize the next generation software infrastructure for cloud computing. With Microsoft for Startups, Second State will create open source software frameworks and developer tools for the cloud and for blockchains based on the WebAssembly technology.
+WebAssembly was originally created as a high-performance execution engine for web browsers. As it becomes increasingly popular in the developer community, WebAssembly is moving from the client-side to the server-side, powering the next generation cloud services.</description>
+    </item>
     
     <item>
       <title>Polkadot is getting WebAssembly-based Ethereum 2.0 virtual machine from Second State</title>
@@ -197,15 +207,6 @@ Note: My company, Second State, was invited to give a talk at Devcon5, where we 
       <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
       <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
 SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
-    </item>
-    
-    <item>
-      <title>Second State SOLL 编译器项目获得以太坊基金会的现金奖励</title>
-      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</link>
-      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</guid>
-      <description>Second State 是领先的面向区块链智能合约的开源基础架构软件的提供者，因为对开源SOLL编译器项目的贡献，获得了以太坊基金会的现金奖励。2019年10月</description>
     </item>
     
   </channel>
