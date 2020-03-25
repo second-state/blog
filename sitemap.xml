@@ -163,6 +163,13 @@
   </url>
   
   <url>
+    <loc>http://blog.secondstate.io/post/20191218-webassembly-for-the-server-side/</loc>
+    <lastmod>2019-12-18T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.secondstate.io/categories/ethereum/</loc>
     <lastmod>2019-12-06T09:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>

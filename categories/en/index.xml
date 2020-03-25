@@ -53,6 +53,17 @@ Prior to the Panvala grant, Second State is already a recognized leader in Ether
     </item>
     
     <item>
+      <title>Second State releases WebAssembly for the server side</title>
+      <link>http://blog.secondstate.io/post/20191218-webassembly-for-the-server-side/</link>
+      <pubDate>Wed, 18 Dec 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191218-webassembly-for-the-server-side/</guid>
+      <description>An open source WebAssembly runtime optimized for blockchain, AI, and cloud services
+(12/17/2019, Taipei)The Second State team has released a “developer preview” of the Second State Virtual Machine (SSVM). It is a WebAssembly (Wasm) compatible runtime engineered from ground up for server side applications. Get it from Github here: https://github.com/second-state/SSVM
+Wasm started as a high performance execution engine inside web browsers. It is language agnostic (supporting popular new languages such as Rust), platform agnostic, lightweight, fast, and also provides native hardware access through its modular security model.</description>
+    </item>
+    
+    <item>
       <title> Ethereum Development A2Z| Smart Contract ABI </title>
       <link>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</link>
       <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
@@ -204,16 +215,6 @@ This partnership will bring high-impact enhancements into the ETC ecosystem, and
       <guid>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</guid>
       <description>Second State, a developer of an open source blockchain smart contract platform for enterprises was shortlisted in the Qualcomm Innovate in Taiwan Challenge – 2019. They proposed to optimize the popular WebAssemly virtual machine technology with customized chip solutions. The chip-accelerated WebAssemly virtual machine is then applied to the blockchain to efficiently execute smart contracts. So to develop a &amp;ldquo;blockchain chip&amp;rdquo; that is truly valuable and meaningful.
  Qualcomm, a smartphone chip maker, recently hosted the Qualcomm Innovate in Taiwan Challenge – 2019, and selected 10 teams out of over 100 teams as finalists.</description>
-    </item>
-    
-    <item>
-      <title>Team HITCON, with Second State&#39;s developer as a core, scored the second in DEF CON</title>
-      <link>http://blog.secondstate.io/post/20190819-defcon-ctf-winners-overview/</link>
-      <pubDate>Mon, 19 Aug 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20190819-defcon-ctf-winners-overview/</guid>
-      <description>Taiwanese hacker team HITCON scored the second in world’s most prestigious hacking competition DEF CON Capture the Flag in Las Vegas. A core team member is a software developer at Second State Inc.
-In the just-concluded DEF CON 27 CTF hacking contest, after three days and two nights of “competition”, HITCON &amp;amp; BFKinesiS team from Taiwan defeated Team Tea deliverses and A0E from Tencent and won the runner-up. The core member of the HITCON team is also a software engineers at Second State.</description>
     </item>
     
   </channel>

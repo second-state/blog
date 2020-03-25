@@ -62,6 +62,17 @@ Prior to the Panvala grant, Second State is already a recognized leader in Ether
     </item>
     
     <item>
+      <title>Second State releases WebAssembly for the server side</title>
+      <link>http://blog.secondstate.io/post/20191218-webassembly-for-the-server-side/</link>
+      <pubDate>Wed, 18 Dec 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191218-webassembly-for-the-server-side/</guid>
+      <description>An open source WebAssembly runtime optimized for blockchain, AI, and cloud services
+(12/17/2019, Taipei)The Second State team has released a “developer preview” of the Second State Virtual Machine (SSVM). It is a WebAssembly (Wasm) compatible runtime engineered from ground up for server side applications. Get it from Github here: https://github.com/second-state/SSVM
+Wasm started as a high performance execution engine inside web browsers. It is language agnostic (supporting popular new languages such as Rust), platform agnostic, lightweight, fast, and also provides native hardware access through its modular security model.</description>
+    </item>
+    
+    <item>
       <title>只需 5 分钟，教你如何编写并执行一个 Rust &#43; WebAssembly 程序</title>
       <link>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</link>
       <pubDate>Fri, 06 Dec 2019 09:42:14 +0800</pubDate>
@@ -197,16 +208,6 @@ Note: My company, Second State, was invited to give a talk at Devcon5, where we 
       
       <guid>http://blog.secondstate.io/post/20191024-build-website-zh/</guid>
       <description>不用买域名，购买虚拟主机空间，设置域名服务器，工信部备案等等繁琐的流程。 5分钟学会自己建一个去中心化的网站，从此做网站不求人！永久留存，完全</description>
-    </item>
-    
-    <item>
-      <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
-      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
-      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
-      <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
-SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
     </item>
     
   </channel>

@@ -42,6 +42,17 @@ The virtual machine is a key infrastructure component for public blockchains. It
     </item>
     
     <item>
+      <title>Second State releases WebAssembly for the server side</title>
+      <link>http://blog.secondstate.io/post/20191218-webassembly-for-the-server-side/</link>
+      <pubDate>Wed, 18 Dec 2019 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191218-webassembly-for-the-server-side/</guid>
+      <description>An open source WebAssembly runtime optimized for blockchain, AI, and cloud services
+(12/17/2019, Taipei)The Second State team has released a “developer preview” of the Second State Virtual Machine (SSVM). It is a WebAssembly (Wasm) compatible runtime engineered from ground up for server side applications. Get it from Github here: https://github.com/second-state/SSVM
+Wasm started as a high performance execution engine inside web browsers. It is language agnostic (supporting popular new languages such as Rust), platform agnostic, lightweight, fast, and also provides native hardware access through its modular security model.</description>
+    </item>
+    
+    <item>
       <title>只需 5 分钟，教你如何编写并执行一个 Rust &#43; WebAssembly 程序</title>
       <link>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</link>
       <pubDate>Fri, 06 Dec 2019 09:42:14 +0800</pubDate>
