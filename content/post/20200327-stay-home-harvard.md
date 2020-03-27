@@ -518,4 +518,4 @@ Second State 帮大家整理了一系列免费顶级大学在线课程，都是�
 * Find  Your Calling: Career Transition Principles for Returning Veterans (https://www.classcentral.com/course/edx-find-your-calling-career-transition-principles-for-returning-veterans-12258?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 
 *如果您都已近看到这里了，不妨帮忙点赞评论转发吧~*
-*点击这里免费学编程啦 **Get started* (https://www.freecodecamp.org/learn)
+*点击这里免费学编程啦 *[*开始吧！*] (https://docs.secondstate.io/beginners-guide-to-webassembly/beginners-guide-to-webassembly)
