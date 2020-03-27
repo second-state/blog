@@ -7,7 +7,7 @@ categories: ["zh"]
 ---
 
 
-**安全第一哦，大家一起在家里学编程吧！ *如何不安装任何软件就学会Rust (https://www.freecodecamp.org/news/learn-rust-with-github-actions/)***
+**安全第一哦，大家一起在家里学编程吧！戳→ [*如何不安装任何软件就学会Rust](https://www.freecodecamp.org/news/learn-rust-with-github-actions/)***
 
 **450门常春藤盟校免费在线课程**
 
@@ -19,8 +19,7 @@ Second State 帮大家整理了一系列免费顶级大学在线课程，都是�
 
 课程来自世界顶级的8所常春藤盟校， 包括布朗大学、哈佛大学、康奈尔大学、普林斯顿大学、达特茅斯大学、耶鲁大学、哥伦比亚大学和宾夕法尼亚大学。
 
-
-这些课程分为以下几类:
+课程分为以下几类:
 
 * 电脑科学
 * 数据科学
