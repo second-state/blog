@@ -447,20 +447,20 @@ categories: ["zh"]
 
 ## 工程(15)
 
-* [ The  Art of Structural Engineering: Vaults](https://www.classcentral.com/course/edx-the-art-of-structural-engineering-vaults-12040?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★★(18)
-* [ Robotics:  Aerial Robotics](https://www.classcentral.com/course/robotics-flight-5025?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(9)
-* [ The  Art of Structural Engineering: Bridges](https://www.classcentral.com/course/edx-the-art-of-structural-engineering-bridges-4561?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(6)
-* [ Robotics:  Computational Motion Planning](https://www.classcentral.com/course/robotics-computation-5029?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
-* [ Energy  Within Environmental Constraints](https://www.classcentral.com/course/edx-energy-within-environmental-constraints-6021?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
-* [ Robotics:  Mobility](https://www.classcentral.com/course/robotics-mobility-5032?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★☆☆(2)
-* [ [New]  Robotics: Kinematics and Mathematical Foundations](https://www.classcentral.com/course/edx-robotics-kinematics-and-mathematical-foundations-8197?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★☆☆☆☆(2)
-* [ Robotics](https://www.classcentral.com/course/edx-robotics-7241?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哥伦比亚大学 ★★★☆☆(2)
-* [ A  Hands-on Introduction to Engineering Simulations](https://www.classcentral.com/course/edx-a-hands-on-introduction-to-engineering-simulations-5850?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(2)
-* [ The  Engineering of Structures Around Us](https://www.classcentral.com/course/edx-the-engineering-of-structures-around-us-3208?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★★(2)
-* [ Robotics:  Estimation and Learning](https://www.classcentral.com/course/robotics-estimation-and-learning-5030?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★☆☆☆(1)
-* [ MOS  Transistors](https://www.classcentral.com/course/mosfet-547?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学  ★★★★★(1)
-* [ [New]  Robotics: Dynamics and Control](https://www.classcentral.com/course/edx-robotics-dynamics-and-control-8196?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ [New]  Robotics: Locomotion Engineering](https://www.classcentral.com/course/edx-robotics-locomotion-engineering-8204?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 结构工程的艺术：金库](https://www.classcentral.com/course/edx-the-art-of-structural-engineering-vaults-12040?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★★(18)
+* [ 机器人技术：空中机器人技术](https://www.classcentral.com/course/robotics-flight-5025?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(9)
+* [ 结构工程的艺术：桥梁](https://www.classcentral.com/course/edx-the-art-of-structural-engineering-bridges-4561?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(6)
+* [ 机器人技术：计算运动计划](https://www.classcentral.com/course/robotics-computation-5029?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
+* [ 环境约束下的能源](https://www.classcentral.com/course/edx-energy-within-environmental-constraints-6021?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
+* [ 机器人技术：移动性](https://www.classcentral.com/course/robotics-mobility-5032?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★☆☆(2)
+* [ [[新]机器人技术：运动学和数学基础](https://www.classcentral.com/course/edx-robotics-kinematics-and-mathematical-foundations-8197?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★☆☆☆☆(2)
+* [ 机器人技术](https://www.classcentral.com/course/edx-robotics-7241?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哥伦比亚大学 ★★★☆☆(2)
+* [ 工程仿真动手入门](https://www.classcentral.com/course/edx-a-hands-on-introduction-to-engineering-simulations-5850?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(2)
+* [ 我们周围的结构工程](https://www.classcentral.com/course/edx-the-engineering-of-structures-around-us-3208?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★★(2)
+* [ 机器人：估计与学习](https://www.classcentral.com/course/robotics-estimation-and-learning-5030?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★☆☆☆(1)
+* [ MOS晶体管](https://www.classcentral.com/course/mosfet-547?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学  ★★★★★(1)
+* [ [新]机器人技术：动力学与控制](https://www.classcentral.com/course/edx-robotics-dynamics-and-control-8196?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ [新]机器人技术：运动工程](https://www.classcentral.com/course/edx-robotics-locomotion-engineering-8204?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ 工程设计导论](https://www.classcentral.com/course/edx-introduction-to-engineering-and-design-12329?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学
 
 ## 教育(21)
@@ -468,7 +468,7 @@ categories: ["zh"]
 * [ 领导力学习](https://www.classcentral.com/course/edx-leaders-of-learning-2027?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★☆(15)
 * [ 申请美国大学](https://www.classcentral.com/course/usuniversities-1620?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(10)
 * [ 美国教育改革：历史，政策，实践](https://www.classcentral.com/course/edref-2793?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(9)
-* [ 拯救学校迷你课程1：美国教育的历史和政治](https://www.classcentral.com/course/edx-saving-schools-mini-course-1-history-and-politics-of-u-s-education-2365?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
+* [ 拯救学校，迷你课程1：美国教育的历史和政治](https://www.classcentral.com/course/edx-saving-schools-mini-course-1-history-and-politics-of-u-s-education-2365?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
 * [ 拯救学校，迷你课程2：教师政策](https://www.classcentral.com/course/edx-saving-schools-mini-course-2-teacher-policies-2812?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
 * [ 拯救学校，迷你课程3：问责制和国家标准](https://www.classcentral.com/course/edx-saving-schools-mini-course-3-accountability-and-national-standards-2695?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
 * [ 拯救学校迷你课程4：学校选择](https://www.classcentral.com/course/edx-saving-schools-mini-course-4-school-choice-2696?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
