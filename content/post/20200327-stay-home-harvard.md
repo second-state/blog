@@ -490,7 +490,7 @@ categories: ["zh"]
 
 ## 数学
 
-* [ Introduction  to Linear Models and Matrix Algebra](https://www.classcentral.com/course/edx-introduction-to-linear-models-and-matrix-algebra-2963?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(8)
+* [ 线性模型和矩阵代数简介](https://www.classcentral.com/course/edx-introduction-to-linear-models-and-matrix-algebra-2963?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(8)
 * [ 微积分：单变量第1部分-函数](https://www.classcentral.com/course/single-variable-calculus-5066?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(7)
 * [ 微积分：单变量第2部分-微分](https://www.classcentral.com/course/differentiation-calculus-5068?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(4)
 * [ 微积分：单变量第3部分-集成](https://www.classcentral.com/course/integration-calculus-5069?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
