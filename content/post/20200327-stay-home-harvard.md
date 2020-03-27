@@ -120,7 +120,7 @@ categories: ["zh"]
 
 ## 人文科学(80门)
 
-* [美国现当代诗歌](“ModPo”)](https://www.classcentral.com/course/modpo-356?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(184)
+* [ 美国现当代诗歌](“ModPo”)](https://www.classcentral.com/course/modpo-356?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(184)
 * [ 美国现当代诗歌](https://www.classcentral.com/course/edx-hope-human-odyssey-to-political-existentialism-11584?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★★(108)
 * [ 日常生活的道德](https://www.classcentral.com/course/moralities-911?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(39)
 * [ 希腊和罗马神话](https://www.classcentral.com/course/mythology-353?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(18)
