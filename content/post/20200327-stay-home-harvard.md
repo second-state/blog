@@ -462,57 +462,57 @@ categories: ["zh"]
 * [ MOS  Transistors](https://www.classcentral.com/course/mosfet-547?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学  ★★★★★(1)
 * [ [New]  Robotics: Dynamics and Control](https://www.classcentral.com/course/edx-robotics-dynamics-and-control-8196?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ [New]  Robotics: Locomotion Engineering](https://www.classcentral.com/course/edx-robotics-locomotion-engineering-8204?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ Introduction  to Engineering and Design](https://www.classcentral.com/course/edx-introduction-to-engineering-and-design-12329?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学
+* [ 工程设计导论](https://www.classcentral.com/course/edx-introduction-to-engineering-and-design-12329?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学
 
 ## 教育(21)
 
-* [ Leaders  of Learning](https://www.classcentral.com/course/edx-leaders-of-learning-2027?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★☆(15)
-* [ Applying  to U.S. Universities](https://www.classcentral.com/course/usuniversities-1620?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(10)
-* [ American  Education Reform: History, Policy, Practice](https://www.classcentral.com/course/edref-2793?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(9)
-* [ Saving  Schools Mini-Course 1: History and Politics of U.S. Education](https://www.classcentral.com/course/edx-saving-schools-mini-course-1-history-and-politics-of-u-s-education-2365?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
-* [ Saving  Schools, Mini-Course 2: Teacher Policies](https://www.classcentral.com/course/edx-saving-schools-mini-course-2-teacher-policies-2812?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
-* [ Saving  Schools, Mini-Course 3: Accountability and National Standards](https://www.classcentral.com/course/edx-saving-schools-mini-course-3-accountability-and-national-standards-2695?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
-* [ Saving  Schools Mini-Course 4: School Choice](https://www.classcentral.com/course/edx-saving-schools-mini-course-4-school-choice-2696?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
-* [ Introduction  to Online and Blended Teaching](https://www.classcentral.com/course/edx-introduction-to-online-and-blended-teaching-8856?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
-* [ How  to Apply to College](https://www.classcentral.com/course/applying-to-college-7504?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
-* [ Orchestrating  Whole Classroom Discussion](https://www.classcentral.com/course/classdiscussion-7421?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
-* [ Analytics  in Course Design: Leveraging Canvas Data](HE)](https://www.classcentral.com/course/canvas-network-analytics-in-course-design-leveraging-canvas-data-he-6668?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★☆(1)
-* [ Introduction  to Family Engagement in Education](https://www.classcentral.com/course/edx-introduction-to-family-engagement-in-education-6513?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Introduction  to Data Wise: A Collaborative Process to Improve Learning & Teaching](https://www.classcentral.com/course/edx-introduction-to-data-wise-a-collaborative-process-to-improve-learning-teaching-3395?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学
-* [ Saving  Schools](https://www.classcentral.com/course/edx-saving-schools-8616?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Understanding  Classroom Interaction](https://www.classcentral.com/course/edx-understanding-classroom-interaction-7198?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ The  Science of Learning - What Every Teacher Should Know](https://www.classcentral.com/course/edx-the-science-of-learning-what-every-teacher-should-know-5725?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Innovating  Instruction: Reimagining Teaching with Technology](https://www.classcentral.com/course/edx-innovating-instruction-reimagining-teaching-with-technology-8019?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ University  Studies for Student Veterans](https://www.classcentral.com/course/edx-university-studies-for-student-veterans-9129?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Inclusive  Teaching: Supporting All Students in the College Classroom](https://www.classcentral.com/course/edx-inclusive-teaching-supporting-all-students-in-the-college-classroom-13690?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Attaining  Higher Education](https://www.classcentral.com/course/edx-attaining-higher-education-13336?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Teaching  & Learning in the Diverse Classroom](https://www.classcentral.com/course/edx-teaching-learning-in-the-diverse-classroom-15171?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学
+* [ 领导力学习](https://www.classcentral.com/course/edx-leaders-of-learning-2027?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★☆(15)
+* [ 申请美国大学](https://www.classcentral.com/course/usuniversities-1620?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(10)
+* [ 美国教育改革：历史，政策，实践](https://www.classcentral.com/course/edref-2793?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(9)
+* [ 拯救学校迷你课程1：美国教育的历史和政治](https://www.classcentral.com/course/edx-saving-schools-mini-course-1-history-and-politics-of-u-s-education-2365?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
+* [ 拯救学校，迷你课程2：教师政策](https://www.classcentral.com/course/edx-saving-schools-mini-course-2-teacher-policies-2812?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
+* [ 拯救学校，迷你课程3：问责制和国家标准](https://www.classcentral.com/course/edx-saving-schools-mini-course-3-accountability-and-national-standards-2695?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
+* [ 拯救学校迷你课程4：学校选择](https://www.classcentral.com/course/edx-saving-schools-mini-course-4-school-choice-2696?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
+* [ 在线和与混合教学简介](https://www.classcentral.com/course/edx-introduction-to-online-and-blended-teaching-8856?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
+* [ 如何申请大学](https://www.classcentral.com/course/applying-to-college-7504?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
+* [ 编排课堂讨论](https://www.classcentral.com/course/classdiscussion-7421?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
+* [ 课程设计中的分析：利用画布数据](https://www.classcentral.com/course/canvas-network-analytics-in-course-design-leveraging-canvas-data-he-6668?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★☆(1)
+* [ 家庭参与教育导论](https://www.classcentral.com/course/edx-introduction-to-family-engagement-in-education-6513?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 明智的数据入门：改善学与教的协作过程](https://www.classcentral.com/course/edx-introduction-to-data-wise-a-collaborative-process-to-improve-learning-teaching-3395?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学
+* [ 拯救学校](https://www.classcentral.com/course/edx-saving-schools-8616?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 了解课堂互动](https://www.classcentral.com/course/edx-understanding-classroom-interaction-7198?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 学习的科学-每个老师应该知道的](https://www.classcentral.com/course/edx-the-science-of-learning-what-every-teacher-should-know-5725?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 创新教学：用技术重塑教学](https://www.classcentral.com/course/edx-innovating-instruction-reimagining-teaching-with-technology-8019?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 大学退伍军人研究]](https://www.classcentral.com/course/edx-university-studies-for-student-veterans-9129?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 包容性教学：在大学教室中为所有学生提供支持](https://www.classcentral.com/course/edx-inclusive-teaching-supporting-all-students-in-the-college-classroom-13690?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 接受高等教育]](https://www.classcentral.com/course/edx-attaining-higher-education-13336?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 多元课堂教学](https://www.classcentral.com/course/edx-teaching-learning-in-the-diverse-classroom-15171?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学
 
 ## 数学
 
 * [ Introduction  to Linear Models and Matrix Algebra](https://www.classcentral.com/course/edx-introduction-to-linear-models-and-matrix-algebra-2963?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(8)
-* [ Calculus:  Single Variable Part 1 - Functions](https://www.classcentral.com/course/single-variable-calculus-5066?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(7)
-* [ Calculus:  Single Variable Part 2 - Differentiation](https://www.classcentral.com/course/differentiation-calculus-5068?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(4)
-* [ Calculus:  Single Variable Part 3 - Integration](https://www.classcentral.com/course/integration-calculus-5069?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
-* [ Fat  Chance: Probability from the Ground Up](https://www.classcentral.com/course/edx-fat-chance-probability-from-the-ground-up-10159?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
-* [ Statistical  Inference and Modeling for High-throughput Experiments](https://www.classcentral.com/course/edx-statistical-inference-and-modeling-for-high-throughput-experiments-2967?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
-* [ Calculus:  Single Variable Part 4 - Applications](https://www.classcentral.com/course/applications-calculus-5070?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(3)
-* [ Analytic  Combinatorics](https://www.classcentral.com/course/ac-922?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(2)
-* [ A  Crash Course in Causality: Inferring Causal Effects from Observational  Data](https://www.classcentral.com/course/crash-course-in-causality-8425?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(1)
-* [ Calculus  Applied!](https://www.classcentral.com/course/edx-calculus-applied-8778?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Introduction  to Probability](https://www.classcentral.com/course/edx-introduction-to-probability-11423?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Single  Variable Calculus](https://www.classcentral.com/course/discrete-calculus-5067?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ Causal  Inference](https://www.classcentral.com/course/causal-inference-12136?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Causal  Inference 2](https://www.classcentral.com/course/causal-inference-2-13095?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 微积分：单变量第1部分-函数](https://www.classcentral.com/course/single-variable-calculus-5066?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(7)
+* [ 微积分：单变量第2部分-微分](https://www.classcentral.com/course/differentiation-calculus-5068?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(4)
+* [ 微积分：单变量第3部分-集成](https://www.classcentral.com/course/integration-calculus-5069?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
+* [ 微积分：单变量第4部分-应用](https://www.classcentral.com/course/applications-calculus-5070?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(3)
+* [ “胖”机会：从头开始的概率](https://www.classcentral.com/course/edx-fat-chance-probability-from-the-ground-up-10159?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
+* [ 高通量实验的统计推断和建模](https://www.classcentral.com/course/edx-statistical-inference-and-modeling-for-high-throughput-experiments-2967?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
+* [ 解析组合](https://www.classcentral.com/course/ac-922?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(2)
+* [ 因果关系速成：从观测数据推断因果关系](https://www.classcentral.com/course/crash-course-in-causality-8425?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(1)
+* [ 微积分应用](https://www.classcentral.com/course/edx-calculus-applied-8778?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 概率论](https://www.classcentral.com/course/edx-introduction-to-probability-11423?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 单变量微积分](https://www.classcentral.com/course/discrete-calculus-5067?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 因果推论1](https://www.classcentral.com/course/causal-inference-12136?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 因果推论2](https://www.classcentral.com/course/causal-inference-2-13095?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 
 ## 个人发展(7)
 
-* [ Introduction  to Negotiation: A Strategic Playbook for Becoming a Principled and  Persuasive Negotiator](https://www.classcentral.com/course/negotiation-4336?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(8)
-* [ A  Preview Course on Collaborative Knowledge Services](https://www.classcentral.com/course/canvas-network-a-preview-course-on-collaborative-knowledge-services-6075?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★★(3)
-* [ Success](https://www.classcentral.com/course/wharton-succcess-6893?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)宾夕法尼亚大学 ★★★★★(1)
-* [ Improving  Communication Skills](https://www.classcentral.com/course/wharton-communication-skills-8235?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
-* [ Rhetoric:  The Art of Persuasive Writing and Public Speaking](https://www.classcentral.com/course/edx-rhetoric-the-art-of-persuasive-writing-and-public-speaking-16993?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Find  Your Calling: Career Transition Principles for Returning Veterans](https://www.classcentral.com/course/edx-find-your-calling-career-transition-principles-for-returning-veterans-12258?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [谈判简介：成为一名有原则和说服力的谈判者的战略手册](https://www.classcentral.com/course/negotiation-4336?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(8)
+* [协同知识服务预备课程](https://www.classcentral.com/course/canvas-network-a-preview-course-on-collaborative-knowledge-services-6075?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★★(3)
+* [成功学](https://www.classcentral.com/course/wharton-succcess-6893?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)宾夕法尼亚大学 ★★★★★(1)
+* [改善沟通技巧](https://www.classcentral.com/course/wharton-communication-skills-8235?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [修辞学：说服力写作和公共演讲的艺术](https://www.classcentral.com/course/edx-rhetoric-the-art-of-persuasive-writing-and-public-speaking-16993?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [找到你的方向：退伍军人的职业过渡原则](https://www.classcentral.com/course/edx-find-your-calling-career-transition-principles-for-returning-veterans-12258?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 
 **都看到这里了，不妨帮忙点赞转发吧~**
 [点击这里免费学 WebAssembly 编程](https://docs.secondstate.io/beginners-guide-to-webassembly/beginners-guide-to-webassembly)
