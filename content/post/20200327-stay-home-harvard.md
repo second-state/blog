@@ -87,17 +87,17 @@ categories: ["zh"]
 * [ 数据科学：视觉化](https://www.classcentral.com/course/edx-data-science-visualization-10347?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
 * [ 高纬度数据分析](https://www.classcentral.com/course/edx-high-dimensional-data-analysis-2949?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★☆(3)
 * [ 数据科学：机器学习](https://www.classcentral.com/course/edx-data-science-machine-learning-10353?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(2)
-* [ Case  study: DNA methylation data analysis](https://www.classcentral.com/course/edx-case-study-dna-methylation-data-analysis-2980?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ Data  Science: Linear Regression](https://www.classcentral.com/course/edx-data-science-linear-regression-10352?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(2)
-* [ Causal  Diagrams: Draw Your Assumptions Before Your Conclusions](https://www.classcentral.com/course/edx-causal-diagrams-draw-your-assumptions-before-your-conclusions-9097?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ Data  Science: Wrangling](https://www.classcentral.com/course/edx-data-science-wrangling-10351?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Data  Science: Productivity Tools](https://www.classcentral.com/course/edx-data-science-productivity-tools-10350?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Data  Science: Probability](https://www.classcentral.com/course/edx-data-science-probability-10348?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(1)
-* [ Data  Science: Inference and Modeling](https://www.classcentral.com/course/edx-data-science-inference-and-modeling-10349?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
-* [ Big  Data and Education](https://www.classcentral.com/course/edx-big-data-and-education-968?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★☆☆(1)
-* [ Data  Science: Capstone](https://www.classcentral.com/course/edx-data-science-capstone-10354?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Principles,  Statistical and Computational Tools for Reproducible Data Science](https://www.classcentral.com/course/edx-principles-statistical-and-computational-tools-for-reproducible-data-science-9489?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Data,  Models and Decisions in Business Analytics](https://www.classcentral.com/course/edx-data-models-and-decisions-in-business-analytics-8218?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 全球中国: 从蒙古到明](https://www.classcentral.com/course/edx-case-study-dna-methylation-data-analysis-2980?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ 数据科学: 线性回归](https://www.classcentral.com/course/edx-data-science-linear-regression-10352?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(2)
+* [ 因果关系图: 在得出结论之前画出假设](https://www.classcentral.com/course/edx-causal-diagrams-draw-your-assumptions-before-your-conclusions-9097?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ 数据科学：缠绕](https://www.classcentral.com/course/edx-data-science-wrangling-10351?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 数据科学: 生产力工具](https://www.classcentral.com/course/edx-data-science-productivity-tools-10350?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 数据科学：概率](https://www.classcentral.com/course/edx-data-science-probability-10348?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(1)
+* [ 数据科学：推断和模型](https://www.classcentral.com/course/edx-data-science-inference-and-modeling-10349?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
+* [ 大数据和教育](https://www.classcentral.com/course/edx-big-data-and-education-968?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★☆☆(1)
+* [ 数据科学: 压顶石](https://www.classcentral.com/course/edx-data-science-capstone-10354?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 可再生数据科学的原理、统计和计算工具](https://www.classcentral.com/course/edx-principles-statistical-and-computational-tools-for-reproducible-data-science-9489?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 商业分析中的数据、模型和决策](https://www.classcentral.com/course/edx-data-models-and-decisions-in-business-analytics-8218?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 
 ## 有关数据科学的深度解析请看下面几篇文章
 
@@ -109,14 +109,14 @@ categories: ["zh"]
 
 ## 编程(8门)
 
-* [ Using  Python for Research](https://www.classcentral.com/course/edx-using-python-for-research-7204?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(9)
+* [ 使用Python进行研究](https://www.classcentral.com/course/edx-using-python-for-research-7204?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(9)
 * [ CS50's  Web Programming with Python and JavaScript](https://www.classcentral.com/course/edx-cs50-s-web-programming-with-python-and-javascript-11506?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(4)
 * [ Programming  for the Web with JavaScript](https://www.classcentral.com/course/edx-programming-for-the-web-with-javascript-8518?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(3)
 * [ The  Computing Technology Inside Your Smartphone](https://www.classcentral.com/course/edx-the-computing-technology-inside-your-smartphone-2809?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(2)
 * [ CS50's  Mobile App Development with React Native](https://www.classcentral.com/course/edx-cs50-s-mobile-app-development-with-react-native-11505?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
 * [ CS50's  Introduction to Game Development](https://www.classcentral.com/course/edx-cs50-s-introduction-to-game-development-11504?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Software  Development Fundamentals](https://www.classcentral.com/course/edx-software-development-fundamentals-8516?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★☆☆(1)
-* [ （New）Quantitative Methods for Biology](https://www.classcentral.com/course/edx-quantitative-methods-for-biology-17849?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 软件开发基础](https://www.classcentral.com/course/edx-software-development-fundamentals-8516?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★☆☆(1)
+* [ 生物的量化方法](https://www.classcentral.com/course/edx-quantitative-methods-for-biology-17849?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
 
 ## 人文科学(80门)
 
@@ -144,34 +144,34 @@ categories: ["zh"]
 * [ 侵略、叛乱与中华帝国的灭亡](https://www.classcentral.com/course/edx-invasions-rebellions-and-the-fall-of-imperial-china-2467?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(4)
 * [ 世界唐: 中国的贵族文化](https://www.classcentral.com/course/edx-cosmopolitan-tang-aristocratic-culture-in-china-1773?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(4)
 * [ 全球中国: 从蒙古到明代](https://www.classcentral.com/course/edx-global-china-from-the-mongols-to-the-ming-1988?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(4)
-* [ China  and Communism](https://www.classcentral.com/course/edx-china-and-communism-2469?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(4)
-* [ Contemporary  China: The People's Republic, Taiwan, and Hong Kong](https://www.classcentral.com/course/edx-contemporary-china-the-people-s-republic-taiwan-and-hong-kong-2470?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(4)
-* [ Masterpieces  of World Literature](https://www.classcentral.com/course/edx-masterpieces-of-world-literature-6844?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(4)
-* [ Global  History Lab](https://www.classcentral.com/course/edx-global-history-lab-2371?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(4)
-* [ Christianity  Through Its Scriptures](https://www.classcentral.com/course/edx-christianity-through-its-scriptures-5858?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
-* [ Shakespeare's  Hamlet: The Ghost](https://www.classcentral.com/course/edx-shakespeare-s-hamlet-the-ghost-7016?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
-* [ Journey  of the Universe: The Unfolding of Life](https://www.classcentral.com/course/journey-unfolding-life-6947?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★☆☆(3)
-* [ American  Capitalism: A History](https://www.classcentral.com/course/edx-american-capitalism-a-history-1562?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(3)
-* [ The  Ethics of Eating](https://www.classcentral.com/course/edx-the-ethics-of-eating-3043?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★☆(3)
-* [ Question  Reality! Science, philosophy, and the search for meaning](https://www.classcentral.com/course/edx-question-reality-science-philosophy-and-the-search-for-meaning-6851?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★☆(3)
-* [ Islam  Through Its Scriptures](https://www.classcentral.com/course/edx-islam-through-its-scriptures-5818?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ Religion,  Conflict and Peace](https://www.classcentral.com/course/edx-religion-conflict-and-peace-9452?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(2)
-* [ The  Medieval Book of Hours: Art and Devotion in the Later Middle Ages](https://www.classcentral.com/course/edx-the-medieval-book-of-hours-art-and-devotion-in-the-later-middle-ages-3838?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(2)
-* [ PredictionX:  John Snow and the Cholera Outbreak of 1854](https://www.classcentral.com/course/edx-predictionx-john-snow-and-the-cholera-outbreak-of-1854-7159?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ Books  in the Medieval Liturgy](https://www.classcentral.com/course/edx-books-in-the-medieval-liturgy-3839?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ The  Ancient Greek Hero](https://www.classcentral.com/course/edx-the-ancient-greek-hero-609?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(2)
-* [ Bioethics:  The Law, Medicine, and Ethics of Reproductive Technologies and Genetics](https://www.classcentral.com/course/edx-bioethics-the-law-medicine-and-ethics-of-reproductive-technologies-and-genetics-6649?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★☆(2)
-* [ Shakespeare's  Othello: The Moor](https://www.classcentral.com/course/edx-shakespeare-s-othello-the-moor-11951?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ Wonders  of Ancient Egypt](https://www.classcentral.com/course/wondersancientegypt-9577?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(2)
-* [ A Journey through Western Christianity: from Persecuted Faith to Global  Religion(200 - 1650)](https://www.classcentral.com/course/western-christianity-200-1650-8106?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)耶鲁大学 ★★★★★(2)
-* [ Poetry  in America: Whitman](https://www.classcentral.com/course/edx-poetry-in-america-whitman-940?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
-* [ Ancient  Masterpieces of World Literature](https://www.classcentral.com/course/edx-ancient-masterpieces-of-world-literature-9423?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Hinduism  Through Its Scriptures](https://www.classcentral.com/course/edx-hinduism-through-its-scriptures-5819?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Judaism  Through Its Scriptures](https://www.classcentral.com/course/edx-judaism-through-its-scriptures-5820?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Shakespeare's  The Merchant of Venice: Shylock](https://www.classcentral.com/course/edx-shakespeare-s-the-merchant-of-venice-shylock-8536?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ English  for Business and Entrepreneurship](https://www.classcentral.com/course/business-6010?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
-* [ English  for Science, Technology, Engineering, and Mathematics](https://www.classcentral.com/course/stem-6538?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
-* [ The  Tabernacle in Word & Image: An Italian Jewish Manuscript Revealed](https://www.classcentral.com/course/edx-the-tabernacle-in-word-image-an-italian-jewish-manuscript-revealed-11462?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [ 中国与共产主义](https://www.classcentral.com/course/edx-china-and-communism-2469?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(4)
+* [ 当代中国: 中华人民共和国、台湾和香港](https://www.classcentral.com/course/edx-contemporary-china-the-people-s-republic-taiwan-and-hong-kong-2470?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(4)
+* [ 世界文学经典](https://www.classcentral.com/course/edx-masterpieces-of-world-literature-6844?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(4)
+* [ 环球历史实验室](https://www.classcentral.com/course/edx-global-history-lab-2371?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(4)
+* [ 从经文看基督教](https://www.classcentral.com/course/edx-christianity-through-its-scriptures-5858?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
+* [ 莎士比亚的《哈姆雷特: 幽灵》](https://www.classcentral.com/course/edx-shakespeare-s-hamlet-the-ghost-7016?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
+* [ 宇宙之旅: 生命的展开](https://www.classcentral.com/course/journey-unfolding-life-6947?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★☆☆(3)
+* [ 美国资本主义: 一段历史](https://www.classcentral.com/course/edx-american-capitalism-a-history-1562?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(3)
+* [ 吃的道德](https://www.classcentral.com/course/edx-the-ethics-of-eating-3043?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★☆(3)
+* [ 质疑现实！ 科学，哲学和对意义的追求](https://www.classcentral.com/course/edx-question-reality-science-philosophy-and-the-search-for-meaning-6851?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★☆(3)
+* [ 经文中的伊斯兰](https://www.classcentral.com/course/edx-islam-through-its-scriptures-5818?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ 宗教冲突和和平](https://www.classcentral.com/course/edx-religion-conflict-and-peace-9452?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(2)
+* [ 中世纪时光：中世纪后期的艺术与奉献精神](https://www.classcentral.com/course/edx-the-medieval-book-of-hours-art-and-devotion-in-the-later-middle-ages-3838?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(2)
+* [ PredictionX：John Snow和1854年的霍乱爆发](https://www.classcentral.com/course/edx-predictionx-john-snow-and-the-cholera-outbreak-of-1854-7159?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ 中世纪礼仪中的书](https://www.classcentral.com/course/edx-books-in-the-medieval-liturgy-3839?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ 古希腊英雄](https://www.classcentral.com/course/edx-the-ancient-greek-hero-609?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(2)
+* [ 生物伦理学：生殖技术和遗传学的法律，医学和伦理学](https://www.classcentral.com/course/edx-bioethics-the-law-medicine-and-ethics-of-reproductive-technologies-and-genetics-6649?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★☆(2)
+* [ 莎士比亚的《奥赛罗：沼泽》](https://www.classcentral.com/course/edx-shakespeare-s-othello-the-moor-11951?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ 古埃及奇观](https://www.classcentral.com/course/wondersancientegypt-9577?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(2)
+* [ 西方基督教之旅：从迫害信仰到全球宗教（200-1650）](https://www.classcentral.com/course/western-christianity-200-1650-8106?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)耶鲁大学 ★★★★★(2)
+* [ 美国诗歌：惠特曼](https://www.classcentral.com/course/edx-poetry-in-america-whitman-940?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(1)
+* [ 世界文学的古代杰作](https://www.classcentral.com/course/edx-ancient-masterpieces-of-world-literature-9423?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 经文中的印度教](https://www.classcentral.com/course/edx-hinduism-through-its-scriptures-5819?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 经文中的犹太教](https://www.classcentral.com/course/edx-judaism-through-its-scriptures-5820?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 莎士比亚的《威尼斯商人：夏洛克》](https://www.classcentral.com/course/edx-shakespeare-s-the-merchant-of-venice-shylock-8536?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 商业与创业英语](https://www.classcentral.com/course/business-6010?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [ 科学，技术，工程和数学英语](https://www.classcentral.com/course/stem-6538?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [ 文字和图像中的帐幕：揭示了意大利犹太手稿](https://www.classcentral.com/course/edx-the-tabernacle-in-word-image-an-italian-jewish-manuscript-revealed-11462?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
 * [ Seeking  Women’s Rights: Colonial Period to the Civil War](https://www.classcentral.com/course/edx-seeking-women-s-rights-colonial-period-to-the-civil-war-13127?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★★(1)
 * [ Women  Have Always Worked: The U.S. Experience 1700 - 1920](https://www.classcentral.com/course/edx-women-have-always-worked-the-u-s-experience-1700-1920-8110?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★★(1)
 * [ The  American Renaissance: Classic Literature of the 19th Century](https://www.classcentral.com/course/edx-the-american-renaissance-classic-literature-of-the-19th-century-4916?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★★(1)
@@ -203,7 +203,7 @@ categories: ["zh"]
 
 ## 商业(72)
 
-* [ Introduction  to Marketing](https://www.classcentral.com/course/whartonmarketing-1137?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(56)
+* [ 市场营销入门](https://www.classcentral.com/course/whartonmarketing-1137?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(56)
 * [ Introduction  to Financial Accounting](https://www.classcentral.com/course/whartonaccounting-769?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(49)
 * [ Introduction  to Operations Management](https://www.classcentral.com/course/whartonoperations-372?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾大沃顿商学院 ★★★★☆(29)
 * [ Financial  Markets](https://www.classcentral.com/course/financialmarkets-912?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学  ★★★★☆(27)
@@ -514,5 +514,5 @@ categories: ["zh"]
 * [ Rhetoric:  The Art of Persuasive Writing and Public Speaking](https://www.classcentral.com/course/edx-rhetoric-the-art-of-persuasive-writing-and-public-speaking-16993?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
 * [ Find  Your Calling: Career Transition Principles for Returning Veterans](https://www.classcentral.com/course/edx-find-your-calling-career-transition-principles-for-returning-veterans-12258?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 
-** 都看到这里了，不妨帮忙点赞转发吧~**
-* [点击这里免费学 WebAssembly 编程](https://docs.secondstate.io/beginners-guide-to-webassembly/beginners-guide-to-webassembly)
+**都看到这里了，不妨帮忙点赞转发吧~**
+[点击这里免费学 WebAssembly 编程](https://docs.secondstate.io/beginners-guide-to-webassembly/beginners-guide-to-webassembly)
