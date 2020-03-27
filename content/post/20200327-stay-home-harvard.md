@@ -412,38 +412,38 @@ categories: ["zh"]
 
 ## 健康和医药(32)
 
-* [ Buddhism  and Modern Psychology](https://www.classcentral.com/course/science-of-meditationm-1355?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)普林斯顿大学 ★★★★★(26)
-* [ Humanitarian  Response to Conflict and Disaster](https://www.classcentral.com/course/edx-humanitarian-response-to-conflict-and-disaster-6569?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(5)
-* [ Introduction  to Breast Cancer](https://www.classcentral.com/course/breast-cancer-causes-prevention-6044?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(5)
-* [ Introduction  to Dental Medicine](https://www.classcentral.com/course/dentmedpenn-2902?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
-* [ Improving  Global Health: Focusing on Quality and Safety](https://www.classcentral.com/course/edx-improving-global-health-focusing-on-quality-and-safety-1950?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
-* [ Going  Out on a Limb: Anatomy of the Upper Limb](https://www.classcentral.com/course/edx-going-out-on-a-limb-anatomy-of-the-upper-limb-4520?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(3)
-* [ United  States Health Policy](https://www.classcentral.com/course/edx-united-states-health-policy-1616?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ Fundamentals  of Clinical Trials](https://www.classcentral.com/course/edx-fundamentals-of-clinical-trials-924?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ AnatomyX:  Musculoskeletal Cases](https://www.classcentral.com/course/edx-anatomyx-musculoskeletal-cases-2024?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ Anatomy  of the Chest, Abdomen, and Pelvis](https://www.classcentral.com/course/trunk-anatomy-10390?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(2)
-* [ The  Science and Politics of the GMO](https://www.classcentral.com/course/edx-the-science-and-politics-of-the-gmo-6501?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(2)
-* [ Global  Health Case Studies From a Biosocial Perspective](https://www.classcentral.com/course/edx-global-health-case-studies-from-a-biosocial-perspective-1619?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Readings  in Global Health](https://www.classcentral.com/course/edx-readings-in-global-health-5178?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Health  and Society](https://www.classcentral.com/course/edx-health-and-society-923?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(1)
-* [ The  Opioid Crisis in America](https://www.classcentral.com/course/edx-the-opioid-crisis-in-america-7830?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Health  Care Innovation](https://www.classcentral.com/course/wo-pmo-healthcareinnovation-10802?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★★(1)
-* [ Essentials  of Global Health](https://www.classcentral.com/course/essentials-global-health-7337?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★☆(1)
-* [ Strengthening  Community Health Worker Programs](https://www.classcentral.com/course/edx-strengthening-community-health-worker-programs-13318?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Practical  Improvement Science in Health Care: A Roadmap for Getting Results](https://www.classcentral.com/course/edx-practical-improvement-science-in-health-care-a-roadmap-for-getting-results-5003?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Innovating  in Health Care](https://www.classcentral.com/course/edx-innovating-in-health-care-1614?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Prescription  Drug Regulation, Cost, and Access: Current Controversies in Context](https://www.classcentral.com/course/edx-prescription-drug-regulation-cost-and-access-current-controversies-in-context-13246?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Lessons  from Ebola: Preventing the Next Pandemic](https://www.classcentral.com/course/edx-lessons-from-ebola-preventing-the-next-pandemic-4879?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Feeding  the World](https://www.classcentral.com/course/feedingtheworld-3913?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ The  Oral Cavity: Portal to Health and Disease](https://www.classcentral.com/course/oralcavity-9263?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ The  Economics of Health Care Delivery](https://www.classcentral.com/course/health-economics-us-healthcare-systems-10796?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ [New]  Addiction Treatment: Clinical Skills for Healthcare Providers](https://www.classcentral.com/course/addiction-treatment-17925?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
-* [ Pediatric  HIV Nursing](https://www.classcentral.com/course/edx-pediatric-hiv-nursing-11350?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Fighting  HIV with Antiretroviral Therapy: Implementing the Treat-All Approach](https://www.classcentral.com/course/edx-fighting-hiv-with-antiretroviral-therapy-implementing-the-treat-all-approach-11351?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Soins  infirmiers en VIH pédiatrique](https://www.classcentral.com/course/edx-soins-infirmiers-en-vih-pediatrique-13333?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Traitement  antirétroviral pour lutter contre le VIH : mise en œuvre de l'approche «  traiter tout le monde »](https://www.classcentral.com/course/edx-traitement-antiretroviral-pour-lutter-contre-le-vih-mise-en-oeuvre-de-l-approche-traiter-tout-le-monde-13312?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Beyond  Medical Histories: Gaining Insight from Patient Stories](https://www.classcentral.com/course/edx-beyond-medical-histories-gaining-insight-from-patient-stories-11762?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学
-* [ Artful  Medicine](https://www.classcentral.com/course/edx-artful-medicine-8541?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学
+* [ 佛教与现代心理学](https://www.classcentral.com/course/science-of-meditationm-1355?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)普林斯顿大学 ★★★★★(26)
+* [ H人道主义对冲突与灾难的反应](https://www.classcentral.com/course/edx-humanitarian-response-to-conflict-and-disaster-6569?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(5)
+* [ I乳腺癌概论](https://www.classcentral.com/course/breast-cancer-causes-prevention-6044?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(5)
+* [ 牙科医学理论](https://www.classcentral.com/course/dentmedpenn-2902?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
+* [ 改善全球健康：注重质量和安全](https://www.classcentral.com/course/edx-improving-global-health-focusing-on-quality-and-safety-1950?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
+* [ 上肢解剖](https://www.classcentral.com/course/edx-going-out-on-a-limb-anatomy-of-the-upper-limb-4520?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(3)
+* [ 美国卫生政策](https://www.classcentral.com/course/edx-united-states-health-policy-1616?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ F临床试验基础](https://www.classcentral.com/course/edx-fundamentals-of-clinical-trials-924?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ AnatomyX: 肌肉骨骼病例](https://www.classcentral.com/course/edx-anatomyx-musculoskeletal-cases-2024?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ 胸部，腹部和骨盆的解剖](https://www.classcentral.com/course/trunk-anatomy-10390?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(2)
+* [ 转基因生物的科学与政治](https://www.classcentral.com/course/edx-the-science-and-politics-of-the-gmo-6501?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(2)
+* [ 从生物社会角度看全球卫生案例研究](https://www.classcentral.com/course/edx-global-health-case-studies-from-a-biosocial-perspective-1619?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 全球卫生读物](https://www.classcentral.com/course/edx-readings-in-global-health-5178?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 健康与社会](https://www.classcentral.com/course/edx-health-and-society-923?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(1)
+* [ 美国的阿片类药物危机](https://www.classcentral.com/course/edx-the-opioid-crisis-in-america-7830?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 医疗保健创新](https://www.classcentral.com/course/wo-pmo-healthcareinnovation-10802?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★★(1)
+* [ 全球健康要点](https://www.classcentral.com/course/essentials-global-health-7337?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★☆(1)
+* [ 加强社区卫生工作者计划](https://www.classcentral.com/course/edx-strengthening-community-health-worker-programs-13318?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 医疗保健中的实用改进科学：获得成果的路线图](https://www.classcentral.com/course/edx-practical-improvement-science-in-health-care-a-roadmap-for-getting-results-5003?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 创新医疗保健](https://www.classcentral.com/course/edx-innovating-in-health-care-1614?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 处方药监管，成本和获取：当前背景中的当前争议](https://www.classcentral.com/course/edx-prescription-drug-regulation-cost-and-access-current-controversies-in-context-13246?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 埃博拉病毒的教训：预防下一次大流行](https://www.classcentral.com/course/edx-lessons-from-ebola-preventing-the-next-pandemic-4879?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 喂养世界(https://www.classcentral.com/course/feedingtheworld-3913?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 口腔：健康与疾病的门户](https://www.classcentral.com/course/oralcavity-9263?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 卫生保健的经济学](https://www.classcentral.com/course/health-economics-us-healthcare-systems-10796?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ [新]上瘾治疗：医疗保健提供者的临床技能](https://www.classcentral.com/course/addiction-treatment-17925?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
+* [ 小儿HIV护理](https://www.classcentral.com/course/edx-pediatric-hiv-nursing-11350?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 用抗逆转录病毒疗法抗击艾滋病毒：实施全部治疗方法](https://www.classcentral.com/course/edx-fighting-hiv-with-antiretroviral-therapy-implementing-the-treat-all-approach-11351?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 小儿HIV护理](https://www.classcentral.com/course/edx-soins-infirmiers-en-vih-pediatrique-13333?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 抗逆转录病毒疗法抗击艾滋病毒：实施“人人治疗”方法](https://www.classcentral.com/course/edx-traitement-antiretroviral-pour-lutter-contre-le-vih-mise-en-oeuvre-de-l-approche-traiter-tout-le-monde-13312?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 超越医学史：从患者故事中获得见识](https://www.classcentral.com/course/edx-beyond-medical-histories-gaining-insight-from-patient-stories-11762?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学
+* [ 艺术药理](https://www.classcentral.com/course/edx-artful-medicine-8541?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学
 
 ## 工程(15)
 
