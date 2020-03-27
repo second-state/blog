@@ -59,7 +59,7 @@ categories: ["zh"]
 * [ 网络插图: 没有微积分的原理](https://www.classcentral.com/course/ni-891?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(3)
 * [ Linux 基础: 命令行界面](https://www.classcentral.com/course/edx-linux-basics-the-command-line-interface-11537?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★★(2)
 * [ C语言: 模块化编程和内存管理](https://www.classcentral.com/course/edx-c-programming-modular-programming-and-memory-management-11666?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★★(2)
-* [ CS50's  Computer Science for Business Professionals](https://www.classcentral.com/course/edx-cs50-s-computer-science-for-business-professionals-10143?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 面向CS50商务人士的计算机科学](https://www.classcentral.com/course/edx-cs50-s-computer-science-for-business-professionals-10143?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
 * [ CS50's  计算机科学入门](https://www.classcentral.com/course/edx-cs50-s-introduction-to-computer-science-7017?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
 * [ CS50's 理解技术](https://www.classcentral.com/course/edx-cs50-s-understanding-technology-10142?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
 * [ 网络: 朋友，金钱和字节](https://www.classcentral.com/course/friendsmoneybytes-359?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★☆☆(1)
@@ -301,120 +301,120 @@ categories: ["zh"]
 ## 科学(32)
 
 * [ 生命体征：了解身体在告诉我们什么](https://www.classcentral.com/course/vitalsigns-1887?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(43)
-* [ Best  Practices for Biomedical Research Data Management](HE)](https://www.classcentral.com/course/canvas-network-best-practices-for-biomedical-research-data-management-he-10172?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) from Harvard  Medical School ★★★★★(20)
-* [ Fundamentals  of Neuroscience, Part 1: The Electrical Properties of the Neuron](https://www.classcentral.com/course/edx-fundamentals-of-neuroscience-part-1-the-electrical-properties-of-the-neuron-942?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(11)
-* [ Science  & Cooking: From Haute Cuisine to Soft Matter Science(part 1)](https://www.classcentral.com/course/edx-science-cooking-from-haute-cuisine-to-soft-matter-science-part-1-811?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(11)
-* [ Fundamentals  of Neuroscience, Part 2: Neurons and Networks](https://www.classcentral.com/course/edx-fundamentals-of-neuroscience-part-2-neurons-and-networks-2430?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(6)
-* [ Principles  of Biochemistry](https://www.classcentral.com/course/edx-principles-of-biochemistry-3462?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(6)
-* [ Introduction  to Environmental Science](https://www.classcentral.com/course/edx-introduction-to-environmental-science-2637?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★☆(6)
-* [ Super-Earths  and Life](https://www.classcentral.com/course/edx-super-earths-and-life-1874?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★☆(5)
-* [ Sharks!  Global Biodiversity, Biology, and Conservation](https://www.classcentral.com/course/edx-sharks-global-biodiversity-biology-and-conservation-5865?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(5)
-* [ Relativity  and Astrophysics](https://www.classcentral.com/course/edx-relativity-and-astrophysics-1334?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★☆(5)
-* [ Imagining  Other Earths](https://www.classcentral.com/course/otherearths-1271?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(3)
-* [ The  Climate-Energy Challenge](https://www.classcentral.com/course/edx-the-climate-energy-challenge-9626?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(2)
-* [ The  Quantum World](https://www.classcentral.com/course/edx-the-quantum-world-8358?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(2)
-* [ Introduction  to Bioconductor: Annotation and Analysis of Genomes and Genomic Assays](https://www.classcentral.com/course/edx-introduction-to-bioconductor-annotation-and-analysis-of-genomes-and-genomic-assays-2970?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★☆(1)
-* [ Case  Studies in Functional Genomics](https://www.classcentral.com/course/edx-case-studies-in-functional-genomics-2976?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(1)
-* [ Cell  Biology: Mitochondria](https://www.classcentral.com/course/edx-cell-biology-mitochondria-6022?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ The  Health Effects of Climate Change](https://www.classcentral.com/course/edx-the-health-effects-of-climate-change-12106?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Science  & Cooking: From Haute Cuisine to Soft Matter Science(physics)](https://www.classcentral.com/course/edx-science-cooking-from-haute-cuisine-to-soft-matter-science-physics-8383?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ MalariaX:  Defeating Malaria from the Genes to the Globe](https://www.classcentral.com/course/edx-malariax-defeating-malaria-from-the-genes-to-the-globe-8413?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Fundamentals  of Neuroscience, Part 3: The Brain](https://www.classcentral.com/course/edx-fundamentals-of-neuroscience-part-3-the-brain-3927?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ High-performance  Computing for Reproducible Genomics](https://www.classcentral.com/course/edx-high-performance-computing-for-reproducible-genomics-2973?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Backyard  Meteorology: The Science of Weather](https://www.classcentral.com/course/edx-backyard-meteorology-the-science-of-weather-12108?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Communicating  Climate Change and Health](https://www.classcentral.com/course/climatecommunication-16879?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
-* [ Introduction  to Climate Change and Health](https://www.classcentral.com/course/introduction-climate-change-health-16878?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
-* [ Communicating  Climate Change and Health](https://www.classcentral.com/course/climatecommunication-16879?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
-* [ Introduction  to Climate Change and Health](https://www.classcentral.com/course/introduction-climate-change-health-16878?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
-* [ Journey  Conversations: Weaving Knowledge and Action](https://www.classcentral.com/course/journey-knowledge-action-6945?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
+* [ 生物医学研究数据管理最佳实践](HE)](https://www.classcentral.com/course/canvas-network-best-practices-for-biomedical-research-data-management-he-10172?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) from Harvard  Medical School ★★★★★(20)
+* [ 神经科学基础，第1部分：神经元的电特性](https://www.classcentral.com/course/edx-fundamentals-of-neuroscience-part-1-the-electrical-properties-of-the-neuron-942?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(11)
+* [ 科学与烹饪：从高级烹饪到软物质科学（第1部分）](https://www.classcentral.com/course/edx-science-cooking-from-haute-cuisine-to-soft-matter-science-part-1-811?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(11)
+* [ 神经科学基础，第2部分：神经元和网络](https://www.classcentral.com/course/edx-fundamentals-of-neuroscience-part-2-neurons-and-networks-2430?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(6)
+* [ 生物化学原理](https://www.classcentral.com/course/edx-principles-of-biochemistry-3462?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(6)
+* [ 环境科学导论](https://www.classcentral.com/course/edx-introduction-to-environmental-science-2637?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学 ★★★★☆(6)
+* [ 超级地球与生命](https://www.classcentral.com/course/edx-super-earths-and-life-1874?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★☆(5)
+* [ 鲨鱼！ 全球生物多样性，生物学与保护](https://www.classcentral.com/course/edx-sharks-global-biodiversity-biology-and-conservation-5865?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(5)
+* [ 相对论与天体物理学](https://www.classcentral.com/course/edx-relativity-and-astrophysics-1334?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★☆(5)
+* [ 想象另一个地球](https://www.classcentral.com/course/otherearths-1271?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(3)
+* [ 气候能源挑战](https://www.classcentral.com/course/edx-the-climate-energy-challenge-9626?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(2)
+* [ 量子世界](https://www.classcentral.com/course/edx-the-quantum-world-8358?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(2)
+* [ 生物导体简介：基因组和基因组分析的注释和分析](https://www.classcentral.com/course/edx-introduction-to-bioconductor-annotation-and-analysis-of-genomes-and-genomic-assays-2970?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★☆(1)
+* [ 功能基因组学案例研究](https://www.classcentral.com/course/edx-case-studies-in-functional-genomics-2976?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(1)
+* [ 细胞生物学：线粒体](https://www.classcentral.com/course/edx-cell-biology-mitochondria-6022?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 气候变化的健康影响](https://www.classcentral.com/course/edx-the-health-effects-of-climate-change-12106?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 科学与烹饪：从高级烹饪到软物质科学（物理学）](https://www.classcentral.com/course/edx-science-cooking-from-haute-cuisine-to-soft-matter-science-physics-8383?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 疟疾X：从基因向全球战胜疟疾](https://www.classcentral.com/course/edx-malariax-defeating-malaria-from-the-genes-to-the-globe-8413?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 神经科学基础，第3部分：大脑](https://www.classcentral.com/course/edx-fundamentals-of-neuroscience-part-3-the-brain-3927?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 可再生基因组学的高性能计算](https://www.classcentral.com/course/edx-high-performance-computing-for-reproducible-genomics-2973?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 后院气象学：天气科学](https://www.classcentral.com/course/edx-backyard-meteorology-the-science-of-weather-12108?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 传达气候变化与健康](https://www.classcentral.com/course/climatecommunication-16879?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
+* [ 气候变化与健康概论](https://www.classcentral.com/course/introduction-climate-change-health-16878?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
+* [ 传达气候变化与健康](https://www.classcentral.com/course/climatecommunication-16879?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
+* [ 气候变化与健康概论](https://www.classcentral.com/course/introduction-climate-change-health-16878?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
+* [ 旅程对话：编织知识和行动](https://www.classcentral.com/course/journey-knowledge-action-6945?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
 * [ 宇宙之旅：展现生命(Journey of the Universe: The  Unfolding of Life)](https://www.classcentral.com/course/yuzhou-zhi-lu-9462?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
 * [ Thomas  Berry的世界观：地球社区的繁荣](The Worldview of  Thomas Berry: The Flourishing of the Earth Community)](https://www.classcentral.com/course/diqiu-fanrong-9461?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
 * [ 宇宙之旅：对话(Journey of the Universe: Weaving  Knowledge and Action)](https://www.classcentral.com/course/yuzhou-duihua-9460?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
-* [ Climate  Adaptation for Human Health](https://www.classcentral.com/course/climateadaptation-16880?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
-* [ Bipedalism:  The Science of Upright Walking](https://www.classcentral.com/course/edx-bipedalism-the-science-of-upright-walking-8493?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学
+* [ 气候变化对人类健康的适应](https://www.classcentral.com/course/climateadaptation-16880?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
+* [ Bipedalism：直立行走的科学](https://www.classcentral.com/course/edx-bipedalism-the-science-of-upright-walking-8493?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 达特茅斯大学
 
 ## 社会科学(74)
 
-* [ Justice](https://www.classcentral.com/course/edx-justice-610?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★★(36)
-* [ An  Introduction to American Law](https://www.classcentral.com/course/americanlaw-2872?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(17)
-* [ Constitutional  Interpretation](https://www.classcentral.com/course/edx-constitutional-interpretation-13427?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★★(16)
-* [ Moral  Foundations of Politics](https://www.classcentral.com/course/moral-politics-2986?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)耶鲁大学 ★★★★☆(14)
-* [ The  Age of Sustainable Development](https://www.classcentral.com/course/susdev-1533?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★★(13)
-* [ Paradoxes  of War](https://www.classcentral.com/course/warparadoxes-1361?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(12)
-* [ Contract  Law: From Trust to Promise to Contract](https://www.classcentral.com/course/edx-contract-law-from-trust-to-promise-to-contract-2633?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(10)
-* [ America's  Written Constitution](https://www.classcentral.com/course/awc-2677?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★☆(9)
-* [ The  Science of Well-Being](https://www.classcentral.com/course/the-science-of-well-being-10346?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(8)
-* [ Tangible  Things: Discovering History Through Artworks, Artifacts, Scientific  Specimens, and the Stuff Around You](https://www.classcentral.com/course/edx-tangible-things-discovering-history-through-artworks-artifacts-scientific-specimens-and-the-stuff-around-you-1870?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(6)
-* [ Introduction  to Key Constitutional Concepts and Supreme Court Cases](https://www.classcentral.com/course/constitution-2082?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(6)
-* [ Designing  Cities](https://www.classcentral.com/course/designingcities-1047?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(6)
-* [ Civil  Liberties](https://www.classcentral.com/course/edx-civil-liberties-11764?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★★(6)
-* [ Microeconomics:  The Power of Markets](https://www.classcentral.com/course/microeconomics-part1-624?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(5)
-* [ Global  History of Capitalism](https://www.classcentral.com/course/edx-global-history-of-capitalism-10307?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(5)
-* [ Revolutionary  Ideas: Utility, Justice, Equality, Freedom](https://www.classcentral.com/course/political-philosophy-4234?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
-* [ A  Law Student's Toolkit](https://www.classcentral.com/course/law-student-4897?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★☆(4)
-* [ Monasteries,  Schools, and Notaries, Part 1: Reading the Late Medieval Marseille Archive](https://www.classcentral.com/course/edx-monasteries-schools-and-notaries-part-1-reading-the-late-medieval-marseille-archive-3878?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★☆(3)
-* [ Making  and Meaning in the Medieval Manuscript](https://www.classcentral.com/course/edx-making-and-meaning-in-the-medieval-manuscript-3873?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
-* [ America's  Unwritten Constitution](https://www.classcentral.com/course/auc-3008?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(3)
-* [ JuryX:  Deliberations for Social Change](https://www.classcentral.com/course/edx-juryx-deliberations-for-social-change-3188?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ Monasteries,  Schools, and Notaries, Part 2: Introduction to the Transitional Gothic  Script](https://www.classcentral.com/course/edx-monasteries-schools-and-notaries-part-2-introduction-to-the-transitional-gothic-script-3871?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(2)
-* [ The  History of Medieval Medicine Through Jewish Manuscripts](https://www.classcentral.com/course/edx-the-history-of-medieval-medicine-through-jewish-manuscripts-6301?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(2)
-* [ Positive  Psychology: Resilience Skills](https://www.classcentral.com/course/positive-psychology-resilience-8331?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(2)
-* [ Introduction  to Psychology](https://www.classcentral.com/course/introduction-psychology-12509?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)耶鲁大学  ★★★★★(2)
-* [ Economics  of Money and Banking](https://www.classcentral.com/course/money-banking-6632?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★★(2)
-* [ Making  Government Work in Hard Places](https://www.classcentral.com/course/edx-making-government-work-in-hard-places-4562?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★★(2)
-* [ Wiretaps  to Big Data](https://www.classcentral.com/course/edx-wiretaps-to-big-data-1492?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学  ★★★★☆(2)
-* [ Networks,  Crowds and Markets](https://www.classcentral.com/course/edx-networks-crowds-and-markets-1565?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★☆(2)
-* [ PredictionX:  Diviner’s Guide](https://www.classcentral.com/course/edx-predictionx-diviner-s-guide-8717?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★☆(1)
-* [ Scrolls  in the Age of the Book](https://www.classcentral.com/course/edx-scrolls-in-the-age-of-the-book-3508?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ The  History of the Book in 17th and 18th Century Europe](https://www.classcentral.com/course/edx-the-history-of-the-book-in-17th-and-18th-century-europe-3880?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
-* [ Central  Challenges of American National Security, Strategy, and the Press](https://www.classcentral.com/course/edx-central-challenges-of-american-national-security-strategy-and-the-press-1231?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(1)
-* [ Print  and Manuscript in Western Europe, Asia and the Middle East](1450-1650)](https://www.classcentral.com/course/edx-print-and-manuscript-in-western-europe-asia-and-the-middle-east-1450-1650-3872?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★★(1)
-* [ English  for Media Literacy](https://www.classcentral.com/course/media-2839?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
-* [ Microeconomics:  When Markets Fail](https://www.classcentral.com/course/microeconomics-part2-5295?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
-* [ Revolutionary  Ideas: Borders, Elections, Constitutions, Prisons](https://www.classcentral.com/course/political-philosophy-2-4171?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
-* [ Positive  Psychology: Applications and Interventions](https://www.classcentral.com/course/positive-psychology-applications-8332?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
-* [ Positive  Psychology: Martin E. P. Seligman’s Visionary Science](https://www.classcentral.com/course/positive-psychology-visionary-science-8337?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
-* [ Intellectual  Property Law and Policy: Part 2](https://www.classcentral.com/course/edx-intellectual-property-law-and-policy-part-2-6490?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(1)
-* [ Network  Dynamics of Social Behavior](https://www.classcentral.com/course/networkdynamics-9306?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
-* [ Social  Norms, Social Change I](https://www.classcentral.com/course/norms-5910?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
-* [ Intellectual  Property Law and Policy: Part 1](https://www.classcentral.com/course/edx-intellectual-property-law-and-policy-part-1-5001?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
-* [ Corruption](https://www.classcentral.com/course/wharton-corruption-6888?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)宾夕法尼亚大学 ★★★★★(1)
+* [ 正义](https://www.classcentral.com/course/edx-justice-610?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★★(36)
+* [ 美国法律概论](https://www.classcentral.com/course/americanlaw-2872?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(17)
+* [ 宪法解释](https://www.classcentral.com/course/edx-constitutional-interpretation-13427?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★★(16)
+* [ 政治的道德基础](https://www.classcentral.com/course/moral-politics-2986?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)耶鲁大学 ★★★★☆(14)
+* [ 可持续发展时代](https://www.classcentral.com/course/susdev-1533?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★★(13)
+* [ 战争悖论](https://www.classcentral.com/course/warparadoxes-1361?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(12)
+* [ 合同法：从信任到承诺再到合同](https://www.classcentral.com/course/edx-contract-law-from-trust-to-promise-to-contract-2633?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(10)
+* [ 美国成文宪法](https://www.classcentral.com/course/awc-2677?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★☆(9)
+* [ 幸福的科学](https://www.classcentral.com/course/the-science-of-well-being-10346?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(8)
+* [ 有形的事物：通过艺术品，人工制品，科学标本和您周围的东西发现历史](https://www.classcentral.com/course/edx-tangible-things-discovering-history-through-artworks-artifacts-scientific-specimens-and-the-stuff-around-you-1870?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(6)
+* [ 主要宪法概念和最高法院案件简介](https://www.classcentral.com/course/constitution-2082?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(6)
+* [ 设计城市](https://www.classcentral.com/course/designingcities-1047?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(6)
+* [ 公民权利](https://www.classcentral.com/course/edx-civil-liberties-11764?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★★(6)
+* [ 微观经济学：市场的力量](https://www.classcentral.com/course/microeconomics-part1-624?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(5)
+* [ 全球资本主义史](https://www.classcentral.com/course/edx-global-history-of-capitalism-10307?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(5)
+* [ 革命思想：效用，正义，平等，自由](https://www.classcentral.com/course/political-philosophy-4234?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
+* [ 法律系学生的工具包](https://www.classcentral.com/course/law-student-4897?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★☆(4)
+* [ 修道院，学校和公证人，第1部分：阅读中世纪晚期马赛档案馆](https://www.classcentral.com/course/edx-monasteries-schools-and-notaries-part-1-reading-the-late-medieval-marseille-archive-3878?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★☆(3)
+* [ 中世纪手稿中的造句与意义](https://www.classcentral.com/course/edx-making-and-meaning-in-the-medieval-manuscript-3873?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
+* [ 美国不成文宪法](https://www.classcentral.com/course/auc-3008?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(3)
+* [ JuryX：社会变革的审议](https://www.classcentral.com/course/edx-juryx-deliberations-for-social-change-3188?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ 修道院，学校和公证人，第2部分：过渡哥特式文本简介](https://www.classcentral.com/course/edx-monasteries-schools-and-notaries-part-2-introduction-to-the-transitional-gothic-script-3871?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★★(2)
+* [ 通过犹太手稿看中世纪医学史](https://www.classcentral.com/course/edx-the-history-of-medieval-medicine-through-jewish-manuscripts-6301?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(2)
+* [ 积极心理学：坚强的技巧](https://www.classcentral.com/course/positive-psychology-resilience-8331?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(2)
+* [ 心理学概论](https://www.classcentral.com/course/introduction-psychology-12509?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)耶鲁大学  ★★★★★(2)
+* [ 货币与银行经济学](https://www.classcentral.com/course/money-banking-6632?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★★(2)
+* [ 让政府在艰苦的地方工作](https://www.classcentral.com/course/edx-making-government-work-in-hard-places-4562?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★★(2)
+* [ 窃听大数据](https://www.classcentral.com/course/edx-wiretaps-to-big-data-1492?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学  ★★★★☆(2)
+* [ 网络，人群和市场](https://www.classcentral.com/course/edx-networks-crowds-and-markets-1565?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★☆(2)
+* [ PredictionX：Diviner指南](https://www.classcentral.com/course/edx-predictionx-diviner-s-guide-8717?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★☆(1)
+* [ 书籍时代的卷轴](https://www.classcentral.com/course/edx-scrolls-in-the-age-of-the-book-3508?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 17至18世纪欧洲的书籍历史](https://www.classcentral.com/course/edx-the-history-of-the-book-in-17th-and-18th-century-europe-3880?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(1)
+* [ 美国国家安全，战略和新闻的主要挑战](https://www.classcentral.com/course/edx-central-challenges-of-american-national-security-strategy-and-the-press-1231?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(1)
+* [ 西欧，亚洲和中东的印刷作品和手稿](1450-1650)](https://www.classcentral.com/course/edx-print-and-manuscript-in-western-europe-asia-and-the-middle-east-1450-1650-3872?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)哈佛大学 ★★★★★(1)
+* [ 新闻媒体英语](https://www.classcentral.com/course/media-2839?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [ 微观经济学：市场失灵时](https://www.classcentral.com/course/microeconomics-part2-5295?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [ 革命思想：边界，选举，宪法，监狱](https://www.classcentral.com/course/political-philosophy-2-4171?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [ 积极心理学：应用和干预](https://www.classcentral.com/course/positive-psychology-applications-8332?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [ 积极心理学：马丁·E·P·塞利格曼的远见科学](https://www.classcentral.com/course/positive-psychology-visionary-science-8337?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [ 知识产权法律和政策：第2部分](https://www.classcentral.com/course/edx-intellectual-property-law-and-policy-part-2-6490?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★★☆(1)
+* [ 社会行为的网络动力学](https://www.classcentral.com/course/networkdynamics-9306?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
+* [ 社会规范，社会变革I](https://www.classcentral.com/course/norms-5910?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(1)
+* [ 知识产权法律和政策：第1部分](https://www.classcentral.com/course/edx-intellectual-property-law-and-policy-part-1-5001?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
+* [ 贪污](https://www.classcentral.com/course/wharton-corruption-6888?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)宾夕法尼亚大学 ★★★★★(1)
 * [ Social  Norms, Social Change II](https://www.classcentral.com/course/change-7429?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★☆☆☆(1)
 * [ Everyday  Parenting: The ABCs of Child Rearing](https://www.classcentral.com/course/everyday-parenting-8875?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(1)
 * [ Global  Muckraking: Investigative Journalism and Global Media](https://www.classcentral.com/course/edx-global-muckraking-investigative-journalism-and-global-media-8029?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★★(1)
-* [ Risk  & Return](https://www.classcentral.com/course/edx-risk-return-9062?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学  ★★★★☆(1)
-* [ Reclaiming  Broken Places: Introduction to Civic Ecology](https://www.classcentral.com/course/edx-reclaiming-broken-places-introduction-to-civic-ecology-2811?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★☆☆(1)
-* [ U.S.  Public Policy: Social, Economic, and Foreign Policies](https://www.classcentral.com/course/edx-u-s-public-policy-social-economic-and-foreign-policies-11696?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Citizen  Politics in America: Public Opinion, Elections, Interest Groups, and the  Media](https://www.classcentral.com/course/edx-citizen-politics-in-america-public-opinion-elections-interest-groups-and-the-media-11695?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ American  Government: Constitutional Foundations](https://www.classcentral.com/course/edx-american-government-constitutional-foundations-11664?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ CitiesX:  The Past, Present and Future of Urban Life](https://www.classcentral.com/course/edx-citiesx-the-past-present-and-future-of-urban-life-9738?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ U.S.  Political Institutions: Congress, Presidency, Courts, and Bureaucracy](https://www.classcentral.com/course/edx-u-s-political-institutions-congress-presidency-courts-and-bureaucracy-11694?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Child  Protection: Children's Rights in Theory and Practice](https://www.classcentral.com/course/edx-child-protection-children-s-rights-in-theory-and-practice-12686?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ Positive  Psychology Specialization Project: Design Your Life for Well-being](https://www.classcentral.com/course/positive-psychology-project-8330?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ Creating  an Effective Child Welfare System](https://www.classcentral.com/course/edx-creating-an-effective-child-welfare-system-11665?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ Trademark  Law](https://www.classcentral.com/course/trademark-law-13467?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ Exploring  Renewable Energy Schemes](https://www.classcentral.com/course/exploring-renewable-energy-17025?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ Introduction  to Intellectual Property](https://www.classcentral.com/course/introduction-intellectual-property-13446?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ Positive  Psychology: Character, Grit and Research Methods](https://www.classcentral.com/course/positive-psychology-methods-8335?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ The  Top 10 Social Issues for the First 100 Days](https://www.classcentral.com/course/edx-the-top-10-social-issues-for-the-first-100-days-7586?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
-* [ American  Contract Law I](https://www.classcentral.com/course/contracts-1-12714?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
-* [ American  Contract Law II](https://www.classcentral.com/course/contracts-2-12715?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
-* [ Freedom  of Expression and Information in the Time of Globalization: Foundational  Course](https://www.classcentral.com/course/edx-freedom-of-expression-and-information-in-the-time-of-globalization-foundational-course-15198?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Freedom  of Expression and Information in the Time of Globalization: Advanced  Course](https://www.classcentral.com/course/edx-freedom-of-expression-and-information-in-the-time-of-globalization-advanced-course-15199?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Health,  Housing, and Educational Services](https://www.classcentral.com/course/health-housing-educational-services-12826?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Social  Services for Families, Seniors and Those with Disabilities](https://www.classcentral.com/course/social-health-policy-programs-12823?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ US  Social Services: Where did they come from?](https://www.classcentral.com/course/welfare-state-origin-12820?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Poverty  & Population: How Demographics Shape Policy](https://www.classcentral.com/course/poverty-population-demographics-policy-12818?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ US  Social Services Compared](https://www.classcentral.com/course/welfare-state-12819?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Freedom  of Expression in the Age of Globalization](https://www.classcentral.com/course/edx-freedom-of-expression-in-the-age-of-globalization-6646?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Protecting  Children in Humanitarian Settings](https://www.classcentral.com/course/edx-protecting-children-in-humanitarian-settings-14482?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ Structuring  Successful Business Deals](https://www.classcentral.com/course/edx-structuring-successful-business-deals-8285?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学
+* [ 风险和回报](https://www.classcentral.com/course/edx-risk-return-9062?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学  ★★★★☆(1)
+* [ 开垦破碎的地方：公民生态学导论](https://www.classcentral.com/course/edx-reclaiming-broken-places-introduction-to-civic-ecology-2811?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★☆☆(1)
+* [ 美国公共政策：社会，经济和外交政策](https://www.classcentral.com/course/edx-u-s-public-policy-social-economic-and-foreign-policies-11696?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 美国公民政治：舆论，选举，利益集团和媒体](https://www.classcentral.com/course/edx-citizen-politics-in-america-public-opinion-elections-interest-groups-and-the-media-11695?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 美国政府：宪法基金会](https://www.classcentral.com/course/edx-american-government-constitutional-foundations-11664?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ CitiesX：城市生活的过去，现在和未来](https://www.classcentral.com/course/edx-citiesx-the-past-present-and-future-of-urban-life-9738?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 美国政治机构：国会，总统府，法院和官僚机构](https://www.classcentral.com/course/edx-u-s-political-institutions-congress-presidency-courts-and-bureaucracy-11694?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 儿童保护：理论和实践中的儿童权利](https://www.classcentral.com/course/edx-child-protection-children-s-rights-in-theory-and-practice-12686?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
+* [ 积极心理学专业化项目：为幸福而设计生活](https://www.classcentral.com/course/positive-psychology-project-8330?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 建立有效的儿童福利制度](https://www.classcentral.com/course/edx-creating-an-effective-child-welfare-system-11665?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 商标法](https://www.classcentral.com/course/trademark-law-13467?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 探索可再生能源计划](https://www.classcentral.com/course/exploring-renewable-energy-17025?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 知识产权介绍](https://www.classcentral.com/course/introduction-intellectual-property-13446?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 积极心理学：性格，毅力和研究方法](https://www.classcentral.com/course/positive-psychology-methods-8335?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 前100天的十大社会问题](https://www.classcentral.com/course/edx-the-top-10-social-issues-for-the-first-100-days-7586?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 美国合同法一](https://www.classcentral.com/course/contracts-1-12714?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
+* [ 美国合同法二](https://www.classcentral.com/course/contracts-2-12715?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
+* [ 全球化时代的表达自由和信息自由：基础课程](https://www.classcentral.com/course/edx-freedom-of-expression-and-information-in-the-time-of-globalization-foundational-course-15198?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 全球化时代的表达自由和信息自由：高级课程](https://www.classcentral.com/course/edx-freedom-of-expression-and-information-in-the-time-of-globalization-advanced-course-15199?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 卫生，住房和教育服务](https://www.classcentral.com/course/health-housing-educational-services-12826?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 面向家庭，老年人和残疾人的社会服务](https://www.classcentral.com/course/social-health-policy-programs-12823?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 美国社会服务部：它们来自哪里？](https://www.classcentral.com/course/welfare-state-origin-12820?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 贫困与人口：人口如何影响政策](https://www.classcentral.com/course/poverty-population-demographics-policy-12818?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 美国社会服务比较](https://www.classcentral.com/course/welfare-state-12819?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 全球化时代的表达自由](https://www.classcentral.com/course/edx-freedom-of-expression-in-the-age-of-globalization-6646?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 在人道主义环境中保护儿童](https://www.classcentral.com/course/edx-protecting-children-in-humanitarian-settings-14482?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 构建成功的业务交易](https://www.classcentral.com/course/edx-structuring-successful-business-deals-8285?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学
 
 ## 健康和医药(32)
 
 * [ 佛教与现代心理学](https://www.classcentral.com/course/science-of-meditationm-1355?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)普林斯顿大学 ★★★★★(26)
-* [ 人道主义对冲突与灾难的反应](https://www.classcentral.com/course/edx-humanitarian-response-to-conflict-and-disaster-6569?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(5)
-* [ 乳腺癌概论](https://www.classcentral.com/course/breast-cancer-causes-prevention-6044?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(5)
+* [ H人道主义对冲突与灾难的反应](https://www.classcentral.com/course/edx-humanitarian-response-to-conflict-and-disaster-6569?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(5)
+* [ I乳腺癌概论](https://www.classcentral.com/course/breast-cancer-causes-prevention-6044?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(5)
 * [ 牙科医学理论](https://www.classcentral.com/course/dentmedpenn-2902?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
 * [ 改善全球健康：注重质量和安全](https://www.classcentral.com/course/edx-improving-global-health-focusing-on-quality-and-safety-1950?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
 * [ 上肢解剖](https://www.classcentral.com/course/edx-going-out-on-a-limb-anatomy-of-the-upper-limb-4520?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(3)
@@ -434,7 +434,7 @@ categories: ["zh"]
 * [ 创新医疗保健](https://www.classcentral.com/course/edx-innovating-in-health-care-1614?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
 * [ 处方药监管，成本和获取：当前背景中的当前争议](https://www.classcentral.com/course/edx-prescription-drug-regulation-cost-and-access-current-controversies-in-context-13246?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
 * [ 埃博拉病毒的教训：预防下一次大流行](https://www.classcentral.com/course/edx-lessons-from-ebola-preventing-the-next-pandemic-4879?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ 喂养世界](https://www.classcentral.com/course/feedingtheworld-3913?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 喂养世界(https://www.classcentral.com/course/feedingtheworld-3913?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ 口腔：健康与疾病的门户](https://www.classcentral.com/course/oralcavity-9263?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ 卫生保健的经济学](https://www.classcentral.com/course/health-economics-us-healthcare-systems-10796?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ [新]上瘾治疗：医疗保健提供者的临床技能](https://www.classcentral.com/course/addiction-treatment-17925?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
@@ -482,9 +482,9 @@ categories: ["zh"]
 * [ 了解课堂互动](https://www.classcentral.com/course/edx-understanding-classroom-interaction-7198?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ 学习的科学-每个老师应该知道的](https://www.classcentral.com/course/edx-the-science-of-learning-what-every-teacher-should-know-5725?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 * [ 创新教学：用技术重塑教学](https://www.classcentral.com/course/edx-innovating-instruction-reimagining-teaching-with-technology-8019?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ 大学退伍军人研究](https://www.classcentral.com/course/edx-university-studies-for-student-veterans-9129?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 大学退伍军人研究]](https://www.classcentral.com/course/edx-university-studies-for-student-veterans-9129?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 * [ 包容性教学：在大学教室中为所有学生提供支持](https://www.classcentral.com/course/edx-inclusive-teaching-supporting-all-students-in-the-college-classroom-13690?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ 接受高等教育](https://www.classcentral.com/course/edx-attaining-higher-education-13336?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 接受高等教育]](https://www.classcentral.com/course/edx-attaining-higher-education-13336?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 * [ 多元课堂教学](https://www.classcentral.com/course/edx-teaching-learning-in-the-diverse-classroom-15171?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学
 
 ## 数学
