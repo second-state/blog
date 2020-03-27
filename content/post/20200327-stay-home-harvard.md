@@ -413,13 +413,13 @@ categories: ["zh"]
 ## 健康和医药(32)
 
 * [ 佛教与现代心理学](https://www.classcentral.com/course/science-of-meditationm-1355?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)普林斯顿大学 ★★★★★(26)
-* [ H人道主义对冲突与灾难的反应](https://www.classcentral.com/course/edx-humanitarian-response-to-conflict-and-disaster-6569?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(5)
-* [ I乳腺癌概论](https://www.classcentral.com/course/breast-cancer-causes-prevention-6044?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(5)
+* [ 人道主义对冲突与灾难的反应](https://www.classcentral.com/course/edx-humanitarian-response-to-conflict-and-disaster-6569?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(5)
+* [ 乳腺癌概论](https://www.classcentral.com/course/breast-cancer-causes-prevention-6044?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(5)
 * [ 牙科医学理论](https://www.classcentral.com/course/dentmedpenn-2902?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(4)
 * [ 改善全球健康：注重质量和安全](https://www.classcentral.com/course/edx-improving-global-health-focusing-on-quality-and-safety-1950?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(3)
 * [ 上肢解剖](https://www.classcentral.com/course/edx-going-out-on-a-limb-anatomy-of-the-upper-limb-4520?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★☆(3)
 * [ 美国卫生政策](https://www.classcentral.com/course/edx-united-states-health-policy-1616?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
-* [ F临床试验基础](https://www.classcentral.com/course/edx-fundamentals-of-clinical-trials-924?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
+* [ 临床试验基础](https://www.classcentral.com/course/edx-fundamentals-of-clinical-trials-924?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
 * [ AnatomyX: 肌肉骨骼病例](https://www.classcentral.com/course/edx-anatomyx-musculoskeletal-cases-2024?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
 * [ 胸部，腹部和骨盆的解剖](https://www.classcentral.com/course/trunk-anatomy-10390?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学 ★★★★★(2)
 * [ 转基因生物的科学与政治](https://www.classcentral.com/course/edx-the-science-and-politics-of-the-gmo-6501?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学 ★★★★★(2)
@@ -434,7 +434,7 @@ categories: ["zh"]
 * [ 创新医疗保健](https://www.classcentral.com/course/edx-innovating-in-health-care-1614?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
 * [ 处方药监管，成本和获取：当前背景中的当前争议](https://www.classcentral.com/course/edx-prescription-drug-regulation-cost-and-access-current-controversies-in-context-13246?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
 * [ 埃博拉病毒的教训：预防下一次大流行](https://www.classcentral.com/course/edx-lessons-from-ebola-preventing-the-next-pandemic-4879?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ 喂养世界(https://www.classcentral.com/course/feedingtheworld-3913?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
+* [ 喂养世界](https://www.classcentral.com/course/feedingtheworld-3913?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ 口腔：健康与疾病的门户](https://www.classcentral.com/course/oralcavity-9263?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ 卫生保健的经济学](https://www.classcentral.com/course/health-economics-us-healthcare-systems-10796?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ [新]上瘾治疗：医疗保健提供者的临床技能](https://www.classcentral.com/course/addiction-treatment-17925?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
@@ -482,9 +482,9 @@ categories: ["zh"]
 * [ 了解课堂互动](https://www.classcentral.com/course/edx-understanding-classroom-interaction-7198?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学
 * [ 学习的科学-每个老师应该知道的](https://www.classcentral.com/course/edx-the-science-of-learning-what-every-teacher-should-know-5725?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 * [ 创新教学：用技术重塑教学](https://www.classcentral.com/course/edx-innovating-instruction-reimagining-teaching-with-technology-8019?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ 大学退伍军人研究]](https://www.classcentral.com/course/edx-university-studies-for-student-veterans-9129?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 大学退伍军人研究](https://www.classcentral.com/course/edx-university-studies-for-student-veterans-9129?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 * [ 包容性教学：在大学教室中为所有学生提供支持](https://www.classcentral.com/course/edx-inclusive-teaching-supporting-all-students-in-the-college-classroom-13690?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
-* [ 接受高等教育]](https://www.classcentral.com/course/edx-attaining-higher-education-13336?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
+* [ 接受高等教育](https://www.classcentral.com/course/edx-attaining-higher-education-13336?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 * [ 多元课堂教学](https://www.classcentral.com/course/edx-teaching-learning-in-the-diverse-classroom-15171?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 康奈尔大学
 
 ## 数学
