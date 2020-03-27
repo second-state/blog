@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Mar 2020 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>宅在家里上哈佛：450门常春藤盟校免费在线课程</title>
+      <link>http://blog.secondstate.io/post/20200327-stay-home-harvard/</link>
+      <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200327-stay-home-harvard/</guid>
+      <description>安全第一哦，大家一起在家里学编程吧！ How to Learn Rust Without Installing Any Software (https://www.freecodecamp.org/news/learn-rust-with-github-actions/) 450****门常春藤盟校免费在线课程 美国新冠感染人数已经超过中国成为世界第一了。据约</description>
+    </item>
     
     <item>
       <title>Second State joins Microsoft for Startups to develop the next generation software infrastructure for cloud computing</title>
@@ -199,15 +208,6 @@ Through its web-based BUIDL IDE, developers can easily access Second State smart
       <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
       <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
 Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&#39;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
-    </item>
-    
-    <item>
-      <title>教程|5分钟建一个去中心化的网站</title>
-      <link>http://blog.secondstate.io/post/20191024-build-website-zh/</link>
-      <pubDate>Wed, 23 Oct 2019 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191024-build-website-zh/</guid>
-      <description>不用买域名，购买虚拟主机空间，设置域名服务器，工信部备案等等繁琐的流程。 5分钟学会自己建一个去中心化的网站，从此做网站不求人！永久留存，完全</description>
     </item>
     
   </channel>

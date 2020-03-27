@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Mar 2020 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>coding</title>
+      <link>http://blog.secondstate.io/tags/coding/</link>
+      <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>freeclass</title>
+      <link>http://blog.secondstate.io/tags/freeclass/</link>
+      <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/freeclass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>harvard</title>
+      <link>http://blog.secondstate.io/tags/harvard/</link>
+      <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/harvard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>http://blog.secondstate.io/tags/webassembly/</link>
+      <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blockchain</title>
@@ -35,15 +71,6 @@
       <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/microsoft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WebAssembly</title>
-      <link>http://blog.secondstate.io/tags/webassembly/</link>
-      <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
       <description></description>
     </item>
     
@@ -161,33 +188,6 @@
       <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/devcon5/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Libra</title>
-      <link>http://blog.secondstate.io/tags/libra/</link>
-      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/libra/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Uniswap</title>
-      <link>http://blog.secondstate.io/tags/uniswap/</link>
-      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/uniswap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Second State</title>
-      <link>http://blog.secondstate.io/tags/second-state/</link>
-      <pubDate>Thu, 31 Oct 2019 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/second-state/</guid>
       <description></description>
     </item>
     

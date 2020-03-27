@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>harvard on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/harvard/</link>
+    <description>Recent content in harvard on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Mar 2020 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/harvard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>宅在家里上哈佛：450门常春藤盟校免费在线课程</title>
+      <link>http://blog.secondstate.io/post/20200327-stay-home-harvard/</link>
+      <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200327-stay-home-harvard/</guid>
+      <description>安全第一哦，大家一起在家里学编程吧！ How to Learn Rust Without Installing Any Software (https://www.freecodecamp.org/news/learn-rust-with-github-actions/) 450****门常春藤盟校免费在线课程 美国新冠感染人数已经超过中国成为世界第一了。据约</description>
+    </item>
+    
+  </channel>
+</rss>
