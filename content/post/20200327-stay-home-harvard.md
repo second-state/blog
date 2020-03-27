@@ -40,20 +40,20 @@ categories: ["zh"]
 
 ## 计算机(37门)
 
-* [ CS50's  Introduction to Computer Science](https://www.classcentral.com/course/edx-cs50-s-introduction-to-computer-science-442?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学★★★★★(78)
-* [ Algorithms,  Part I](https://www.classcentral.com/course/algs4partI-339?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★★(60)
-* [ Algorithms,  Part II](https://www.classcentral.com/course/algs4partII-340?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★★(21)
-* [ Bitcoin  and Cryptocurrency Technologies](https://www.classcentral.com/course/bitcointech-3655?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(17)
+* [ CS50计算机科学入门](https://www.classcentral.com/course/edx-cs50-s-introduction-to-computer-science-442?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学★★★★★(78)
+* [ 算法, I](https://www.classcentral.com/course/algs4partI-339?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★★(60)
+* [ 算法, II](https://www.classcentral.com/course/algs4partII-340?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★★(21)
+* [ 比特币和加密货币技术](https://www.classcentral.com/course/bitcointech-3655?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(17)
 * [ Machine  Learning for Data Science and Analytics](https://www.classcentral.com/course/edx-machine-learning-for-data-science-and-analytics-4912?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★☆☆(15)
 * [ 机器学习](https://www.classcentral.com/course/edx-machine-learning-7231?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★☆(10)
-* [ Artificial  Intelligence](AI)](https://www.classcentral.com/course/edx-artificial-intelligence-ai-7230?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★☆(9)
-* [ Reinforcement  Learning](https://www.classcentral.com/course/udacity-reinforcement-learning-1849?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学  ★★★☆☆(8)
-* [ Machine  Learning](https://www.classcentral.com/course/udacity-machine-learning-1020?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 乔治亚理工学院 ★★★★☆(6)
-* [ Software  Defined Networking](https://www.classcentral.com/course/sdn-489?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(6)
-* [ Computer  Architecture](https://www.classcentral.com/course/comparch-342?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(6)
+* [ 人工智能](AI)](https://www.classcentral.com/course/edx-artificial-intelligence-ai-7230?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★★★★☆(9)
+* [ 增强学习](https://www.classcentral.com/course/udacity-reinforcement-learning-1849?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学  ★★★☆☆(8)
+* [ 机器学习](https://www.classcentral.com/course/udacity-machine-learning-1020?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 乔治亚理工学院 ★★★★☆(6)
+* [ 软件定义的网络](https://www.classcentral.com/course/sdn-489?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(6)
+* [ 计算机体系结构](https://www.classcentral.com/course/comparch-342?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★☆(6)
 * [ Enabling  Technologies for Data Science and Analytics: The Internet of Things](https://www.classcentral.com/course/edx-enabling-technologies-for-data-science-and-analytics-the-internet-of-things-4911?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学 ★☆☆☆☆(5)
 * [ Analysis  of Algorithms](https://www.classcentral.com/course/aofa-921?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学  ★★★★★(4)
-* [ Robotics:  Perception](https://www.classcentral.com/course/robotics-perception-5033?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★☆☆(3)
+* [机器人：理解](https://www.classcentral.com/course/robotics-perception-5033?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学  ★★★☆☆(3)
 * [ Machine  Learning: Unsupervised Learning](https://www.classcentral.com/course/udacity-machine-learning-unsupervised-learning-1848?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 布朗大学 ★★★☆☆(3)
 * [ Animation  and CGI Motion](https://www.classcentral.com/course/edx-animation-and-cgi-motion-7242?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学  ★★★☆☆(3)
 * [ Networks  Illustrated: Principles without Calculus](https://www.classcentral.com/course/ni-891?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 普林斯顿大学 ★★★★☆(3)
@@ -86,7 +86,7 @@ categories: ["zh"]
 * [ People  Analytics](https://www.classcentral.com/course/wharton-people-analytics-4264?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) from 宾夕法尼亚大学  ★★★★☆(5)
 * [ Data  Science: Visualization](https://www.classcentral.com/course/edx-data-science-visualization-10347?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(3)
 * [ High-Dimensional  Data Analysis](https://www.classcentral.com/course/edx-high-dimensional-data-analysis-2949?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学  ★★★★☆(3)
-* [ Data  Science: Machine Learning](https://www.classcentral.com/course/edx-data-science-machine-learning-10353?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(2)
+* [ 数据科学：机器学习](https://www.classcentral.com/course/edx-data-science-machine-learning-10353?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★☆(2)
 * [ Case  study: DNA methylation data analysis](https://www.classcentral.com/course/edx-case-study-dna-methylation-data-analysis-2980?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
 * [ Data  Science: Linear Regression](https://www.classcentral.com/course/edx-data-science-linear-regression-10352?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★☆☆(2)
 * [ Causal  Diagrams: Draw Your Assumptions Before Your Conclusions](https://www.classcentral.com/course/edx-causal-diagrams-draw-your-assumptions-before-your-conclusions-9097?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学 ★★★★★(2)
@@ -512,7 +512,6 @@ categories: ["zh"]
 * [ Success](https://www.classcentral.com/course/wharton-succcess-6893?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020)宾夕法尼亚大学 ★★★★★(1)
 * [ Improving  Communication Skills](https://www.classcentral.com/course/wharton-communication-skills-8235?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 宾夕法尼亚大学 ★★★★★(1)
 * [ Rhetoric:  The Art of Persuasive Writing and Public Speaking](https://www.classcentral.com/course/edx-rhetoric-the-art-of-persuasive-writing-and-public-speaking-16993?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学
-* [ مقدمة عن التفاوض: دليل استراتيجي لتصبح مُفاوضًا ذا مبادئ ومُقنعًا](https://www.classcentral.com/course/negotiation-ar-13419?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 耶鲁大学
 * [ Find  Your Calling: Career Transition Principles for Returning Veterans](https://www.classcentral.com/course/edx-find-your-calling-career-transition-principles-for-returning-veterans-12258?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哥伦比亚大学
 
 ** 都看到这里了，不妨帮忙点赞转发吧~**
