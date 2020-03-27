@@ -7,9 +7,9 @@ categories: ["zh"]
 ---
 
 
-**安全第一哦，大家一起在家里学编程吧！ *How to Learn Rust Without Installing Any Software (https://www.freecodecamp.org/news/learn-rust-with-github-actions/)***
+**安全第一哦，大家一起在家里学编程吧！ *如何不安装任何软件就学会Rust (https://www.freecodecamp.org/news/learn-rust-with-github-actions/)***
 
-**450****门常春藤盟校免费在线课程**
+**450门常春藤盟校免费在线课程**
 
 美国新冠感染人数已经超过中国成为世界第一了。据约翰斯·霍普金斯大学数据，截至美东时间26日17时37分，美国新冠肺炎确诊病例为82404例，死亡1178例。从3月23日开始，美国日新增病例均超过1万。
 
@@ -36,10 +36,11 @@ Second State 帮大家整理了一系列免费顶级大学在线课程，都是�
 * 教育及教学
 * 个人发展
 
-这些网络公开课能在这个英文页面上找到合集： https://www.classcentral.com/collection/Ivy-League-MOOCs 当添加新课程时，该集合会自动更新。 可以通过点击蓝色的“ follow”按钮来订阅更新。
+这些网络公开课能在这个英文页面上找到合集： https://www.classcentral.com/collection/Ivy-League-MOOCs 当添加新课程时，该集合会自动更新。 可以通过点击蓝色的“ follow”按钮来订阅更新。来自 Class Central (https://www.class-central.com/)主页。
 
 需要注意的是 Coursera课程注册以后都可以免费参加，如果想要课程证书也可以缴费。*大部分都有中文字幕喔*！如果你是在线学习的新手，看看下面的30个可行的小贴士( https://www.classcentral.com/report/mooc-motivation-hacks/ / 技巧)来保持专注。
-来自 Class Central (https://www.class-central.com/)主页。
+
+
 **计算机* (37*门*)***
 
 * CS50's  Introduction to Computer Science (https://www.classcentral.com/course/edx-cs50-s-introduction-to-computer-science-442?utm_source=fcc_medium&utm_medium=web&utm_campaign=ivy_league_courses_2020) 哈佛大学★★★★★(78)
