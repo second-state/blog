@@ -58,7 +58,7 @@ categories: ["zh"]
 
 WebAssembly 的设计目标是：定义一个可移植，体积紧凑，加载迅速的二进制格式为编译目标，而此二进制格式文件将可以在各种平台（包括移动设备和物联网设备）上被编译，然后发挥通用的硬件性能以原生应用的速度运行。Second State 提出，在硬件设备中直接支持 WebAssembly 已经成为趋势。
 
-![](/images/20190826-wasm-03.png)
+![](/images/20190826-wasm-02.png)
 
 Second State 计划将高通芯片、WebAssembly 虚拟机与区块链应用结合起来，如将针对高通 Hexagon NN芯片对WebAssembly 虚拟机进行优化，使两者能够完美结合，为区块链虚拟机提供硬件支持，提升区块链虚拟机的性能。Second State 的提案获得了高通的高度认可，成功入围决赛，为区块链应用落地打开了新的思路。
 
