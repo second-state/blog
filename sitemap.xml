@@ -604,6 +604,27 @@
   </url>
   
   <url>
+    <loc>http://blog.secondstate.io/tags/ai-chip/</loc>
+    <lastmod>2019-08-26T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20190826-blockchain-chips-zh/</loc>
+    <lastmod>2019-08-26T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/wasm/</loc>
+    <lastmod>2019-08-26T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.secondstate.io/tags/blockchain-for-enterprise/</loc>
     <lastmod>2019-08-26T09:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -737,14 +758,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
+    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
+    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
