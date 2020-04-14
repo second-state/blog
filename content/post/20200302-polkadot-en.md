@@ -26,9 +26,12 @@ Then in Feb 2020, the Web3 Foundation, [announced that it was funding Second Sta
 
 Ewasm is a high performance and flexible virtual machine for the future of the Ethereum ecosystem, and hence will be used by the majority of blockchain application developers. This project will bring Ethereum developers and applications into the Polkadot ecosystem; expanding support for the Ethereum protocol inside the Polkadot platform.
 
-[Second State](https://www.secondstate.io/) is a leading developer of WebAssembly-based virtual machines for server-side applications. Ewasm is an extension of its generic [Second State VM (SSVM)](https://github.com/second-state/SSVM). The goal of the SSVM is to enable high performance, highly manageable, and secure microservice applications. It works with existing blockchain and web service frameworks including Substrate, GETH, Tendermint etc. (on the blockchain side), as well as NodeJS, Python Django, RoR, PHP, Java etc. (on the web service side). To learn more about how WebAssembly can help cloud and web services developers, [check out this](https://docs.secondstate.io/beginners-guide-to-webassembly/why-webassembly).
+[Second State](https://www.secondstate.io/) is a leading developer of WebAssembly-based virtual machines for server-side applications. Ewasm is an extension of its generic [Second State VM (SSVM)](https://github.com/second-state/SSVM). The goal of the SSVM is to enable high performance, highly manageable, and secure microservice applications. It works with existing blockchain and web service frameworks including Substrate, GETH, Tendermint etc. (on the blockchain side), as well as NodeJS, Python Django, RoR, PHP, Java etc. (on the web service side). To learn more about how WebAssembly can help cloud and web services developers, [check out this](https://cloud.secondstate.io/server-side-webassembly/why).
 
 As software eats the world, infrastructure must be adapted to meet developer needs. Developers clearly want “serverless” and less infrastructure. WebAssembly and SSVM-based open source solutions are here to help!
+
+
+
 
 
 
