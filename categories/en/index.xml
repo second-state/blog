@@ -6,10 +6,20 @@
     <description>Recent content in en on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 25 Mar 2020 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State (https://www.secondstate.io/)released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm</title>
+      <link>http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/</link>
+      <pubDate>Thu, 16 Apr 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/</guid>
+      <description>The Ethereum flavored WebAssembly (Ewasm) virtual machine is a key infrastructure component of the next generation Ethereum (Ethereum 2.0) ecosystem. Second State recently released a new version of its leading Ewasm software, empowering developers to write tomorrow’s Ethereum 2.0 smart contracts today!
+The Second State Virtual Machine (SSVM) is a high-performance, server-optimized WebAssembly runtime. SSVM supports multiple WebAssembly extensions, including Ewasm. In the recently released SSVM 0.5.0 software, the SSVM-evmc extension specially supports Ewasm.</description>
+    </item>
     
     <item>
       <title>Second State joins Microsoft for Startups to develop the next generation software infrastructure for cloud computing</title>
@@ -205,16 +215,6 @@ How to get the 35% discount code The discount code is “hidden in plain sight�
       <guid>http://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/</guid>
       <description>Ethereum Classic Labs (ETC Labs), the developer and maintainer of the Ethereum Classic blockchain (ETC), announced today that it has entered a partnership with a leading blockchain infrastructure developer, Second State, to create open source toolchain and runtime software that powers the next generation of Ethereum-compatible blockchains, including the Ethereum Classic.
 This partnership will bring high-impact enhancements into the ETC ecosystem, and make the ETC blockchain a premier destination for smart contract developers.</description>
-    </item>
-    
-    <item>
-      <title>Second State Finalisted in Qualcomm Innovate in Taiwan Challenge, Driving the Blockchain Chips Revolution</title>
-      <link>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</link>
-      <pubDate>Mon, 26 Aug 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20190826-ewasm-blockchain-chips/</guid>
-      <description>Second State, a developer of an open source blockchain smart contract platform for enterprises was shortlisted in the Qualcomm Innovate in Taiwan Challenge – 2019. They proposed to optimize the popular WebAssemly virtual machine technology with customized chip solutions. The chip-accelerated WebAssemly virtual machine is then applied to the blockchain to efficiently execute smart contracts. So to develop a &amp;ldquo;blockchain chip&amp;rdquo; that is truly valuable and meaningful.
- Qualcomm, a smartphone chip maker, recently hosted the Qualcomm Innovate in Taiwan Challenge – 2019, and selected 10 teams out of over 100 teams as finalists.</description>
     </item>
     
   </channel>

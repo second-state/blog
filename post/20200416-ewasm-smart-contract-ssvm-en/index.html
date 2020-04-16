@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Second State (https://www.secondstate.io/)released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="The Ethereum flavored WebAssembly (Ewasm) virtual machine is a key infrastructure component of the next generation Ethereum (Ethereum 2.0) ecosystem. Second State recently released a new version of its leading Ewasm software, empowering developers to write tomorrow’s Ethereum 2.0 smart contracts today!
+The Second State Virtual Machine (SSVM) is a high-performance, server-optimized WebAssembly runtime. SSVM supports multiple WebAssembly extensions, including Ewasm. In the recently released SSVM 0.5.0 software, the SSVM-evmc extension specially supports Ewasm." />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.62.2" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+<meta itemprop="name" content="Second State (https://www.secondstate.io/)released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm">
+<meta itemprop="description" content="The Ethereum flavored WebAssembly (Ewasm) virtual machine is a key infrastructure component of the next generation Ethereum (Ethereum 2.0) ecosystem. Second State recently released a new version of its leading Ewasm software, empowering developers to write tomorrow’s Ethereum 2.0 smart contracts today!
+The Second State Virtual Machine (SSVM) is a high-performance, server-optimized WebAssembly runtime. SSVM supports multiple WebAssembly extensions, including Ewasm. In the recently released SSVM 0.5.0 software, the SSVM-evmc extension specially supports Ewasm.">
+<meta itemprop="datePublished" content="2020-04-16T10:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2020-04-16T10:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="548">
+
+
+
+<meta itemprop="keywords" content="smart contract,Ethereum,ETH 2.0,blockchain," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Second State (https://www.secondstate.io/)released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm"/>
+<meta name="twitter:description" content="The Ethereum flavored WebAssembly (Ewasm) virtual machine is a key infrastructure component of the next generation Ethereum (Ethereum 2.0) ecosystem. Second State recently released a new version of its leading Ewasm software, empowering developers to write tomorrow’s Ethereum 2.0 smart contracts today!
+The Second State Virtual Machine (SSVM) is a high-performance, server-optimized WebAssembly runtime. SSVM supports multiple WebAssembly extensions, including Ewasm. In the recently released SSVM 0.5.0 software, the SSVM-evmc extension specially supports Ewasm."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="Second State (https://www.secondstate.io/)released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm - Second State News and Articles">
+  <meta property="og:description" content="The Ethereum flavored WebAssembly (Ewasm) virtual machine is a key infrastructure component of the next generation Ethereum (Ethereum 2.0) ecosystem. Second State recently released a new version of its leading Ewasm software, empowering developers to write tomorrow’s Ethereum 2.0 smart contracts today!
+The Second State Virtual Machine (SSVM) is a high-performance, server-optimized WebAssembly runtime. SSVM supports multiple WebAssembly extensions, including Ewasm. In the recently released SSVM 0.5.0 software, the SSVM-evmc extension specially supports Ewasm." />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Second State (https://www.secondstate.io/)released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> April 16, 2020 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/en/"> en </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p>The Ethereum flavored WebAssembly (Ewasm) virtual machine is a key infrastructure component of the next generation Ethereum (Ethereum 2.0) ecosystem. Second State recently released a new version of its leading Ewasm software, empowering developers to write tomorrow’s Ethereum 2.0 smart contracts today!</p>
+<p><img src="/images/20200416-ewasm-smart-contract-ssvm-01.png" alt=""></p>
+<p>The <a href="https://github.com/second-state/SSVM">Second State Virtual Machine (SSVM)</a> is a high-performance, server-optimized WebAssembly runtime. SSVM supports multiple WebAssembly extensions, including Ewasm. In the recently released SSVM 0.5.0 software, the SSVM-evmc extension specially supports Ewasm. For details, see the release notes: <a href="https://github.com/second-state/ssvm/releases/tag/0.5.0">https://github.com/second-state/ssvm/releases/tag/0.5.0</a></p>
+<h2 id="the-ssvm-evmc-empowers-developers">The ssvm-evmc empowers developers</h2>
+<p>The ssvm-evmc Ewasm VM has passed all of stEWASM's stateful Ethereum test cases. This means that ssvm-evmc software has fully met Ethereum Foundation's specifications on Ewasm. This makes Second State the first team to achieve this important goal outside of the Ethereum Foundation.</p>
+<p>Ethereum developers can compile ethereum smart contracts into Ewasm bytecode and deploy them onto any blockchain that is compatible with the ssvm-evmc VM. Public blockchains such as Ethereum, Ethereum Classic, Polkadot, and CyberMiles are all going to be supported. For now, the best blockchain system to experiment with the ssvm-evmc Ewasm VM is<a href="https://github.com/second-state/devchain">Second State's DevChain</a>based on the open source<a href="https://github.com/CyberMiles/travis">CyberMiles blockchain software</a>.</p>
+<p>The ssvm-evmc virtual machine manages changes in the state of the application (that is, storage variables defined by Ethereum) according to the Ethereum protocol. It rejects execution of opcodes with uncertain results, such as general floating point math operations. It provides finely grained calculation of resource consumption, known as gas, based on executed opcodes.</p>
+<p>Going forward, the ssvm-evmc will natively support 256-bit integer computation, thus increasing the execution speed of the Ethereum smart contracts by more than 10 times.</p>
+<p>According to the <a href="https://docs.secondstate.io/devchain/getting-started/run-an-ewasm-smart-contract">tutorial</a> published by Second State, any developer can use the open source Second State DevChain software to launch an Ewasm blockchain in 10 minutes. They can then deploy and experiment with Ewasm smart contracts on the actual blockchain.</p>
+<p><img src="/images/20200416-ewasm-smart-contract-ssvm-02.png" alt=""></p>
+<p>With the support of Second State's SOLL compiler, Ethereum developers can compile commonly used ERC20 contracts into Ewasm bytecode and deploy them to the Ewasm devchain via ssvm-evmc. <a href="https://github.com/second-state/SOLL">SOLL compiler</a> supports Solidity and YUL source code.</p>
+<p>Second State Devchain is an open source software based on the CyberMiles public blockchain software. The CyberMiles Foundation will also release a new Ewasm testnet based on ssvm-evmc in the near future. Developers will then be able to deploy next generation Ethereum smart contracts onto the CyberMiles public Ewasm testnet.</p>
+<h2 id="what-does-this-mean-for-ethereum-20">What does this mean for Ethereum 2.0?</h2>
+<p>In the official road map of Ethereum 2.0, its implementation has four phases. Phase 0 and phase 1 do not involve the deployment and execution of smart contracts. However, smart contracts are at the core of the Ethereum blockchain. The primary goal of Phase 2 is to support the smart contract virtual machine. So far, Ethereum 2.0 has a long way to go before it reaches phase 2.</p>
+<p>At the DEVCON5 2019 in Osaka, Second State team successfully demoed the SOLL compiler to the Ethererum Foundation team. SOLL was <a href="https://blog.secondstate.io/post/20191022-soll-compiler-project/">the world's first compiler toolchain</a> to support Ewasm and was subsequently award a cash prize by the Ethereum Foundation.</p>
+<p>With the advancement of SOLL compiler + ssvm-evmc virtual machine + Second State Devchain, the <a href="https://www.secondstate.io/">Second State</a> team continues to build out a full stack of open source tools and runtimes for Ethereum 2.0. Our future is bright!</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">April 16, 2020</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/smart-contract/">smart contract</a>
+          <a href="http://blog.secondstate.io/tags/ethereum/">Ethereum</a>
+          <a href="http://blog.secondstate.io/tags/eth-2.0/">ETH 2.0</a>
+          <a href="http://blog.secondstate.io/tags/blockchain/">blockchain</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/20200327-stay-home-harvard/">
+            <span class="next-text nav-default">宅在家里上哈佛：450门常春藤盟校免费在线课程</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

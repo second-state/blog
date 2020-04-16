@@ -6,10 +6,20 @@
     <description>Recent content in smart contract on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Feb 2020 20:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/smart-contract/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State (https://www.secondstate.io/)released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm</title>
+      <link>http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/</link>
+      <pubDate>Thu, 16 Apr 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/</guid>
+      <description>The Ethereum flavored WebAssembly (Ewasm) virtual machine is a key infrastructure component of the next generation Ethereum (Ethereum 2.0) ecosystem. Second State recently released a new version of its leading Ewasm software, empowering developers to write tomorrow’s Ethereum 2.0 smart contracts today!
+The Second State Virtual Machine (SSVM) is a high-performance, server-optimized WebAssembly runtime. SSVM supports multiple WebAssembly extensions, including Ewasm. In the recently released SSVM 0.5.0 software, the SSVM-evmc extension specially supports Ewasm.</description>
+    </item>
     
     <item>
       <title>Second State 又获以太坊生态体系的资助奖励</title>

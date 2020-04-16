@@ -6,10 +6,20 @@
     <description>Recent content in Ethereum on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 02 Mar 2020 20:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State (https://www.secondstate.io/)released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm</title>
+      <link>http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/</link>
+      <pubDate>Thu, 16 Apr 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/</guid>
+      <description>The Ethereum flavored WebAssembly (Ewasm) virtual machine is a key infrastructure component of the next generation Ethereum (Ethereum 2.0) ecosystem. Second State recently released a new version of its leading Ewasm software, empowering developers to write tomorrow’s Ethereum 2.0 smart contracts today!
+The Second State Virtual Machine (SSVM) is a high-performance, server-optimized WebAssembly runtime. SSVM supports multiple WebAssembly extensions, including Ewasm. In the recently released SSVM 0.5.0 software, the SSVM-evmc extension specially supports Ewasm.</description>
+    </item>
     
     <item>
       <title>Polkadot is getting WebAssembly-based Ethereum 2.0 virtual machine from Second State</title>
@@ -195,16 +205,6 @@ The focus of our session is to address the challenges of today’s Ethereum smar
       <guid>http://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/</guid>
       <description>Ethereum Classic Labs (ETC Labs), the developer and maintainer of the Ethereum Classic blockchain (ETC), announced today that it has entered a partnership with a leading blockchain infrastructure developer, Second State, to create open source toolchain and runtime software that powers the next generation of Ethereum-compatible blockchains, including the Ethereum Classic.
 This partnership will bring high-impact enhancements into the ETC ecosystem, and make the ETC blockchain a premier destination for smart contract developers.</description>
-    </item>
-    
-    <item>
-      <title>Libra First Impressions Part 3: How to Issue ERC20 token on Libra with Move Language</title>
-      <link>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/</link>
-      <pubDate>Fri, 19 Jul 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20190719-how-to-issue-erc20-token-on-libra-with-move-language/</guid>
-      <description>This article is the third and final part of the &amp;ldquo;Libra First impressions&amp;rdquo; series. In the previous two articles, we explored the technical implications of the Libra project and the internal processing and execution of Libra Client and Validator.
- Libra First Impressions Part 2: Deep dive with a Libra transaction Libra First Impressions Part 1: Smart Contracts are not created equal  Write your token module In this article, we will show you how to use Move IR to write a simple token module.</description>
     </item>
     
   </channel>
