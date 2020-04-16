@@ -44,14 +44,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/</loc>
+    <loc>http://blog.secondstate.io/</loc>
     <lastmod>2020-04-16T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/</loc>
+    <loc>http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/</loc>
     <lastmod>2020-04-16T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
