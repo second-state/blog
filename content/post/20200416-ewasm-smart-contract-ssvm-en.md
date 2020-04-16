@@ -1,5 +1,5 @@
 ---
-title: "Second State (https://www.secondstate.io/)released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm"
+title: "Second State released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm"
 date: 2020-04-16T10:01:23+08:00
 draft: false
 tags: ["smart contract","Ethereum","ETH 2.0","blockchain"]
@@ -18,7 +18,7 @@ The [Second State Virtual Machine (SSVM)](https://github.com/second-state/SSVM) 
 
 The ssvm-evmc Ewasm VM has passed all of stEWASM's stateful Ethereum test cases. This means that ssvm-evmc software has fully met Ethereum Foundation's specifications on Ewasm. This makes Second State the first team to achieve this important goal outside of the Ethereum Foundation.
 
-Ethereum developers can compile ethereum smart contracts into Ewasm bytecode and deploy them onto any blockchain that is compatible with the ssvm-evmc VM. Public blockchains such as Ethereum, Ethereum Classic, Polkadot, and CyberMiles are all going to be supported. For now, the best blockchain system to experiment with the ssvm-evmc Ewasm VM is[Second State's DevChain](https://github.com/second-state/devchain)based on the open source[CyberMiles blockchain software](https://github.com/CyberMiles/travis).
+Ethereum developers can compile ethereum smart contracts into Ewasm bytecode and deploy them onto any blockchain that is compatible with the ssvm-evmc VM. Public blockchains such as Ethereum, Ethereum Classic, Polkadot, and CyberMiles are all going to be supported. For now, the best blockchain system to experiment with the ssvm-evmc Ewasm VM is [Second State's DevChain](https://github.com/second-state/devchain) based on the open source [CyberMiles blockchain software](https://github.com/CyberMiles/travis).
 
 The ssvm-evmc virtual machine manages changes in the state of the application (that is, storage variables defined by Ethereum) according to the Ethereum protocol. It rejects execution of opcodes with uncertain results, such as general floating point math operations. It provides finely grained calculation of resource consumption, known as gas, based on executed opcodes.
 
