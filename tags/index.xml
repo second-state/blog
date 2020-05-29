@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Apr 2020 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 19:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rust</title>
+      <link>http://blog.secondstate.io/tags/rust/</link>
+      <pubDate>Fri, 29 May 2020 19:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>server side</title>
+      <link>http://blog.secondstate.io/tags/server-side/</link>
+      <pubDate>Fri, 29 May 2020 19:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/server-side/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>swtich to rust</title>
+      <link>http://blog.secondstate.io/tags/swtich-to-rust/</link>
+      <pubDate>Fri, 29 May 2020 19:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/swtich-to-rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Why rust</title>
+      <link>http://blog.secondstate.io/tags/why-rust/</link>
+      <pubDate>Fri, 29 May 2020 19:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/why-rust/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>blockchain</title>
@@ -152,42 +188,6 @@
       <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/vyper/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>http://blog.secondstate.io/tags/rust/</link>
-      <pubDate>Fri, 06 Dec 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>BUIDL</title>
-      <link>http://blog.secondstate.io/tags/buidl/</link>
-      <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/buidl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Developer</title>
-      <link>http://blog.secondstate.io/tags/developer/</link>
-      <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/developer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EVM</title>
-      <link>http://blog.secondstate.io/tags/evm/</link>
-      <pubDate>Wed, 06 Nov 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/evm/</guid>
       <description></description>
     </item>
     

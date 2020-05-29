@@ -2,21 +2,77 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.secondstate.io/tags/blockchain/</loc>
-    <lastmod>2020-04-16T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/categories/</loc>
-    <lastmod>2020-04-16T10:01:23+08:00</lastmod>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.secondstate.io/categories/en/</loc>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/</loc>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/rust/</loc>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/</loc>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/server-side/</loc>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/swtich-to-rust/</loc>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/</loc>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20200529-why-rust-en/</loc>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/why-rust/</loc>
+    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/blockchain/</loc>
     <lastmod>2020-04-16T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -37,20 +93,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/post/</loc>
-    <lastmod>2020-04-16T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/</loc>
-    <lastmod>2020-04-16T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/</loc>
     <lastmod>2020-04-16T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -59,13 +101,6 @@
   
   <url>
     <loc>http://blog.secondstate.io/tags/smart-contract/</loc>
-    <lastmod>2020-04-16T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/</loc>
     <lastmod>2020-04-16T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -213,13 +248,6 @@
   
   <url>
     <loc>http://blog.secondstate.io/categories/ethereum/</loc>
-    <lastmod>2019-12-06T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/rust/</loc>
     <lastmod>2019-12-06T09:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

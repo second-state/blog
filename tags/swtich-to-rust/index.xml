@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rust on Second State News and Articles</title>
-    <link>http://blog.secondstate.io/tags/rust/</link>
-    <description>Recent content in Rust on Second State News and Articles</description>
+    <title>swtich to rust on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/swtich-to-rust/</link>
+    <description>Recent content in swtich to rust on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 29 May 2020 19:01:23 +0800</lastBuildDate>
     
-	<atom:link href="http://blog.secondstate.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.secondstate.io/tags/swtich-to-rust/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>http://blog.secondstate.io/post/20200529-why-rust-en/</guid>
       <description>The Rust programming language is gaining popularity amongst developers. For 5 years in a row, it is voted as the most beloved programming language in the world. In the most recent 2020 surveyof 65,000 developers, Rust was beloved by a stunning 86.1% of developers. Being loved by developers is a leading indicator that Rust is on the path of mass adoption. It is entering a positive feedback cycle of more developers, more libraries, better tools, larger talent pool, more adoption, and then more developers.</description>
-    </item>
-    
-    <item>
-      <title>只需 5 分钟，教你如何编写并执行一个 Rust &#43; WebAssembly 程序</title>
-      <link>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</link>
-      <pubDate>Fri, 06 Dec 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</guid>
-      <description>在探讨 WASM 在服务端的巨大潜力时，我们提到 WASM 的一大优势就是支持有影响力的新锐编程语言，例如 Rust 。这篇文章将展示如何编写并执行一个 Wasm Rust 程序，只有代码</description>
     </item>
     
   </channel>

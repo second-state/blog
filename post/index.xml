@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Apr 2020 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2020 19:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Why Rust</title>
+      <link>http://blog.secondstate.io/post/20200529-why-rust-en/</link>
+      <pubDate>Fri, 29 May 2020 19:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200529-why-rust-en/</guid>
+      <description>The Rust programming language is gaining popularity amongst developers. For 5 years in a row, it is voted as the most beloved programming language in the world. In the most recent 2020 surveyof 65,000 developers, Rust was beloved by a stunning 86.1% of developers. Being loved by developers is a leading indicator that Rust is on the path of mass adoption. It is entering a positive feedback cycle of more developers, more libraries, better tools, larger talent pool, more adoption, and then more developers.</description>
+    </item>
     
     <item>
       <title>Second State released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm</title>
@@ -199,15 +208,6 @@ You need to
       <guid>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</guid>
       <description>Second State provides open source infrastructure technologies for public and enterprise blockchains. The smart contract compiler toolchain and virtual machine runtimes are critical elements of the infrastructure.
 Through its web-based BUIDL IDE, developers can easily access Second State smart contract programming languages, compilers, optimizers, and virtual machines. Even novice developers can write and publish decentralized applications (smart contract + web app) on any Ethereum-compatible blockchain in minutes. See examples on Ethereum Classic and CyberMiles blockchains.</description>
-    </item>
-    
-    <item>
-      <title>一文带你了解Devcon5</title>
-      <link>http://blog.secondstate.io/post/20191025-devcon5-recap-zh/</link>
-      <pubDate>Thu, 24 Oct 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191025-devcon5-recap-zh/</guid>
-      <description>以太坊基金会 Devcon 是以太坊生态系统中最重要的开发者、设计师和研究人员的年度聚会。今年在日本大阪举行的 Devcon5 是第五届以太开发大会，与往年一样，Devc</description>
     </item>
     
   </channel>
