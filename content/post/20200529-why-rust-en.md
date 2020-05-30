@@ -7,7 +7,7 @@ categories: ["en"]
 ---
 
 
-The Rust programming language is gaining popularity amongst developers. For 5 years in a row, it is voted as the most beloved programming language in the world. In the most [recent 2020 survey](https://stackoverflow.blog/2020/05/27/2020-stack-overflow-developer-survey-results/)of 65,000 developers, Rust was beloved by a stunning 86.1% of developers. Being loved by developers is a leading indicator that Rust is on the path of mass adoption. It is entering a positive feedback cycle of more developers, more libraries, better tools, larger talent pool, more adoption, and then more developers. Indeed, Rust is already one of the fastest growing programming languages in the world.
+The Rust programming language is gaining popularity amongst developers. For 5 years in a row, it is voted as the most beloved programming language in the world. In the most [recent 2020 survey](https://stackoverflow.blog/2020/05/27/2020-stack-overflow-developer-survey-results/) of 65,000 developers, Rust was beloved by a stunning 86.1% of developers. Being loved by developers is a leading indicator that Rust is on the path of mass adoption. It is entering a positive feedback cycle of more developers, more libraries, better tools, larger talent pool, more adoption, and then more developers. Indeed, Rust is already one of the fastest growing programming languages in the world.
 
 ![](/images/20200529-rust-01.jpg)
 
@@ -43,7 +43,7 @@ In a nutshell, it is pleasant to switch to Rust from Java.
 
 ## Node.js developers
 
-The [2019 official Rust developer survey](https://blog.rust-lang.org/2020/04/17/Rust-survey-2019.html)shows that most Rust developers are working on web applications. What is it that makes people want to use Rust on the server? Reddit user [**silveredge7**](https://www.reddit.com/user/silveredge7) asked exactly that. Here are his questions and answers we compiled. 
+The [2019 official Rust developer survey](https://blog.rust-lang.org/2020/04/17/Rust-survey-2019.html) shows that most Rust developers are working on web applications. What is it that makes people want to use Rust on the server? Reddit user [**silveredge7**](https://www.reddit.com/user/silveredge7) asked exactly that. Here are his questions and answers we compiled. 
 
 Did your application had any cpu intensive tasks that you decided to go with rust and not any other language ?
 
