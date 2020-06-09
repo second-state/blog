@@ -6,10 +6,20 @@
     <description>Recent content in en on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 May 2020 19:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State releases scalable privacy service at Mozilla Open Labs</title>
+      <link>http://blog.secondstate.io/post/20200603-scalable-privacy-service/</link>
+      <pubDate>Wed, 03 Jun 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200603-scalable-privacy-service/</guid>
+      <description>Building a scalable and privacy-first Internet on Second State’s serverless infrastructure. Get the email newsletter on Rust, WebAssembly, serverless, blockchain, and AI.
+Internet privacy is broken The Public Key Infrastructure (PKI), invented over 40 years ago, has been the bed rock for security and privacy on the Internet. While PKI algorithms are behind the most internet security protocols, such as HTTPS and TLS, the idea for individuals to use public keys to exchange data, (eg, PGP), was not adopted in large scale.</description>
+    </item>
     
     <item>
       <title>Why Rust</title>
@@ -204,16 +214,6 @@ Ethereum Classic is the original Ethereum blockchain. With fast confirmation tim
       <guid>http://blog.secondstate.io/post/20191002-book-etc-en/</guid>
       <description>The Building Blockchain Apps book is to be published by Addison-Wesley in 2019. It provides a comprehensive guide for developers to incorporate the blockchain technology into existing and future applications. You can pre-order it from Amazon or InformIT.
 How to get the 35% discount code The discount code is “hidden in plain sight” in a smart contract deployed on the Ethereum Classic blockchain. Using BUIDL for ETC, you can instantiate an instance of this contract and call it’s functions to get its state.</description>
-    </item>
-    
-    <item>
-      <title>Calling All Developers: Second State Launches BUIDL IDE, an Integrated Development Environment Software Application, for Ethereum Classic Blockchain</title>
-      <link>http://blog.secondstate.io/post/20190925-buidl-for-etc/</link>
-      <pubDate>Tue, 24 Sep 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20190925-buidl-for-etc/</guid>
-      <description>This news is also seen on PRweb.com
- SAN FRANCISCO (Sept. 24, 2019) —Second State, developer of an open source, blockchain-based smart contract platform for global business, has announced the launch of its BUIDL IDE, an integrated development environment software application for Ethereum Classic (ETC), the preeminent blockchain for smart contracts and “dapps.” With Second State’s BUIDL IDE, development and deployment on ETC can be done within minutes, from any web browser: secondstate.</description>
     </item>
     
   </channel>

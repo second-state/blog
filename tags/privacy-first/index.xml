@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Privacy-first on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/privacy-first/</link>
+    <description>Recent content in Privacy-first on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 03 Jun 2020 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/privacy-first/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Second State releases scalable privacy service at Mozilla Open Labs</title>
+      <link>http://blog.secondstate.io/post/20200603-scalable-privacy-service/</link>
+      <pubDate>Wed, 03 Jun 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200603-scalable-privacy-service/</guid>
+      <description>Building a scalable and privacy-first Internet on Second State’s serverless infrastructure. Get the email newsletter on Rust, WebAssembly, serverless, blockchain, and AI.
+Internet privacy is broken The Public Key Infrastructure (PKI), invented over 40 years ago, has been the bed rock for security and privacy on the Internet. While PKI algorithms are behind the most internet security protocols, such as HTTPS and TLS, the idea for individuals to use public keys to exchange data, (eg, PGP), was not adopted in large scale.</description>
+    </item>
+    
+  </channel>
+</rss>

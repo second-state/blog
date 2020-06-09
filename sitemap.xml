@@ -3,35 +3,70 @@
   
   <url>
     <loc>http://blog.secondstate.io/categories/</loc>
-    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.secondstate.io/categories/en/</loc>
-    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.secondstate.io/post/</loc>
-    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/privacy-first/</loc>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.secondstate.io/tags/rust/</loc>
-    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.secondstate.io/</loc>
-    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20200603-scalable-privacy-service/</loc>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/serverless/</loc>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/</loc>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/webassembly/</loc>
+    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -45,13 +80,6 @@
   
   <url>
     <loc>http://blog.secondstate.io/tags/swtich-to-rust/</loc>
-    <lastmod>2020-05-29T19:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/</loc>
     <lastmod>2020-05-29T19:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -122,13 +150,6 @@
   
   <url>
     <loc>http://blog.secondstate.io/tags/harvard/</loc>
-    <lastmod>2020-03-26T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/webassembly/</loc>
     <lastmod>2020-03-26T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

@@ -6,10 +6,20 @@
     <description>Recent content in Rust on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 29 May 2020 19:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2020 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State releases scalable privacy service at Mozilla Open Labs</title>
+      <link>http://blog.secondstate.io/post/20200603-scalable-privacy-service/</link>
+      <pubDate>Wed, 03 Jun 2020 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200603-scalable-privacy-service/</guid>
+      <description>Building a scalable and privacy-first Internet on Second State’s serverless infrastructure. Get the email newsletter on Rust, WebAssembly, serverless, blockchain, and AI.
+Internet privacy is broken The Public Key Infrastructure (PKI), invented over 40 years ago, has been the bed rock for security and privacy on the Internet. While PKI algorithms are behind the most internet security protocols, such as HTTPS and TLS, the idea for individuals to use public keys to exchange data, (eg, PGP), was not adopted in large scale.</description>
+    </item>
     
     <item>
       <title>Why Rust</title>
