@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rust on Second State News and Articles</title>
+    <title>rust on Second State News and Articles</title>
     <link>http://blog.secondstate.io/tags/rust/</link>
-    <description>Recent content in Rust on Second State News and Articles</description>
+    <description>Recent content in rust on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 03 Jun 2020 10:01:23 +0800</lastBuildDate>
@@ -37,6 +37,16 @@ Internet privacy is broken The Public Key Infrastructure (PKI), invented over 40
       
       <guid>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</guid>
       <description>在探讨 WASM 在服务端的巨大潜力时，我们提到 WASM 的一大优势就是支持有影响力的新锐编程语言，例如 Rust 。这篇文章将展示如何编写并执行一个 Wasm Rust 程序，只有代码</description>
+    </item>
+    
+    <item>
+      <title>WebAssembly on the server side</title>
+      <link>http://blog.secondstate.io/post/20191124-wasm-en/</link>
+      <pubDate>Sun, 24 Nov 2019 19:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191124-wasm-en/</guid>
+      <description>WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
+Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side.</description>
     </item>
     
   </channel>

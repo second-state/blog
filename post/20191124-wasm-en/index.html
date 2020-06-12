@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>WebAssembly on the server side - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
+Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side." />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.62.2" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20191124-wasm-en/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+<meta itemprop="name" content="WebAssembly on the server side">
+<meta itemprop="description" content="WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
+Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side.">
+<meta itemprop="datePublished" content="2019-11-24T19:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2019-11-24T19:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="818">
+
+
+
+<meta itemprop="keywords" content="WebAssembly,rust,server side,Microservices," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WebAssembly on the server side"/>
+<meta name="twitter:description" content="WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
+Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="WebAssembly on the server side - Second State News and Articles">
+  <meta property="og:description" content="WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
+Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side." />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20191124-wasm-en/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">WebAssembly on the server side</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> November 24, 2019 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/en/"> en </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p><a href="https://webassembly.org/">WebAssembly (Wasm)</a>, originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.</p>
+<p><img src="/images/20191124-wasm-01.png" alt=""></p>
+<h2 id="value-propositions-of-webassembly">Value propositions of WebAssembly</h2>
+<p>Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side.</p>
+<p>Compared with the JVM and JavaScript engines, Wasm supports 20+ programming languages via the LLVM toolchain, offering developers freedom and productivity. In particular, it supports new programming languages beloved by influential developers, such as Rust. At the same time, Wasm can easily support hardware features such as CPU, GPU, AI-optimized chips and even field-programmable gate array (FPGA) hardware circuits.</p>
+<blockquote>
+<p>Wasm provides near-native performance without sacrificing safety.</p>
+</blockquote>
+<p><img src="/images/20191124-wasm-02.png" alt=""></p>
+<p>When compared with containers like Docker, Wasm provides a higher level of abstraction, and hence higher productivity, for developers. Wasm can deploy code and applications directly, instead of launching operating systems. In fact, Wasm applications can run without modification in any host environment. This plays well with today’s cloud-native microservices architecture.</p>
+<p>Wasm consumes much less memory and resources than typical containers. In particular, its <a href="https://twitter.com/WebAssemblyWasm/status/1197686856386674688">security model</a> allows modular access to the underlying hardware and Operating System (OS), on a per-function call basis, ensuring safety while retaining native performance.</p>
+<blockquote>
+<p>If WASM+WASI existed in 2008, we wouldn’t have needed to created Docker. That’s how important it is. WebAssembly on the server is the future of computing. — Solomon Hykes, Co-founder of Docker</p>
+</blockquote>
+<p>Furthermore, the server-side Wasm benefits from significant innovations coming from the blockchain community.</p>
+<h2 id="blockchain-leads-the-way">Blockchain leads the way</h2>
+<p>Server-side Wasm is currently in an early stage. A significant amount of work (optimizations, developer tools, and integration libraries) has to be done before Wasm can see meaningful adoption in enterprise settings. However, developers are already using it for microservices in an emerging field of enterprise computing; decentralized blockchain applications.</p>
+<p>Blockchain smart contracts are immutable and automatically executed code. Applications, known as decentralized applications (or dapps), can interact with smart contracts via web interfaces i.e. Remote Procedure Call (RPC) service endpoints. That makes smart contracts natural microservices.</p>
+<p>Large public blockchain networks, such as Ethereum, EOS, and Polkadot, have all committed to adopting Wasm as their next-generation execution engines. As a result, the public blockchain, with its decentralized and serverless infrastructure is the best platform to write and deploy Wasm services today.</p>
+<p>Moreover, the server-side Wasm can directly leverage billions of dollars worth of R&amp;D investments poured into the blockchain space in recent years. Many of those blockchain R&amp;D innovations are highly relevant to enterprise use cases; even those inside centralized data centers. Some of those use cases include:</p>
+<ul>
+<li>Metered and billable shared resources usage accurate to opcodes</li>
+<li>Trustless consensus for computing results</li>
+<li>Digital currency infrastructure support</li>
+<li>Formal verification of applications</li>
+<li>Zero-knowledge computing</li>
+<li>Improving deterministic behavior of applications</li>
+</ul>
+<h2 id="show-me-the-code">Show me the code</h2>
+<p>Second State’s web-based developer tools, allow you to deploy decentralized microservices on blockchain networks in a matter of minutes. These developer tools also enable you to build web applications around those microservices.</p>
+<p>This <a href="https://docs.secondstate.io/buidl-developer-tool/getting-started">getting started tutorial</a> shows you how to create and deploy a decentralized web application, using Second State’s web-based IDE, called <a href="http://buidl.secondstate.io/">BUIDL</a></p>
+<p><img src="/images/20191124-wasm-03.png" alt=""></p>
+<p>Smart contracts, of decentralized web applications, act as microservices on the backend. This architecture is decentralized, serverless, and cloud-native.</p>
+<p>Second State already has a version of BUIDL that <a href="https://link.medium.com/y00OToZpQ1">deploys smart contracts onto Ethereum Foundation’s Ewasm testnet</a>.</p>
+<p>The next evolution of server-side Wasm is to power enterprise use cases beyond the blockchain. In a data center environment, Wasm provides services that are language agnostic (i.e., Rust on the server), hardware and OS agnostic, very lightweight, highly performant with native access to hardware features (i.e., GPU and AI chips), and highly secure with a modular security model. You can see a PoC demo of <a href="https://link.medium.com/rn44ZU1pQ1">running a Rust service in WASM</a>.</p>
+<h2 id="the-road-ahead">The road ahead</h2>
+<p>The soon-to-be-released Second State Virtual Machine (SSVM) is a fully compliant Wasm implementation optimized for server-side applications.</p>
+<p>On the blockchain, we are at the forefront of providing Ethereum-flavored WebAssembly (Ewasm) for the next-gen Ethereum-compatible blockchain systems. The SSVM, for blockchain, natively supports 256-bit integer operations. It handles non-deterministic opcodes and gas computation inside the VM, resulting in much-improved performance compared with other leading Ewasm implementations.</p>
+<p>In the cloud services arena, the SSVM provides optimized support for enterprise features such as persistent application state, high volume IO, multithreading, and low-level access to hardware accelerators. For example, the SSVM provides native access to the Qualcomm AI SDK functions when running on Qualcomm chips.</p>
+<p>The road ahead for Wasm on the server-side is very promising. We look forward to sharing more of our cutting-edge developments as we blaze a trail; evolving toward the next-gen cloud architecture!</p>
+<p>If you would like to learn more about anything mentioned in this article, please contact us at <a href="https://www.secondstate.io/">SecondState.io</a></p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">November 24, 2019</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/webassembly/">WebAssembly</a>
+          <a href="http://blog.secondstate.io/tags/rust/">rust</a>
+          <a href="http://blog.secondstate.io/tags/server-side/">server side</a>
+          <a href="http://blog.secondstate.io/tags/microservices/">Microservices</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+          <a class="prev" href="/post/20191220-rust-webassembly-zh/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">只需 5 分钟，教你如何编写并执行一个 Rust &#43; WebAssembly 程序</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        
+          <a class="next" href="/post/20191118-ethereum-developer-abi-en/">
+            <span class="next-text nav-default"> Ethereum Development A2Z| Smart Contract ABI </span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      
+
+  
+  <script type="text/javascript">document.cookie = 'MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'</script>
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"fff3b05c9dd4ef7b8163406d1","lid":"8eb8db2618","uniqueMethods":true}) })</script>
+
+<div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

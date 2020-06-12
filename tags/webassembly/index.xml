@@ -81,6 +81,16 @@ Wasm started as a high performance execution engine inside web browsers. It is l
     </item>
     
     <item>
+      <title>WebAssembly on the server side</title>
+      <link>http://blog.secondstate.io/post/20191124-wasm-en/</link>
+      <pubDate>Sun, 24 Nov 2019 19:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191124-wasm-en/</guid>
+      <description>WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
+Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side.</description>
+    </item>
+    
+    <item>
       <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
       <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
       <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>

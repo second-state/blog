@@ -20,5 +20,15 @@
       <description>The Rust programming language is gaining popularity amongst developers. For 5 years in a row, it is voted as the most beloved programming language in the world. In the most recent 2020 survey of 65,000 developers, Rust was beloved by a stunning 86.1% of developers. Being loved by developers is a leading indicator that Rust is on the path of mass adoption. It is entering a positive feedback cycle of more developers, more libraries, better tools, larger talent pool, more adoption, and then more developers.</description>
     </item>
     
+    <item>
+      <title>WebAssembly on the server side</title>
+      <link>http://blog.secondstate.io/post/20191124-wasm-en/</link>
+      <pubDate>Sun, 24 Nov 2019 19:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191124-wasm-en/</guid>
+      <description>WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
+Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side.</description>
+    </item>
+    
   </channel>
 </rss>

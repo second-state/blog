@@ -93,6 +93,16 @@ Wasm started as a high performance execution engine inside web browsers. It is l
     </item>
     
     <item>
+      <title>WebAssembly on the server side</title>
+      <link>http://blog.secondstate.io/post/20191124-wasm-en/</link>
+      <pubDate>Sun, 24 Nov 2019 19:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191124-wasm-en/</guid>
+      <description>WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
+Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side.</description>
+    </item>
+    
+    <item>
       <title> Ethereum Development A2Z| Smart Contract ABI </title>
       <link>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</link>
       <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
@@ -204,16 +214,6 @@ The focus of our session is to address the challenges of today’s Ethereum smar
       <guid>http://blog.secondstate.io/post/20191003-easierandfasterdapps-en/</guid>
       <description>Ethereum, the world’s first and dominant smart contract platform, has the largest dapp ecosystem with more than a million deployed smart contracts and hundreds of millions of dollars in monthly transactions.
 Ethereum Classic is the original Ethereum blockchain. With fast confirmation time, ultra-low gas cost, and now with first-class developer tooling from the BUIDL IDE, the Ethereum Classic blockchain is also becoming the best platform for deploying smart contracts and dapps.</description>
-    </item>
-    
-    <item>
-      <title>Treasure Hunt -- Ethereum Classic Edition</title>
-      <link>http://blog.secondstate.io/post/20191002-book-etc-en/</link>
-      <pubDate>Wed, 02 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191002-book-etc-en/</guid>
-      <description>The Building Blockchain Apps book is to be published by Addison-Wesley in 2019. It provides a comprehensive guide for developers to incorporate the blockchain technology into existing and future applications. You can pre-order it from Amazon or InformIT.
-How to get the 35% discount code The discount code is “hidden in plain sight” in a smart contract deployed on the Ethereum Classic blockchain. Using BUIDL for ETC, you can instantiate an instance of this contract and call it’s functions to get its state.</description>
     </item>
     
   </channel>
