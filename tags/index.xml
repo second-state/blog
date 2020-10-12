@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jun 2020 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ethereum</title>
+      <link>http://blog.secondstate.io/tags/ethereum/</link>
+      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hackathon</title>
+      <link>http://blog.secondstate.io/tags/hackathon/</link>
+      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/hackathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oasis</title>
+      <link>http://blog.secondstate.io/tags/oasis/</link>
+      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/oasis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>smart contract</title>
+      <link>http://blog.secondstate.io/tags/smart-contract/</link>
+      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/smart-contract/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Privacy-first</title>
@@ -93,24 +129,6 @@
     </item>
     
     <item>
-      <title>Ethereum</title>
-      <link>http://blog.secondstate.io/tags/ethereum/</link>
-      <pubDate>Thu, 16 Apr 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/ethereum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>smart contract</title>
-      <link>http://blog.secondstate.io/tags/smart-contract/</link>
-      <pubDate>Thu, 16 Apr 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/smart-contract/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>coding</title>
       <link>http://blog.secondstate.io/tags/coding/</link>
       <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
@@ -170,24 +188,6 @@
       <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/polkadot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Solidity</title>
-      <link>http://blog.secondstate.io/tags/solidity/</link>
-      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/solidity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Web3</title>
-      <link>http://blog.secondstate.io/tags/web3/</link>
-      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/web3/</guid>
       <description></description>
     </item>
     

@@ -6,10 +6,19 @@
     <description>Recent content in Ethereum on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 16 Apr 2020 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>奖励最高达 25000 ROSE, Oasis &#43; Second State 线上 Hackathon 正式开始</title>
+      <link>http://blog.secondstate.io/post/oasis-secondstate-hackathon-zh/</link>
+      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/oasis-secondstate-hackathon-zh/</guid>
+      <description>发布Dapp，在 Oasis network 上运行以太坊智能合约，就可以获得 ROSE Token 奖励 Oasis Network 是隐私计算领域的知名项目，10月2日，Oasis 基金会发布了 Mainnet beta 版以及由 Second State</description>
+    </item>
     
     <item>
       <title>Second State released SSVM version 0.5.0 for the new generation Ethereum virtual machine Ewasm</title>
@@ -195,16 +204,6 @@ The focus of our session is to address the challenges of today’s Ethereum smar
       <guid>http://blog.secondstate.io/post/20190925-buidl-for-etc/</guid>
       <description>This news is also seen on PRweb.com
  SAN FRANCISCO (Sept. 24, 2019) —Second State, developer of an open source, blockchain-based smart contract platform for global business, has announced the launch of its BUIDL IDE, an integrated development environment software application for Ethereum Classic (ETC), the preeminent blockchain for smart contracts and “dapps.” With Second State’s BUIDL IDE, development and deployment on ETC can be done within minutes, from any web browser: secondstate.</description>
-    </item>
-    
-    <item>
-      <title>Ethereum Classic partners with Second State to build the next generation Ethereum infrastructure</title>
-      <link>http://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/</link>
-      <pubDate>Sun, 01 Sep 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/</guid>
-      <description>Ethereum Classic Labs (ETC Labs), the developer and maintainer of the Ethereum Classic blockchain (ETC), announced today that it has entered a partnership with a leading blockchain infrastructure developer, Second State, to create open source toolchain and runtime software that powers the next generation of Ethereum-compatible blockchains, including the Ethereum Classic.
-This partnership will bring high-impact enhancements into the ETC ecosystem, and make the ETC blockchain a premier destination for smart contract developers.</description>
     </item>
     
   </channel>

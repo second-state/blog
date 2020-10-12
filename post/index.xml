@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jun 2020 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>奖励最高达 25000 ROSE, Oasis &#43; Second State 线上 Hackathon 正式开始</title>
+      <link>http://blog.secondstate.io/post/oasis-secondstate-hackathon-zh/</link>
+      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/oasis-secondstate-hackathon-zh/</guid>
+      <description>发布Dapp，在 Oasis network 上运行以太坊智能合约，就可以获得 ROSE Token 奖励 Oasis Network 是隐私计算领域的知名项目，10月2日，Oasis 基金会发布了 Mainnet beta 版以及由 Second State</description>
+    </item>
     
     <item>
       <title>Second State releases scalable privacy service at Mozilla Open Labs</title>
@@ -198,15 +207,6 @@ Now, for developers, can you tell what the following code is for?
       <description>Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.
  “The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).
  The EVM consists of a stack-based architecture. In order for a smart contract to be deployed, all high level Ethereum smart contract code must first be compiled into machine-readable code (called bytecode).</description>
-    </item>
-    
-    <item>
-      <title>深度剖析以太坊虚拟机（EVM）的未来：Ewasm</title>
-      <link>http://blog.secondstate.io/post/20191029-ewasm-zh/</link>
-      <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191029-ewasm-zh/</guid>
-      <description>以太坊是具有内置图灵完备编程语言的区块链。任何人都可以使用以太坊智能合约来创建去中心化应用程序。 “以太坊虚拟机（EVM）是以太坊处理智能合约</description>
     </item>
     
   </channel>
