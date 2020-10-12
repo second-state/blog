@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>The Oasis Second State Community Hackathon starts</title>
+      <link>http://blog.secondstate.io/post/oasis-secondstate-hackathon/</link>
+      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/oasis-secondstate-hackathon/</guid>
+      <description>Today Second State, together with Oasis foundation, is announcing the most exciting community event to date, and a chance for community members to earn some of the largest rewards Oasis foundation has ever offered. Last week Oasis network launched Mainnet Beta, and we released Second State’s Oasis Ethereum ParaTime.
+The ParaTime’s powerful design and technology means the Oasis Ethereum ParaTime is:
+ Completely backward compatible with Ethereum with support for the entire Solidity toolchain, allowing it to support DApps currently on the Ethereum network.</description>
+    </item>
+    
+    <item>
       <title>奖励最高达 31050 ROSE, Oasis &#43; Second State 线上 Hackathon 正式开始</title>
       <link>http://blog.secondstate.io/post/oasis-secondstate-hackathon-zh/</link>
       <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
@@ -196,17 +207,6 @@ Blockchain Smart Contract ABI is the interface between smart contracts and block
 BUIDL IDE tools now has an upgraded UI just for Halloween. Trick or treat! A spooky pumpkin on the top welcomes you to the BUIDL’s Halloween.
 Now, for developers, can you tell what the following code is for?
 1 2 3 4 5 6 7 8  pragma lity ^1.2.4; contract Halloween { function greet() pure public returns (string) { return &amp;#34;Happy Halloween&amp;#34;; } }   This is a very simple (yet spooky) smart contract example, just like the “Hello World” on the internet.</description>
-    </item>
-    
-    <item>
-      <title>Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm</title>
-      <link>http://blog.secondstate.io/post/20191029-ewasm/</link>
-      <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191029-ewasm/</guid>
-      <description>Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.
- “The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).
- The EVM consists of a stack-based architecture. In order for a smart contract to be deployed, all high level Ethereum smart contract code must first be compiled into machine-readable code (called bytecode).</description>
     </item>
     
   </channel>
