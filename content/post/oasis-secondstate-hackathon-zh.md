@@ -1,5 +1,5 @@
 ---
-title: "奖励最高达 25000 ROSE, Oasis + Second State 线上 Hackathon 正式开始"
+title: "奖励最高达 31050 ROSE, Oasis + Second State 线上 Hackathon 正式开始"
 date: 2020-10-12T01:01:23+08:00
 draft: false
 tags: ["Ethereum", "Oasis","Smart contract","hackathon"]
@@ -37,8 +37,7 @@ Oasis Network 是隐私计算领域的知名项目，10月2日，Oasis 基金会
 #### 挑战一：创建和部署教程DApp
 第一个挑战非常简单，只需要10分钟就可以完成。在 Second State 的 BUIDL 开发工具上部署默认 DApp 的实例。
 
-**奖励: **
-**25 ROSE -50 ROSE**
+**奖励: 25 ROSE -50 ROSE**
 
 **如何完成：**
 使用 Second State 开发的 BUIDL 开发工具 http://oasiseth.org/dev/hack ，完成 OasisTweet Dapp 的部署，并把你部署的DApp 分享在社交媒体上，如朋友圈、微博等
