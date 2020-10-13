@@ -25,7 +25,7 @@ Simply complete a series of challenges on the Second State Oasis Ethereum ParaTi
 ### Hackathon Challenges
 
 There are three challenges for you to complete. To earn rewards, you must complete at least one of the challenges and submit it using the submission form [here](https://oasisprotocol.org/second-state-competition). Additional terms and conditions apply. See the details [here](https://oasisprotocol.org/community-cup-tocs).
-The Hackathon will leverage our new[development environment](http://oasiseth.org/).
+The Hackathon will leverage our new [development environment](http://oasiseth.org/).
 
 ### Challenge #1: Build & Deploy the Tutorial DApp
 
@@ -55,7 +55,7 @@ Create and publish your own DApp that is substantially different from the defaul
 
 **Where:**
 
-Use Second State’s [development environment](http://oasiseth.org/dev/hack)[](http://oasiseth.org/dev/hack) to build and deploy your DApp.
+Use Second State’s [development environment](http://oasiseth.org/dev/hack) to build and deploy your DApp.
 
 **How to claim your reward:**
 
@@ -87,7 +87,7 @@ Submit the address for your ERC20 token contract [here](https://oasisprotocol.or
 ### Questions or issues?
 We’ll be here to help along the way. If you need to get in touch, you can reach us in the following places:
 
-* Updates & Announcements: [_Oasis Etehreum Telegram_](https://t.me/oasiseth)
+* Updates & Announcements: [Oasis Etehreum Telegram](https://t.me/oasiseth)
 * Technical Support:[Community Disord Channel](https://discord.com/invite/MjxtURG)
 
 Good luck in the competition! We’re eager to see the creative DApps and ideas that you submit.
