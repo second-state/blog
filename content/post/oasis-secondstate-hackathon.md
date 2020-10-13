@@ -3,7 +3,7 @@ title: "The Oasis Second State Community Hackathon starts"
 date: 2020-10-12T01:01:23+08:00
 draft: false
 tags: ["Ethereum", "Oasis","Smart contract","hackathon"]
-categories: ["oasis"]
+categories: ["oasis","en"]
 ---
 
 
