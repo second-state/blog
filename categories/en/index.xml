@@ -6,10 +6,21 @@
     <description>Recent content in en on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 03 Jun 2020 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Oasis Second State Community Hackathon starts</title>
+      <link>http://blog.secondstate.io/post/oasis-secondstate-hackathon/</link>
+      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/oasis-secondstate-hackathon/</guid>
+      <description>Today Second State, together with Oasis foundation, is announcing the most exciting community event to date, and a chance for community members to earn some of the largest rewards Oasis foundation has ever offered. Last week Oasis network launched Mainnet Beta, and we released Second State’s Oasis Ethereum ParaTime.
+The ParaTime’s powerful design and technology means the Oasis Ethereum ParaTime is:
+ Completely backward compatible with Ethereum with support for the entire Solidity toolchain, allowing it to support DApps currently on the Ethereum network.</description>
+    </item>
     
     <item>
       <title>Second State releases scalable privacy service at Mozilla Open Labs</title>
@@ -204,16 +215,6 @@ The focus of our session is to address the challenges of today’s Ethereum smar
       
       <guid>http://blog.secondstate.io/post/20191006-etc-summit-recap/</guid>
       <description>Disclaimer: Second State sponsored this year’s ETC Summit and released the BUIDL for ETC IDE — even novice developers can now write and publish complete smart contract powered applications on the Ethereum Classic blockchain in minutes. Check out a tutorial! All views and opinions expressed in the article are my own. 中文版点击这里 Church &amp;amp; State Successful open source communities</description>
-    </item>
-    
-    <item>
-      <title>Easier and faster dapps on the Ethereum Classic blockchain</title>
-      <link>http://blog.secondstate.io/post/20191003-easierandfasterdapps-en/</link>
-      <pubDate>Thu, 03 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191003-easierandfasterdapps-en/</guid>
-      <description>Ethereum, the world’s first and dominant smart contract platform, has the largest dapp ecosystem with more than a million deployed smart contracts and hundreds of millions of dollars in monthly transactions.
-Ethereum Classic is the original Ethereum blockchain. With fast confirmation time, ultra-low gas cost, and now with first-class developer tooling from the BUIDL IDE, the Ethereum Classic blockchain is also becoming the best platform for deploying smart contracts and dapps.</description>
     </item>
     
   </channel>

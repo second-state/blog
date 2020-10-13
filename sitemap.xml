@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>http://blog.secondstate.io/categories/en/</loc>
+    <lastmod>2020-10-12T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.secondstate.io/tags/ethereum/</loc>
     <lastmod>2020-10-12T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -74,13 +81,6 @@
   <url>
     <loc>http://blog.secondstate.io/post/oasis-secondstate-hackathon-zh/</loc>
     <lastmod>2020-10-12T01:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/categories/en/</loc>
-    <lastmod>2020-06-03T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
