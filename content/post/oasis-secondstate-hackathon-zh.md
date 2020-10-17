@@ -85,6 +85,9 @@ http://oasiseth.org/dev/hack
 
 * 400 ROSE: Second State 在 Oasis网络上部署了 Uniswap 。点击[这里](http://uniswap.oasiseth.org/)查看。如果你在 Uniswap 的 Oasis 安装中成功地为你的 ERC-20 Token 创建了一个流动性池，您将得到额外的400 ROSE。
 
+**教程**
+* [文字教程](https://mp.weixin.qq.com/s/7sdM1ONkWeclZKxaxJnCag)
+
 如果你有任何问题，欢迎通过以下方式与我们联系:
 
 * [Oasis 基金会 telegram](https://t.me/oasisprotocolcommunity)
