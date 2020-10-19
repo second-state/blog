@@ -96,7 +96,7 @@ http://oasiseth.org/dev/hack
 * [Oasis Etehreum Discord](https://discord.com/invite/MjxtURG)
 
 ### 🦄🦄🦄 领取奖励的方式：
-请在北京时间11月24日下午14:30前，点击下面的链接，按照表格的指引填写相关信息。
+请在北京时间10月24日下午14:30前，点击下面的链接，按照表格的指引填写相关信息。
 https://oasisprotocol.org/second-state-competition
 
 ### 活动方介绍：
