@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Toward a more interoperable WebAssembly - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="Reference types and bulk memory operations support on Second State VM 0.7.0
+The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
+ It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node." />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.62.2" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+<meta itemprop="name" content="Toward a more interoperable WebAssembly">
+<meta itemprop="description" content="Reference types and bulk memory operations support on Second State VM 0.7.0
+The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
+ It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node.">
+<meta itemprop="datePublished" content="2020-10-26T09:42:14&#43;08:00" />
+<meta itemprop="dateModified" content="2020-10-26T09:42:14&#43;08:00" />
+<meta itemprop="wordCount" content="1218">
+
+
+
+<meta itemprop="keywords" content="WebAssembly,Rust,SSVM,WASI,Reference types," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Toward a more interoperable WebAssembly"/>
+<meta name="twitter:description" content="Reference types and bulk memory operations support on Second State VM 0.7.0
+The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
+ It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="Toward a more interoperable WebAssembly - Second State News and Articles">
+  <meta property="og:description" content="Reference types and bulk memory operations support on Second State VM 0.7.0
+The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
+ It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node." />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">Toward a more interoperable WebAssembly</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> October 26, 2020 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/developer/"> developer </a>
+            <a href="http://blog.secondstate.io/categories/en/"> en </a>
+            <a href="http://blog.secondstate.io/categories/webassembly/"> WebAssembly </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p><em>Reference types and bulk memory operations support on Second State VM 0.7.0</em></p>
+<p>The <a href="https://www.secondstate.io/ssvm/">Second State VM (SSVM)</a> is an open-source WebAssembly virtual machine implementation optimized for server-side applications.</p>
+<ul>
+<li>It is one of the <a href="https://www.secondstate.io/articles/ssvm-performance/">fastest WebAssembly VM</a> on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our <a href="https://arxiv.org/abs/2010.07115">performance benchmark paper</a> to be published on <a href="https://www.computer.org/csdl/magazine/so/5555/01/09214403/1nHNGfu2Ypi">IEEE Software</a>.</li>
+<li>It provides seamless integration into population web service frameworks, such as <a href="https://www.secondstate.io/articles/getting-started-with-rust-function/">Node.js</a> and <a href="https://github.com/second-state/ssvm-tencent-starter">TencentCloud Serverless</a>.</li>
+<li>It fully support the <a href="https://www.secondstate.io/articles/wasi-access-system-resources/">WebAssembly Systems Interface (WASI)</a> for operating system access on the server.</li>
+<li>It supports fine-grained and real-time resource metering.</li>
+<li>It supports non-standard host functions to access storage database, the Ethereum blockchain, and native operating system commands. See an example on how to <a href="https://www.secondstate.io/articles/internet-of-functions-http-proxy/">access the Internet</a>or to <a href="https://www.secondstate.io/articles/face-detection-ai-as-a-service/">run Tensorflow inference for face detection</a> from SSVM functions.</li>
+</ul>
+<p>Now, with the <a href="https://github.com/second-state/SSVM/releases/tag/0.7.0">SSVM 0.7.0 release</a>, we are supporting popular WebAssembly draft specifications that are relevant to server-side application use cases. Specially, SSVM 0.7 supports the <a href="https://github.com/WebAssembly/reference-types/blob/master/proposals/reference-types/Overview.md">reference types</a> and <a href="https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md">bulk memory operations</a> draft proposals.</p>
+<p>The bulk memory operations specification is relatively simple and straightforward. It adds instructions (opcodes) to the WebAssembly VM to perform efficient copying and moving of large sections of memory data. That improves runtime performance in data intensive applications. It also makes it easier for WebAssembly programs to interact and share memory with external applications. We will be working with WebAssembly compiler projects, such as rustc, LLVM, and <a href="https://github.com/second-state/SOLL">SOLL</a>, to generate such instructions in compiled WebAssembly bytecode.</p>
+<p>The reference types proposal is more complex. In the rest of this article, I will explain what it is, why it is important, and how we can improve the SSVM developer experience today!</p>
+<h2 id="wasi">WASI</h2>
+<p>One of the most important WebAssembly extension specification is that WebAssembly System Interface (WASI). WASI provides a way for WebAssembly bytecode programs to call functions in the operating system’s standard library. That allows WebAssembly programs to access the file system, environmental variables, random numbers, and other important functionalities. Access to operating system services is crucial for using WebAssembly as a standalone application outside of the browser sandbox.</p>
+<blockquote>
+<p>If WASM+WASI existed in 2008, we wouldn't have needed to created Docker. — Solomon Hykes, Co-Founder of Docker</p>
+</blockquote>
+<p>However, why stop at operating system standard libraries? Why not allow WebAssembly programs to access any library function the underlying host system provides?</p>
+<h2 id="host-functions">Host functions</h2>
+<p>Indeed, in many application scenarios, different WebAssembly VM implementations already provide access to various services it’s host environment provides. Those pre-defined WebAssembly functions which access the host environment are called “host functions”.</p>
+<ul>
+<li>The V8 engine, running WebAssembly in a JavaScript environment, has always provided ways for WebAssembly bytecode to call JavaScript functions. In-browser WebAssembly programs frequently do so to interact with the web page DOM and UI.</li>
+<li>The <a href="https://github.com/ewasm">Ethereum flavored WebAssembly (Ewasm)</a> defines a host functions interface for the WebAssembly bytecode to access data stored on an Ethereum blockchain, such as user accounts, balances, and block information. That allows WebAssembly to become a smart contract execution engine on the Ethereum blockchain. The <a href="https://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/">SSVM is one of the leading Ewasm implementations.</a></li>
+<li>Besides Ethereum, there are many other blockchain projects that chose WebAssembly as the execution engine. All of them exposes the blockchain data and functions to WebAssembly as host functions.</li>
+<li>The SSVM supports several host functions that are relevant to the server-side use case. For example, it provides a set of host functions to access external key-value data stores (e.g., a RockDB instance), as well as host functions to execute operating system commands. The latter is extremely versatile as it could run any command, but at the cost of portability — the WebAssembly program can only execute on host operating systems with the necessary commands installed.</li>
+</ul>
+<blockquote>
+<p>One of the most interesting ideas WASI promotes is “capability based security”. That is, you could declare which operating system services the WebAssembly VM have access to when you instantiate it. That WebAssembly VM could have an entirely different set of security rules than the operating system user who runs it. We could adapt the same security model for host functions. We can provide a rich selection of host functions, but each VM instance only has access to the host functions it declares and needs.</p>
+</blockquote>
+<p>While host functions are very useful and popular. There is no “standard” to create them. The reference types specification is going to change that.</p>
+<h2 id="reference-types">Reference types</h2>
+<p>The simplicity of the WebAssembly specification is one of its great advantages. It is lightweight, very efficient, and can be throughly reviewed for security. However, the simple specification also means limited features. By default, WebAssembly only supports numbers as input and output types. You cannot even pass a string or array to a WebAssembly program without complicated maneuvers to manage memory spaces both inside the WebAssembly VM, and in the external program the VM communicates with.</p>
+<blockquote>
+<p>That is why most WebAssembly “hello world” tutorials do not do “hello world” at all. They do some kind of simple numeric operations such as addition, multiplication, or generating the fibonacci sequence. Taking the “hello world” string input is complicated in WebAssembly!</p>
+</blockquote>
+<p>The reference types proposal enables WebAssembly to exchange complex data types with external applications. The most obvious use case, of course, is to exchange data with host functions!</p>
+<h2 id="a-tutorial">A tutorial</h2>
+<p>Without compiler support, creating a reference types demo is quite involved. We have created <a href="https://github.com/second-state/SSVM/blob/master/doc/externref.md">a comprehensive tutorial</a> that walks through the steps to create a WebAssembly program, hand craft its bytecode for reference types, and then create, compile, and register host functions in C to pass data in those types.</p>
+<p>While almost all WebAssembly VM projects have committed to support reference types, SSVM and wasmtime are the only two with complete implementations at the time of this writing. The <a href="https://fitzgeraldnick.com/2020/08/27/reference-types-in-wasmtime.html">wasmtime demo</a> can be found here. The major difference is that wasmtime demonstrated host functions written in Rust while SSVM has host functions written in C. While we love Rust, we believe C offers a much larger selection of libraries for applications such as AI inference on GPUs and custom hardware.</p>
+<h2 id="the-future-has-arrived">The future has arrived</h2>
+<p>At Second State, we actively support WebAssembly standards by implementing them early. However, like the bulk memory operations proposal, application developers must wait for compiler toolchain support before they can fully take advantage of reference types. But, we are not sitting idle and waiting! Second State is committed to support rich host functions NOW.</p>
+<p>Developers can write native programs in Rust, C, or even GO, and call them from SSVM through the command interface. The SSVM program, written in Rust, can pass typed arguments or binary data to the command program. Check out our tutorials on how to implement and call <a href="https://www.secondstate.io/articles/face-detection-ai-as-a-service/">a tensorflow command for face detection</a> and for <a href="https://www.secondstate.io/articles/image-classification-as-a-service-in-node.js/">image classification</a>. This approach is easy for developers to get started and experiment with SSVM extensions.</p>
+<p>At the same time, we are creating a library of host functions to execute Tensorflow models and perform image and video manipulations. Those host functions are exchanging data with WebAssembly directly using memory segments. Those specialized host functions are more performant, more portable, and easier to use than the generic commands.</p>
+<p>Once the reference types and bulk memory operations proposals are finalized with compiler support, we will port SSVM host functions and provide community developers with a standard interface to create and register host functions for the SSVM!</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">October 26, 2020</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/webassembly/">WebAssembly</a>
+          <a href="http://blog.secondstate.io/tags/rust/">Rust</a>
+          <a href="http://blog.secondstate.io/tags/ssvm/">SSVM</a>
+          <a href="http://blog.secondstate.io/tags/wasi/">WASI</a>
+          <a href="http://blog.secondstate.io/tags/reference-types/">Reference types</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/oasis-secondstate-hackathon/">
+            <span class="next-text nav-default">The Oasis Second State Community Hackathon starts</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      
+
+  
+  <script type="text/javascript">document.cookie = 'MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'</script>
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"fff3b05c9dd4ef7b8163406d1","lid":"8eb8db2618","uniqueMethods":true}) })</script>
+
+<div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2020
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

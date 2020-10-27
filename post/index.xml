@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2020 09:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Toward a more interoperable WebAssembly</title>
+      <link>http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/</guid>
+      <description>Reference types and bulk memory operations support on Second State VM 0.7.0
+The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
+ It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node.</description>
+    </item>
     
     <item>
       <title>The Oasis Second State Community Hackathon starts</title>
@@ -195,18 +206,6 @@ Blockchain Smart Contract ABI is the interface between smart contracts and block
       
       <guid>http://blog.secondstate.io/post/20191031-sfbw-zh/</guid>
       <description>备受瞩目的世界级区块链技术盛会-旧金山区块链周于当地时间10月28日拉开帷幕，区块链基础软件技术公司Second State(第二形科技) 赞助</description>
-    </item>
-    
-    <item>
-      <title>Celebrate Halloween with Blockchain Smart Contract</title>
-      <link>http://blog.secondstate.io/post/20191031-halloween/</link>
-      <pubDate>Thu, 31 Oct 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191031-halloween/</guid>
-      <description>Halloween is finally here! Are you ready for the spookiest night of the year?
-BUIDL IDE tools now has an upgraded UI just for Halloween. Trick or treat! A spooky pumpkin on the top welcomes you to the BUIDL’s Halloween.
-Now, for developers, can you tell what the following code is for?
-1 2 3 4 5 6 7 8  pragma lity ^1.2.4; contract Halloween { function greet() pure public returns (string) { return &amp;#34;Happy Halloween&amp;#34;; } }   This is a very simple (yet spooky) smart contract example, just like the “Hello World” on the internet.</description>
     </item>
     
   </channel>

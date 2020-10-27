@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2020 09:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reference types</title>
+      <link>http://blog.secondstate.io/tags/reference-types/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/reference-types/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>http://blog.secondstate.io/tags/rust/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSVM</title>
+      <link>http://blog.secondstate.io/tags/ssvm/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/ssvm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WASI</title>
+      <link>http://blog.secondstate.io/tags/wasi/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/wasi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>http://blog.secondstate.io/tags/webassembly/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Ethereum</title>
@@ -57,29 +102,11 @@
     </item>
     
     <item>
-      <title>rust</title>
-      <link>http://blog.secondstate.io/tags/rust/</link>
-      <pubDate>Wed, 03 Jun 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>serverless</title>
       <link>http://blog.secondstate.io/tags/serverless/</link>
       <pubDate>Wed, 03 Jun 2020 10:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/serverless/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WebAssembly</title>
-      <link>http://blog.secondstate.io/tags/webassembly/</link>
-      <pubDate>Wed, 03 Jun 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
       <description></description>
     </item>
     
@@ -161,33 +188,6 @@
       <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/cloud-computing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Microsoft</title>
-      <link>http://blog.secondstate.io/tags/microsoft/</link>
-      <pubDate>Wed, 25 Mar 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/microsoft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EWASM</title>
-      <link>http://blog.secondstate.io/tags/ewasm/</link>
-      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/ewasm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>polkadot</title>
-      <link>http://blog.secondstate.io/tags/polkadot/</link>
-      <pubDate>Mon, 02 Mar 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/polkadot/</guid>
       <description></description>
     </item>
     

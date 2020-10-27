@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reference types on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/reference-types/</link>
+    <description>Recent content in Reference types on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 26 Oct 2020 09:42:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/reference-types/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Toward a more interoperable WebAssembly</title>
+      <link>http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/</guid>
+      <description>Reference types and bulk memory operations support on Second State VM 0.7.0
+The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
+ It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node.</description>
+    </item>
+    
+  </channel>
+</rss>

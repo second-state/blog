@@ -6,10 +6,21 @@
     <description>Recent content in en on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2020 09:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Toward a more interoperable WebAssembly</title>
+      <link>http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/</guid>
+      <description>Reference types and bulk memory operations support on Second State VM 0.7.0
+The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
+ It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node.</description>
+    </item>
     
     <item>
       <title>The Oasis Second State Community Hackathon starts</title>
@@ -206,15 +217,6 @@ SOLL is the world’s first toolchain that compiles Solidity smart contracts int
       <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5/</guid>
       <description>Addressing the challenges of today’s Ethereum smart contract development The first photo is from our session on the first day of Devcon. It is standing room only. We gave a very technical presentation and did all of our live demos from the BUIDL IDE with great success.
 The focus of our session is to address the challenges of today’s Ethereum smart contract development. We discussed solutions we have developed for today’s EVM, as well as future solutions for Ethereum 2.</description>
-    </item>
-    
-    <item>
-      <title>What I learned from ETC Summit</title>
-      <link>http://blog.secondstate.io/post/20191006-etc-summit-recap/</link>
-      <pubDate>Sun, 06 Oct 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191006-etc-summit-recap/</guid>
-      <description>Disclaimer: Second State sponsored this year’s ETC Summit and released the BUIDL for ETC IDE — even novice developers can now write and publish complete smart contract powered applications on the Ethereum Classic blockchain in minutes. Check out a tutorial! All views and opinions expressed in the article are my own. 中文版点击这里 Church &amp;amp; State Successful open source communities</description>
     </item>
     
   </channel>

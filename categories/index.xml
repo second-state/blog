@@ -6,17 +6,35 @@
     <description>Recent content in Categories on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2020 09:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>developer</title>
+      <link>http://blog.secondstate.io/categories/developer/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/categories/developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>en</title>
       <link>http://blog.secondstate.io/categories/en/</link>
-      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/categories/en/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>http://blog.secondstate.io/categories/webassembly/</link>
+      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/categories/webassembly/</guid>
       <description></description>
     </item>
     
@@ -53,15 +71,6 @@
       <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/categories/ewasm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>developer</title>
-      <link>http://blog.secondstate.io/categories/developer/</link>
-      <pubDate>Tue, 24 Sep 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/categories/developer/</guid>
       <description></description>
     </item>
     
