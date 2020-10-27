@@ -25,9 +25,9 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 <meta name="author" content="Second State" />
-  <meta name="description" content="Reference types and bulk memory operations support on Second State VM 0.7.0
-The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
- It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node." />
+  <meta name="description" content="Interface types and bulk memory operations support on Second State VM 0.7.0
+ TL&#39;DR Second State is committed to support the vision of WebAssembly nanoprocess proposed by Bytecode Alliance, Fastly, and Mozilla. SSVM 0.7.0 implements two key components of nanoprocess: WASI and Interface Types. We are taking it further with WASI-like extensions for blockchains and Tensorflow. Try our Tensorflow as a Service live demo today!
+ The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications." />
 
   <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
 
@@ -61,20 +61,20 @@ The Second State VM (SSVM) is an open-source WebAssembly virtual machine impleme
 
 
 <meta itemprop="name" content="Toward a more interoperable WebAssembly">
-<meta itemprop="description" content="Reference types and bulk memory operations support on Second State VM 0.7.0
-The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
- It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node.">
+<meta itemprop="description" content="Interface types and bulk memory operations support on Second State VM 0.7.0
+ TL&#39;DR Second State is committed to support the vision of WebAssembly nanoprocess proposed by Bytecode Alliance, Fastly, and Mozilla. SSVM 0.7.0 implements two key components of nanoprocess: WASI and Interface Types. We are taking it further with WASI-like extensions for blockchains and Tensorflow. Try our Tensorflow as a Service live demo today!
+ The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.">
 <meta itemprop="datePublished" content="2020-10-26T09:42:14&#43;08:00" />
 <meta itemprop="dateModified" content="2020-10-26T09:42:14&#43;08:00" />
-<meta itemprop="wordCount" content="1218">
+<meta itemprop="wordCount" content="1261">
 
 
 
-<meta itemprop="keywords" content="WebAssembly,Rust,SSVM,WASI,Reference types," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="WebAssembly,Rust,SSVM,WASI,Interface types,Reference types," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Toward a more interoperable WebAssembly"/>
-<meta name="twitter:description" content="Reference types and bulk memory operations support on Second State VM 0.7.0
-The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
- It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node."/>
+<meta name="twitter:description" content="Interface types and bulk memory operations support on Second State VM 0.7.0
+ TL&#39;DR Second State is committed to support the vision of WebAssembly nanoprocess proposed by Bytecode Alliance, Fastly, and Mozilla. SSVM 0.7.0 implements two key components of nanoprocess: WASI and Interface Types. We are taking it further with WASI-like extensions for blockchains and Tensorflow. Try our Tensorflow as a Service live demo today!
+ The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications."/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -98,9 +98,9 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
 <meta property="og:title" content="Toward a more interoperable WebAssembly - Second State News and Articles">
-  <meta property="og:description" content="Reference types and bulk memory operations support on Second State VM 0.7.0
-The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
- It is one of the fastest WebAssembly VM on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our performance benchmark paper to be published on IEEE Software. It provides seamless integration into population web service frameworks, such as Node." />
+  <meta property="og:description" content="Interface types and bulk memory operations support on Second State VM 0.7.0
+ TL&#39;DR Second State is committed to support the vision of WebAssembly nanoprocess proposed by Bytecode Alliance, Fastly, and Mozilla. SSVM 0.7.0 implements two key components of nanoprocess: WASI and Interface Types. We are taking it further with WASI-like extensions for blockchains and Tensorflow. Try our Tensorflow as a Service live demo today!
+ The Second State VM (SSVM) is an open-source WebAssembly virtual machine implementation optimized for server-side applications." />
 <meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
 <meta property="og:url" content="http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/">
 
@@ -295,23 +295,23 @@ The Second State VM (SSVM) is an open-source WebAssembly virtual machine impleme
 
     
     <div class="post-content">
-      <p><em>Reference types and bulk memory operations support on Second State VM 0.7.0</em></p>
+      <p><strong>Interface types and bulk memory operations support on Second State VM 0.7.0</strong></p>
+<blockquote>
+<p>TL'DR Second State is committed to support the vision of <a href="https://bytecodealliance.org/articles/1-year-update">WebAssembly nanoprocess</a> proposed by Bytecode Alliance, Fastly, and Mozilla. SSVM 0.7.0 implements two key components of nanoprocess: WASI and Interface Types. We are taking it further with WASI-like extensions for <a href="https://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/">blockchains</a> and <a href="https://www.secondstate.io/articles/face-detection-ai-as-a-service/">Tensorflow</a>. Try our <a href="https://second-state.github.io/wasm-learning/faas/mtcnn/html/index.html">Tensorflow as a Service live demo</a> today!</p>
+</blockquote>
 <p>The <a href="https://www.secondstate.io/ssvm/">Second State VM (SSVM)</a> is an open-source WebAssembly virtual machine implementation optimized for server-side applications.</p>
 <ul>
 <li>It is one of the <a href="https://www.secondstate.io/articles/ssvm-performance/">fastest WebAssembly VM</a> on the market today partly because of AOT (Ahead Of Time) compiler optimization. See our <a href="https://arxiv.org/abs/2010.07115">performance benchmark paper</a> to be published on <a href="https://www.computer.org/csdl/magazine/so/5555/01/09214403/1nHNGfu2Ypi">IEEE Software</a>.</li>
 <li>It provides seamless integration into population web service frameworks, such as <a href="https://www.secondstate.io/articles/getting-started-with-rust-function/">Node.js</a> and <a href="https://github.com/second-state/ssvm-tencent-starter">TencentCloud Serverless</a>.</li>
 <li>It fully support the <a href="https://www.secondstate.io/articles/wasi-access-system-resources/">WebAssembly Systems Interface (WASI)</a> for operating system access on the server.</li>
 <li>It supports fine-grained and real-time resource metering.</li>
-<li>It supports non-standard host functions to access storage database, the Ethereum blockchain, and native operating system commands. See an example on how to <a href="https://www.secondstate.io/articles/internet-of-functions-http-proxy/">access the Internet</a>or to <a href="https://www.secondstate.io/articles/face-detection-ai-as-a-service/">run Tensorflow inference for face detection</a> from SSVM functions.</li>
+<li>It supports non-standard host functions to access storage database, the Ethereum blockchain, and native operating system commands. See an example on how to <a href="https://www.secondstate.io/articles/internet-of-functions-http-proxy/">access the Internet</a> or to <a href="https://www.secondstate.io/articles/face-detection-ai-as-a-service/">run Tensorflow inference for face detection</a> from SSVM functions.</li>
 </ul>
-<p>Now, with the <a href="https://github.com/second-state/SSVM/releases/tag/0.7.0">SSVM 0.7.0 release</a>, we are supporting popular WebAssembly draft specifications that are relevant to server-side application use cases. Specially, SSVM 0.7 supports the <a href="https://github.com/WebAssembly/reference-types/blob/master/proposals/reference-types/Overview.md">reference types</a> and <a href="https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md">bulk memory operations</a> draft proposals.</p>
+<p>Now, with the <a href="https://github.com/second-state/SSVM/releases/tag/0.7.0">SSVM 0.7.0 release</a>, we are supporting popular WebAssembly draft specifications that are relevant to server-side application use cases. Specially, SSVM 0.7 supports the <a href="https://github.com/WebAssembly/reference-types/blob/master/proposals/reference-types/Overview.md">reference types</a>, which is the major element of Interface Types, and <a href="https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md">bulk memory operations</a> draft proposals.</p>
 <p>The bulk memory operations specification is relatively simple and straightforward. It adds instructions (opcodes) to the WebAssembly VM to perform efficient copying and moving of large sections of memory data. That improves runtime performance in data intensive applications. It also makes it easier for WebAssembly programs to interact and share memory with external applications. We will be working with WebAssembly compiler projects, such as rustc, LLVM, and <a href="https://github.com/second-state/SOLL">SOLL</a>, to generate such instructions in compiled WebAssembly bytecode.</p>
 <p>The reference types proposal is more complex. In the rest of this article, I will explain what it is, why it is important, and how we can improve the SSVM developer experience today!</p>
 <h2 id="wasi">WASI</h2>
 <p>One of the most important WebAssembly extension specification is that WebAssembly System Interface (WASI). WASI provides a way for WebAssembly bytecode programs to call functions in the operating system’s standard library. That allows WebAssembly programs to access the file system, environmental variables, random numbers, and other important functionalities. Access to operating system services is crucial for using WebAssembly as a standalone application outside of the browser sandbox.</p>
-<blockquote>
-<p>If WASM+WASI existed in 2008, we wouldn't have needed to created Docker. — Solomon Hykes, Co-Founder of Docker</p>
-</blockquote>
 <p>However, why stop at operating system standard libraries? Why not allow WebAssembly programs to access any library function the underlying host system provides?</p>
 <h2 id="host-functions">Host functions</h2>
 <p>Indeed, in many application scenarios, different WebAssembly VM implementations already provide access to various services it’s host environment provides. Those pre-defined WebAssembly functions which access the host environment are called “host functions”.</p>
@@ -369,6 +369,7 @@ The Second State VM (SSVM) is an open-source WebAssembly virtual machine impleme
           <a href="http://blog.secondstate.io/tags/rust/">Rust</a>
           <a href="http://blog.secondstate.io/tags/ssvm/">SSVM</a>
           <a href="http://blog.secondstate.io/tags/wasi/">WASI</a>
+          <a href="http://blog.secondstate.io/tags/interface-types/">Interface types</a>
           <a href="http://blog.secondstate.io/tags/reference-types/">Reference types</a>
           
         </div>
