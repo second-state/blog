@@ -2,13 +2,13 @@
 title: "Toward a more interoperable WebAssembly"
 date: 2020-10-26T09:42:14+08:00
 draft: false
-tags: ["WebAssembly", "Rust", "SSVM", "WASI", "Reference types"]
+tags: ["WebAssembly", "Rust", "SSVM", "WASI", "Interface types", "Reference types"]
 categories: ["developer","en","WebAssembly"]
 ---
 
+**Interface types and bulk memory operations support on Second State VM 0.7.0**
 
-
-*Reference types and bulk memory operations support on Second State VM 0.7.0*
+> TL'DR Second State is committed to support the vision of [WebAssembly nanoprocess](https://bytecodealliance.org/articles/1-year-update) proposed by Bytecode Alliance, Fastly, and Mozilla. SSVM 0.7.0 implements two key components of nanoprocess: WASI and Interface Types. We are taking it further with WASI-like extensions for [blockchains](https://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/) and [Tensorflow](https://www.secondstate.io/articles/face-detection-ai-as-a-service/). Try our [Tensorflow as a Service live demo](https://second-state.github.io/wasm-learning/faas/mtcnn/html/index.html) today!
 
 The [Second State VM (SSVM)](https://www.secondstate.io/ssvm/) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
 
@@ -16,10 +16,9 @@ The [Second State VM (SSVM)](https://www.secondstate.io/ssvm/) is an open-source
 * It provides seamless integration into population web service frameworks, such as [Node.js](https://www.secondstate.io/articles/getting-started-with-rust-function/) and [TencentCloud Serverless](https://github.com/second-state/ssvm-tencent-starter).
 * It fully support the [WebAssembly Systems Interface (WASI)](https://www.secondstate.io/articles/wasi-access-system-resources/) for operating system access on the server.
 * It supports fine-grained and real-time resource metering.
-* It supports non-standard host functions to access storage database, the Ethereum blockchain, and native operating system commands. See an example on how to [access the Internet](https://www.secondstate.io/articles/internet-of-functions-http-proxy/)or to [run Tensorflow inference for face detection](https://www.secondstate.io/articles/face-detection-ai-as-a-service/) from SSVM functions.
+* It supports non-standard host functions to access storage database, the Ethereum blockchain, and native operating system commands. See an example on how to [access the Internet](https://www.secondstate.io/articles/internet-of-functions-http-proxy/) or to [run Tensorflow inference for face detection](https://www.secondstate.io/articles/face-detection-ai-as-a-service/) from SSVM functions.
 
-
-Now, with the [SSVM 0.7.0 release](https://github.com/second-state/SSVM/releases/tag/0.7.0), we are supporting popular WebAssembly draft specifications that are relevant to server-side application use cases. Specially, SSVM 0.7 supports the [reference types](https://github.com/WebAssembly/reference-types/blob/master/proposals/reference-types/Overview.md) and [bulk memory operations](https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md) draft proposals. 
+Now, with the [SSVM 0.7.0 release](https://github.com/second-state/SSVM/releases/tag/0.7.0), we are supporting popular WebAssembly draft specifications that are relevant to server-side application use cases. Specially, SSVM 0.7 supports the [reference types](https://github.com/WebAssembly/reference-types/blob/master/proposals/reference-types/Overview.md), which is the major element of Interface Types, and [bulk memory operations](https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md) draft proposals. 
 
 The bulk memory operations specification is relatively simple and straightforward. It adds instructions (opcodes) to the WebAssembly VM to perform efficient copying and moving of large sections of memory data. That improves runtime performance in data intensive applications. It also makes it easier for WebAssembly programs to interact and share memory with external applications. We will be working with WebAssembly compiler projects, such as rustc, LLVM, and [SOLL](https://github.com/second-state/SOLL), to generate such instructions in compiled WebAssembly bytecode.
 
@@ -28,10 +27,6 @@ The reference types proposal is more complex. In the rest of this article, I wil
 ## WASI
 
 One of the most important WebAssembly extension specification is that WebAssembly System Interface (WASI). WASI provides a way for WebAssembly bytecode programs to call functions in the operating system’s standard library. That allows WebAssembly programs to access the file system, environmental variables, random numbers, and other important functionalities. Access to operating system services is crucial for using WebAssembly as a standalone application outside of the browser sandbox.
-
-
-> If WASM+WASI existed in 2008, we wouldn't have needed to created Docker. — Solomon Hykes, Co-Founder of Docker
-
 
 However, why stop at operating system standard libraries? Why not allow WebAssembly programs to access any library function the underlying host system provides?
 
@@ -44,10 +39,7 @@ Indeed, in many application scenarios, different WebAssembly VM implementations 
 * Besides Ethereum, there are many other blockchain projects that chose WebAssembly as the execution engine. All of them exposes the blockchain data and functions to WebAssembly as host functions.
 * The SSVM supports several host functions that are relevant to the server-side use case. For example, it provides a set of host functions to access external key-value data stores (e.g., a RockDB instance), as well as host functions to execute operating system commands. The latter is extremely versatile as it could run any command, but at the cost of portability — the WebAssembly program can only execute on host operating systems with the necessary commands installed. 
 
-
-
 > One of the most interesting ideas WASI promotes is “capability based security”. That is, you could declare which operating system services the WebAssembly VM have access to when you instantiate it. That WebAssembly VM could have an entirely different set of security rules than the operating system user who runs it. We could adapt the same security model for host functions. We can provide a rich selection of host functions, but each VM instance only has access to the host functions it declares and needs.
-
 
 While host functions are very useful and popular. There is no “standard” to create them. The reference types specification is going to change that.
 
@@ -55,9 +47,7 @@ While host functions are very useful and popular. There is no “standard” to 
 
 The simplicity of the WebAssembly specification is one of its great advantages. It is lightweight, very efficient, and can be throughly reviewed for security. However, the simple specification also means limited features. By default, WebAssembly only supports numbers as input and output types. You cannot even pass a string or array to a WebAssembly program without complicated maneuvers to manage memory spaces both inside the WebAssembly VM, and in the external program the VM communicates with.
 
-
 > That is why most WebAssembly “hello world” tutorials do not do “hello world” at all. They do some kind of simple numeric operations such as addition, multiplication, or generating the fibonacci sequence. Taking the “hello world” string input is complicated in WebAssembly!
-
 
 The reference types proposal enables WebAssembly to exchange complex data types with external applications. The most obvious use case, of course, is to exchange data with host functions!
 
