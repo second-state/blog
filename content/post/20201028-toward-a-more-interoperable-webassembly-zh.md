@@ -7,7 +7,7 @@ categories: ["developer","zh","WebAssembly"]
 ---
 
 
-*Second State 虚拟机 0.7.0 版本支持 reference types 和 bulk memory operations。*
+***Second State 虚拟机 0.7.0 版本支持 reference types 和 bulk memory operations。***
 
 Second State 虚拟机（[SSVM](https://www.secondstate.io/ssvm/)）是针对服务器端应用优化的开源 WebAssembly 虚拟机实现。
 
