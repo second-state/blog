@@ -8,7 +8,7 @@ categories: ["developer","en","WebAssembly"]
 
 **Interface types and bulk memory operations support on Second State VM 0.7.0**
 
-> TL'DR Second State is committed to support the vision of [WebAssembly nanoprocess](https://bytecodealliance.org/articles/1-year-update) proposed by Bytecode Alliance, Fastly, and Mozilla. SSVM 0.7.0 implements two key components of nanoprocess: WASI and Interface Types. We are taking it further with WASI-like extensions for [blockchains](https://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/) and [Tensorflow](https://www.secondstate.io/articles/face-detection-ai-as-a-service/). Try our [Tensorflow as a Service live demo](https://second-state.github.io/wasm-learning/faas/mtcnn/html/index.html) today!
+> TL;DR Second State is committed to support the vision of [WebAssembly nanoprocess](https://bytecodealliance.org/articles/1-year-update) proposed by Bytecode Alliance, Fastly, and Mozilla. SSVM 0.7.0 implements two key components of nanoprocess: WASI and Interface Types. We are taking it further with WASI-like extensions for [blockchains](https://blog.secondstate.io/post/20200416-ewasm-smart-contract-ssvm-en/) and [Tensorflow](https://www.secondstate.io/articles/face-detection-ai-as-a-service/). Try our [Tensorflow as a Service live demo](https://second-state.github.io/wasm-learning/faas/mtcnn/html/index.html) today!
 
 The [Second State VM (SSVM)](https://www.secondstate.io/ssvm/) is an open-source WebAssembly virtual machine implementation optimized for server-side applications.
 
