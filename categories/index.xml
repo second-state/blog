@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2020 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2020 09:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>developer</title>
       <link>http://blog.secondstate.io/categories/developer/</link>
-      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/categories/developer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>http://blog.secondstate.io/categories/webassembly/</link>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/categories/webassembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zh</title>
+      <link>http://blog.secondstate.io/categories/zh/</link>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/categories/zh/</guid>
       <description></description>
     </item>
     
@@ -30,29 +48,11 @@
     </item>
     
     <item>
-      <title>WebAssembly</title>
-      <link>http://blog.secondstate.io/categories/webassembly/</link>
-      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/categories/webassembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>oasis</title>
       <link>http://blog.secondstate.io/categories/oasis/</link>
       <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/categories/oasis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>zh</title>
-      <link>http://blog.secondstate.io/categories/zh/</link>
-      <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/categories/zh/</guid>
       <description></description>
     </item>
     

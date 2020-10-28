@@ -6,10 +6,19 @@
     <description>Recent content in Reference types on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2020 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2020 09:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/reference-types/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SSVM 0.7.0：朝更具互操作性的 WebAssembly 迈进</title>
+      <link>http://blog.secondstate.io/post/20201028-toward-a-more-interoperable-webassembly-zh/</link>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20201028-toward-a-more-interoperable-webassembly-zh/</guid>
+      <description>*Second State 虚拟机 0.7.0 版本支持 reference types 和 bulk memory operations * Second State 虚拟机（SSVM）是针对服务器端应用优化的开源 WebAssembly 虚拟机实现。 SSVM 是当今市场上最快的 WebAssembly 虚拟机之一，部分原因</description>
+    </item>
     
     <item>
       <title>Toward a more interoperable WebAssembly</title>

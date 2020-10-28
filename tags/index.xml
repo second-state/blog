@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 26 Oct 2020 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2020 09:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Interface types</title>
       <link>http://blog.secondstate.io/tags/interface-types/</link>
-      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/interface-types/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>Reference types</title>
       <link>http://blog.secondstate.io/tags/reference-types/</link>
-      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/reference-types/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>rust</title>
       <link>http://blog.secondstate.io/tags/rust/</link>
-      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/rust/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>SSVM</title>
       <link>http://blog.secondstate.io/tags/ssvm/</link>
-      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/ssvm/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>WASI</title>
       <link>http://blog.secondstate.io/tags/wasi/</link>
-      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/wasi/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>WebAssembly</title>
       <link>http://blog.secondstate.io/tags/webassembly/</link>
-      <pubDate>Mon, 26 Oct 2020 09:42:14 +0800</pubDate>
+      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/webassembly/</guid>
       <description></description>

@@ -3,14 +3,98 @@
   
   <url>
     <loc>http://blog.secondstate.io/categories/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.secondstate.io/categories/developer/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/interface-types/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/reference-types/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/rust/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/ssvm/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20201028-toward-a-more-interoperable-webassembly-zh/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/wasi/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/webassembly/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/webassembly/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/zh/</loc>
+    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -23,77 +107,7 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/interface-types/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/post/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/reference-types/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/rust/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/ssvm/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/post/20201026-toward-a-more-interoperable-webassembly/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/wasi/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/categories/webassembly/</loc>
-    <lastmod>2020-10-26T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/webassembly/</loc>
     <lastmod>2020-10-26T09:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -234,13 +248,6 @@
   
   <url>
     <loc>http://blog.secondstate.io/tags/harvard/</loc>
-    <lastmod>2020-03-26T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/categories/zh/</loc>
     <lastmod>2020-03-26T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
