@@ -6,7 +6,9 @@ tags: ["Oasis", "confidential smart contract", "Ethereum", "Hackathon"]
 categories: ["developer","en","Oasis"]
 ---
 
-[Oasis Foundation](https://oasisprotocol.org/) and [Second State](https://www.secondstate.io/) partnered on a community hackathon from 12th to 23rd Oct to bring Ethereum developers to the [Oasis Ethereum ParaTime](https://www.oasiseth.org/). Now, the results are in! Community developers created 3274 smart contracts and published 759 decentralized web apps in 11 days!
+[Oasis Foundation](https://oasisprotocol.org/) and [Second State](https://www.secondstate.io/) partnered on a [community hackathon](https://blog.secondstate.io/post/oasis-secondstate-hackathon/) from 12th to 23rd Oct to bring Ethereum developers to the [Oasis Ethereum ParaTime](https://www.oasiseth.org/). Now, the results are in! Community developers created 3274 smart contracts and published 759 decentralized web apps in 11 days!
+
+![](/images/20201029-oasis-second-state-hackathon.jpeg)
 
 The Oasis Second State Hackathon set up three challenges for developers to complete. When developers complete any of the challenges, they get ROSE (the native token of the Oasis network) as rewards. All the smart contracts are deployed on the Oasis Network via the Oasis Ethereum ParaTime.
 
