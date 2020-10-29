@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hackathon on Second State News and Articles</title>
+    <title>Hackathon on Second State News and Articles</title>
     <link>http://blog.secondstate.io/tags/hackathon/</link>
-    <description>Recent content in hackathon on Second State News and Articles</description>
+    <description>Recent content in Hackathon on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
@@ -29,6 +29,16 @@ The ParaTime’s powerful design and technology means the Oasis Ethereum ParaTim
       
       <guid>http://blog.secondstate.io/post/oasis-secondstate-hackathon-zh/</guid>
       <description>发布Dapp，在 Oasis network 上运行以太坊智能合约，就可以获得 ROSE Token 奖励 Oasis Network 是隐私计算领域的知名项目，10月2日，Oasis 基金会发布了 Mainnet beta 版以及由 Second State</description>
+    </item>
+    
+    <item>
+      <title>Developers created 3274 smart contracts in the Oasis Second State Hackathon</title>
+      <link>http://blog.secondstate.io/post/20201029-recap-the-oasis-second-state-hackathon/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20201029-recap-the-oasis-second-state-hackathon/</guid>
+      <description>Oasis Foundation and Second State partnered on a community hackathon from 12th to 23rd Oct to bring Ethereum developers to the Oasis Ethereum ParaTime. Now, the results are in! Community developers created 3274 smart contracts and published 759 decentralized web apps in 11 days!
+The Oasis Second State Hackathon set up three challenges for developers to complete. When developers complete any of the challenges, they get ROSE (the native token of the Oasis network) as rewards.</description>
     </item>
     
   </channel>
