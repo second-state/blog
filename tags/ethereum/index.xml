@@ -6,10 +6,20 @@
     <description>Recent content in Ethereum on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Oct 2020 01:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 06:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/ethereum/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Developers created 3274 smart contracts in the Oasis Second State Hackathon</title>
+      <link>http://blog.secondstate.io/post/20201029-recap-the-oasis-second-state-hackathon/</link>
+      <pubDate>Thu, 29 Oct 2020 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20201029-recap-the-oasis-second-state-hackathon/</guid>
+      <description>Oasis Foundation and Second State partnered on a community hackathon from 12th to 23rd Oct to bring Ethereum developers to the Oasis Ethereum ParaTime. Now, the results are in! Community developers created 3274 smart contracts and published 759 decentralized web apps in 11 days!
+The Oasis Second State Hackathon set up three challenges for developers to complete. When developers complete any of the challenges, they get ROSE (the native token of the Oasis network) as rewards.</description>
+    </item>
     
     <item>
       <title>The Oasis Second State Community Hackathon starts</title>
@@ -196,15 +206,6 @@ The focus of our session is to address the challenges of today’s Ethereum smar
       
       <guid>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</guid>
       <description>解决现下以太坊智能合约开发挑战 第一张照片来自Devcon第一天，我们的发言现场。观众熙熙攘攘，只有站立空间。我们进行了非常技术性的介绍，通过</description>
-    </item>
-    
-    <item>
-      <title>Second State 发布专为以太经典（ETC）打造的BUIDL IDE工具</title>
-      <link>http://blog.secondstate.io/post/20190926-buidl-for-etc-zh/</link>
-      <pubDate>Thu, 26 Sep 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20190926-buidl-for-etc-zh/</guid>
-      <description>区块链智能合约平台Second State 发布专为以太经典（Ethereum Classic）打造的BUIDL IDE。BUIDL 集成了以太经典开发环境，</description>
     </item>
     
   </channel>

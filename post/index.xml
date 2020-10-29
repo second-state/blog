@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Oct 2020 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 06:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Developers created 3274 smart contracts in the Oasis Second State Hackathon</title>
+      <link>http://blog.secondstate.io/post/20201029-recap-the-oasis-second-state-hackathon/</link>
+      <pubDate>Thu, 29 Oct 2020 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20201029-recap-the-oasis-second-state-hackathon/</guid>
+      <description>Oasis Foundation and Second State partnered on a community hackathon from 12th to 23rd Oct to bring Ethereum developers to the Oasis Ethereum ParaTime. Now, the results are in! Community developers created 3274 smart contracts and published 759 decentralized web apps in 11 days!
+The Oasis Second State Hackathon set up three challenges for developers to complete. When developers complete any of the challenges, they get ROSE (the native token of the Oasis network) as rewards.</description>
+    </item>
     
     <item>
       <title>SSVM 0.7.0：朝更具互操作性的 WebAssembly 迈进</title>
@@ -197,15 +207,6 @@ Blockchain Smart Contract ABI is the interface between smart contracts and block
       
       <guid>http://blog.secondstate.io/post/20191106-ewasm-en/</guid>
       <description>The next generation Ethereum Virtual Machine — Crosslink 2019 Taiwan This is a wrap-up for Second State’s VP of Engineering, Mr. Hung-Ying Tai’s presentation on SOLL, Ewasm VM&#39;s current research content and future direction. The sharing is very exciting, including content on EVM bytecode, Webassembly, Ewasm1.0 and Ewasm2.0 EVM bytecode and Webassembly (WASM) When Ethereum&#39;s smart contract transaction is executed,</description>
-    </item>
-    
-    <item>
-      <title>Ewasm Vs EVM：Ewasm 带来了什么改变？</title>
-      <link>http://blog.secondstate.io/post/20191106-ewasm-zh/</link>
-      <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191106-ewasm-zh/</guid>
-      <description>这篇文章是 Crosslink 2019 Taiwan 的一个议程纪录：The next generation Ethereum Virtual Machine，由来自Second State 的工程VP Hung-Ying Tai（hydai） 分享 Ewasm VM 目前研究内容及未来</description>
     </item>
     
   </channel>

@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Oct 2020 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 06:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>confidential smart contract</title>
+      <link>http://blog.secondstate.io/tags/confidential-smart-contract/</link>
+      <pubDate>Thu, 29 Oct 2020 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/confidential-smart-contract/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ethereum</title>
+      <link>http://blog.secondstate.io/tags/ethereum/</link>
+      <pubDate>Thu, 29 Oct 2020 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/ethereum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hackathon</title>
+      <link>http://blog.secondstate.io/tags/hackathon/</link>
+      <pubDate>Thu, 29 Oct 2020 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/hackathon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oasis</title>
+      <link>http://blog.secondstate.io/tags/oasis/</link>
+      <pubDate>Thu, 29 Oct 2020 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/oasis/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Interface types</title>
@@ -62,33 +98,6 @@
       <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/webassembly/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ethereum</title>
-      <link>http://blog.secondstate.io/tags/ethereum/</link>
-      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/ethereum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hackathon</title>
-      <link>http://blog.secondstate.io/tags/hackathon/</link>
-      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/hackathon/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Oasis</title>
-      <link>http://blog.secondstate.io/tags/oasis/</link>
-      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/oasis/</guid>
       <description></description>
     </item>
     
@@ -179,15 +188,6 @@
       <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/freeclass/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>harvard</title>
-      <link>http://blog.secondstate.io/tags/harvard/</link>
-      <pubDate>Thu, 26 Mar 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/harvard/</guid>
       <description></description>
     </item>
     
