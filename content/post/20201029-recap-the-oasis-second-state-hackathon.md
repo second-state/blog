@@ -1,6 +1,6 @@
 ---
 title: "Developers created 3274 smart contracts in the Oasis Second State Hackathon"
-date: 2020-10-39T06:42:14+08:00
+date: 2020-10-29T06:42:14+08:00
 draft: false
 tags: ["Oasis", "confidential smart contract", "Ethereum", "Hackathon"]
 categories: ["developer","en","Oasis"]
