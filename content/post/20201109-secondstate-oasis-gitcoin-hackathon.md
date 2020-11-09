@@ -11,8 +11,12 @@ categories: ["developer","en","Oasis"]
 
 The [Oasis Foundation](https://oasisprotocol.org/) announced [the Quest for ROSE: An Oasis Network Hackathon](https://gitcoin.co/hackathon/oasis/onboard) in partnership with Gitcoin and [Second State](https://www.secondstate.io/) from 9th November to 2nd December. 
 
+![](/images/20201109-secondstate-oasis-gitcoin-hackathon-01.png)
+
 There are two challenges for the Quest for ROSE hackathon. One is to use **Parcel SDK** of Oasis Network to develop responsible data apps. The other one is to use [**Oasis Ethereum ParaTime**](https://www.oasiseth.org/)to develop ethereum-compatible Dapps.
 The prizes of this hackathon will be distributed as the U.S. dollar equivalent, fair market value amount in $ROSE, the native token of the Oasis Network. The total value of prizes provided by the Oasis Protocol Foundation is $11,500. Besides ROSE, the prizes also include exclusive swags from the Oasis Foundation and partners, cloud credits, product discounts, and more.
+
+![](/images/20201109-secondstate-oasis-gitcoin-hackathon-02.png)
 
 ## ⚔️ Challenge 1: Protect the ROSE
 
