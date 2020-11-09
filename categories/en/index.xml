@@ -6,10 +6,21 @@
     <description>Recent content in en on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Oct 2020 06:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 09 Nov 2020 06:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State partners with Oasis Foundation and Gitcoin to host The Quest for ROSE</title>
+      <link>http://blog.secondstate.io/post/20201109-secondstate-oasist-gitcoin-hackathon/</link>
+      <pubDate>Mon, 09 Nov 2020 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20201109-secondstate-oasist-gitcoin-hackathon/</guid>
+      <description>Developers rejoice! A new week, a new hackathon with great prizes!
+The Oasis Foundation announced the Quest for ROSE: An Oasis Network Hackathon in partnership with Gitcoin and Second State from 9th November to 2nd December.
+There are two challenges for the Quest for ROSE hackathon. One is to use Parcel SDK of Oasis Network to develop responsible data apps. The other one is to use Oasis Ethereum ParaTimeto develop ethereum-compatible Dapps.</description>
+    </item>
     
     <item>
       <title>Developers created 3274 smart contracts in the Oasis Second State Hackathon</title>
@@ -207,16 +218,6 @@ Through its web-based BUIDL IDE, developers can easily access Second State smart
       <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
       <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
 Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&#39;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
-    </item>
-    
-    <item>
-      <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
-      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
-      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
-      <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
-SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
     </item>
     
   </channel>
