@@ -51,6 +51,16 @@ We will select a university-affiliated team to win ROSE Doctorate.
 
 To qualify for this prize, you should register with a .edu email address. The team could compete in either Parcel SDK or Oasis Ethereum ParaTime challenges.
 
+## 📞 join the community
+
+If you have any questions about the hackathon, don't hesitate to join our community.
+
+* Updates & Announcements on Oasis Network: [Oasis Foundation Telegram](https://t.me/oasisprotocolcommunity)
+* Technical Support from Oasis Network:  [Community Slack Channel](https://join.slack.com/t/oasiscommunity/shared_invite/enQtNjQ5MTA3NTgyOTkzLWIxNTg1ZWZmOTIwNmQ2MTg1YmU0MzgyMzk3OWM2ZWQ4NTQ0ZDJkNTBmMTdlM2JhODllYjg5YmJkODc2NzgwNTg)
+* [Oasis Ethereum ParaTime Telegram](https://t.me/oasiseth)
+* [Oasis Ethereum ParaTime Discord](https://discord.com/invite/MjxtURG)
+
+
 ## 👏 Resources
 
 * [Parcel SDK](http://docs.oasiscloud.io/) - use password: **Parcel2020!**
