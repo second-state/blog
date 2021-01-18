@@ -6,10 +6,19 @@
     <description>Recent content in Oasis on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 09 Nov 2020 06:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 14 Jan 2021 06:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/oasis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Second State Functions releases a developer preview for high performance serverless functions</title>
+      <link>http://blog.secondstate.io/post/second-state-functions-developer-preview/</link>
+      <pubDate>Thu, 14 Jan 2021 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/second-state-functions-developer-preview/</guid>
+      <description>Second State has recently released a developer preview of its Function-as-a-Service (FaaS), known as Second State Functions. The Second State Functions enables developers to write simple functions in the Rust programming language for computationally intensive tasks such as image processing and AI inference. The developer simply needs to upload the compiled function to the FaaS service, and the function will become publically available as a web service. The developer preview version of the Second State Functions is free to use.</description>
+    </item>
     
     <item>
       <title>Second State partners with Oasis Foundation and Gitcoin to host The Quest for ROSE</title>
