@@ -19,7 +19,7 @@ Developers write Second State Functions in the Rust programming language, which 
 > Rust has been voted as the most beloved programming language 5 years in a row by Stackoverflow users. 
 
 
-Specifically, the high performance of Rust and SSVM enables compute-intensive serverless functions. For example, Second State Functions has [comprehensive tutorials](https://www.secondstate.io/articles/wasi-tensorflow/) on how to create Tensorflow functions to classify images or detect faces. 
+Specifically, the high performance of Rust and SSVM enables compute-intensive serverless functions. For example, Second State Functions has comprehensive tutorials on how to [create Tensorflow functions](https://www.secondstate.io/articles/wasi-tensorflow/) to classify images or detect faces. 
 
 The developer preview of Second State Functions is available to the public. With it, anyone can create and deploy Rust functions as web services. 
 
