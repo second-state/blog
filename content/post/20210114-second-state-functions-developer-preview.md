@@ -2,8 +2,8 @@
 title: "Second State Functions releases a developer preview for high performance serverless functions"
 date: 2021-01-14T06:42:14+08:00
 draft: false
-tags: ["Oasis", "confidential smart contract", "Ethereum", "Hackathon"]
-categories: ["developer","en","Oasis"]
+tags: ["FaaS", "Rust", "WebAssembly", "SSVM"]
+categories: ["developer","en","Second State Functions"]
 ---
 
 
