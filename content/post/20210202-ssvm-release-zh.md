@@ -13,13 +13,13 @@ categories: ["developer","zh","Second State Functions"]
 
 ## WebAssembly 提案 
 
-SSVM 支持可选的 WebAssembly 功能和提案。这些提案可能成为 WebAssembly 的正式规范。例如，SSVM 支持 WebAssembly 程序的 [WASI（WebAssembly系统接口）规范](https://github.com/WebAssembly/WASI)，从而可以与主机 Linux 操作系统安全地交互。在 0.7 版中，SSVM 支持以下提案。 
+SSVM 支持社区正在讨论与设计的 WebAssembly 功能和提案。这些提案可能成为 WebAssembly 的正式规范。例如，SSVM 支持 WebAssembly 程序的 [WASI（WebAssembly系统接口）规范](https://github.com/WebAssembly/WASI)，从而可以与主机 Linux 操作系统安全地交互。在 0.7 版中，SSVM 支持以下提案。 
 
 * [Reference Types](https://webassembly.github.io/reference-types/core/)。它允许 WebAssembly 程序与主机应用程序和操作系统交换数据。
 
 * [Bulk memory operations](https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md)。 WebAssembly 程序可以更快地访问内存，并且在大容量内存操作中性能更好。
 
-* [SIMD](https://github.com/WebAssembly/simd)（单指令，多个数据）。对于有着多核 CPU 的现代设备，SIMD 允许数据处理程序充分利用 CPU。 SIMD 可以大大提高数据应用程序的性能。
+* [SIMD](https://github.com/WebAssembly/simd)（单指令多数据运算）。对于有着多核 CPU 的现代设备，SIMD 允许数据处理程序充分利用 CPU。 SIMD 可以大大提高数据应用程序的性能。
 
 
 此外，SSVM 团队正在探索 wasi-socket 提案，以支持 WebAssembly 程序中的网络访问。 SSVM 有望成为世界上第一个支持 wasi-socket 的WebAssembly 虚拟机。 
@@ -76,7 +76,7 @@ SSVM 将逐步支持 [OCI (Open Container Initiative)](https://opencontainers.or
 
 从理论上讲，通过 LLVM 工具链，WebAssembly 可以支持20多种编程语言。但实际上，只有C、C++、Rust 和 AssemblyScript 获得了顶级的支持。即使这些语言，编译器也需要进行修补，以针对非标准扩展生成正确的 WebAssembly 字节码和 API 调用。例如，尽管 SSVM 支持 SIMD 提案，但当前只有基于 C 的编译器才能生成正确的 SIMD WebAssembly 字节码。 Rust 编译器[仍在修补中](https://github.com/rust-lang/stdarch/pull/874/files)，以实现对 WebAssembly 目标的 SIMD 支持。 
 
-除通用编程语言外，SSVM 还支持针对特定行业的细分编程语言(DSL)。例如，SSVM 的一个常见用例是，SSVM 可以在兼容以太坊的区块链上运行智能合约。 SSVM 已经被 Oasis Network 和 Substrate / Polkadot 社区等头部区块链采用为 Ewasm（以太坊的WebAssembly 虚拟机）。 
+除通用编程语言外，SSVM 还支持针对特定行业的细分编程语言(DSL)。例如，SSVM 的一个常见应用场景是，SSVM 可以在兼容以太坊的区块链上运行智能合约。 SSVM 已经被 Oasis Network 和 Substrate / Polkadot 社区等头部区块链采用为 Ewasm（以太坊的WebAssembly 虚拟机）。 
 
 
 * Solidity是编写以太坊智能合约的主要编程语言。由 Second State 开发的 [SOLL](https://github.com/second-state/SOLL) 编译器将 Solidity 程序[编译为可在 SSVM 内运行的 WebAssembly 字节码](https://github.com/second-state/SOLL/blob/master/doc/guides/FeatureGuideForSolidity.md)。
