@@ -6,10 +6,19 @@
     <description>Recent content in zh on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 28 Oct 2020 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Feb 2021 06:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/zh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>SSVM 0.7 版本将 WebAssembly 引入公有云</title>
+      <link>http://blog.secondstate.io/post/20200202-ssvm-release-zh/</link>
+      <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200202-ssvm-release-zh/</guid>
+      <description>SSVM (Second State VM)是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为</description>
+    </item>
     
     <item>
       <title>SSVM 0.7.0：朝更具互操作性的 WebAssembly 迈进</title>

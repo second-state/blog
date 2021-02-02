@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>SSVM 0.7 版本将 WebAssembly 引入公有云</title>
+      <link>http://blog.secondstate.io/post/20200202-ssvm-release-zh/</link>
+      <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200202-ssvm-release-zh/</guid>
+      <description>SSVM (Second State VM)是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为</description>
+    </item>
+    
+    <item>
       <title>The SSVM 0.7 release brings WebAssembly to the public cloud</title>
       <link>http://blog.secondstate.io/post/20210202-ssvm-release/</link>
       <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
@@ -197,16 +206,6 @@ Wasm started as a high performance execution engine inside web browsers. It is l
       
       <guid>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</guid>
       <description>在探讨 WASM 在服务端的巨大潜力时，我们提到 WASM 的一大优势就是支持有影响力的新锐编程语言，例如 Rust 。这篇文章将展示如何编写并执行一个 Wasm Rust 程序，只有代码</description>
-    </item>
-    
-    <item>
-      <title>WebAssembly on the server side</title>
-      <link>http://blog.secondstate.io/post/20191124-wasm-en/</link>
-      <pubDate>Sun, 24 Nov 2019 19:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191124-wasm-en/</guid>
-      <description>WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
-Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side.</description>
     </item>
     
   </channel>

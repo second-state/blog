@@ -65,6 +65,13 @@
   </url>
   
   <url>
+    <loc>http://blog.secondstate.io/post/20200202-ssvm-release-zh/</loc>
+    <lastmod>2021-02-02T06:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.secondstate.io/tags/</loc>
     <lastmod>2021-02-02T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -80,6 +87,13 @@
   
   <url>
     <loc>http://blog.secondstate.io/tags/webassembly/</loc>
+    <lastmod>2021-02-02T06:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/zh/</loc>
     <lastmod>2021-02-02T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -121,14 +135,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/oasis/</loc>
+    <loc>http://blog.secondstate.io/tags/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/oasis/</loc>
+    <loc>http://blog.secondstate.io/categories/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -178,13 +192,6 @@
   
   <url>
     <loc>http://blog.secondstate.io/categories/webassembly/</loc>
-    <lastmod>2020-10-28T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/categories/zh/</loc>
     <lastmod>2020-10-28T09:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

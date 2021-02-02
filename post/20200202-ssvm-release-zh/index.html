@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>SSVM 0.7 版本将 WebAssembly 引入公有云 - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="SSVM (Second State VM)是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为" />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.62.2" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20200202-ssvm-release-zh/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+<meta itemprop="name" content="SSVM 0.7 版本将 WebAssembly 引入公有云">
+<meta itemprop="description" content="SSVM (Second State VM)是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为">
+<meta itemprop="datePublished" content="2021-02-02T06:42:14&#43;08:00" />
+<meta itemprop="dateModified" content="2021-02-02T06:42:14&#43;08:00" />
+<meta itemprop="wordCount" content="2237">
+
+
+
+<meta itemprop="keywords" content="Cloud-native,Rust,WebAssembly,SSVM," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="SSVM 0.7 版本将 WebAssembly 引入公有云"/>
+<meta name="twitter:description" content="SSVM (Second State VM)是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="SSVM 0.7 版本将 WebAssembly 引入公有云 - Second State News and Articles">
+  <meta property="og:description" content="SSVM (Second State VM)是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为" />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20200202-ssvm-release-zh/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">SSVM 0.7 版本将 WebAssembly 引入公有云</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> February 2, 2021 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/developer/"> developer </a>
+            <a href="http://blog.secondstate.io/categories/zh/"> zh </a>
+            <a href="http://blog.secondstate.io/categories/second-state-functions/"> Second State Functions </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p><a href="https://www.secondstate.io/ssvm/">SSVM (Second State VM)</a>是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为最快的 WebAssembly 虚拟机之一。最新的 <a href="https://github.com/second-state/SSVM/releases/tag/0.7.3">SSVM 0.7</a> 版本发布了一系列强大且独一无二的功能，这些功能使得 SSVM 进一步差异化，并巩固了 SSVM 作为领先的云原生应用程序运行时的地位。</p>
+<p><img src="/images/20210201-ssvm-0-7-release.png" alt="SSVM 0.7 release"></p>
+<h2 id="webassembly-提案">WebAssembly 提案</h2>
+<p>SSVM 支持可选的 WebAssembly 功能和提案。这些提案可能成为 WebAssembly 的正式规范。例如，SSVM 支持 WebAssembly 程序的 <a href="https://github.com/WebAssembly/WASI">WASI（WebAssembly系统接口）规范</a>，从而可以与主机 Linux 操作系统安全地交互。在 0.7 版中，SSVM 支持以下提案。</p>
+<ul>
+<li>
+<p><a href="https://webassembly.github.io/reference-types/core/">Reference Types</a>。它允许 WebAssembly 程序与主机应用程序和操作系统交换数据。</p>
+</li>
+<li>
+<p><a href="https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md">Bulk memory operations</a>。 WebAssembly 程序可以更快地访问内存，并且在大容量内存操作中性能更好。</p>
+</li>
+<li>
+<p><a href="https://github.com/WebAssembly/simd">SIMD</a>（单指令，多个数据）。对于有着多核 CPU 的现代设备，SIMD 允许数据处理程序充分利用 CPU。 SIMD 可以大大提高数据应用程序的性能。</p>
+</li>
+</ul>
+<p>此外，SSVM 团队正在探索 wasi-socket 提案，以支持 WebAssembly 程序中的网络访问。 SSVM 有望成为世界上第一个支持 wasi-socket 的WebAssembly 虚拟机。</p>
+<h2 id="wasi-的服务端应用扩展">WASI 的服务端应用扩展</h2>
+<p>SSVM 与其他 WebAssembly 虚拟机的主要区别在于对非标准扩展的支持。 <a href="https://github.com/WebAssembly/WASI">WASI 规范</a>为开发者提供了一种机制，可以有效、安全地扩展 WebAssembly 虚拟机。 SSVM 团队根据实际场景的需求对 0.7 版本的需求创建了以下类 WASI 的扩展。在不久的将来，SSVM 团队会合作、增强和标准化这些扩展和API。</p>
+<ul>
+<li>
+<p><a href="https://github.com/second-state/ssvm-tensorflow">Tensorflow</a>。开发者可以使用简单的<a href="https://crates.io/crates/ssvm_tensorflow_interface">Rust API</a> 编写 Tensorflow 推理函数，然后在 SSVM 中安全地以本机速度运行该函数。<a href="https://www.secondstate.io/faas/">Second State Functions</a> 支持此功能。</p>
+</li>
+<li>
+<p>其他 AI 框架。除了 Tensorflow 之外，Second State 团队还为 AI 框架（例如 ONNX 和 Tengine ）构建类 WASI 的扩展。</p>
+</li>
+<li>
+<p><a href="https://github.com/second-state/ssvm-storage">存储</a>。SSVM 存储接口允许 WebAssembly 程序读取和写入一个 KV 数据库。 Second State Functions 支持此功能。</p>
+</li>
+<li>
+<p><a href="https://github.com/second-state/ssvm_process_interface">命令界面</a>。 SSVM 允许 WebAssembly 函数在主机操作系统中执行本机命令。它支持传递参数、环境变量、STDIN / STDOUT 管道以及用于主机访问的安全策略。Second State Functions 中的 <a href="https://www.secondstate.io/articles/internet-of-functions-http-proxy/">http_proxy</a> 是在 serverless 函数中使用操作系统命令的示例。</p>
+</li>
+<li>
+<p><a href="https://github.com/second-state/ssvm-evmc">以太坊</a>。 SSVM Ewasm 扩展支持编译为 WebAssembly 的以太坊智能合约。这是是前沿性的以太坊风格 WebAssembly（Ewasm）实现。</p>
+</li>
+<li>
+<p><a href="https://github.com/second-state/substrate-ssvm-node">Substrate</a>。<a href="https://github.com/second-state/pallet-ssvm">SSVM Pallet</a> 允许SSVM在任何基于Substrate 的区块链上充当以太坊智能合约执行引擎。</p>
+</li>
+</ul>
+<h2 id="基于能力的安全性">基于能力的安全性</h2>
+<p>WASI 和类 WASI 的扩展通过声明性的、基于能力的安全模型来控制对主机系统的访问。这种方法允许 WebAssembly 虚拟机实例由显式规则保护，并且独立于运行虚拟机实例的用户。例如，使用 WASI，SSVM 主机应用程序规定虚拟机可以访问主机操作系统中的哪些文件夹。</p>
+<p>SSVM 增加了<a href="https://www.secondstate.io/articles/command-process/">对操作系统本机命令的支持</a>。沙盒 WebAssembly 字节码应用程序只能访问它要求并声明的操作系统命令，这点很重要。现在，SSVM 主机应用程序可以将允许虚拟机访问的命令列入白名单。随着生态系统和安全策略的发展，我们预计 SSVM 将比当今基于容器的运行时 (例如Docker) 更加安全，适应性更强。</p>
+<h2 id="跨平台">跨平台</h2>
+<p>使用服务端的 WebAssembly 虚拟机，开发者可以在一台机器(例如开发者的笔记本电脑或 CI 机器)上编译应用程序，并部署在各种不同的平台上。公有云和边缘云的标准运行时通常是旧版本的 Linux，在开发中已不再广泛使用。例如，Second State 和腾讯云在 <a href="https://github.com/second-state/tencent-tensorflow-scf">Severless Tensorflow 函数</a>的合作中，SSVM 及其类 WASI 的 Tensorflow 扩展需要在老旧的 CentOS 7 image 上运行。</p>
+<p>SSVM 是在 Ubuntu 20.04 上开发的，以利用先进的LLVM 功能来实现 AOT 编译器。我们为较旧的 Linux 发行版构建和发布了静态链接的 SSVM 二进制文件。 SSVM 二进制文件的 <code>manylinux1</code> 构建可以在2007年发布的 CentOS 5 上运行。SSVM 还将移植到各种服务器、嵌入式操作系统和硬件平台上。</p>
+<h2 id="云原生支持">云原生支持</h2>
+<p>SSVM 是“云原生” WebAssembly 虚拟机，旨在为应用程序开发者提供云服务。SSVM 0.7 作为高性能和安全的运行时引擎，被集成到云原生应用程序框架中。</p>
+<ul>
+<li>
+<p><a href="https://www.secondstate.io/faas/">Second State Functions</a> 是公共的 Serverless 即服务（FaaS）。它在 SSVM 中安全地运行计算密集型函数。Second State Functions 服务建立在 <a href="https://github.com/second-state/wasm-joey">Wasm Joey</a> 这一开源项目上，该项目依赖于 Node.js 实例化并管理 SSVM 实例。</p>
+</li>
+<li>
+<p><a href="https://intl.cloud.tencent.com/product/scf">腾讯 Serverless 云函数</a>与 Second State 合作，通过 SSVM 支持 <a href="https://www.secondstate.io/articles/wasi-tensorflow/">Tensorflow 推理函数</a>。开发者可以在几分钟之内开始使用 <a href="https://github.com/second-state/tencent-tensorflow-scf">Serverless 框架模板</a>，发布一个Serverless AI 推理函数。现在还可以参加<a href="https://mp.weixin.qq.com/s/ur8l_tIGXOXoW7lf1LTSOg">线上黑客马拉松赢取奖品</a>。</p>
+</li>
+<li>
+<p><a href="https://github.com/yomorun/yomo">YoMo</a> 是一个开源的 Serverless 流框架，用于构建低延迟边缘计算应用程序，建立在 QUIC 传输协议和功能性反应性编程接口之上。Yomo 利用 <a href="https://github.com/yomorun/yomo-flow-ssvm-example">SSVM</a> 在边缘设置中执行Serverless 函数。</p>
+</li>
+</ul>
+<p>SSVM 将逐步支持 <a href="https://opencontainers.org/">OCI (Open Container Initiative)</a>规范，该规范将允许由 Cloud Native Orchestration 工具，如Kubernetes，管理 SSVM 实例。</p>
+<h2 id="语言支持">语言支持</h2>
+<p>从理论上讲，通过 LLVM 工具链，WebAssembly 可以支持20多种编程语言。但实际上，只有C、C++、Rust 和 AssemblyScript 获得了顶级的支持。即使这些语言，编译器也需要进行修补，以针对非标准扩展生成正确的 WebAssembly 字节码和 API 调用。例如，尽管 SSVM 支持 SIMD 提案，但当前只有基于 C 的编译器才能生成正确的 SIMD WebAssembly 字节码。 Rust 编译器<a href="https://github.com/rust-lang/stdarch/pull/874/files">仍在修补中</a>，以实现对 WebAssembly 目标的 SIMD 支持。</p>
+<p>除通用编程语言外，SSVM 还支持针对特定行业的细分编程语言(DSL)。例如，SSVM 的一个常见用例是，SSVM 可以在兼容以太坊的区块链上运行智能合约。 SSVM 已经被 Oasis Network 和 Substrate / Polkadot 社区等头部区块链采用为 Ewasm（以太坊的WebAssembly 虚拟机）。</p>
+<ul>
+<li>
+<p>Solidity是编写以太坊智能合约的主要编程语言。由 Second State 开发的 <a href="https://github.com/second-state/SOLL">SOLL</a> 编译器将 Solidity 程序<a href="https://github.com/second-state/SOLL/blob/master/doc/guides/FeatureGuideForSolidity.md">编译为可在 SSVM 内运行的 WebAssembly 字节码</a>。</p>
+</li>
+<li>
+<p>Fe 是以太坊基金会的一种新的简化智能合约语言。 SOLL编译器与以太坊基金会的 solc 工具一起可以将 <a href="https://github.com/second-state/rust-ssvm/blob/master/examples/fe-readme.md">Fe 智能合约编译为用于 可在 SSVM 内运行的的 WebAssembly 字节码</a>。</p>
+</li>
+</ul>
+<p>SSVM 0.7 是针对 Web、边缘、区块链和 Serverless 计算进行优化的的一个重要版本。</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">February 2, 2021</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/cloud-native/">Cloud-native</a>
+          <a href="http://blog.secondstate.io/tags/rust/">Rust</a>
+          <a href="http://blog.secondstate.io/tags/webassembly/">WebAssembly</a>
+          <a href="http://blog.secondstate.io/tags/ssvm/">SSVM</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/20210202-ssvm-release/">
+            <span class="next-text nav-default">The SSVM 0.7 release brings WebAssembly to the public cloud</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      
+
+  
+  <script type="text/javascript">document.cookie = 'MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'</script>
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"fff3b05c9dd4ef7b8163406d1","lid":"8eb8db2618","uniqueMethods":true}) })</script>
+
+<div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

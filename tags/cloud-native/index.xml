@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>SSVM 0.7 版本将 WebAssembly 引入公有云</title>
+      <link>http://blog.secondstate.io/post/20200202-ssvm-release-zh/</link>
+      <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20200202-ssvm-release-zh/</guid>
+      <description>SSVM (Second State VM)是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为</description>
+    </item>
+    
+    <item>
       <title>The SSVM 0.7 release brings WebAssembly to the public cloud</title>
       <link>http://blog.secondstate.io/post/20210202-ssvm-release/</link>
       <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
