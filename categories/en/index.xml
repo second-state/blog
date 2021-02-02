@@ -6,10 +6,20 @@
     <description>Recent content in en on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 14 Jan 2021 06:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Feb 2021 06:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The SSVM 0.7 release brings WebAssembly to the public cloud</title>
+      <link>http://blog.secondstate.io/post/20210202-ssvm-release/</link>
+      <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20210202-ssvm-release/</guid>
+      <description>The SSVM (Second State VM) is a popular WebAssembly VM optimized for high-performance applications on the server side. With advanced AOT (Ahead of Time compiler) support, the SSVM is already one of the fastest WebAssembly VMs. The recent SSVM release 0.7 brings a wide array of unique features that further differentiate and solidify the SSVM as a leading cloud native application runtime.
+WebAssembly proposals The SSVM supports optional WebAssembly features and proposals.</description>
+    </item>
     
     <item>
       <title>Second State Functions releases a developer preview for high performance serverless functions</title>
@@ -207,16 +217,6 @@ Now, for developers, can you tell what the following code is for?
       <description>Have you ever tried to build your own website?
 You need to
  Get Web Hosting Register a Domain name(usually ~$15/year) Set up your website from the web host ········  Way too many steps! But with BUIDL IDE tools, you can build a decentralized website all by yourself in 5 minutes. The website will not only allow you to write any words you want but also allow your friends to access this page and interact with you.</description>
-    </item>
-    
-    <item>
-      <title>Compile and deploy an ERC20 contract on Ewasm</title>
-      <link>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</link>
-      <pubDate>Fri, 25 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</guid>
-      <description>Second State provides open source infrastructure technologies for public and enterprise blockchains. The smart contract compiler toolchain and virtual machine runtimes are critical elements of the infrastructure.
-Through its web-based BUIDL IDE, developers can easily access Second State smart contract programming languages, compilers, optimizers, and virtual machines. Even novice developers can write and publish decentralized applications (smart contract + web app) on any Ethereum-compatible blockchain in minutes. See examples on Ethereum Classic and CyberMiles blockchains.</description>
     </item>
     
   </channel>

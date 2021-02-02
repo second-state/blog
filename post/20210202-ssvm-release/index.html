@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>The SSVM 0.7 release brings WebAssembly to the public cloud - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="The SSVM (Second State VM) is a popular WebAssembly VM optimized for high-performance applications on the server side. With advanced AOT (Ahead of Time compiler) support, the SSVM is already one of the fastest WebAssembly VMs. The recent SSVM release 0.7 brings a wide array of unique features that further differentiate and solidify the SSVM as a leading cloud native application runtime.
+WebAssembly proposals The SSVM supports optional WebAssembly features and proposals." />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.62.2" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20210202-ssvm-release/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+<meta itemprop="name" content="The SSVM 0.7 release brings WebAssembly to the public cloud">
+<meta itemprop="description" content="The SSVM (Second State VM) is a popular WebAssembly VM optimized for high-performance applications on the server side. With advanced AOT (Ahead of Time compiler) support, the SSVM is already one of the fastest WebAssembly VMs. The recent SSVM release 0.7 brings a wide array of unique features that further differentiate and solidify the SSVM as a leading cloud native application runtime.
+WebAssembly proposals The SSVM supports optional WebAssembly features and proposals.">
+<meta itemprop="datePublished" content="2021-02-02T06:42:14&#43;08:00" />
+<meta itemprop="dateModified" content="2021-02-02T06:42:14&#43;08:00" />
+<meta itemprop="wordCount" content="1133">
+
+
+
+<meta itemprop="keywords" content="Cloud-native,Rust,WebAssembly,SSVM," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="The SSVM 0.7 release brings WebAssembly to the public cloud"/>
+<meta name="twitter:description" content="The SSVM (Second State VM) is a popular WebAssembly VM optimized for high-performance applications on the server side. With advanced AOT (Ahead of Time compiler) support, the SSVM is already one of the fastest WebAssembly VMs. The recent SSVM release 0.7 brings a wide array of unique features that further differentiate and solidify the SSVM as a leading cloud native application runtime.
+WebAssembly proposals The SSVM supports optional WebAssembly features and proposals."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="The SSVM 0.7 release brings WebAssembly to the public cloud - Second State News and Articles">
+  <meta property="og:description" content="The SSVM (Second State VM) is a popular WebAssembly VM optimized for high-performance applications on the server side. With advanced AOT (Ahead of Time compiler) support, the SSVM is already one of the fastest WebAssembly VMs. The recent SSVM release 0.7 brings a wide array of unique features that further differentiate and solidify the SSVM as a leading cloud native application runtime.
+WebAssembly proposals The SSVM supports optional WebAssembly features and proposals." />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20210202-ssvm-release/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">The SSVM 0.7 release brings WebAssembly to the public cloud</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> February 2, 2021 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/developer/"> developer </a>
+            <a href="http://blog.secondstate.io/categories/en/"> en </a>
+            <a href="http://blog.secondstate.io/categories/second-state-functions/"> Second State Functions </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p>The <a href="https://www.secondstate.io/ssvm/">SSVM (Second State VM)</a> is a popular WebAssembly VM optimized for high-performance applications on the server side. With advanced AOT (Ahead of Time compiler) support, the SSVM is already one of the fastest WebAssembly VMs. The recent <a href="https://github.com/second-state/SSVM/releases/tag/0.7.3">SSVM release 0.7</a> brings a wide array of unique features that further differentiate and solidify the SSVM as a leading cloud native application runtime.</p>
+<p><img src="/images/20210201-ssvm-0-7-release.png" alt="SSVM 0.7 release"></p>
+<h2 id="webassembly-proposals">WebAssembly proposals</h2>
+<p>The SSVM supports optional WebAssembly features and proposals. Those proposals are likely to become official WebAssembly specifications in the future. For example, the SSVM has supported the <a href="https://github.com/WebAssembly/WASI">WASI (WebAssembly Systems Interface) spec</a> for WebAssembly programs to securely interact with the host Linux operating system. With release 0.7, the SSVM supports the following proposals.</p>
+<ul>
+<li><a href="https://webassembly.github.io/reference-types/core/">Reference Types</a>. It allows WebAssembly programs to exchange data with host applications and operating systems.</li>
+<li><a href="https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md">Bulk memory operations</a>. The WebAssembly program sees faster memory access and performs better with bulk memory operations.</li>
+<li><a href="https://github.com/second-state/SSVM/blob/master/doc/simd.md">SIMD</a> (Single instruction, multiple data). For modern devices with multiple CPU cores, the SIMD allows data processing programs to fully take advantage of the CPUs. SIMD could greatly enhance performance of data applications.</li>
+</ul>
+<p>Furthermore, the SSVM team is exploring the <a href="https://github.com/WebAssembly/WASI/pull/312">wasi-socket</a> proposal to support network access in WebAssembly programs. The SSVM is posed to become the world’s first WebAssembly VM to support wasi-socket.</p>
+<h2 id="powerful-wasi-like-extensions">Powerful WASI-like extensions</h2>
+<p>A key differentiator of the SSVM from other WebAssembly VMs is its support for non-standard extensions. The <a href="https://github.com/WebAssembly/WASI">WASI spec</a> provides a mechanism for developers to extend WebAssembly VMs efficiently and securely. The SSVM team created the following WASI-like extensions based on real-world customer demands for release 0.7. We will collaborate, enhance, and standardize those extensions and APIs in the near future.</p>
+<ul>
+<li><a href="https://github.com/second-state/ssvm-tensorflow">Tensorflow</a>. Developers can write Tensorflow inference functions using a <a href="https://crates.io/crates/ssvm_tensorflow_interface">simple Rust API</a>, and then run the function securely and at native speed inside SSVM. This feature is supported in <a href="https://www.secondstate.io/faas/">Second State Functions</a>.</li>
+<li>Other AI frameworks. Besides Tensorflow, the Second State team is building WASI-like extensions for AI frameworks such as ONNX and Tengine for SSVM.</li>
+<li><a href="https://github.com/second-state/ssvm-storage">Storage</a>. The SSVM <a href="https://github.com/second-state/rust_native_storage_library">storage interface</a> allows WebAssembly programs to read and write a key value store. This feature is supported in Second State functions.</li>
+<li><a href="https://github.com/second-state/ssvm_process_interface">Command interface</a>. SSVM allows WebAssembly functions to execute native commands in the host operating system. It supports passing arguments, environment variables, STDIN / STDOUT pipes, and security policies for host access. The <a href="https://www.secondstate.io/articles/internet-of-functions-http-proxy/">http_proxy</a> in Second State Functions is an example of using operating system commands in a serverless function.</li>
+<li><a href="https://github.com/second-state/ssvm-evmc">Ethereum</a>. The SSVM Ewasm extension supports Ethereum smart contracts compiled to WebAssembly. It is a leading implementation for Ethereum flavored WebAssembly (Ewasm).</li>
+<li><a href="https://github.com/second-state/substrate-ssvm-node">Substrate</a>. The <a href="https://github.com/second-state/pallet-ssvm">SSVM Pallet</a> allows the SSVM to act as an Ethereum smart contract execution engine on any Substrate based blockchains.</li>
+</ul>
+<h2 id="capability-based-security">Capability-based security</h2>
+<p>WASI and WASI-like extensions control access to the host system through a declarative and capability-based security model. This approach allows the WebAssembly VM instance to be secured by explicit rules that are independent from the user running the VM instance. For example, with WASI, the SSVM host application can specify which file folders in the host operating system the VM has access to.</p>
+<p>In SSVM 0.7, we added support for <a href="https://www.secondstate.io/articles/command-process/">operating system native commands</a>. It is important that the sandboxed WebAssembly bytecode application only has access to the operating system commands it requires and declares. The SSVM host application can now whitelist commands the VM is allowed to access. As the ecosystem and security policies grow, we anticipate that the SSVM will be more secure and more adaptable than today’s container-based runtimes such as Docker.</p>
+<h2 id="cross-platform">Cross-platform</h2>
+<p>WebAssembly VM on the server side allows applications to be compiled on one machine (eg the developer’s laptop or a CI machine) and deployed on a variety of different platforms. For public and edge clouds, the standard runtimes are often older versions of Linux that are no longer widely used in development. For example, the collaboration between Second State and Tencent Cloud on <a href="https://github.com/second-state/tencent-tensorflow-scf">Serverless Tensorflow functions</a> require the SSVM and its WASI-like Tensorflow extension to run on a hardened CentOS 7 image.</p>
+<p>The SSVM is developed on Ubuntu 20.04 to take advantage of advanced LLVM features for the AOT compiler. With SSVM 0.7, we are now building and releasing statically linked SSVM binaries for older Linux distributions. The <code>manylinux1</code> build of the SSVM binaries can run on CentOS 5, which was released in 2007. Going forward, SSVM is now being ported to a wide array of server and embedded operating systems and hardware platforms.</p>
+<h2 id="cloud-native-support">Cloud native support</h2>
+<p>The SSVM is a &ldquo;cloud native&rdquo; WebAssembly VM . It aims to provide cloud services to application developers. The SSVM 0.7 is integrated into cloud native application frameworks as a high-performance and secure runtime engine.</p>
+<ul>
+<li>The <a href="https://www.secondstate.io/faas/">Second State Functions</a> is a public serverless function-as-a-service (FaaS). It runs computationally intensive functions safely in SSVM. The Second State Functions service is built on the <a href="https://github.com/second-state/wasm-joey">Wasm Joey</a> open source project, which relies on Node.js to instantiate and manage SSVM instances.</li>
+<li>The <a href="https://intl.cloud.tencent.com/product/scf">Tencent Serverless Cloud Function</a> collaborates with Second State to support <a href="https://www.secondstate.io/articles/wasi-tensorflow/">Tensorflow inference functions</a>through the SSVM. Developers can get started within minutes with a <a href="https://github.com/second-state/tencent-tensorflow-scf">Serverless Framework template</a> and win cool prizes in an online hackathon.</li>
+<li><a href="https://github.com/yomorun/yomo">YoMo</a> is an open-source Streaming Serverless Framework for building Low-latency Edge Computing applications, built atop QUIC Transport Protocol and Functional Reactive Programming interface. It <a href="https://github.com/yomorun/yomo-flow-ssvm-example">utilizes the SSVM</a> to execute serverless functions in edge settings.</li>
+</ul>
+<p>Going forward, SSVM will support the <a href="https://opencontainers.org/">OCI (Open Container Initiative)</a> specification, which will allow SSVM instances to be managed by cloud native orchestration tools such as Kubernetes.</p>
+<h2 id="language-support">Language support</h2>
+<p>In theory, WebAssembly can support over 20 programming languages through the LLVM toolchain. However, in reality, only C, C++, Rust, and AssemblyScript receive first class support. Even among those languages, the compiler needs to be patched to generate the correct WebAssembly bytecode and API calls for non-standard extensions. For example, while the <a href="https://github.com/second-state/SSVM/blob/master/doc/simd.md">SSVM supports the SIMD</a> proposal, currently only C-based compilers can generate correct SIMD WebAssembly bytecode. The Rust compiler is <a href="https://github.com/rust-lang/stdarch/pull/874/files">still being patched</a> for SIMD support for WebAssembly targets.</p>
+<p>Besides general purpose programming languages, the SSVM supports niche programming languages for specific industry verticals. For example, a common use case for SSVM is to run smart contracts on Ethereum compatible blockchains. The SSVM 0.7 is adopted by leading blockchains such the Oasis Network and Substrate / Polkadot community as the Ewasm (Ethereum flavored WebAssembly) VM.</p>
+<ul>
+<li>Solidity is a leading programming language for Ethereum smart contracts. The <a href="https://github.com/second-state/SOLL">SOLL</a> compiler, developed by Second State, <a href="https://github.com/second-state/SOLL/blob/master/doc/guides/FeatureGuideForSolidity.md">compiles Solidity programs to WebAssembly bytecode</a> that can run inside the SSVM.</li>
+<li>Fe is a new and simplified smart contract language from the Ethereum foundation. The SOLL compiler, together with Ethereum Foundation's solc tool, can <a href="https://github.com/second-state/rust-ssvm/blob/master/examples/fe-readme.md">compile Fe smart contracts to WebAssembly for SSVM</a>.</li>
+</ul>
+<p><strong>SSVM 0.7 is a significant release for an open source WebAssembly VM optimized for cloud, edge, blockchain and serverless computing.</strong></p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">February 2, 2021</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/cloud-native/">Cloud-native</a>
+          <a href="http://blog.secondstate.io/tags/rust/">Rust</a>
+          <a href="http://blog.secondstate.io/tags/webassembly/">WebAssembly</a>
+          <a href="http://blog.secondstate.io/tags/ssvm/">SSVM</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/20210114-second-state-functions-developer-preview/">
+            <span class="next-text nav-default">Second State Functions releases a developer preview for high performance serverless functions</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      
+
+  
+  <script type="text/javascript">document.cookie = 'MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'</script>
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"fff3b05c9dd4ef7b8163406d1","lid":"8eb8db2618","uniqueMethods":true}) })</script>
+
+<div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloud-native on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/cloud-native/</link>
+    <description>Recent content in Cloud-native on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 02 Feb 2021 06:42:14 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/cloud-native/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The SSVM 0.7 release brings WebAssembly to the public cloud</title>
+      <link>http://blog.secondstate.io/post/20210202-ssvm-release/</link>
+      <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20210202-ssvm-release/</guid>
+      <description>The SSVM (Second State VM) is a popular WebAssembly VM optimized for high-performance applications on the server side. With advanced AOT (Ahead of Time compiler) support, the SSVM is already one of the fastest WebAssembly VMs. The recent SSVM release 0.7 brings a wide array of unique features that further differentiate and solidify the SSVM as a leading cloud native application runtime.
+WebAssembly proposals The SSVM supports optional WebAssembly features and proposals.</description>
+    </item>
+    
+  </channel>
+</rss>
