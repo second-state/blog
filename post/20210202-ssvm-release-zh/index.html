@@ -37,7 +37,7 @@
 <meta name="generator" content="Hugo 0.62.2" />
 
 
-<link rel="canonical" href="http://blog.secondstate.io/post/20200202-ssvm-release-zh/" />
+<link rel="canonical" href="http://blog.secondstate.io/post/20210202-ssvm-release-zh/" />
 
 
 
@@ -62,7 +62,7 @@
 <meta itemprop="description" content="SSVM (Second State VM)是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为">
 <meta itemprop="datePublished" content="2021-02-02T06:42:14&#43;08:00" />
 <meta itemprop="dateModified" content="2021-02-02T06:42:14&#43;08:00" />
-<meta itemprop="wordCount" content="2237">
+<meta itemprop="wordCount" content="2246">
 
 
 
@@ -94,7 +94,7 @@ if (!doNotTrack) {
 <meta property="og:title" content="SSVM 0.7 版本将 WebAssembly 引入公有云 - Second State News and Articles">
   <meta property="og:description" content="SSVM (Second State VM)是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为" />
 <meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
-<meta property="og:url" content="http://blog.secondstate.io/post/20200202-ssvm-release-zh/">
+<meta property="og:url" content="http://blog.secondstate.io/post/20210202-ssvm-release-zh/">
 
 
 </head>
@@ -290,7 +290,7 @@ if (!doNotTrack) {
       <p><a href="https://www.secondstate.io/ssvm/">SSVM (Second State VM)</a>是一个非常受欢迎的 WebAssembly 虚拟机，针对服务端的高性能应用程序进行了优化。凭借先进的 AOT（Ahead of Time 编译器）支持，SSVM 已经成为最快的 WebAssembly 虚拟机之一。最新的 <a href="https://github.com/second-state/SSVM/releases/tag/0.7.3">SSVM 0.7</a> 版本发布了一系列强大且独一无二的功能，这些功能使得 SSVM 进一步差异化，并巩固了 SSVM 作为领先的云原生应用程序运行时的地位。</p>
 <p><img src="/images/20210201-ssvm-0-7-release.png" alt="SSVM 0.7 release"></p>
 <h2 id="webassembly-提案">WebAssembly 提案</h2>
-<p>SSVM 支持可选的 WebAssembly 功能和提案。这些提案可能成为 WebAssembly 的正式规范。例如，SSVM 支持 WebAssembly 程序的 <a href="https://github.com/WebAssembly/WASI">WASI（WebAssembly系统接口）规范</a>，从而可以与主机 Linux 操作系统安全地交互。在 0.7 版中，SSVM 支持以下提案。</p>
+<p>SSVM 支持社区正在讨论与设计的 WebAssembly 功能和提案。这些提案可能成为 WebAssembly 的正式规范。例如，SSVM 支持 WebAssembly 程序的 <a href="https://github.com/WebAssembly/WASI">WASI（WebAssembly系统接口）规范</a>，从而可以与主机 Linux 操作系统安全地交互。在 0.7 版中，SSVM 支持以下提案。</p>
 <ul>
 <li>
 <p><a href="https://webassembly.github.io/reference-types/core/">Reference Types</a>。它允许 WebAssembly 程序与主机应用程序和操作系统交换数据。</p>
@@ -299,7 +299,7 @@ if (!doNotTrack) {
 <p><a href="https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md">Bulk memory operations</a>。 WebAssembly 程序可以更快地访问内存，并且在大容量内存操作中性能更好。</p>
 </li>
 <li>
-<p><a href="https://github.com/WebAssembly/simd">SIMD</a>（单指令，多个数据）。对于有着多核 CPU 的现代设备，SIMD 允许数据处理程序充分利用 CPU。 SIMD 可以大大提高数据应用程序的性能。</p>
+<p><a href="https://github.com/WebAssembly/simd">SIMD</a>（单指令多数据运算）。对于有着多核 CPU 的现代设备，SIMD 允许数据处理程序充分利用 CPU。 SIMD 可以大大提高数据应用程序的性能。</p>
 </li>
 </ul>
 <p>此外，SSVM 团队正在探索 wasi-socket 提案，以支持 WebAssembly 程序中的网络访问。 SSVM 有望成为世界上第一个支持 wasi-socket 的WebAssembly 虚拟机。</p>
@@ -347,7 +347,7 @@ if (!doNotTrack) {
 <p>SSVM 将逐步支持 <a href="https://opencontainers.org/">OCI (Open Container Initiative)</a>规范，该规范将允许由 Cloud Native Orchestration 工具，如Kubernetes，管理 SSVM 实例。</p>
 <h2 id="语言支持">语言支持</h2>
 <p>从理论上讲，通过 LLVM 工具链，WebAssembly 可以支持20多种编程语言。但实际上，只有C、C++、Rust 和 AssemblyScript 获得了顶级的支持。即使这些语言，编译器也需要进行修补，以针对非标准扩展生成正确的 WebAssembly 字节码和 API 调用。例如，尽管 SSVM 支持 SIMD 提案，但当前只有基于 C 的编译器才能生成正确的 SIMD WebAssembly 字节码。 Rust 编译器<a href="https://github.com/rust-lang/stdarch/pull/874/files">仍在修补中</a>，以实现对 WebAssembly 目标的 SIMD 支持。</p>
-<p>除通用编程语言外，SSVM 还支持针对特定行业的细分编程语言(DSL)。例如，SSVM 的一个常见用例是，SSVM 可以在兼容以太坊的区块链上运行智能合约。 SSVM 已经被 Oasis Network 和 Substrate / Polkadot 社区等头部区块链采用为 Ewasm（以太坊的WebAssembly 虚拟机）。</p>
+<p>除通用编程语言外，SSVM 还支持针对特定行业的细分编程语言(DSL)。例如，SSVM 的一个常见应用场景是，SSVM 可以在兼容以太坊的区块链上运行智能合约。 SSVM 已经被 Oasis Network 和 Substrate / Polkadot 社区等头部区块链采用为 Ewasm（以太坊的WebAssembly 虚拟机）。</p>
 <ul>
 <li>
 <p>Solidity是编写以太坊智能合约的主要编程语言。由 Second State 开发的 <a href="https://github.com/second-state/SOLL">SOLL</a> 编译器将 Solidity 程序<a href="https://github.com/second-state/SOLL/blob/master/doc/guides/FeatureGuideForSolidity.md">编译为可在 SSVM 内运行的 WebAssembly 字节码</a>。</p>
