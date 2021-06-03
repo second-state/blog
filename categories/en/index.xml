@@ -13,6 +13,18 @@
     
     <item>
       <title>WasmEdge (formerly SSVM) is now a CNCF Project</title>
+      <link>http://blog.secondstate.io/post/20210602-wasmedge-ssvm-joins-cncf/</link>
+      <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20210602-wasmedge-ssvm-joins-cncf/</guid>
+      <description>We are thrilled to announce that WasmEdge, formerly SSVM, has recently been accepted by the CNCF Foundation as a sandbox project, which is the first offcial CNCF WebAssembly runtime project. We envision that it will fill an important role in CNCF’s open source cloud computing landscape as a mission critical lightweight runtime for edge clouds.
+For more infomation about WasmEdge, check out this article.
+Join the WasmEdge Community:
+👉 GitHub:WasmEdge</description>
+    </item>
+    
+    <item>
+      <title>WasmEdge (formerly SSVM) is now a CNCF Project</title>
       <link>http://blog.secondstate.io/post/wasmedge-ssvm-joins-cncf/</link>
       <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
       
@@ -207,17 +219,6 @@ Blockchain Smart Contract ABI is the interface between smart contracts and block
 BUIDL IDE tools now has an upgraded UI just for Halloween. Trick or treat! A spooky pumpkin on the top welcomes you to the BUIDL’s Halloween.
 Now, for developers, can you tell what the following code is for?
 1 2 3 4 5 6 7 8  pragma lity ^1.2.4; contract Halloween { function greet() pure public returns (string) { return &amp;#34;Happy Halloween&amp;#34;; } }   This is a very simple (yet spooky) smart contract example, just like the “Hello World” on the internet.</description>
-    </item>
-    
-    <item>
-      <title>Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm</title>
-      <link>http://blog.secondstate.io/post/20191029-ewasm/</link>
-      <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191029-ewasm/</guid>
-      <description>Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.
- “The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).
- The EVM consists of a stack-based architecture. In order for a smart contract to be deployed, all high level Ethereum smart contract code must first be compiled into machine-readable code (called bytecode).</description>
     </item>
     
   </channel>

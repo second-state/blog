@@ -65,6 +65,13 @@
   </url>
   
   <url>
+    <loc>http://blog.secondstate.io/post/20210602-wasmedge-ssvm-joins-cncf/</loc>
+    <lastmod>2021-06-02T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.secondstate.io/post/wasmedge-ssvm-joins-cncf/</loc>
     <lastmod>2021-06-02T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
