@@ -6,10 +6,22 @@
     <description>Recent content in WebAssembly on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 06:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jun 2021 01:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/webassembly/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WasmEdge (formerly SSVM) is now a CNCF Project</title>
+      <link>http://blog.secondstate.io/post/wasmedge-ssvm-joins-cncf/</link>
+      <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/wasmedge-ssvm-joins-cncf/</guid>
+      <description>We are thrilled to announce that WasmEdge, formerly SSVM, has recently been accepted by the CNCF Foundation as a sandbox project, which is the first offcial CNCF WebAssembly runtime project. We envision that it will fill an important role in CNCF’s open source cloud computing landscape as a mission critical lightweight runtime for edge clouds.
+For more infomation about WasmEdge, check out this article.
+Join the WasmEdge Community:
+👉 GitHub:WasmEdge</description>
+    </item>
     
     <item>
       <title>SSVM 0.7 版本将 WebAssembly 引入公有云</title>

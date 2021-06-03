@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CNCF on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/cncf/</link>
+    <description>Recent content in CNCF on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 02 Jun 2021 01:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/cncf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WasmEdge (formerly SSVM) is now a CNCF Project</title>
+      <link>http://blog.secondstate.io/post/wasmedge-ssvm-joins-cncf/</link>
+      <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/wasmedge-ssvm-joins-cncf/</guid>
+      <description>We are thrilled to announce that WasmEdge, formerly SSVM, has recently been accepted by the CNCF Foundation as a sandbox project, which is the first offcial CNCF WebAssembly runtime project. We envision that it will fill an important role in CNCF’s open source cloud computing landscape as a mission critical lightweight runtime for edge clouds.
+For more infomation about WasmEdge, check out this article.
+Join the WasmEdge Community:
+👉 GitHub:WasmEdge</description>
+    </item>
+    
+  </channel>
+</rss>

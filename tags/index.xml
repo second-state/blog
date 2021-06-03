@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 06:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jun 2021 01:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CNCF</title>
+      <link>http://blog.secondstate.io/tags/cncf/</link>
+      <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/cncf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Edge Computing</title>
+      <link>http://blog.secondstate.io/tags/edge-computing/</link>
+      <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/edge-computing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>http://blog.secondstate.io/tags/go/</link>
+      <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>http://blog.secondstate.io/tags/rust/</link>
+      <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebAssembly</title>
+      <link>http://blog.secondstate.io/tags/webassembly/</link>
+      <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Cloud-native</title>
@@ -21,29 +66,11 @@
     </item>
     
     <item>
-      <title>rust</title>
-      <link>http://blog.secondstate.io/tags/rust/</link>
-      <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>SSVM</title>
       <link>http://blog.secondstate.io/tags/ssvm/</link>
       <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/ssvm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WebAssembly</title>
-      <link>http://blog.secondstate.io/tags/webassembly/</link>
-      <pubDate>Tue, 02 Feb 2021 06:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/webassembly/</guid>
       <description></description>
     </item>
     
@@ -161,33 +188,6 @@
       <pubDate>Fri, 29 May 2020 19:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/swtich-to-rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Why rust</title>
-      <link>http://blog.secondstate.io/tags/why-rust/</link>
-      <pubDate>Fri, 29 May 2020 19:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/why-rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>blockchain</title>
-      <link>http://blog.secondstate.io/tags/blockchain/</link>
-      <pubDate>Thu, 16 Apr 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/blockchain/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ETH 2.0</title>
-      <link>http://blog.secondstate.io/tags/eth-2.0/</link>
-      <pubDate>Thu, 16 Apr 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/eth-2.0/</guid>
       <description></description>
     </item>
     
