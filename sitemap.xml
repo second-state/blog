@@ -72,13 +72,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/post/wasmedge-ssvm-joins-cncf/</loc>
-    <lastmod>2021-06-02T01:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/tags/webassembly/</loc>
     <lastmod>2021-06-02T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -170,14 +163,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/oasis/</loc>
+    <loc>http://blog.secondstate.io/categories/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/oasis/</loc>
+    <loc>http://blog.secondstate.io/tags/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
