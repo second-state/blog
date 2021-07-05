@@ -1,7 +1,7 @@
 ---
 title: "How does rules engine help the blockchain adoption"
 date: 2019-05-10T15:01:23+08:00
-draft: false
+draft: true
 tags: ["rules engine","business"]
 categories: ["en"]
 ---
@@ -29,7 +29,7 @@ Rete is the Latin word fir "net", meaning t"he network". The Rete matching algor
 
 Blockchain Rules Engine - a declarative language for non-programmers
 
-Rules engines are already available in many ìnon-blockchainî enterprise programming languages and frameworks. For example, the Drools, Jess and the Pega business rules platforms. Rules engines are applied in industries including finance, commerce, travel and government. How does rules engine can be used to exonerate you from blockchain programming? 
+Rules engines are already available in many ‚Äúnon-blockchain‚Äù enterprise programming languages and frameworks. For example, the Drools, Jess and the Pega business rules platforms. Rules engines are applied in industries including finance, commerce, travel and government. How does rules engine can be used to exonerate you from blockchain programming? 
 
 Smart contract code is immutable; once deployed the smart contract's logic can not be changed. Hence when deployed, only a finite set of possible conditions and logical outcomes are coded. In addition, the real life senarios is very complitcated and changes with the time. "Complex and inferencing rules could be extremely difficult to program, test, and validate, using standard programming languages like Solidity. The long sequence of highly nested IF / THEN statements is fragile and error-prone. " According to Tim McCallum, Second State's core developer. Therefore, rule engine comes into play.
 
