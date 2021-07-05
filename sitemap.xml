@@ -163,14 +163,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/oasis/</loc>
+    <loc>http://blog.secondstate.io/tags/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/oasis/</loc>
+    <loc>http://blog.secondstate.io/categories/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1145,27 +1145,6 @@
   <url>
     <loc>http://blog.secondstate.io/tags/pos/</loc>
     <lastmod>2018-01-05T01:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/hacks/</loc>
-    <lastmod>2017-11-11T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/post/20171111-polkadot-safe/</loc>
-    <lastmod>2017-11-11T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/wallet/</loc>
-    <lastmod>2017-11-11T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

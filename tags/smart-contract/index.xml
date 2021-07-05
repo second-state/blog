@@ -188,16 +188,5 @@ What is FairPlay FairPlay uses smart contracts to conduct automated prize draws 
 The Libra Blockchain is a decentralized, programmable database designed to support a low-volatility cryptocurrency that will have the ability to serve as an efficient medium of exchange for billions of people around the world.</description>
     </item>
     
-    <item>
-      <title>I accidentally killed it (and evaporated $300 million)</title>
-      <link>http://blog.secondstate.io/post/20171111-polkadot-safe/</link>
-      <pubDate>Sat, 11 Nov 2017 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20171111-polkadot-safe/</guid>
-      <description>Github user devops199 said on Twitter “I accidentally killed it”. Before anyone can blink an eye, his “accident” has “killed” Ethereum accounts holding over $300M in crypto assets. On average, each of his 4 words cost $75M.
-One of those Ethereum accounts belongs to the Polkadot project, and it held close to $90M before it was “killed”.
-Someone asked devops199 after the incident: Why did you do it? His response? “I am just a beginner poking around the system!</description>
-    </item>
-    
   </channel>
 </rss>
