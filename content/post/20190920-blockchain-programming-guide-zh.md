@@ -1,7 +1,7 @@
 ---
 title: "如何使用BUIDL 发布一个自己的区块链网站"
 date: 2019-09-20T09:42:14+08:00
-draft: false
+draft: true
 tags: ["blockchain application", "developer Community", "blockchain programming"]
 categories: ["developer","zh"]
 ---
