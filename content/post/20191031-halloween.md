@@ -1,7 +1,7 @@
 ---
 title: "Celebrate Halloween with Blockchain Smart Contract"
 date: 2019-10-31T10:01:23+08:00
-draft: false
+draft: true
 tags: ["smart contracts","Halloween"] 
 categories: ["en"]
 ---
