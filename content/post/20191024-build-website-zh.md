@@ -1,7 +1,7 @@
 ---
 title: "教程|5分钟建一个去中心化的网站"
 date: 2019-10-23T20:01:23+08:00
-draft: false
+draft: true
 tags: ["网页", "web", "BUIDL"]
 categories: ["zh"]
 ---
