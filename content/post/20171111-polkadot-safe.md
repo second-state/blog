@@ -1,7 +1,7 @@
 ---
 title: "I accidentally killed it (and evaporated $300 million)"
 date: 2017-11-11T10:01:23+08:00
-draft: false
+draft: true
 tags: ["hacks","smart contract","Ethereum","Wallet","blockchain"]
 categories: ["en"]
 ---
