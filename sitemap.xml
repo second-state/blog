@@ -604,20 +604,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/post/20191025-build-your-website/</loc>
-    <lastmod>2019-10-25T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/web/</loc>
-    <lastmod>2019-10-25T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</loc>
     <lastmod>2019-10-25T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -655,6 +641,13 @@
   <url>
     <loc>http://blog.secondstate.io/post/20191024-devcon5-recap/</loc>
     <lastmod>2019-10-24T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/web/</loc>
+    <lastmod>2019-10-23T20:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
