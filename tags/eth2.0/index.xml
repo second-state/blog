@@ -40,14 +40,5 @@ SOLL is the world’s first toolchain that compiles Solidity smart contracts int
 The upbeat and playful community atmosphere continued throughout the entire conference. The days were not only filled with conference presentations. They were filled with lively community interactions, the sharing of ideas, collaborative coding opportunities and even physical puzzle challenges.</description>
     </item>
     
-    <item>
-      <title>First impressions of Ethereum’s Casper — Proof of Stake (PoS)</title>
-      <link>http://blog.secondstate.io/post/20180105-pos/</link>
-      <pubDate>Fri, 05 Jan 2018 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20180105-pos/</guid>
-      <description>Vitalik Buterin and Virgil Griffith have introduced a proof of stake-based finality system capable of overlaying an existing proof of work (PoW) blockchain. In their paper [1], entitled Casper the Friendly Finality Gadget, Buterin and Griffith explain that the first version of Casper (within Ethereum) could take on the form of a hybrid PoW/PoS system. The first available release of the alpha Casper Friendly Finality Gadget (FFG) testnet, built on pyethereum, achieves this.</description>
-    </item>
-    
   </channel>
 </rss>
