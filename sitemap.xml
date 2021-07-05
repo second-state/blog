@@ -1010,14 +1010,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
+    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
+    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -1087,27 +1087,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/business/</loc>
-    <lastmod>2019-05-10T15:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/post/20190510-howrulesenginehelps-theblockchainapplication-en/</loc>
-    <lastmod>2019-05-10T15:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/rules-engine/</loc>
-    <lastmod>2019-05-10T15:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/tags/conference/</loc>
     <lastmod>2019-04-19T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -1124,6 +1103,13 @@
   <url>
     <loc>http://blog.secondstate.io/post/20190419-edcon/</loc>
     <lastmod>2019-04-19T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/business/</loc>
+    <lastmod>2019-03-19T16:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
