@@ -163,14 +163,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/oasis/</loc>
+    <loc>http://blog.secondstate.io/tags/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/oasis/</loc>
+    <loc>http://blog.secondstate.io/categories/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -494,13 +494,6 @@
   <url>
     <loc>http://blog.secondstate.io/tags/developer/</loc>
     <lastmod>2019-11-19T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/post/20191112-ethereum-developer-abi-zh/</loc>
-    <lastmod>2019-11-12T09:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
