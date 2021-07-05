@@ -177,18 +177,6 @@ Value propositions of WebAssembly Wasm’s move from client-side to server-side 
     </item>
     
     <item>
-      <title> Ethereum Development A2Z| Smart Contract ABI </title>
-      <link>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</link>
-      <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</guid>
-      <description>Learn Ethereum development and acquire complex technical concepts in a snap!
-Second State Inc is to release Ethereum development A2Z series articles to help you learn Ethereum in a short time starting from the basics, with real blockchain development cases.
-This article is to introduce Smart Contract ABI, the first piece in the series.
-Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like BUIDL, an ABI for this smart contract is automatically generated, recording the functions and parameters of the smart contract.</description>
-    </item>
-    
-    <item>
       <title>The Next Generation Ethereum Virtual Machine — Ewasm VM</title>
       <link>http://blog.secondstate.io/post/20191106-ewasm-en/</link>
       <pubDate>Wed, 06 Nov 2019 10:01:23 +0800</pubDate>
@@ -218,6 +206,16 @@ Now, for developers, can you tell what the following code is for?
       <description>Ethereum is a blockchain with a built-in Turing-complete programming language. It allows anyone to create a decentralised application, by making use of Ethereum smart contracts.
  “The Ethereum Virtual Machine (EVM) is the part of Ethereum that handles smart contract deployment and execution” (Antonopoulos and Wood, 2018).
  The EVM consists of a stack-based architecture. In order for a smart contract to be deployed, all high level Ethereum smart contract code must first be compiled into machine-readable code (called bytecode).</description>
+    </item>
+    
+    <item>
+      <title>Compile and deploy an ERC20 contract on Ewasm</title>
+      <link>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</link>
+      <pubDate>Fri, 25 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</guid>
+      <description>Second State provides open source infrastructure technologies for public and enterprise blockchains. The smart contract compiler toolchain and virtual machine runtimes are critical elements of the infrastructure.
+Through its web-based BUIDL IDE, developers can easily access Second State smart contract programming languages, compilers, optimizers, and virtual machines. Even novice developers can write and publish decentralized applications (smart contract + web app) on any Ethereum-compatible blockchain in minutes. See examples on Ethereum Classic and CyberMiles blockchains.</description>
     </item>
     
   </channel>

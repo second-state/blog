@@ -62,18 +62,6 @@ Prior to the Panvala grant, Second State is already a recognized leader in Ether
     </item>
     
     <item>
-      <title> Ethereum Development A2Z| Smart Contract ABI </title>
-      <link>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</link>
-      <pubDate>Tue, 19 Nov 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</guid>
-      <description>Learn Ethereum development and acquire complex technical concepts in a snap!
-Second State Inc is to release Ethereum development A2Z series articles to help you learn Ethereum in a short time starting from the basics, with real blockchain development cases.
-This article is to introduce Smart Contract ABI, the first piece in the series.
-Blockchain Smart Contract ABI is the interface between smart contracts and blockchain applications. After a smart contract is compiled into a binary file by a compiler like BUIDL, an ABI for this smart contract is automatically generated, recording the functions and parameters of the smart contract.</description>
-    </item>
-    
-    <item>
       <title>Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm</title>
       <link>http://blog.secondstate.io/post/20191029-ewasm/</link>
       <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>

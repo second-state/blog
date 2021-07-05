@@ -478,27 +478,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/post/20191118-ethereum-developer-abi-en/</loc>
-    <lastmod>2019-11-19T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/buidl/</loc>
-    <lastmod>2019-11-19T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/developer/</loc>
-    <lastmod>2019-11-19T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/tags/evm/</loc>
     <lastmod>2019-11-06T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -536,6 +515,13 @@
   <url>
     <loc>http://blog.secondstate.io/tags/uniswap/</loc>
     <lastmod>2019-11-06T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/buidl/</loc>
+    <lastmod>2019-10-31T20:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -704,6 +690,13 @@
   <url>
     <loc>http://blog.secondstate.io/post/20191014-secondstate-at-devcon5-zh/</loc>
     <lastmod>2019-10-14T10:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/developer/</loc>
+    <lastmod>2019-10-06T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
