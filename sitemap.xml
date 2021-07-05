@@ -520,34 +520,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/buidl/</loc>
-    <lastmod>2019-10-31T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/second-state/</loc>
-    <lastmod>2019-10-31T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/post/20191031-sfbw-zh/</loc>
-    <lastmod>2019-10-31T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/sfbw/</loc>
-    <lastmod>2019-10-31T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/post/20191031-halloween/</loc>
     <lastmod>2019-10-31T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -648,6 +620,13 @@
   <url>
     <loc>http://blog.secondstate.io/post/20191022-soll-compiler-project-zh/</loc>
     <lastmod>2019-10-22T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/buidl/</loc>
+    <lastmod>2019-10-20T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
