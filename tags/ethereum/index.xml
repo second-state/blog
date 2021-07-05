@@ -83,15 +83,6 @@ The virtual machine is a key infrastructure component for public blockchains. It
     </item>
     
     <item>
-      <title>Second State 又获以太坊生态体系的资助奖励</title>
-      <link>http://blog.secondstate.io/post/20200217-soll-zh/</link>
-      <pubDate>Sun, 16 Feb 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20200217-soll-zh/</guid>
-      <description>Second State 最近获得了以太坊生态最大的去中心化自治组织（DAO） Panvala 的资助奖励。Panvala 由 ConsenSys 创立孵化，为以太坊生态里最重要的基础软件项目提供资金</description>
-    </item>
-    
-    <item>
       <title>Ewasm Vs EVM：Ewasm 带来了什么改变？</title>
       <link>http://blog.secondstate.io/post/20191106-ewasm-zh/</link>
       <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
@@ -204,6 +195,16 @@ The focus of our session is to address the challenges of today’s Ethereum smar
       <guid>http://blog.secondstate.io/post/20190925-buidl-for-etc/</guid>
       <description>This news is also seen on PRweb.com
  SAN FRANCISCO (Sept. 24, 2019) —Second State, developer of an open source, blockchain-based smart contract platform for global business, has announced the launch of its BUIDL IDE, an integrated development environment software application for Ethereum Classic (ETC), the preeminent blockchain for smart contracts and “dapps.” With Second State’s BUIDL IDE, development and deployment on ETC can be done within minutes, from any web browser: secondstate.</description>
+    </item>
+    
+    <item>
+      <title>Ethereum Classic partners with Second State to build the next generation Ethereum infrastructure</title>
+      <link>http://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/</link>
+      <pubDate>Sun, 01 Sep 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190901-etc-partners-with-secondstate/</guid>
+      <description>Ethereum Classic Labs (ETC Labs), the developer and maintainer of the Ethereum Classic blockchain (ETC), announced today that it has entered a partnership with a leading blockchain infrastructure developer, Second State, to create open source toolchain and runtime software that powers the next generation of Ethereum-compatible blockchains, including the Ethereum Classic.
+This partnership will bring high-impact enhancements into the ETC ecosystem, and make the ETC blockchain a premier destination for smart contract developers.</description>
     </item>
     
   </channel>

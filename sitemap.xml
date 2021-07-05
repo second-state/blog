@@ -163,14 +163,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/oasis/</loc>
+    <loc>http://blog.secondstate.io/categories/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/oasis/</loc>
+    <loc>http://blog.secondstate.io/tags/oasis/</loc>
     <lastmod>2020-11-09T06:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -422,20 +422,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/post/20200217-soll-zh/</loc>
-    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/vyper/</loc>
-    <lastmod>2020-02-16T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/post/20191218-webassembly-for-the-server-side/</loc>
     <lastmod>2019-12-18T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -514,6 +500,13 @@
   
   <url>
     <loc>http://blog.secondstate.io/post/20191029-ewasm/</loc>
+    <lastmod>2019-10-29T20:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/vyper/</loc>
     <lastmod>2019-10-29T20:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -905,14 +898,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
+    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
+    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
