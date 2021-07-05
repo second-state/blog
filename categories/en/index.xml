@@ -186,18 +186,6 @@ Value propositions of WebAssembly Wasm’s move from client-side to server-side 
     </item>
     
     <item>
-      <title>Celebrate Halloween with Blockchain Smart Contract</title>
-      <link>http://blog.secondstate.io/post/20191031-halloween/</link>
-      <pubDate>Thu, 31 Oct 2019 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191031-halloween/</guid>
-      <description>Halloween is finally here! Are you ready for the spookiest night of the year?
-BUIDL IDE tools now has an upgraded UI just for Halloween. Trick or treat! A spooky pumpkin on the top welcomes you to the BUIDL’s Halloween.
-Now, for developers, can you tell what the following code is for?
-1 2 3 4 5 6 7 8  pragma lity ^1.2.4; contract Halloween { function greet() pure public returns (string) { return &amp;#34;Happy Halloween&amp;#34;; } }   This is a very simple (yet spooky) smart contract example, just like the “Hello World” on the internet.</description>
-    </item>
-    
-    <item>
       <title>Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm</title>
       <link>http://blog.secondstate.io/post/20191029-ewasm/</link>
       <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>
@@ -216,6 +204,16 @@ Now, for developers, can you tell what the following code is for?
       <guid>http://blog.secondstate.io/post/20191025-compile-and-deploy-an-erc20-contract-on-ewasm/</guid>
       <description>Second State provides open source infrastructure technologies for public and enterprise blockchains. The smart contract compiler toolchain and virtual machine runtimes are critical elements of the infrastructure.
 Through its web-based BUIDL IDE, developers can easily access Second State smart contract programming languages, compilers, optimizers, and virtual machines. Even novice developers can write and publish decentralized applications (smart contract + web app) on any Ethereum-compatible blockchain in minutes. See examples on Ethereum Classic and CyberMiles blockchains.</description>
+    </item>
+    
+    <item>
+      <title>What I learned from Ethereum Devcon5</title>
+      <link>http://blog.secondstate.io/post/20191024-devcon5-recap/</link>
+      <pubDate>Thu, 24 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
+      <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
+Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&#39;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
     </item>
     
   </channel>

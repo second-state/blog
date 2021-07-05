@@ -520,27 +520,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/post/20191031-halloween/</loc>
-    <lastmod>2019-10-31T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/halloween/</loc>
-    <lastmod>2019-10-31T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/smart-contracts/</loc>
-    <lastmod>2019-10-31T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/post/20191029-ewasm/</loc>
     <lastmod>2019-10-29T20:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -807,6 +786,13 @@
   </url>
   
   <url>
+    <loc>http://blog.secondstate.io/tags/smart-contracts/</loc>
+    <lastmod>2019-08-26T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.secondstate.io/tags/cybersecurity/</loc>
     <lastmod>2019-08-19T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -926,14 +912,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
+    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
+    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
