@@ -6,19 +6,10 @@
     <description>Recent content in developer Community on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 20 Sep 2019 09:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2019 09:42:14 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/developer-community/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>如何使用BUIDL 发布一个自己的区块链网站</title>
-      <link>http://blog.secondstate.io/post/20190920-blockchain-programming-guide-zh/</link>
-      <pubDate>Fri, 20 Sep 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20190920-blockchain-programming-guide-zh/</guid>
-      <description>欢迎来到区块链的世界，在区块链应用里，您留下的足迹会永远留存，永远不会消失~ 小科普 区块链应用通常以智能合约为后端，以HTML 和 JavaScr</description>
-    </item>
     
     <item>
       <title>Meetup#7：Libra 智能合约技术详解</title>

@@ -814,34 +814,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/blockchain-application/</loc>
-    <lastmod>2019-09-20T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/blockchain-programming/</loc>
-    <lastmod>2019-09-20T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/developer-community/</loc>
-    <lastmod>2019-09-20T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/post/20190920-blockchain-programming-guide-zh/</loc>
-    <lastmod>2019-09-20T09:42:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/tags/development/</loc>
     <lastmod>2019-09-01T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -940,6 +912,13 @@
   </url>
   
   <url>
+    <loc>http://blog.secondstate.io/tags/developer-community/</loc>
+    <lastmod>2019-08-05T09:42:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.secondstate.io/post/20190805-meetup-deep-dive-with-libra-zh/</loc>
     <lastmod>2019-08-05T09:42:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -1010,14 +989,14 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
+    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/search-engine/</loc>
+    <loc>http://blog.secondstate.io/tags/search-engine/</loc>
     <lastmod>2019-07-14T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
