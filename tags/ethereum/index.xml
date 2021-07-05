@@ -92,17 +92,6 @@ The virtual machine is a key infrastructure component for public blockchains. It
     </item>
     
     <item>
-      <title>Second State receives another grant award for the SOLL compiler</title>
-      <link>http://blog.secondstate.io/post/20200216-soll-en/</link>
-      <pubDate>Fri, 14 Feb 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20200216-soll-en/</guid>
-      <description>Second State has been awarded a development grant from Panvala, a leading DAO (Decentralized Autonomous Organization) in the Ethereum ecosystem.
-Founded at ConsenSys, Panvala provides funding support for critical software development efforts in the Ethereum ecosystem. Past Panvala grant awardees include Sigma Prime, Prysmatic Labs, MakerDAO, Aragon, Status, and Gitcoin.
-Prior to the Panvala grant, Second State is already a recognized leader in Ethereum infrastructure development. It is had received funding and grants from both the Ethereum Foundation and Ethereum Classic Labs.</description>
-    </item>
-    
-    <item>
       <title>Ewasm Vs EVM：Ewasm 带来了什么改变？</title>
       <link>http://blog.secondstate.io/post/20191106-ewasm-zh/</link>
       <pubDate>Wed, 06 Nov 2019 09:42:14 +0800</pubDate>
@@ -205,6 +194,16 @@ The focus of our session is to address the challenges of today’s Ethereum smar
       
       <guid>http://blog.secondstate.io/post/20190926-buidl-for-etc-zh/</guid>
       <description>区块链智能合约平台Second State 发布专为以太经典（Ethereum Classic）打造的BUIDL IDE。BUIDL 集成了以太经典开发环境，</description>
+    </item>
+    
+    <item>
+      <title>Calling All Developers: Second State Launches BUIDL IDE, an Integrated Development Environment Software Application, for Ethereum Classic Blockchain</title>
+      <link>http://blog.secondstate.io/post/20190925-buidl-for-etc/</link>
+      <pubDate>Tue, 24 Sep 2019 09:42:14 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20190925-buidl-for-etc/</guid>
+      <description>This news is also seen on PRweb.com
+ SAN FRANCISCO (Sept. 24, 2019) —Second State, developer of an open source, blockchain-based smart contract platform for global business, has announced the launch of its BUIDL IDE, an integrated development environment software application for Ethereum Classic (ETC), the preeminent blockchain for smart contracts and “dapps.” With Second State’s BUIDL IDE, development and deployment on ETC can be done within minutes, from any web browser: secondstate.</description>
     </item>
     
   </channel>

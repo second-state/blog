@@ -31,17 +31,6 @@ The virtual machine is a key infrastructure component for public blockchains. It
     </item>
     
     <item>
-      <title>Second State receives another grant award for the SOLL compiler</title>
-      <link>http://blog.secondstate.io/post/20200216-soll-en/</link>
-      <pubDate>Fri, 14 Feb 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20200216-soll-en/</guid>
-      <description>Second State has been awarded a development grant from Panvala, a leading DAO (Decentralized Autonomous Organization) in the Ethereum ecosystem.
-Founded at ConsenSys, Panvala provides funding support for critical software development efforts in the Ethereum ecosystem. Past Panvala grant awardees include Sigma Prime, Prysmatic Labs, MakerDAO, Aragon, Status, and Gitcoin.
-Prior to the Panvala grant, Second State is already a recognized leader in Ethereum infrastructure development. It is had received funding and grants from both the Ethereum Foundation and Ethereum Classic Labs.</description>
-    </item>
-    
-    <item>
       <title>Diving into Ethereum&#39;s Virtual Machine(EVM): the future of Ewasm</title>
       <link>http://blog.secondstate.io/post/20191029-ewasm/</link>
       <pubDate>Tue, 29 Oct 2019 20:01:23 +0800</pubDate>

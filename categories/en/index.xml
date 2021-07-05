@@ -145,17 +145,6 @@ The virtual machine is a key infrastructure component for public blockchains. It
     </item>
     
     <item>
-      <title>Second State receives another grant award for the SOLL compiler</title>
-      <link>http://blog.secondstate.io/post/20200216-soll-en/</link>
-      <pubDate>Fri, 14 Feb 2020 20:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20200216-soll-en/</guid>
-      <description>Second State has been awarded a development grant from Panvala, a leading DAO (Decentralized Autonomous Organization) in the Ethereum ecosystem.
-Founded at ConsenSys, Panvala provides funding support for critical software development efforts in the Ethereum ecosystem. Past Panvala grant awardees include Sigma Prime, Prysmatic Labs, MakerDAO, Aragon, Status, and Gitcoin.
-Prior to the Panvala grant, Second State is already a recognized leader in Ethereum infrastructure development. It is had received funding and grants from both the Ethereum Foundation and Ethereum Classic Labs.</description>
-    </item>
-    
-    <item>
       <title>Second State releases WebAssembly for the server side</title>
       <link>http://blog.secondstate.io/post/20191218-webassembly-for-the-server-side/</link>
       <pubDate>Wed, 18 Dec 2019 10:01:23 +0800</pubDate>
@@ -214,6 +203,16 @@ Through its web-based BUIDL IDE, developers can easily access Second State smart
       <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
       <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
 Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&#39;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
+    </item>
+    
+    <item>
+      <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
+      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
+      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
+      <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
+SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
     </item>
     
   </channel>
