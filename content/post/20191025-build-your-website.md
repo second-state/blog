@@ -1,7 +1,7 @@
 ---
 title: "Build your own decentralized website with BUIDL IDE"
 date: 2019-10-25T20:01:23+08:00
-draft: false
+draft: true
 tags: ["web", "BUIDL"]
 categories: ["en"]
 ---
