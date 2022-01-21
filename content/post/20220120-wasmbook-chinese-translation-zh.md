@@ -3,12 +3,12 @@ title: "WasmEdge 文档翻译规范和术语表"
 date: 2022-01-20T10:01:23+08:00
 draft: false
 tags: ["翻译","文档","GitHub"]
-categories: ["en"]
+categories: ["zh"]
 ---
 
 
 
-本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 [FreeCodeCamp 翻译指南](https://github.com/mzlogin/chinese-copywriting-guidelines)。
+本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 [中文排版规则](https://github.com/mzlogin/chinese-copywriting-guidelines)。
 
 翻译时请先查阅翻译术语表，涉及到的关键词统一按照规范进行翻译。如有异议或添加新的术语请通过提 GitHub Issue 和维护团队商讨。
 
@@ -38,7 +38,6 @@ categories: ["en"]
 |英文	|
 |---	|
 |WasmEdge	|
-|---	|
 |WebAssembly	|
 |runtime	|
 |Wasm	|
@@ -77,7 +76,8 @@ categories: ["en"]
 |[SuperEdge](https://wasmedge.org/book/en/kubernetes/kubernetes/superedge.html)	|
 |KubeEdge	|
 |AWS Lambda	|
-|Second StateMOSN	|
+|Second State
+|MOSN	|
 |Yomo	|
 |Polkadot	|
 |Vercel	|
@@ -119,13 +119,10 @@ categories: ["en"]
 |英文	|译文	|
 |---	|---	|
 |CNCF	|云原生计算基金会	|
-|---	|---	|
 |RTOS	|实时操作系统	|
 |AOT	|提前（编译）	|
 |JIT	|即时（编译）	|
-|	|	|
-|	|	|
-|	|	|
+
 
 ## 不需要保留英文的关键词
 
