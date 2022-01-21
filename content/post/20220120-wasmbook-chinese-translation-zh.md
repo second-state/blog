@@ -8,7 +8,7 @@ categories: ["zh"]
 
 
 
-本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 [中文排版规则](https://github.com/mzlogin/chinese-copywriting-guidelines)。
+本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考[中文排版规则](https://github.com/mzlogin/chinese-copywriting-guidelines)。
 
 翻译时请先查阅翻译术语表，涉及到的关键词统一按照规范进行翻译。如有异议或添加新的术语请通过提 GitHub Issue 和维护团队商讨。
 
@@ -108,7 +108,6 @@ categories: ["zh"]
 |PowerShell	|
 |Guest Linux OS	|
 |LLVM	|
-|	|
 
 除了大段代码块内很明显的解释性语句，所有代码内容请勿翻译。
 
