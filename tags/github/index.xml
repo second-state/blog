@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GitHub on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/github/</link>
+    <description>Recent content in GitHub on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Jan 2022 10:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WasmEdge 文档翻译规范和术语表</title>
+      <link>http://blog.secondstate.io/post/20220120-wasmbook-chinese-translation-zh/</link>
+      <pubDate>Thu, 20 Jan 2022 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20220120-wasmbook-chinese-translation-zh/</guid>
+      <description>本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 FreeCodeCamp 翻译指南。 翻译</description>
+    </item>
+    
+  </channel>
+</rss>

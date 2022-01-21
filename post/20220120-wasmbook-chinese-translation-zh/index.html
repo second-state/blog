@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>WasmEdge 文档翻译规范和术语表 - Second State News and Articles</title>
+  
+
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+
+
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+<meta name="mobile-web-app-capable" content="yes">
+
+<meta name="author" content="Second State" />
+  <meta name="description" content="本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 FreeCodeCamp 翻译指南。 翻译" />
+
+  <meta name="keywords" content="Second State, Lity, Ethereum, blockchain, ETH, commerce, bitcoin, smart contract" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.62.2" />
+
+
+<link rel="canonical" href="http://blog.secondstate.io/post/20220120-wasmbook-chinese-translation-zh/" />
+
+
+
+<link rel="icon" href="/favicon.ico" />
+
+
+
+
+
+
+
+
+
+
+<link href="/dist/jane.min.css?v=2.7.0" rel="stylesheet">
+
+
+
+
+
+<meta itemprop="name" content="WasmEdge 文档翻译规范和术语表">
+<meta itemprop="description" content="本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 FreeCodeCamp 翻译指南。 翻译">
+<meta itemprop="datePublished" content="2022-01-20T10:01:23&#43;08:00" />
+<meta itemprop="dateModified" content="2022-01-20T10:01:23&#43;08:00" />
+<meta itemprop="wordCount" content="704">
+
+
+
+<meta itemprop="keywords" content="翻译,文档,GitHub," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WasmEdge 文档翻译规范和术语表"/>
+<meta name="twitter:description" content="本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 FreeCodeCamp 翻译指南。 翻译"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-137134458-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+<meta property="og:title" content="WasmEdge 文档翻译规范和术语表 - Second State News and Articles">
+  <meta property="og:description" content="本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 FreeCodeCamp 翻译指南。 翻译" />
+<meta property="og:image" content="https://blog.secondstate.io/logo_symbol.png">
+<meta property="og:url" content="http://blog.secondstate.io/post/20220120-wasmbook-chinese-translation-zh/">
+
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="http://www.secondstate.io" class="logo">
+      <img src="/logo-small.png">
+      
+    </a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+        
+      </li><li class="mobile-menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+        
+      </li>
+    
+  </ul>
+</nav>
+
+
+  
+    
+
+
+
+
+
+
+  <link rel="stylesheet" href="/lib/photoswipe/photoswipe.min.css" />
+  <link rel="stylesheet" href="/lib/photoswipe/default-skin/default-skin.min.css" />
+
+
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+  
+
+  
+
+  <header id="header" class="header container">
+    <div class="logo-wrapper">
+  <a href="http://www.secondstate.io" class="logo">
+    <img src="/logo.png">
+    
+  </a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/">Home</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/post/">Archives</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://blog.secondstate.io/tags/">Tags</a>
+
+        
+
+      </li>
+    
+      <li class="menu-item">
+        
+          
+          <a class="menu-item-link" href="http://www.secondstate.io">SecondState.io</a>
+
+        
+
+      </li>
+    
+    
+  </ul>
+</nav>
+
+  </header>
+
+  <div id="mobile-panel">
+    <main id="main" class="main bg-llight">
+      <div class="content-wrapper">
+        <div id="content" class="content container">
+          <article class="post bg-white">
+    
+    <header class="post-header">
+      <h1 class="post-title">WasmEdge 文档翻译规范和术语表</h1>
+      
+      <div class="post-meta">
+        <span class="post-time"> January 20, 2022 </span>
+        <div class="post-category">
+            <a href="http://blog.secondstate.io/categories/en/"> en </a>
+            
+          </div>
+        
+
+        
+        
+
+        
+        
+      </div>
+    </header>
+
+    
+    
+
+    
+    <div class="post-content">
+      <p>本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 <a href="https://github.com/mzlogin/chinese-copywriting-guidelines">FreeCodeCamp 翻译指南</a>。</p>
+<p>翻译时请先查阅翻译术语表，涉及到的关键词统一按照规范进行翻译。如有异议或添加新的术语请通过提 GitHub Issue 和维护团队商讨。</p>
+<ul>
+<li>空格
+<ul>
+<li>中英文之间需要增加空格</li>
+<li>中文与数字之间需要增加空格</li>
+<li>数字与单位之间需要增加空格</li>
+<li>全角标点与其他字符之间不加空格</li>
+</ul>
+</li>
+<li>标点符号
+<ul>
+<li>不重复使用标点符号</li>
+<li>破折号前后需要增加一个空格</li>
+</ul>
+</li>
+<li>全角半角
+<ul>
+<li>中文标点使用全角字符</li>
+<li>数字使用半角字符</li>
+<li>遇到完整的英文整句、特殊名词，其內容使用半角标点</li>
+</ul>
+</li>
+</ul>
+<p>文档使用 MarkDown 格式，对于想要翻译的文档，点击 Fork 和编辑可查看英文原文的 MarkDown 格式文本，将文本复制到你将要 commit 的内容中，在此文本基础上进行修改和翻译。</p>
+<h1 id="翻译术语列表">翻译术语列表</h1>
+<p>*列表持续完善中，如有缺漏，欢迎提 PR 补充或提出修改建议。</p>
+<h2 id="不需要翻译的英文关键词-请保留原文">不需要翻译的英文关键词 请保留原文</h2>
+<table>
+<thead>
+<tr>
+<th>英文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WasmEdge</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>WebAssembly</td>
+</tr>
+<tr>
+<td>runtime</td>
+</tr>
+<tr>
+<td>Wasm</td>
+</tr>
+<tr>
+<td>Kubenetes</td>
+</tr>
+<tr>
+<td><a href="https://github.com/WebAssembly/bulk-memory-operations/blob/master/proposals/bulk-memory-operations/Overview.md">Bulk memory operations</a></td>
+</tr>
+<tr>
+<td><a href="https://webassembly.github.io/reference-types/core/">Reference Types</a></td>
+</tr>
+<tr>
+<td>Dapr</td>
+</tr>
+<tr>
+<td>Docker</td>
+</tr>
+<tr>
+<td>crun</td>
+</tr>
+<tr>
+<td>runc</td>
+</tr>
+<tr>
+<td>Kind</td>
+</tr>
+<tr>
+<td>Knative</td>
+</tr>
+<tr>
+<td>serverless</td>
+</tr>
+<tr>
+<td>FaaS</td>
+</tr>
+<tr>
+<td>API</td>
+</tr>
+<tr>
+<td>WASI</td>
+</tr>
+<tr>
+<td>Substrate</td>
+</tr>
+<tr>
+<td>Pallet</td>
+</tr>
+<tr>
+<td>Rust</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+</tr>
+<tr>
+<td>Go</td>
+</tr>
+<tr>
+<td>Swift</td>
+</tr>
+<tr>
+<td>AssemblyScript</td>
+</tr>
+<tr>
+<td>Kotlin</td>
+</tr>
+<tr>
+<td>Grain</td>
+</tr>
+<tr>
+<td>Python</td>
+</tr>
+<tr>
+<td>Linux</td>
+</tr>
+<tr>
+<td>Windows</td>
+</tr>
+<tr>
+<td>Mac</td>
+</tr>
+<tr>
+<td>seL4</td>
+</tr>
+<tr>
+<td>Open Harmony</td>
+</tr>
+<tr>
+<td>Raspberry Pi</td>
+</tr>
+<tr>
+<td>plug-in</td>
+</tr>
+<tr>
+<td>CRI-O</td>
+</tr>
+<tr>
+<td>containerd</td>
+</tr>
+<tr>
+<td><a href="https://wasmedge.org/book/en/kubernetes/kubernetes/superedge.html">SuperEdge</a></td>
+</tr>
+<tr>
+<td>KubeEdge</td>
+</tr>
+<tr>
+<td>AWS Lambda</td>
+</tr>
+<tr>
+<td>Second StateMOSN</td>
+</tr>
+<tr>
+<td>Yomo</td>
+</tr>
+<tr>
+<td>Polkadot</td>
+</tr>
+<tr>
+<td>Vercel</td>
+</tr>
+<tr>
+<td>Netlify</td>
+</tr>
+<tr>
+<td>Slack</td>
+</tr>
+<tr>
+<td>demo</td>
+</tr>
+<tr>
+<td>crate</td>
+</tr>
+<tr>
+<td>NAPI</td>
+</tr>
+<tr>
+<td><a href="https://github.com/second-state/rustwasmc">rustwasmc</a></td>
+</tr>
+<tr>
+<td>eBPF</td>
+</tr>
+<tr>
+<td>host</td>
+</tr>
+<tr>
+<td>Jamstack</td>
+</tr>
+<tr>
+<td>TensorFlow</td>
+</tr>
+<tr>
+<td>ImageNet</td>
+</tr>
+<tr>
+<td>QuickJS</td>
+</tr>
+<tr>
+<td>TinyGo</td>
+</tr>
+<tr>
+<td>host</td>
+</tr>
+<tr>
+<td>web</td>
+</tr>
+<tr>
+<td>JSON</td>
+</tr>
+<tr>
+<td>sidercar</td>
+</tr>
+<tr>
+<td>Grain</td>
+</tr>
+<tr>
+<td>repo</td>
+</tr>
+<tr>
+<td>grayscale</td>
+</tr>
+<tr>
+<td>fork</td>
+</tr>
+<tr>
+<td>GitHub Pages</td>
+</tr>
+<tr>
+<td>Next.js</td>
+</tr>
+<tr>
+<td>handler</td>
+</tr>
+<tr>
+<td>PowerShell</td>
+</tr>
+<tr>
+<td>Guest Linux OS</td>
+</tr>
+<tr>
+<td>LLVM</td>
+</tr>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>除了大段代码块内很明显的解释性语句，所有代码内容请勿翻译。</p>
+<h2 id="英文中文都需要保留的关键词">英文中文都需要保留的关键词</h2>
+<blockquote>
+<p>需要保留关键词的地方统一按照<code>中文翻译（英文关键词）</code>的格式。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>英文</th>
+<th>译文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNCF</td>
+<td>云原生计算基金会</td>
+</tr>
+<tr>
+<td>&mdash;</td>
+<td>&mdash;</td>
+</tr>
+<tr>
+<td>RTOS</td>
+<td>实时操作系统</td>
+</tr>
+<tr>
+<td>AOT</td>
+<td>提前（编译）</td>
+</tr>
+<tr>
+<td>JIT</td>
+<td>即时（编译）</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="不需要保留英文的关键词">不需要保留英文的关键词</h2>
+<table>
+<thead>
+<tr>
+<th>英文</th>
+<th>译文</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>developer</td>
+<td>开发者</td>
+</tr>
+<tr>
+<td>microservices</td>
+<td>微服务</td>
+</tr>
+<tr>
+<td>smart contracts</td>
+<td>智能合约</td>
+</tr>
+<tr>
+<td>proprietary</td>
+<td></td>
+</tr>
+<tr>
+<td>Ethereum</td>
+<td>以太坊</td>
+</tr>
+<tr>
+<td>service mesh</td>
+<td>服务网格</td>
+</tr>
+<tr>
+<td>container</td>
+<td>容器</td>
+</tr>
+<tr>
+<td>parser</td>
+<td>分析器</td>
+</tr>
+<tr>
+<td>resolver</td>
+<td>解析器</td>
+</tr>
+<tr>
+<td>image</td>
+<td>镜像</td>
+</tr>
+<tr>
+<td>framework</td>
+<td>框架</td>
+</tr>
+<tr>
+<td>micokernel</td>
+<td>微内核</td>
+</tr>
+<tr>
+<td>app</td>
+<td>应用</td>
+</tr>
+<tr>
+<td>application</td>
+<td>应用程序</td>
+</tr>
+<tr>
+<td>feature</td>
+<td>特性</td>
+</tr>
+<tr>
+<td>use case</td>
+<td>应用场景</td>
+</tr>
+<tr>
+<td>cloud native</td>
+<td>云原生</td>
+</tr>
+<tr>
+<td>integration</td>
+<td>集成</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>操作系统</td>
+</tr>
+<tr>
+<td>console</td>
+<td>操作台</td>
+</tr>
+<tr>
+<td>library</td>
+<td>库</td>
+</tr>
+<tr>
+<td>Golang</td>
+<td>Go 语言</td>
+</tr>
+<tr>
+<td>VM</td>
+<td>虚拟机</td>
+</tr>
+<tr>
+<td>module</td>
+<td>模块</td>
+</tr>
+<tr>
+<td>instance</td>
+<td>系统进程</td>
+</tr>
+<tr>
+<td>inference</td>
+<td>推理</td>
+</tr>
+<tr>
+<td><a href="https://wasmedge.org/book/en/frameworks/serverless/vercel.html#prerequisite">Prerequisite</a></td>
+<td>前期准备</td>
+</tr>
+<tr>
+<td>Package</td>
+<td>包</td>
+</tr>
+<tr>
+<td>Macro</td>
+<td>宏</td>
+</tr>
+<tr>
+<td>runner</td>
+<td>运行器</td>
+</tr>
+<tr>
+<td>memory</td>
+<td>内存</td>
+</tr>
+<tr>
+<td>directory</td>
+<td>目录</td>
+</tr>
+<tr>
+<td>powered by</td>
+<td>由……驱动</td>
+</tr>
+<tr>
+<td>dependency</td>
+<td>依赖项</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Second State</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">January 20, 2022</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="http://blog.secondstate.io/tags/%E7%BF%BB%E8%AF%91/">翻译</a>
+          <a href="http://blog.secondstate.io/tags/%E6%96%87%E6%A1%A3/">文档</a>
+          <a href="http://blog.secondstate.io/tags/github/">GitHub</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/20210602-wasmedge-ssvm-joins-cncf/">
+            <span class="next-text nav-default">WasmEdge (formerly SSVM) is now a CNCF Project</span>
+            <span class="prev-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
+  
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+        </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      
+
+  
+  <script type="text/javascript">document.cookie = 'MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;'</script>
+  <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us3.list-manage.com","uuid":"fff3b05c9dd4ef7b8163406d1","lid":"8eb8db2618","uniqueMethods":true}) })</script>
+
+<div class="social-links">
+      <a href="mailto:contact@secondstate.io" rel="me noopener" class="iconfont icon-email"
+        title="email">
+      </a>
+      <a href="https://twitter.com/secondstateinc" rel="me noopener" class="iconfont icon-twitter"
+        title="twitter" target="_blank">
+      </a>
+      <a href="https://www.facebook.com/Secondstateinc-422015655273364/" rel="me noopener" class="iconfont icon-facebook"
+        title="facebook" target="_blank">
+      </a>
+      <a href="https://github.com/second-state/" rel="me noopener" class="iconfont icon-github"
+        title="github" target="_blank">
+      </a>
+  <a href="http://blog.secondstate.io/index.xml" rel="noopener alternate" type="application/rss&#43;xml" class="iconfont icon-rss"
+    title="rss" target="_blank">
+  </a>
+  </div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - <a class="theme-link" href="https://github.com/xianmin/hugo-theme-jane">Jane</a>
+  </span>
+
+  <span class="copyright-year">
+    &copy;
+    
+      2019 -
+    2022
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span><span class="author">
+        Second State
+        
+      </span></span>
+
+  
+  
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+<script type="text/javascript" src="/dist/jane.min.js?v=2.7.0"></script>
+
+
+
+
+
+  
+    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe.min.js"></script>
+    <script type="text/javascript" src="/lib/photoswipe/photoswipe-ui-default.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

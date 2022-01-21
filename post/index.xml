@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jun 2021 01:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Jan 2022 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WasmEdge 文档翻译规范和术语表</title>
+      <link>http://blog.secondstate.io/post/20220120-wasmbook-chinese-translation-zh/</link>
+      <pubDate>Thu, 20 Jan 2022 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20220120-wasmbook-chinese-translation-zh/</guid>
+      <description>本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 FreeCodeCamp 翻译指南。 翻译</description>
+    </item>
     
     <item>
       <title>WasmEdge (formerly SSVM) is now a CNCF Project</title>
@@ -198,16 +207,6 @@ Wasm started as a high performance execution engine inside web browsers. It is l
       
       <guid>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</guid>
       <description>在探讨 WASM 在服务端的巨大潜力时，我们提到 WASM 的一大优势就是支持有影响力的新锐编程语言，例如 Rust 。这篇文章将展示如何编写并执行一个 Wasm Rust 程序，只有代码</description>
-    </item>
-    
-    <item>
-      <title>WebAssembly on the server side</title>
-      <link>http://blog.secondstate.io/post/20191124-wasm-en/</link>
-      <pubDate>Sun, 24 Nov 2019 19:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191124-wasm-en/</guid>
-      <description>WebAssembly (Wasm), originally invented and developed by Mozilla, Google, Microsoft, Apple, and others at W3C; is a high-performance execution engine for in-browser web applications. As it gains popularity on the client-side, Wasm is also becoming a serious contender as a server-side technology.
-Value propositions of WebAssembly Wasm’s move from client-side to server-side follows well-traveled paths of previous generations of technologies such as Java and JavaScript. Compared with existing solutions, Wasm offers some compelling value propositions on the server-side.</description>
     </item>
     
   </channel>
