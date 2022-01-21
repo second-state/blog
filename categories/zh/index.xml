@@ -6,10 +6,19 @@
     <description>Recent content in zh on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Feb 2021 06:42:14 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 20 Jan 2022 10:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/zh/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>WasmEdge 文档翻译规范和术语表</title>
+      <link>http://blog.secondstate.io/post/20220120-wasmbook-chinese-translation-zh/</link>
+      <pubDate>Thu, 20 Jan 2022 10:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20220120-wasmbook-chinese-translation-zh/</guid>
+      <description>本指南希望帮助社区贡献者统一中文文案、排版的相关用法，降低沟通成本，增强译文的规范性和统一性，使文档更加易读。详细指南请参考 中文排版规则。 翻</description>
+    </item>
     
     <item>
       <title>SSVM 0.7 版本将 WebAssembly 引入公有云</title>
