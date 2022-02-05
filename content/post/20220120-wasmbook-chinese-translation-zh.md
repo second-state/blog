@@ -94,7 +94,7 @@ categories: ["zh"]
 |ImageNet	|
 |QuickJS	|
 |TinyGo	|
-|host	|
+|brew	|
 |web	|
 |JSON	|
 |sidercar	|
