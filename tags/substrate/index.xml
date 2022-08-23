@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>substrate on Second State News and Articles</title>
+    <link>http://blog.secondstate.io/tags/substrate/</link>
+    <description>Recent content in substrate on Second State News and Articles</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 11 Aug 2022 01:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="http://blog.secondstate.io/tags/substrate/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Running Substrate on WasmEdge</title>
+      <link>http://blog.secondstate.io/post/20220811-substrate-on-wasmedge/</link>
+      <pubDate>Thu, 11 Aug 2022 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20220811-substrate-on-wasmedge/</guid>
+      <description>Substrate is a software framework for building blockchain systems. A substrate blockchain is written in Rust and compiled into WebAssembly so that it could run safely on nodes across different operation systems.
+WasmEdge is a leading WebAssembly Runtime for cloud-native applications. It is an open source project hosted by the Linux Foundation / Cloud-native foundation. Through a generous grant from the web3 foundation, we are happy to preview a version of substrate framework that runs on the WasmEdge runtime.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,55 @@
     <description>Recent content in Tags on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Jan 2022 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Aug 2022 01:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blockchain</title>
+      <link>http://blog.secondstate.io/tags/blockchain/</link>
+      <pubDate>Thu, 11 Aug 2022 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>polkadot</title>
+      <link>http://blog.secondstate.io/tags/polkadot/</link>
+      <pubDate>Thu, 11 Aug 2022 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/polkadot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rust</title>
+      <link>http://blog.secondstate.io/tags/rust/</link>
+      <pubDate>Thu, 11 Aug 2022 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>substrate</title>
+      <link>http://blog.secondstate.io/tags/substrate/</link>
+      <pubDate>Thu, 11 Aug 2022 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/substrate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web3</title>
+      <link>http://blog.secondstate.io/tags/web3/</link>
+      <pubDate>Thu, 11 Aug 2022 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/tags/web3/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>GitHub</title>
@@ -62,15 +107,6 @@
       <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/go/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rust</title>
-      <link>http://blog.secondstate.io/tags/rust/</link>
-      <pubDate>Wed, 02 Jun 2021 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/rust/</guid>
       <description></description>
     </item>
     
@@ -152,42 +188,6 @@
       <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
       
       <guid>http://blog.secondstate.io/tags/interface-types/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reference types</title>
-      <link>http://blog.secondstate.io/tags/reference-types/</link>
-      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/reference-types/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>WASI</title>
-      <link>http://blog.secondstate.io/tags/wasi/</link>
-      <pubDate>Wed, 28 Oct 2020 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/wasi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>smart contract</title>
-      <link>http://blog.secondstate.io/tags/smart-contract/</link>
-      <pubDate>Mon, 12 Oct 2020 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/smart-contract/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy-first</title>
-      <link>http://blog.secondstate.io/tags/privacy-first/</link>
-      <pubDate>Wed, 03 Jun 2020 10:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/tags/privacy-first/</guid>
       <description></description>
     </item>
     

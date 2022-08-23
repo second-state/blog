@@ -6,10 +6,20 @@
     <description>Recent content in en on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 02 Jun 2021 01:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Aug 2022 01:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/categories/en/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Running Substrate on WasmEdge</title>
+      <link>http://blog.secondstate.io/post/20220811-substrate-on-wasmedge/</link>
+      <pubDate>Thu, 11 Aug 2022 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20220811-substrate-on-wasmedge/</guid>
+      <description>Substrate is a software framework for building blockchain systems. A substrate blockchain is written in Rust and compiled into WebAssembly so that it could run safely on nodes across different operation systems.
+WasmEdge is a leading WebAssembly Runtime for cloud-native applications. It is an open source project hosted by the Linux Foundation / Cloud-native foundation. Through a generous grant from the web3 foundation, we are happy to preview a version of substrate framework that runs on the WasmEdge runtime.</description>
+    </item>
     
     <item>
       <title>WasmEdge (formerly SSVM) is now a CNCF Project</title>
@@ -203,16 +213,6 @@ Through its web-based BUIDL IDE, developers can easily access Second State smart
       <guid>http://blog.secondstate.io/post/20191024-devcon5-recap/</guid>
       <description>The Ethereum Foundation Devcon is the most important annual gathering of developers, designers, and researchers in the Ethereum ecosystem. This year’s Devcon5 in Osaka, Japan is the 5th Devcon, and as in past years, it is a bellwether of what to come in Ethereum.
 Note: My company, Second State, was invited to give a talk at Devcon5, where we showed off the world&#39;s first toolchain to compile and deploy Solidity smart contracts on the official Ewasm testnet.</description>
-    </item>
-    
-    <item>
-      <title>Second State receives a prestigious award from the Ethereum Foundation for the SOLL compiler</title>
-      <link>http://blog.secondstate.io/post/20191022-soll-compiler-project/</link>
-      <pubDate>Tue, 22 Oct 2019 01:01:23 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191022-soll-compiler-project/</guid>
-      <description>(Oct 20th, 2019, Taipei) - Second State, a leading provider of open source infrastructure software for blockchain smart contracts, has been awarded a cash prize for its contribution to the open source SOLL compiler project. Vitalik Buterin from the Ethereum Foundation presented Hung-Ying Tai from Second State with the $5000 prize at the CrossLink event in Taipei on Oct 20th, 2019.
-SOLL is the world’s first toolchain that compiles Solidity smart contracts into WebAssembly bytecode and successfully deploys onto Ethereum Foundation’s official Ewasm (Ethereum flavored WebAssembly) testnet.</description>
     </item>
     
   </channel>

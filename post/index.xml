@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Second State News and Articles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Jan 2022 10:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Aug 2022 01:01:23 +0800</lastBuildDate>
     
 	<atom:link href="http://blog.secondstate.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Running Substrate on WasmEdge</title>
+      <link>http://blog.secondstate.io/post/20220811-substrate-on-wasmedge/</link>
+      <pubDate>Thu, 11 Aug 2022 01:01:23 +0800</pubDate>
+      
+      <guid>http://blog.secondstate.io/post/20220811-substrate-on-wasmedge/</guid>
+      <description>Substrate is a software framework for building blockchain systems. A substrate blockchain is written in Rust and compiled into WebAssembly so that it could run safely on nodes across different operation systems.
+WasmEdge is a leading WebAssembly Runtime for cloud-native applications. It is an open source project hosted by the Linux Foundation / Cloud-native foundation. Through a generous grant from the web3 foundation, we are happy to preview a version of substrate framework that runs on the WasmEdge runtime.</description>
+    </item>
     
     <item>
       <title>WasmEdge 文档翻译规范和术语表</title>
@@ -198,15 +208,6 @@ The virtual machine is a key infrastructure component for public blockchains. It
       <description>An open source WebAssembly runtime optimized for blockchain, AI, and cloud services
 (12/17/2019, Taipei)The Second State team has released a “developer preview” of the Second State Virtual Machine (SSVM). It is a WebAssembly (Wasm) compatible runtime engineered from ground up for server side applications. Get it from Github here: https://github.com/second-state/SSVM
 Wasm started as a high performance execution engine inside web browsers. It is language agnostic (supporting popular new languages such as Rust), platform agnostic, lightweight, fast, and also provides native hardware access through its modular security model.</description>
-    </item>
-    
-    <item>
-      <title>只需 5 分钟，教你如何编写并执行一个 Rust &#43; WebAssembly 程序</title>
-      <link>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</link>
-      <pubDate>Fri, 06 Dec 2019 09:42:14 +0800</pubDate>
-      
-      <guid>http://blog.secondstate.io/post/20191220-rust-webassembly-zh/</guid>
-      <description>在探讨 WASM 在服务端的巨大潜力时，我们提到 WASM 的一大优势就是支持有影响力的新锐编程语言，例如 Rust 。这篇文章将展示如何编写并执行一个 Wasm Rust 程序，只有代码</description>
     </item>
     
   </channel>

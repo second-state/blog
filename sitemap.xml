@@ -2,35 +2,84 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.secondstate.io/categories/</loc>
-    <lastmod>2022-01-20T10:01:23+08:00</lastmod>
+    <loc>http://blog.secondstate.io/tags/blockchain/</loc>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/github/</loc>
-    <lastmod>2022-01-20T10:01:23+08:00</lastmod>
+    <loc>http://blog.secondstate.io/categories/</loc>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/categories/en/</loc>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/polkadot/</loc>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.secondstate.io/post/</loc>
-    <lastmod>2022-01-20T10:01:23+08:00</lastmod>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/post/20220811-substrate-on-wasmedge/</loc>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/rust/</loc>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.secondstate.io/</loc>
-    <lastmod>2022-01-20T10:01:23+08:00</lastmod>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/substrate/</loc>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>http://blog.secondstate.io/tags/</loc>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/web3/</loc>
+    <lastmod>2022-08-11T01:01:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.secondstate.io/tags/github/</loc>
     <lastmod>2022-01-20T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -79,21 +128,7 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/categories/en/</loc>
-    <lastmod>2021-06-02T01:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/tags/go/</loc>
-    <lastmod>2021-06-02T01:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/rust/</loc>
     <lastmod>2021-06-02T01:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -331,13 +366,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/blockchain/</loc>
-    <lastmod>2020-04-16T10:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/tags/eth-2.0/</loc>
     <lastmod>2020-04-16T10:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -408,13 +436,6 @@
   </url>
   
   <url>
-    <loc>http://blog.secondstate.io/tags/polkadot/</loc>
-    <lastmod>2020-03-02T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.secondstate.io/post/20200302-polkadot-en/</loc>
     <lastmod>2020-03-02T20:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -423,13 +444,6 @@
   
   <url>
     <loc>http://blog.secondstate.io/tags/solidity/</loc>
-    <lastmod>2020-03-02T20:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.secondstate.io/tags/web3/</loc>
     <lastmod>2020-03-02T20:01:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
